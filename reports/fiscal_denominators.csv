@@ -1,0 +1,11 @@
+country,fiscal_year,government_revenue_usd,reason
+AUS,2022.0,443090336404.2623,Matched-year WDI revenue excluding grants; government coverage follows source
+FJI,2024.0,1588449815.4785502,Matched-year WDI revenue excluding grants; government coverage follows source
+IDN,,,No matched GDP/revenue observations within two years of valuation
+MYS,2024.0,70932826636.83978,Matched-year WDI revenue excluding grants; government coverage follows source
+PHL,2024.0,77067794845.41243,Matched-year WDI revenue excluding grants; government coverage follows source
+THA,2024.0,107126981289.90143,Matched-year WDI revenue excluding grants; government coverage follows source
+TON,2023.0,133839821.10176797,Matched-year WDI revenue excluding grants; government coverage follows source
+VNM,,,No matched GDP/revenue observations within two years of valuation
+VUT,2023.0,287105847.25364655,Matched-year WDI revenue excluding grants; government coverage follows source
+WSM,2023.0,321030473.5766154,Matched-year WDI revenue excluding grants; government coverage follows source

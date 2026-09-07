@@ -1,0 +1,42 @@
+name: Daily research update
+on:
+  schedule:
+    - cron: '30 12 * * *'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: tradewinds-daily
+  cancel-in-progress: false
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+        with:
+          enable-cache: true
+      - run: uv python install 3.12
+      - run: uv sync --locked
+      - uses: actions/cache/restore@v4
+        with:
+          path: |
+            data
+            artifacts
+          key: tradewinds-state-${{ github.run_id }}-${{ github.run_attempt }}
+          restore-keys: tradewinds-state-
+      - run: uv run tradewinds update
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: research-run-${{ github.run_id }}
+          path: artifacts/runs
+          retention-days: 30
+      - uses: actions/cache/save@v4
+        if: success()
+        with:
+          path: |
+            data
+            artifacts
+          key: tradewinds-state-${{ github.run_id }}-${{ github.run_attempt }}

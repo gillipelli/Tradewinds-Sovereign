@@ -1,0 +1,11 @@
+{
+  "n": 374,
+  "rmse": 0.1284639985952034,
+  "coverage90": 0.9438502673796791,
+  "crps": 0.05857068204790171,
+  "baseline_rmse": 0.13388330891210232,
+  "baseline_crps": 0.05454630417543764,
+  "baseline_coverage90": 0.9278074866310161,
+  "training_cutoff": 2018,
+  "interpretation": "Revised-data conditional holdout, not real-time forecasting"
+}

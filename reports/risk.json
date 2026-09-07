@@ -1,0 +1,54 @@
+{
+  "model": "/home/suhas/dev/projects/Tradewinds-Sovereign/artifacts/models/full",
+  "diagnostics_pass": true,
+  "simulations": 10000,
+  "valuation_year": 2024,
+  "n_exposures": 47,
+  "excluded_series": [
+    "FJI:coffee",
+    "PNG:cocoa",
+    "PNG:coconut",
+    "PNG:coffee",
+    "PNG:maize",
+    "PNG:palm",
+    "PNG:rice",
+    "PNG:sugar",
+    "SLB:cocoa",
+    "SLB:coconut",
+    "SLB:palm",
+    "SLB:rice",
+    "TON:coffee",
+    "WSM:cocoa",
+    "WSM:coffee",
+    "WSM:sugar"
+  ],
+  "fiscal_capture": "Uncalibrated triangular sensitivity assumption per country",
+  "settings": {
+    "simulations": 10000,
+    "fiscal_capture_low": 0.01,
+    "fiscal_capture_mode": 0.05,
+    "fiscal_capture_high": 0.1,
+    "budget_buffer_fraction": 0.01,
+    "insurance_attachment_usd": 10000000,
+    "insurance_limit_usd": 100000000,
+    "insurance_loading": 0.2
+  },
+  "scenario_features": {
+    "warm": 2,
+    "warm_lag1": 1,
+    "warm_lag2": 0,
+    "cold": 0,
+    "extreme": 0.5
+  },
+  "assumptions": [
+    "Fixed baseline exposures in nominal valuation-year USD; not a calendar-year fiscal forecast",
+    "Area and price coefficient draws use approximate shared-year bootstrap, separate from yield posterior",
+    "Unsupported local producer prices use a disclosed fixed-price sensitivity, not an estimated response",
+    "Residual dependence is empirical; missing cells use independent marginal draws",
+    "Net fiscal losses allow commodity gains to offset losses; government spending and import costs excluded",
+    "Tax capture assumptions are not national average tax rates or calibrated agricultural effective rates",
+    "Scenario percentiles are conditional; no unconditional event probability or return period assigned"
+  ],
+  "missing_residual_draws": 168246,
+  "inference": "Predictive associations and fiscal stress sensitivities; not causal or sovereign-default estimates"
+}

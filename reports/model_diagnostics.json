@@ -1,0 +1,47 @@
+[
+  {
+    "spec": "total",
+    "n_observations": 3793,
+    "n_series": 63,
+    "training_start": 1963,
+    "training_end": 2024,
+    "max_rhat": 1.0064068212329897,
+    "min_bulk_ess": 926.7029534716694,
+    "divergences": 0,
+    "min_bfmi": 0.786040154773498,
+    "diagnostics_pass": true,
+    "status": "research_candidate",
+    "causal_identification": false,
+    "model": "full"
+  },
+  {
+    "spec": "total",
+    "n_observations": 3419,
+    "n_series": 63,
+    "training_start": 1963,
+    "training_end": 2018,
+    "max_rhat": 1.007391273529102,
+    "min_bulk_ess": 721.2880447663342,
+    "divergences": 0,
+    "min_bfmi": 0.7690403826580352,
+    "diagnostics_pass": true,
+    "status": "research_candidate",
+    "causal_identification": false,
+    "model": "holdout2018"
+  },
+  {
+    "spec": "weather",
+    "n_observations": 3793,
+    "n_series": 63,
+    "training_start": 1963,
+    "training_end": 2024,
+    "max_rhat": 1.0053463952661519,
+    "min_bulk_ess": 1190.8640919693037,
+    "divergences": 0,
+    "min_bfmi": 0.8123890445828224,
+    "diagnostics_pass": true,
+    "status": "research_candidate",
+    "causal_identification": false,
+    "model": "weather"
+  }
+]

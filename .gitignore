@@ -1,0 +1,13 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+data/raw/
+data/processed/
+artifacts/
+*.egg-info/
+.env
+reports/loss_draws.csv.gz
+reports/current_enso_vectors.npy

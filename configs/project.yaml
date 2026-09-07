@@ -1,0 +1,49 @@
+seed: 20260906
+start_year: 1961
+enso_index: roni
+min_years: 30
+max_recent_gap: 3
+countries:
+  IDN: Indonesia
+  MYS: Malaysia
+  PHL: Philippines
+  THA: Thailand
+  VNM: Viet Nam
+  PNG: Papua New Guinea
+  FJI: Fiji
+  SLB: Solomon Islands
+  VUT: Vanuatu
+  WSM: Samoa
+  TON: Tonga
+  AUS: Australia
+# Exact FAOSTAT primary crops; processed products must never be added to these exposures.
+crops:
+  palm: Oil palm fruit
+  coconut: Coconuts, in shell
+  sugar: Sugar cane
+  rice: Rice
+  maize: Maize (corn)
+  cocoa: Cocoa beans
+  coffee: Coffee, green
+sampling:
+  draws: 1000
+  tune: 1000
+  chains: 4
+  target_accept: 0.95
+risk:
+  simulations: 10000
+  # Sensitivity assumptions, NOT measured agricultural effective tax rates.
+  fiscal_capture_low: 0.01
+  fiscal_capture_mode: 0.05
+  fiscal_capture_high: 0.10
+  budget_buffer_fraction: 0.01
+  insurance_attachment_usd: 10000000
+  insurance_limit_usd: 100000000
+  insurance_loading: 0.20
+weather:
+  collection: cru-x0.5
+  model: cru
+  version: ts4.10
+  period: 1901-2025
+  variables: [tas, pr, tasmax]
+  # CRU country land averages, NOT crop-weighted fields. Version upgrades require review.

@@ -1,0 +1,15 @@
+{
+  "as_of": "2026-09-07",
+  "last_observed_center_month": "2026-07-01",
+  "last_observed_index": 1.4,
+  "index": "roni",
+  "selected_model": "ar2",
+  "one_step_rolling_rmse": {
+    "ar2": 0.12479868102848175,
+    "persistence": 0.21573517716558577
+  },
+  "forecast_paths": 2000,
+  "current_exposure_year": 2026,
+  "status": "Statistical monitoring benchmark; not an official NOAA forecast",
+  "limitations": "Revised history; fixed AR coefficients; empirical residual blocks; multi-step probabilities not yet calibrated"
+}
