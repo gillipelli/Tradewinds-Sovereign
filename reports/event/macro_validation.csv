@@ -1,0 +1,5 @@
+kind,model,n,rmse,crps,coverage90,validation_type
+agriculture,baseline,180,0.056136846029297194,0.02812255410953593,0.8722222222222222,conditional final-vintage rolling hindcast; ridge challenger
+agriculture,with_climate,180,0.05875595099814011,0.031469330927203436,0.7388888888888889,conditional final-vintage rolling hindcast; ridge challenger
+fiscal,baseline,180,0.09057917685842953,0.04874689362301512,0.8277777777777777,conditional final-vintage rolling hindcast; ridge challenger
+fiscal,with_agriculture,180,0.09355783318724359,0.050640051295597725,0.8111111111111111,conditional final-vintage rolling hindcast; ridge challenger

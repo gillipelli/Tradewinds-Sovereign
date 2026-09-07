@@ -1,132 +1,79 @@
 # Tradewinds Sovereign
 
-**Super El Niño–Driven Sovereign Revenue Risk — Pacific Agriculture**
+**An actuarial economic-impact study of the 2026–2027 El Niño event in Pacific agriculture and government revenue.** Python · uv · PyMC · pandas · scikit-learn · Plotly · Streamlit.
 
-A reproducible actuarial data science project connecting ENSO, local historical weather,
-agricultural production and prices, and **conditional fiscal exposure**. Built with Python,
-pandas, PyMC, ArviZ, scikit-learn, and Streamlit in a **uv-managed environment**.
+[Read the event study](reports/event/index.html) · [Findings](reports/event/FINDINGS.md) · [Methodology](docs/EVENT_METHODOLOGY.md) · [Sources and institutional comparison](docs/EVENT_SOURCES.md)
 
-The research question is whether climate information improves agricultural risk estimates,
-which commodities and economies contribute to downside exposure, and how sensitive the
-fiscal implications are to assumptions. A complex model must earn its place against simple benchmarks.
+The primary deliverable now answers a dated event question: **how might government revenue in 2026 and 2027 differ with this El Niño versus a defined neutral-climate counterfactual?** It uses official NOAA forecast probabilities, observed ENSO history, agricultural exposure, and empirically estimated fiscal transmission. It retains the earlier historical crop analyses as supporting research, rather than presenting generic stress tests as the event assessment.
 
-**Start with the [generated research report](reports/index.html), [findings](reports/FINDINGS.md),
-[methodology](docs/METHODOLOGY.md), and [data catalog](docs/DATA_SOURCES.md).**
+The study covers Indonesia, Malaysia, the Philippines, Thailand, Vietnam, Papua New Guinea, Fiji, Solomon Islands, Vanuatu, Samoa, Tonga and Australia. Crop detail covers oil palm, coconut, sugar cane, rice, maize, cocoa and coffee where the FAOSTAT record passes eligibility checks. Macro agriculture, forestry and fishing value added supplies a separate aggregate economic channel, including islands without recent crop valuation data.
 
-## Scope and interpretation
+## What the project produces
 
-- Twelve economies: Indonesia, Malaysia, Philippines, Thailand, Viet Nam, Papua New Guinea,
-  Fiji, Solomon Islands, Vanuatu, Samoa, Tonga, and Australia.
-- Seven primary commodities: oil palm fruit, coconuts in shell, sugar cane, rice, maize, cocoa,
-  and green coffee. Only sufficiently long and recent series enter the yield model.
-- Historical rainfall, mean temperature, mean maximum temperature, and monthly dryness/heat
-  proxies from CRU TS through World Bank CCKP. These are **national land averages**, not crop-weighted weather.
-- Separate El Niño, neutral/mixed, and La Niña comparisons; asymmetric ENSO terms and delayed warm effects.
-- Production = yield × harvested area. Revenue exposure additionally depends on local prices.
-- Bayesian country–crop response distributions; uncertainty and data-quality reporting.
-- Conditional fiscal loss distributions, VaR, expected shortfall, tail contributions,
-  buffer exceedance probabilities where fiscal denominators exist, and illustrative insurance layers.
-- Daily refresh support with immutable raw vintages, training-change detection, a process lock,
-  and retention of the last successful run.
+- Separate 2026, 2027 and cumulative revenue-loss distributions, with probability of loss, revenue-buffer exceedance, VaR95 and ES95. Results retain gains and uncertainty rather than forcing every country to lose.
+- Crop yield effects with 2027 carryover, harvested-area and supported local-price responses, and clearly labelled tonnage equivalents. These are not interchangeable with government revenue.
+- An official-forecast climate path, a defined no-event counterfactual, and explicit late-2027 continuation/dependence/onset sensitivities.
+- Estimated country fiscal elasticities, prior-sensitivity checks, chronological benchmark comparisons, Bayesian holdouts, extrapolation flags and source vintages.
+- A portable HTML study, interactive dashboard, CSV outputs, posterior artifacts and an executed event walkthrough notebook.
 
-**This is an implemented research project, not a calibrated sovereign-revenue or default model.**
-Agricultural fiscal capture is an explicit sensitivity assumption. Government relief spending,
-import bills, indirect macroeconomic effects, and country-specific tax mechanisms are outside
-the implemented fiscal equation. Missing recent crop values are excluded, never silently
-projected from decades-old observations. This particularly limits Pacific island portfolio coverage.
-
-## Reproduce
+## Run it
 
 ```bash
 uv python install 3.12
-uv venv --python 3.12
-uv sync --extra dev --locked
-uv run tradewinds ingest
-uv run tradewinds build
-uv run tradewinds analyze
-uv run tradewinds monitor
-uv run tradewinds fit --out artifacts/models/reproduction
-uv run tradewinds risk --model artifacts/models/reproduction
-uv run tradewinds report --model artifacts/models/reproduction
+uv sync --locked --extra dev
+uv run tradewinds update
 uv run streamlit run app.py
 ```
 
-Use uv's managed Python if your system Python lacks development headers. Full MCMC uses four
-chains, 1,000 tuning steps, and 1,000 retained draws per chain. Runtime varies by CPU. Fit
-output directories must be new so existing model artifacts cannot be overwritten accidentally.
-The lockfile fixes dependency versions; the seed and settings are in `configs/project.yaml`.
-
-A real historical Bayesian holdout can be run independently:
+`update` now runs the **2026–2027 event pipeline**. `uv run tradewinds event` is an explicit alias. Both refresh official inputs, refit changed training models, run validation/sensitivities and publish a complete dated assessment. First execution downloads the source datasets and fits several four-chain models; it takes longer than subsequent updates.
 
 ```bash
-uv run tradewinds fit --cutoff 2018 --out artifacts/models/holdout2018
-uv run tradewinds holdout --model artifacts/models/holdout2018
-```
-
-`ingest` uses verified cached source bytes by default; `ingest --refresh` checks servers.
-The first download requires internet access and roughly 100 MB of compressed source data;
-exact sizes and URLs are recorded in the manifest. No API keys are required for implemented sources.
-Large raw files, processed tables, posterior files, and run history are excluded from Git.
-Small analysis tables, figures, the HTML report, and an executable research notebook are included.
-
-## Continuous updates
-
-```bash
-# Refresh observations; refit only if training inputs/configuration/source code changed.
-uv run tradewinds update
-# Reproduce with cached source bytes.
-uv run tradewinds update --cached
-# Refresh and monitor without expensive sampling; stale risk is withheld.
-uv run tradewinds update --no-refit
-```
-
-The [daily workflow](.github/workflows/daily.yml) is scheduled for 12:30 UTC when enabled in
-GitHub Actions. It preserves the raw cache and state between runs and uploads research reports.
-It is **not running on your machine merely because the project exists**. Host scheduling is
-optional; instructions are in [operations](docs/OPERATIONS.md). Nothing has been pushed or deployed.
-
-Daily checks do not turn annual FAOSTAT/WDI/CRU observations into daily measurements. NOAA
-and World Bank commodity releases can update monitoring sooner. The statistical ENSO outlook
-can refresh conditional exposure without inventing new crop observations. CRU release upgrades
-are explicit configuration changes, not an unreviewed splice between versions.
-
-## Analyses and artifacts
-
-| Component | Implementation / output |
-|---|---|
-| Source ingestion and revision audit | `src/tradewinds/data.py`, `data/raw/manifest.json`, immutable SHA-256 files |
-| Weather normalization | `src/tradewinds/weather.py`, `data/processed/weather.csv` |
-| Eligibility and quality | `data/processed/coverage.csv`, official-observation share and grades |
-| Hierarchical Bayesian model | `src/tradewinds/model.py`, posterior/prior NetCDF, diagnostics, predictive checks |
-| Historical benchmarks | `src/tradewinds/analysis.py`, `reports/hindcasts.csv`, phase and matched metrics |
-| ENSO monitoring | `src/tradewinds/monitor.py`, `reports/enso_outlook.csv` |
-| Actuarial simulation | `src/tradewinds/risk.py`, conditional risk metrics and tail contributions |
-| Research dashboard | `app.py`; portable HTML in `reports/index.html` |
-| Research notebook | `notebooks/01_research_walkthrough.ipynb` |
-| Scheduled operations | `src/tradewinds/operations.py`, durable run state and source snapshot |
-
-## Verification
-
-```bash
+uv run tradewinds event --cached   # reproduce from verified cached provider responses
+uv run tradewinds event --cached --no-refit  # reuse only if all required fits remain current
 uv run pytest -q
-uv run ruff check src tests app.py
 ```
 
-Tests cover time availability, calendar lags, incomplete years, training-only transformations,
-source corruption, valuation currency conversion, stale fiscal denominators, and tail-risk
-calculations. Live endpoints are exercised separately by ingestion, not by offline CI tests.
+The daily GitHub Actions workflow runs the same pipeline after this repository is pushed to GitHub and scheduling is enabled there. It is provided here, not represented as already deployed. Source publication lags remain: a daily job cannot manufacture daily crop harvest or annual fiscal observations. Failed refreshes and stale/nonconverged fits leave the prior successful assessment intact.
 
-## What makes the results defensible
+## How it works
 
-1. Conditional hindcasts are labeled honestly: historical source revisions and realized weather
-   prevent claiming a point-in-time historical forecasting record.
-2. Model comparisons use identical observations. Metrics are reported separately by climate phase.
-3. World processed-product prices are analyzed separately; palm oil prices are never multiplied
-   by raw palm-fruit tonnage, nor sugar prices by cane tonnage.
-4. Posterior uncertainty does not cover every structural assumption. Price/area bootstrap uncertainty,
-   empirical dependence, fiscal capture, and extrapolation limits are disclosed independently.
-5. Failed MCMC diagnostics block default risk generation. Passing convergence checks does not
-   automatically establish predictive superiority or justify operational deployment.
+```mermaid
+flowchart LR
+  A[NOAA observations and official 2026–27 forecast] --> B[Paired event and neutral paths]
+  C[FAOSTAT crops and historical CRU weather] --> D[Hierarchical crop response]
+  B --> D
+  E[WDI real agriculture and GDP] --> F[Hierarchical agricultural value-added response]
+  B --> F
+  G[IMF revenue history and macro projections] --> H[Estimated revenue transmission]
+  E --> H
+  F --> I[2026 then 2027 sector outcomes]
+  H --> J[Paired government revenue outcomes]
+  I --> J
+  J --> K[Loss probability, VaR, ES, sensitivity]
+```
 
-See the [model card](docs/MODEL_CARD.md) for intended use and remaining research limitations.
-The code is MIT-licensed; source datasets retain their providers' terms and attribution requirements.
+Bayesian partial pooling shares information across countries/crops without assuming identical responses. Warm, neutral and La Niña history enter the analysis, with lagged economic controls and persistence. The fiscal equation controls for non-agricultural growth and estimates an agricultural-growth coefficient; it does **not** multiply gross sales by an assumed 1%–10% capture rate. Details, equations and justifications are in [the event methodology](docs/EVENT_METHODOLOGY.md).
+
+## Interpret the results honestly
+
+These are **conditional event-risk estimates**, not observed 2026–2027 losses, identified causal tax multipliers, or an official nominal budget forecast. Monetary estimates are constant 2025 USD. The government-revenue channel excludes event-driven inflation/FX feedback, emergency spending and broader non-agricultural spillovers. Fiscal reporting-calendar alignment and crop phenology remain approximate.
+
+Converged sampling is necessary but does not establish predictive accuracy. Chronological benchmark and holdout scores are published even when the climate/agriculture models fail to beat simpler baselines. Late-2027 conditions beyond the official forecast horizon are model extensions. Sparse historical super-event analogues and weak fiscal identification can produce wide intervals spanning gains and losses. No agreement with an institutional sovereign-revenue loss forecast is claimed.
+
+## Repository map
+
+| Location | Contents |
+|---|---|
+| `src/tradewinds/event_*.py` | Official event inputs, climate paths, macro/fiscal models, paired risk, reporting and updates |
+| `src/tradewinds/model.py`, `analysis.py`, `weather.py` | Supporting crop, weather and historical validation models |
+| `reports/event/` | Reviewable primary event study and results |
+| `reports/legacy/` | Archived generic-stress report, not the current event assessment |
+| `docs/EVENT_METHODOLOGY.md` | Assumptions, equations, estimation, validation and limits |
+| `docs/EVENT_SOURCES.md` | Official datasets and institutional comparisons |
+| `notebooks/02_event_assessment.ipynb` | Executed event-study walkthrough |
+| `artifacts/runs/` | Immutable successful/failed run records and frozen report data |
+| `data/raw/` | Hashed, versioned source responses; excluded from Git |
+
+The older `risk` and `monitor` commands remain for reproducing historical/generic experiments; they do not publish the primary event study. `reports/event` is the checked-in review snapshot. The dashboard follows the latest successful event run recorded in `artifacts/state.json`.
+
+MIT-licensed project code; provider data retain their respective terms.

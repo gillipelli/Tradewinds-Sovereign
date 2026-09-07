@@ -1,0 +1,13 @@
+country,agri_revenue_elasticity_mean,agri_revenue_elasticity_p05,agri_revenue_elasticity_median,agri_revenue_elasticity_p95,p_positive,interpretation
+AUS,0.22719823778861656,-1.23564173003283,0.22934300674447744,1.6948060581260571,0.6047,Coefficient on agriculture-share-weighted real growth; not a tax rate
+FJI,0.20038976962186703,-1.305195957399587,0.21876721552075712,1.6751054914404913,0.5951,Coefficient on agriculture-share-weighted real growth; not a tax rate
+IDN,0.24981199797829523,-1.3985328036453686,0.25406069143602195,1.9098958664197005,0.6135,Coefficient on agriculture-share-weighted real growth; not a tax rate
+MYS,0.3334901817322162,-1.2236054328166146,0.3205430376577353,1.963398750510497,0.6442,Coefficient on agriculture-share-weighted real growth; not a tax rate
+PHL,0.5202083798181234,-0.9741370042595568,0.46454684773740706,2.2102098927568643,0.7019,Coefficient on agriculture-share-weighted real growth; not a tax rate
+PNG,0.27348782792821974,-1.3941578391740603,0.2898601547147227,1.9248339727114854,0.6204,Coefficient on agriculture-share-weighted real growth; not a tax rate
+SLB,-0.006893628068374272,-1.7218327438484895,0.054225275063144104,1.493234800543707,0.5224,Coefficient on agriculture-share-weighted real growth; not a tax rate
+THA,0.4431035737430411,-1.0273773180956354,0.3987925161985951,2.1171489399650976,0.6769,Coefficient on agriculture-share-weighted real growth; not a tax rate
+TON,0.24401399200346469,-1.1718037338539202,0.24994198501109072,1.6520830953523615,0.6121,Coefficient on agriculture-share-weighted real growth; not a tax rate
+VNM,0.4349600825738678,-1.2052059682268121,0.3862054697159233,2.275062934599452,0.6648,Coefficient on agriculture-share-weighted real growth; not a tax rate
+VUT,0.06867567841461253,-1.6561987307240011,0.11588093591980858,1.5774102279224995,0.5546,Coefficient on agriculture-share-weighted real growth; not a tax rate
+WSM,0.49015591138183046,-1.0579157183407324,0.4021271091315407,2.3132717335816286,0.6833,Coefficient on agriculture-share-weighted real growth; not a tax rate

@@ -11,3 +11,7 @@ artifacts/
 .env
 reports/loss_draws.csv.gz
 reports/current_enso_vectors.npy
+# Large local event inputs and simulation draws; report summaries remain reviewable.
+data/event/
+reports/event/event_draws.npz
+reports/event/sensitivity/

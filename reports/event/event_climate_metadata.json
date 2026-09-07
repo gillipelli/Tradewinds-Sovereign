@@ -1,0 +1,125 @@
+{
+  "forecast_issue": "2026-08",
+  "forecast_issue_date": "2026-08-13",
+  "official_last_center_month": "2027-04-01",
+  "imf_metadata": {
+    "revenue_pct_gdp": {
+      "label": "Revenue",
+      "description": "Revenue",
+      "source": "Fiscal Monitor (April 2026)",
+      "unit": "% of GDP",
+      "dataset": "FM",
+      "projection-year": 2026,
+      "last-modified": "2026-04-15 00:15:26"
+    },
+    "gdp_usd_bn": {
+      "label": "GDP, current prices",
+      "description": "Gross domestic product is the most commonly used single measure of a country's overall economic activity. It represents the total value at current prices of final goods and services produced within a country during a specified time period, such as one year.",
+      "source": "World Economic Outlook (April 2026)",
+      "unit": "Billions of U.S. dollars",
+      "dataset": "WEO",
+      "projection-year": 2026,
+      "last-modified": "2026-04-08 16:07:35"
+    },
+    "gdp_growth_pct": {
+      "label": "Real GDP growth",
+      "description": "Gross domestic product is the most commonly used single measure of a country's overall economic activity. It represents the total value at constant prices of final goods and services produced within a country during a specified time period, such as one year.",
+      "source": "World Economic Outlook (April 2026)",
+      "unit": "Annual percent change",
+      "dataset": "WEO",
+      "projection-year": 2026,
+      "last-modified": "2026-04-08 16:07:34"
+    }
+  },
+  "sources": {
+    "cpc_outlook": {
+      "url": "https://www.cpc.ncep.noaa.gov/products/analysis_monitoring/enso/roni/outlook/",
+      "sha256": "831e00183ec55ef98c042a9ef711bb19245765d05c62ea887814301d5a88f744",
+      "file": "cpc_outlook/831e00183ec55ef98c042a9ef711bb19245765d05c62ea887814301d5a88f744.bin",
+      "retrieved_at": "2026-09-07T01:47:59.072907+00:00",
+      "checked_at": "2026-09-07T01:47:59.072907+00:00",
+      "etag": null,
+      "last_modified": null,
+      "bytes": 29774
+    },
+    "cpc_advisory": {
+      "url": "https://www.cpc.ncep.noaa.gov/products/analysis_monitoring/enso_advisory/ensodisc.shtml",
+      "sha256": "8647a3804260856f979bba518475d63ffb69c2716d10e4f730658df530c3cc2d",
+      "file": "cpc_advisory/8647a3804260856f979bba518475d63ffb69c2716d10e4f730658df530c3cc2d.bin",
+      "retrieved_at": "2026-09-07T01:48:56.679758+00:00",
+      "checked_at": "2026-09-07T01:48:56.679758+00:00",
+      "etag": null,
+      "last_modified": null,
+      "bytes": 13382
+    },
+    "event_imf_revenue_pct_gdp": {
+      "url": "https://www.imf.org/external/datamapper/api/v2/GGR_G01_GDP_PT",
+      "sha256": "1963930b9e4c636481c81e06e20448822be5e3a4641240e57f849f4824745323",
+      "file": "event_imf_revenue_pct_gdp/1963930b9e4c636481c81e06e20448822be5e3a4641240e57f849f4824745323.bin",
+      "retrieved_at": "2026-09-07T01:51:18.869418+00:00",
+      "checked_at": "2026-09-07T01:51:18.869418+00:00",
+      "etag": null,
+      "last_modified": null,
+      "bytes": 185573
+    },
+    "event_imf_gdp_usd_bn": {
+      "url": "https://www.imf.org/external/datamapper/api/v2/NGDPD",
+      "sha256": "5592998446e9bdae68d4f04c45ff4dacb0eb429441dfa7dbfc8d59ffa1df05cf",
+      "file": "event_imf_gdp_usd_bn/5592998446e9bdae68d4f04c45ff4dacb0eb429441dfa7dbfc8d59ffa1df05cf.bin",
+      "retrieved_at": "2026-09-07T01:51:29.558558+00:00",
+      "checked_at": "2026-09-07T01:51:29.558558+00:00",
+      "etag": null,
+      "last_modified": null,
+      "bytes": 158018
+    },
+    "event_imf_gdp_growth_pct": {
+      "url": "https://www.imf.org/external/datamapper/api/v2/NGDP_RPCH",
+      "sha256": "689860c3b985d99078145c6f171c4b7a9c4e8baa6a4e6ee89a27dd2411d13ead",
+      "file": "event_imf_gdp_growth_pct/689860c3b985d99078145c6f171c4b7a9c4e8baa6a4e6ee89a27dd2411d13ead.bin",
+      "retrieved_at": "2026-09-07T01:51:39.583093+00:00",
+      "checked_at": "2026-09-07T01:51:39.583093+00:00",
+      "etag": null,
+      "last_modified": null,
+      "bytes": 122208
+    },
+    "event_agri_real_usd": {
+      "url": "https://api.worldbank.org/v2/country/IDN;MYS;PHL;THA;VNM;PNG;FJI;SLB;VUT;WSM;TON;AUS/indicator/NV.AGR.TOTL.KD?format=json&per_page=20000&date=1961:2100",
+      "sha256": "dbe09d723ac6bf90c00557d4e683d80c9d1e1f1b1d99b75cd3df06cd81998de9",
+      "file": "event_agri_real_usd/dbe09d723ac6bf90c00557d4e683d80c9d1e1f1b1d99b75cd3df06cd81998de9.bin",
+      "retrieved_at": "2026-09-07T01:51:48.032102+00:00",
+      "checked_at": "2026-09-07T01:51:48.032102+00:00",
+      "etag": null,
+      "last_modified": "Mon, 07 Sep 2026 01:51:47 GMT",
+      "bytes": 199366
+    },
+    "event_gdp_real_usd": {
+      "url": "https://api.worldbank.org/v2/country/IDN;MYS;PHL;THA;VNM;PNG;FJI;SLB;VUT;WSM;TON;AUS/indicator/NY.GDP.MKTP.KD?format=json&per_page=20000&date=1961:2100",
+      "sha256": "97eef8b96d996fda0eb804e9a17f458fe7664a10d7194e7409f1b7e61d176c76",
+      "file": "event_gdp_real_usd/97eef8b96d996fda0eb804e9a17f458fe7664a10d7194e7409f1b7e61d176c76.bin",
+      "retrieved_at": "2026-09-07T01:51:50.803486+00:00",
+      "checked_at": "2026-09-07T01:51:50.803486+00:00",
+      "etag": null,
+      "last_modified": "Mon, 07 Sep 2026 01:51:50 GMT",
+      "bytes": 166449
+    },
+    "event_agri_current_usd": {
+      "url": "https://api.worldbank.org/v2/country/IDN;MYS;PHL;THA;VNM;PNG;FJI;SLB;VUT;WSM;TON;AUS/indicator/NV.AGR.TOTL.CD?format=json&per_page=20000&date=1961:2100",
+      "sha256": "199db3b1909444c1355e1cb604616d3c4e08ddeff3f0a6f4169aabcb64927b74",
+      "file": "event_agri_current_usd/199db3b1909444c1355e1cb604616d3c4e08ddeff3f0a6f4169aabcb64927b74.bin",
+      "retrieved_at": "2026-09-07T01:51:54.756505+00:00",
+      "checked_at": "2026-09-07T01:51:54.756505+00:00",
+      "etag": null,
+      "last_modified": "Mon, 07 Sep 2026 01:51:54 GMT",
+      "bytes": 195055
+    }
+  },
+  "as_of": "2026-09-07",
+  "counterfactual_start": "2026-05-01",
+  "extension": "ar2",
+  "dependence": "empirical",
+  "copula_training_origins": 184,
+  "latest_observed_center": "2026-07-01",
+  "no_event_definition": "Keep pre-onset history; set all subsequent centered RONI seasons to zero.",
+  "official_forecasts_are_marginal_not_joint": true,
+  "extension_is_not_NOAA_forecast": true
+}

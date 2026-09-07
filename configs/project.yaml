@@ -47,3 +47,16 @@ weather:
   period: 1901-2025
   variables: [tas, pr, tasmax]
   # CRU country land averages, NOT crop-weighted fields. Version upgrades require review.
+event:
+  years: [2026, 2027]
+  as_of: null
+  counterfactual_start: '2026-05-01'
+  # AMJ is the first centered season at the El Nino threshold in this event.
+  max_forecast_age_days: 45
+  historical_cutoff: null
+  min_macro_years: 15
+  monetary_basis: '2025 USD at fixed GDP deflator and exchange rate'
+  sampling:
+    draws: 3000
+    tune: 2000
+    target_accept: 0.97

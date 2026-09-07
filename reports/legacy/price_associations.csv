@@ -1,0 +1,8 @@
+commodity,n_years,super_response_median_log_growth,lower90,upper90,interpretation
+Cocoa,64,0.0959011742657064,-0.05472948388059051,0.2345332985863575,Unadjusted global price association; separate from local farmgate risk model
+Coconut oil,64,0.3402770808148457,0.12811892452345577,0.5520970486265117,Unadjusted global price association; separate from local farmgate risk model
+"Coffee, Robusta",64,0.08173055774603662,-0.09372742654211556,0.2743497243807315,Unadjusted global price association; separate from local farmgate risk model
+Maize,64,-0.09174967714171586,-0.2069852676243279,0.015741485380134233,Unadjusted global price association; separate from local farmgate risk model
+Palm oil,64,0.19325917526293332,0.04360916265118181,0.3207949503601267,Unadjusted global price association; separate from local farmgate risk model
+"Rice, Thai 5%",64,-0.014021962863988012,-0.1703167040245228,0.1489598119478353,Unadjusted global price association; separate from local farmgate risk model
+"Sugar, world",64,-0.15863831688859567,-0.42110883789560033,0.092534235846496,Unadjusted global price association; separate from local farmgate risk model

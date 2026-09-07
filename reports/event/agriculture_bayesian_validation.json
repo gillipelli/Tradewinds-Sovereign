@@ -1,0 +1,9 @@
+{
+  "kind": "agriculture",
+  "training_end": 2018,
+  "n": 60,
+  "rmse": 0.06000061973006384,
+  "crps": 0.029388616378595325,
+  "coverage90": 0.9333333333333333,
+  "type": "Bayesian conditional holdout with realized inputs; latest revised history"
+}

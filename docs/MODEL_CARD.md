@@ -1,3 +1,5 @@
+> **Historical supporting analysis.** The primary 2026–2027 study is documented in [EVENT_METHODOLOGY.md](EVENT_METHODOLOGY.md) and [EVENT_SOURCES.md](EVENT_SOURCES.md). Generic fiscal-capture assumptions below do not apply to the primary event pipeline.
+
 # Model card
 
 **Intended use:** actuarial research, exploratory climate-economy analysis, portfolio stress testing,

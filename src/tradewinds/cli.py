@@ -30,6 +30,9 @@ def main():
     upd = sub.add_parser("update")
     upd.add_argument("--cached", action="store_true")
     upd.add_argument("--no-refit", action="store_true")
+    event = sub.add_parser("event", help="Refresh the 2026–2027 event assessment")
+    event.add_argument("--cached", action="store_true")
+    event.add_argument("--no-refit", action="store_true")
     args = parser.parse_args()
     logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
     if args.command == "ingest":
@@ -73,7 +76,7 @@ def main():
         result = bayesian_holdout(args.root, args.root / args.model, args.root / "reports")
         atomic_json(args.root / "reports/bayesian_holdout_metrics.json", result)
         print(result)
-    elif args.command == "update":
+    elif args.command in ["update", "event"]:
         from .operations import update
 
         print(update(args.root, not args.cached, not args.no_refit))

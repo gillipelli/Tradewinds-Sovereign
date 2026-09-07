@@ -22,7 +22,7 @@ def fingerprint(root, frame):
     return h.hexdigest()
 
 
-def update(root: Path, refresh=True, refit=True):
+def update_legacy(root: Path, refresh=True, refit=True):
     from .analysis import backtest, descriptive, robustness
     from .model import fit, modeling_panel
     from .monitor import outlook
@@ -90,3 +90,10 @@ def update(root: Path, refresh=True, refit=True):
                 run / "run.json", {"status": "failed", "error": str(exc), "prior_success_preserved": True}
             )
             raise
+
+
+def update(root: Path, refresh=True, refit=True):
+    if "event" in config(root):
+        from .event_operations import update_event
+        return update_event(root, refresh, refit)
+    return update_legacy(root, refresh, refit)

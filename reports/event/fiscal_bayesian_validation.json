@@ -1,0 +1,9 @@
+{
+  "kind": "fiscal",
+  "training_end": 2018,
+  "n": 66,
+  "rmse": 0.08244289244070911,
+  "crps": 0.04571586072955261,
+  "coverage90": 0.9393939393939394,
+  "type": "Bayesian conditional holdout with realized inputs; latest revised history"
+}
