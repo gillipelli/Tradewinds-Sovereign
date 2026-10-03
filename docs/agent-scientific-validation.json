@@ -1,0 +1,68 @@
+{
+  "root": "/tmp/enso-historical-reproduction-1abn3yr3",
+  "assessment_id": "new-historical-fiscal-reproduction",
+  "scenario_id": "db41b25be88c776e3515b8db",
+  "reproduction_as_of": "2026-09-07",
+  "simulations": 10000,
+  "comparison": {
+    "results": [
+      {
+        "scenario_id": "central",
+        "value": 460446606.9292434,
+        "unit": "2025 USD",
+        "selector": {
+          "scope": "all_modeled",
+          "period": "2027",
+          "metric": "revenue_loss_2025usd_mean"
+        },
+        "evidence_ids": [
+          "827b015753bd832c254e1a26"
+        ]
+      },
+      {
+        "scenario_id": "db41b25be88c776e3515b8db",
+        "value": -52259852.44563516,
+        "unit": "2025 USD",
+        "selector": {
+          "scope": "all_modeled",
+          "period": "2027",
+          "metric": "revenue_loss_2025usd_mean"
+        },
+        "evidence_ids": [
+          "ebca484653646fb6704ae897"
+        ]
+      }
+    ],
+    "differences": [
+      {
+        "value": -512706459.3748785,
+        "unit": "2025 USD",
+        "evidence_ids": [
+          "13fe7a562934b3121e2bea9f"
+        ]
+      }
+    ],
+    "limitation": "Alternatives are not assigned occurrence probabilities."
+  },
+  "verification": {
+    "passed": true,
+    "errors": [],
+    "semantic_review": "Descriptive and interpretive prose is not automatically scientifically validated."
+  },
+  "evidence_records": 11,
+  "original_project_untouched": true,
+  "durable_workspace": "/home/suhas/dev/projects/Tradewinds-Sovereign/artifacts/scientific_validation/historical-fiscal-reproduction",
+  "retention_note": "Byte-preserving copy of original isolated reproduction; original paths retained in historical receipts. Bundle integrity rechecked after copying.",
+  "campaign_additional_scenario": {
+    "receipt": "artifacts/scientific_validation/historical-fiscal-reproduction/campaign-scenario-validation.json",
+    "status": "ok",
+    "verified_evidence_count": 12,
+    "specification": {
+      "extension": "neutral_decay",
+      "residual_dependence": "independent"
+    },
+    "metric": "es95_2025usd",
+    "scope": "all_modeled",
+    "period": "2027"
+  }
+}

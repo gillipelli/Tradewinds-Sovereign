@@ -42,7 +42,7 @@ b.metric('Probability of revenue loss',f'{row.p_revenue_loss:.1%}')
 c.metric('Positive-shortfall VaR95',f'${row.var95_2025usd/1e6:,.0f}m')
 d.metric('Positive-shortfall ES95',f'${row.es95_2025usd/1e6:,.0f}m')
 st.caption(f"90% signed loss interval: ${row.revenue_loss_2025usd_p05/1e6:,.0f}m to ${row.revenue_loss_2025usd_p95/1e6:,.0f}m. Negative losses mean gains. Tail measures are calculated from joint draws, not summed country quantiles.")
-tabs=st.tabs(['Event forecast','Sovereign revenue','Agriculture and commodities','Validation','Sensitivity and sources'])
+tabs=st.tabs(['Event forecast','Sovereign revenue','Agriculture and commodities','Validation','Sensitivity and sources','Investigation agent'])
 with tabs[0]:
     p=read('event_climate.csv')
     f=go.Figure()
@@ -107,3 +107,81 @@ with tabs[4]:
     st.write('Losses exclude event-driven prices/FX in the fiscal channel, emergency spending, and non-agricultural spillovers. Country fiscal-year alignment is approximate. Scenario alternatives are not assigned occurrence probabilities.')
     st.json(climate)
     st.download_button('Download complete portable study',(REPORTS/'index.html').read_bytes(),'2026_2027_event_study.html','text/html')
+
+with tabs[5]:
+    from tradewinds.agents.credentials import zai_api_key
+
+    st.subheader('Evidence-grounded investigation')
+    mode = st.radio('Investigation mode', ['Offline demonstration', 'Live GLM 5.3'], horizontal=True)
+    live = mode == 'Live GLM 5.3'
+    agent_country = st.selectbox('Country', meta['countries'], key='agent_country')
+    example_question = f'What is {agent_country}’s estimated revenue risk in {period}, and what limits confidence in it?'
+    question = st.text_area('Investigation question', example_question, disabled=not live)
+    if live:
+        st.caption('The agent can investigate all countries in the selected historical assessment. The country selection provides a starting question.')
+        c1, c2, c3 = st.columns(3)
+        ceiling = c1.number_input('Maximum estimated spend (USD)', min_value=0.01, max_value=100.0, value=1.0, step=0.25)
+        effort = c2.selectbox('Reasoning effort', ['low', 'high', 'max'], index=1)
+        output_tokens = c3.number_input('Maximum output tokens per call', min_value=128, max_value=8192, value=4096, step=128)
+        with st.expander('API price assumptions'):
+            st.caption('Published Z.ai uncached rates checked October 2, 2026. Verify current rates before running; provider billing is authoritative.')
+            input_price = st.number_input('Input USD per million tokens', min_value=0.01, value=1.4)
+            output_price = st.number_input('Output USD per million tokens', min_value=0.01, value=4.4)
+            st.link_button('Check Z.ai pricing', 'https://docs.z.ai/guides/overview/pricing')
+        if not zai_api_key():
+            st.info('Set ZAI_API_KEY in the project .env file or server environment to enable live investigations.')
+    else:
+        st.caption('Scripted tool demonstration: selects the chosen country and period, checks evidence, and produces a report. It does not interpret a free-form question or call an LLM.')
+    if st.button('Run live investigation' if live else 'Run offline demonstration',
+                 disabled=live and not bool(zai_api_key())):
+        from tradewinds.assessment_bundle import freeze_assessment
+        from tradewinds.agents.provider import DemoClient
+        from tradewinds.agents.runtime import run_agent
+        from tradewinds.agents.schemas import Limits
+
+        assessment_id = state.get('completed_at')
+        if not assessment_id:
+            st.error('A successful recorded assessment is required.')
+        else:
+            try:
+                freeze_assessment(ROOT, assessment_id)
+                selector = {'assessment_id': assessment_id, 'country': agent_country, 'period': period,
+                            'metric': 'revenue_loss_2025usd_mean'}
+                if live:
+                    from tradewinds.agents.zai_provider import ZaiClient
+                    client = ZaiClient(model='glm-5.3', reasoning_effort=effort)
+                    limits = Limits(spend_ceiling_usd=ceiling, input_usd_per_million=input_price,
+                                    output_usd_per_million=output_price, max_output_tokens=int(output_tokens))
+                else:
+                    client, limits = DemoClient(selector), Limits()
+                with st.spinner('Investigating the dated evidence…'):
+                    result = run_agent(ROOT, [assessment_id], question, client, limits=limits, selector=selector)
+                st.session_state['agent_last_run'] = result['run_id']
+            except (ValueError, OSError) as exc:
+                st.error(str(exc))
+    if st.session_state.get('agent_last_run'):
+        folder = ROOT / 'artifacts/agent_runs' / st.session_state['agent_last_run']
+        status_file = folder / 'status.json'
+        if status_file.exists():
+            agent_status = json.loads(status_file.read_text())
+            st.write('Status:', agent_status['status'])
+            if agent_status.get('reason'):
+                st.info(agent_status['reason'])
+            if (folder / 'report.html').exists():
+                st.download_button('Download investigation', (folder / 'report.html').read_bytes(),
+                                   'enso_investigation.html', 'text/html')
+                report = json.loads((folder / 'report.json').read_text())
+                st.write(report['title'])
+                for claim in report['claims']:
+                    if claim['kind'] == 'numeric':
+                        st.write(f"{claim['text']}: {claim['value']:,.6g} {claim['unit']}")
+                    else:
+                        st.write(claim['text'])
+                        st.caption('Interpretation requires scientific review.')
+                for limitation in report['limitations']:
+                    st.caption(limitation)
+            with st.expander('Evidence and tool history'):
+                if (folder / 'evidence.json').exists():
+                    st.json(json.loads((folder / 'evidence.json').read_text()))
+                if (folder / 'events.jsonl').exists():
+                    st.code((folder / 'events.jsonl').read_text(), language='json')

@@ -109,6 +109,8 @@ def update_event(root: Path, refresh=True, refit=True):
                    'model':str(crop),'macro_models':{k:str(v) for k,v in models.items()},
                    'report_dir':str(out),'training_fingerprint':digest,
                    'forecast_issue':event_snapshot['forecast_issue'],'target_years':[2026,2027]}
+            from .assessment_bundle import freeze_assessment
+            freeze_assessment(root, stamp, publication_state=state)
             atomic_json(run/'run.json',state)
             atomic_json(state_path,state)
             return state

@@ -33,9 +33,15 @@ def main():
     event = sub.add_parser("event", help="Refresh the 2026–2027 event assessment")
     event.add_argument("--cached", action="store_true")
     event.add_argument("--no-refit", action="store_true")
+    from .agents.cli import add_parser
+    add_parser(sub)
     args = parser.parse_args()
     logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
-    if args.command == "ingest":
+    if args.command == "agent":
+        import json
+        from .agents.cli import main as agent_main
+        print(json.dumps(agent_main(args), indent=2))
+    elif args.command == "ingest":
         from .data import ingest
 
         print(ingest(args.root, args.refresh)["rows"])

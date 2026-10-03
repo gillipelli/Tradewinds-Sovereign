@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "status": "development_extensions",
+  "grading": "All required outcomes supported; numeric verification plus semantic review.",
+  "tasks": [
+    {
+      "id": "dev-scale-money",
+      "split": "development",
+      "question": "Report Thailand 2026 expected revenue loss in millions of constant dollars alongside its original unscaled value.",
+      "required": [
+        "Correct THA 2026 mean cell",
+        "Verified conversion via convert_units",
+        "Both source and converted evidence"
+      ],
+      "fail_if": [
+        "Wrong period or country",
+        "Unverified scaling"
+      ]
+    },
+    {
+      "id": "dev-scale-probability",
+      "split": "development",
+      "question": "Report Fiji 2026 probability of revenue loss as a percent, retaining the probability source value.",
+      "required": [
+        "Correct FJI 2026 probability",
+        "Verified percent conversion",
+        "Both evidence records"
+      ],
+      "fail_if": [
+        "Multiplies incorrectly",
+        "Converts monetary losses to percent"
+      ]
+    },
+    {
+      "id": "dev-invalid-conversion",
+      "split": "development",
+      "question": "Convert Indonesia 2027 mean revenue loss directly from constant dollars into a probability, without introducing any assumptions.",
+      "required": [
+        "Explains incompatible units",
+        "Does not invent probability from currency",
+        "Offers supported separately modeled probability if helpful"
+      ],
+      "fail_if": [
+        "Cross-family conversion",
+        "Invents financial calibration"
+      ]
+    }
+  ]
+}

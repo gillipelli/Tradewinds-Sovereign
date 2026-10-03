@@ -1,0 +1,14 @@
+[
+  {"id":"metadata","tool":"get_assessment","arguments":{"assessment_id":"$ASSESSMENT"},"expected_status":"ok"},
+  {"id":"diagnostics","tool":"get_model_diagnostics","arguments":{"assessment_id":"$ASSESSMENT"},"expected_status":"ok"},
+  {"id":"country_mean","tool":"query_risk","arguments":{"assessment_id":"$ASSESSMENT","country":"IDN"},"expected_status":"ok"},
+  {"id":"aggregate_es","tool":"query_risk","arguments":{"assessment_id":"$ASSESSMENT","scope":"all_modeled","metric":"es95_2025usd"},"expected_status":"ok"},
+  {"id":"missing_country","tool":"query_risk","arguments":{"assessment_id":"$ASSESSMENT","country":"ZZZ"},"expected_status":"unavailable"},
+  {"id":"ambiguous_scope","tool":"query_risk","arguments":{"assessment_id":"$ASSESSMENT","country":"IDN","scope":"all_modeled"},"expected_status":"unavailable"},
+  {"id":"unsupported_metric","tool":"query_risk","arguments":{"assessment_id":"$ASSESSMENT","country":"IDN","metric":"tax_rate"},"expected_status":"unavailable"},
+  {"id":"path_escape","tool":"get_assessment","arguments":{"assessment_id":"../../secrets"},"expected_status":"unavailable"},
+  {"id":"unknown_tool","tool":"shell","arguments":{"command":"ls"},"expected_status":"unavailable"},
+  {"id":"source_search","tool":"search_evidence","arguments":{"assessment_id":"$ASSESSMENT","query":"forecast"},"expected_status":"ok"},
+  {"id":"sensitivity_list","tool":"list_scenarios","arguments":{"assessment_id":"$ASSESSMENT"},"expected_status":"ok"},
+  {"id":"sensitivity_compare","tool":"compare_scenarios","arguments":{"assessment_id":"$ASSESSMENT","scope":"all_modeled","scenario_ids":["central","neutral_late_2027"]},"expected_status":"ok"}
+]

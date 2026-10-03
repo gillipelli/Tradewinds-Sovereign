@@ -77,3 +77,9 @@ Converged sampling is necessary but does not establish predictive accuracy. Chro
 The older `risk` and `monitor` commands remain for reproducing historical/generic experiments; they do not publish the primary event study. `reports/event` is the checked-in review snapshot. The dashboard follows the latest successful event run recorded in `artifacts/state.json`.
 
 MIT-licensed project code; provider data retain their respective terms.
+
+## Evidence-grounded investigation agents
+
+The project now includes a bounded LLM investigation runtime with GLM 5.3 and optional Anthropic adapters, immutable assessment bundles, typed scientific tools, verified numeric citations, isolated scenario workspaces and resumable SQLite traces. Run an offline demonstration with `uv run tradewinds agent investigate --assessment <successful-run-id> --question "Inspect Indonesia revenue risk" --country IDN`. Live use requires an API key, explicit model prices and a spend ceiling.
+
+See [agent implementation and usage](docs/AGENT_IMPLEMENTATION.md) and the [evaluation protocol](docs/AGENT_EVALUATION_PROTOCOL.md). Existing historical imports are inspection-only; new event publications capture the inputs required for scenario recomputation. Offline demonstrations and mocked provider tests are not live LLM performance results.
