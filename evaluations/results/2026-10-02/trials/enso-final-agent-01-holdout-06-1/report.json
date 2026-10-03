@@ -1,0 +1,30 @@
+{
+  "title": "Vietnam infrastructure repair costs: not modeled",
+  "claims": [
+    {
+      "kind": "descriptive",
+      "text": "This assessment does not model government infrastructure repair costs. Its scope covers agriculture, forestry and fishing value added and conditional government revenue transmission; no infrastructure damage or repair cost channel is estimated, so it implies nothing specific about Vietnam infrastructure repair spending.",
+      "evidence_ids": [
+        "52391358d41f75e82a6cac8e"
+      ],
+      "value": null,
+      "unit": null
+    },
+    {
+      "kind": "numeric",
+      "text": "{'country': 'VNM', 'year': '2026\u20132027', 'metric': 'revenue_loss_2025usd_mean'}",
+      "evidence_ids": [
+        "700a755ee677cc76f43159b5"
+      ],
+      "value": 41272006.41300081,
+      "unit": "2025 USD"
+    }
+  ],
+  "limitations": [
+    "Infrastructure repair costs are outside the assessment's model scope; no damage function or repair-cost estimate exists for Vietnam or any country in this bundle.",
+    "The revenue loss figure measures government revenue shortfalls relative to a no-event counterfactual, not damage or reconstruction expenditure.",
+    "Results are conditional on the ENSO outlook vintage and are not causal attributions.",
+    "Historical input provenance is incomplete; the bundle is flagged for inspection only and is not recomputable.",
+    "All monetary values are in constant 2025 USD at a fixed 2025 exchange rate."
+  ]
+}

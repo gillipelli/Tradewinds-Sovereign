@@ -1,0 +1,974 @@
+{
+  "52391358d41f75e82a6cac8e": {
+    "assessment_id": "20260907T153857705816Z",
+    "artifact": "reports/event_risk_metadata.json",
+    "artifact_hash": "8cb8943ac32e010a5bed8976184ee08fb11e320b854ec8ab165a5b4ac0998780",
+    "bundle_hash": "07603bf49b655531ed9fa5a418ddd640366466f6a80a90428a003f31b50d61f7",
+    "selector": {},
+    "value": {
+      "climate": {
+        "forecast_issue": "2026-08",
+        "forecast_issue_date": "2026-08-13",
+        "official_last_center_month": "2027-04-01",
+        "imf_metadata": {
+          "revenue_pct_gdp": {
+            "label": "Revenue",
+            "description": "Revenue",
+            "source": "Fiscal Monitor (April 2026)",
+            "unit": "% of GDP",
+            "dataset": "FM",
+            "projection-year": 2026,
+            "last-modified": "2026-04-15 00:15:26"
+          },
+          "gdp_usd_bn": {
+            "label": "GDP, current prices",
+            "description": "Gross domestic product is the most commonly used single measure of a country's overall economic activity. It represents the total value at current prices of final goods and services produced within a country during a specified time period, such as one year.",
+            "source": "World Economic Outlook (April 2026)",
+            "unit": "Billions of U.S. dollars",
+            "dataset": "WEO",
+            "projection-year": 2026,
+            "last-modified": "2026-04-08 16:07:35"
+          },
+          "gdp_growth_pct": {
+            "label": "Real GDP growth",
+            "description": "Gross domestic product is the most commonly used single measure of a country's overall economic activity. It represents the total value at constant prices of final goods and services produced within a country during a specified time period, such as one year.",
+            "source": "World Economic Outlook (April 2026)",
+            "unit": "Annual percent change",
+            "dataset": "WEO",
+            "projection-year": 2026,
+            "last-modified": "2026-04-08 16:07:34"
+          }
+        },
+        "sources": {
+          "cpc_outlook": {
+            "url": "https://www.cpc.ncep.noaa.gov/products/analysis_monitoring/enso/roni/outlook/",
+            "sha256": "831e00183ec55ef98c042a9ef711bb19245765d05c62ea887814301d5a88f744",
+            "file": "cpc_outlook/831e00183ec55ef98c042a9ef711bb19245765d05c62ea887814301d5a88f744.bin",
+            "retrieved_at": "2026-09-07T01:47:59.072907+00:00",
+            "checked_at": "2026-09-07T15:39:18.678055+00:00",
+            "etag": null,
+            "last_modified": null,
+            "bytes": 29774
+          },
+          "cpc_advisory": {
+            "url": "https://www.cpc.ncep.noaa.gov/products/analysis_monitoring/enso_advisory/ensodisc.shtml",
+            "sha256": "8647a3804260856f979bba518475d63ffb69c2716d10e4f730658df530c3cc2d",
+            "file": "cpc_advisory/8647a3804260856f979bba518475d63ffb69c2716d10e4f730658df530c3cc2d.bin",
+            "retrieved_at": "2026-09-07T01:48:56.679758+00:00",
+            "checked_at": "2026-09-07T15:39:18.734282+00:00",
+            "etag": null,
+            "last_modified": null,
+            "bytes": 13382
+          },
+          "event_imf_revenue_pct_gdp": {
+            "url": "https://www.imf.org/external/datamapper/api/v2/GGR_G01_GDP_PT",
+            "sha256": "1963930b9e4c636481c81e06e20448822be5e3a4641240e57f849f4824745323",
+            "file": "event_imf_revenue_pct_gdp/1963930b9e4c636481c81e06e20448822be5e3a4641240e57f849f4824745323.bin",
+            "retrieved_at": "2026-09-07T01:51:18.869418+00:00",
+            "checked_at": "2026-09-07T15:39:28.643722+00:00",
+            "etag": null,
+            "last_modified": null,
+            "bytes": 185573
+          },
+          "event_imf_gdp_usd_bn": {
+            "url": "https://www.imf.org/external/datamapper/api/v2/NGDPD",
+            "sha256": "5592998446e9bdae68d4f04c45ff4dacb0eb429441dfa7dbfc8d59ffa1df05cf",
+            "file": "event_imf_gdp_usd_bn/5592998446e9bdae68d4f04c45ff4dacb0eb429441dfa7dbfc8d59ffa1df05cf.bin",
+            "retrieved_at": "2026-09-07T01:51:29.558558+00:00",
+            "checked_at": "2026-09-07T15:39:37.502810+00:00",
+            "etag": null,
+            "last_modified": null,
+            "bytes": 158018
+          },
+          "event_imf_gdp_growth_pct": {
+            "url": "https://www.imf.org/external/datamapper/api/v2/NGDP_RPCH",
+            "sha256": "689860c3b985d99078145c6f171c4b7a9c4e8baa6a4e6ee89a27dd2411d13ead",
+            "file": "event_imf_gdp_growth_pct/689860c3b985d99078145c6f171c4b7a9c4e8baa6a4e6ee89a27dd2411d13ead.bin",
+            "retrieved_at": "2026-09-07T01:51:39.583093+00:00",
+            "checked_at": "2026-09-07T15:39:47.165031+00:00",
+            "etag": null,
+            "last_modified": null,
+            "bytes": 122208
+          },
+          "event_agri_real_usd": {
+            "url": "https://api.worldbank.org/v2/country/IDN;MYS;PHL;THA;VNM;PNG;FJI;SLB;VUT;WSM;TON;AUS/indicator/NV.AGR.TOTL.KD?format=json&per_page=20000&date=1961:2100",
+            "sha256": "dbe09d723ac6bf90c00557d4e683d80c9d1e1f1b1d99b75cd3df06cd81998de9",
+            "file": "event_agri_real_usd/dbe09d723ac6bf90c00557d4e683d80c9d1e1f1b1d99b75cd3df06cd81998de9.bin",
+            "retrieved_at": "2026-09-07T01:51:48.032102+00:00",
+            "checked_at": "2026-09-07T15:39:47.313000+00:00",
+            "etag": null,
+            "last_modified": "Mon, 07 Sep 2026 01:51:47 GMT",
+            "bytes": 199366
+          },
+          "event_gdp_real_usd": {
+            "url": "https://api.worldbank.org/v2/country/IDN;MYS;PHL;THA;VNM;PNG;FJI;SLB;VUT;WSM;TON;AUS/indicator/NY.GDP.MKTP.KD?format=json&per_page=20000&date=1961:2100",
+            "sha256": "97eef8b96d996fda0eb804e9a17f458fe7664a10d7194e7409f1b7e61d176c76",
+            "file": "event_gdp_real_usd/97eef8b96d996fda0eb804e9a17f458fe7664a10d7194e7409f1b7e61d176c76.bin",
+            "retrieved_at": "2026-09-07T01:51:50.803486+00:00",
+            "checked_at": "2026-09-07T15:39:47.384876+00:00",
+            "etag": null,
+            "last_modified": "Mon, 07 Sep 2026 01:51:50 GMT",
+            "bytes": 166449
+          },
+          "event_agri_current_usd": {
+            "url": "https://api.worldbank.org/v2/country/IDN;MYS;PHL;THA;VNM;PNG;FJI;SLB;VUT;WSM;TON;AUS/indicator/NV.AGR.TOTL.CD?format=json&per_page=20000&date=1961:2100",
+            "sha256": "199db3b1909444c1355e1cb604616d3c4e08ddeff3f0a6f4169aabcb64927b74",
+            "file": "event_agri_current_usd/199db3b1909444c1355e1cb604616d3c4e08ddeff3f0a6f4169aabcb64927b74.bin",
+            "retrieved_at": "2026-09-07T01:51:54.756505+00:00",
+            "checked_at": "2026-09-07T15:39:47.442622+00:00",
+            "etag": null,
+            "last_modified": "Mon, 07 Sep 2026 01:51:54 GMT",
+            "bytes": 195055
+          }
+        },
+        "as_of": "2026-09-07",
+        "counterfactual_start": "2026-05-01",
+        "extension": "ar2",
+        "dependence": "empirical",
+        "copula_training_origins": 184,
+        "latest_observed_center": "2026-07-01",
+        "no_event_definition": "Keep pre-onset history; set all subsequent centered RONI seasons to zero.",
+        "official_forecasts_are_marginal_not_joint": true,
+        "extension_is_not_NOAA_forecast": true
+      },
+      "models": {
+        "agriculture": {
+          "kind": "agriculture",
+          "countries": [
+            "AUS",
+            "FJI",
+            "IDN",
+            "MYS",
+            "PHL",
+            "PNG",
+            "SLB",
+            "THA",
+            "TON",
+            "VNM",
+            "VUT",
+            "WSM"
+          ],
+          "features": [
+            "warm",
+            "warm_lag1",
+            "warm_lag2",
+            "cold",
+            "extreme",
+            "cold_lag1",
+            "cold_lag2",
+            "trend",
+            "lag_agri_growth",
+            "lag_nonagri_growth"
+          ],
+          "target": "agri_growth",
+          "training_start": 1963,
+          "training_end": 2024,
+          "observations": 535,
+          "max_rhat": 1.0010326272537367,
+          "min_bulk_ess": 1996.903685348023,
+          "divergences": 0,
+          "min_bfmi": 0.6131600846349942,
+          "diagnostics_pass": true,
+          "prior_scale": 2.0,
+          "fingerprint": "df17c4c46fea83fe1bc76c0ac30fb3d6825b6be1ce69e6a83027071e1cf5689e",
+          "source_snapshot": {
+            "forecast_issue": "2026-08",
+            "forecast_issue_date": "2026-08-13",
+            "official_last_center_month": "2027-04-01",
+            "imf_metadata": {
+              "revenue_pct_gdp": {
+                "label": "Revenue",
+                "description": "Revenue",
+                "source": "Fiscal Monitor (April 2026)",
+                "unit": "% of GDP",
+                "dataset": "FM",
+                "projection-year": 2026,
+                "last-modified": "2026-04-15 00:15:26"
+              },
+              "gdp_usd_bn": {
+                "label": "GDP, current prices",
+                "description": "Gross domestic product is the most commonly used single measure of a country's overall economic activity. It represents the total value at current prices of final goods and services produced within a country during a specified time period, such as one year.",
+                "source": "World Economic Outlook (April 2026)",
+                "unit": "Billions of U.S. dollars",
+                "dataset": "WEO",
+                "projection-year": 2026,
+                "last-modified": "2026-04-08 16:07:35"
+              },
+              "gdp_growth_pct": {
+                "label": "Real GDP growth",
+                "description": "Gross domestic product is the most commonly used single measure of a country's overall economic activity. It represents the total value at constant prices of final goods and services produced within a country during a specified time period, such as one year.",
+                "source": "World Economic Outlook (April 2026)",
+                "unit": "Annual percent change",
+                "dataset": "WEO",
+                "projection-year": 2026,
+                "last-modified": "2026-04-08 16:07:34"
+              }
+            },
+            "sources": {
+              "cpc_outlook": {
+                "url": "https://www.cpc.ncep.noaa.gov/products/analysis_monitoring/enso/roni/outlook/",
+                "sha256": "831e00183ec55ef98c042a9ef711bb19245765d05c62ea887814301d5a88f744",
+                "file": "cpc_outlook/831e00183ec55ef98c042a9ef711bb19245765d05c62ea887814301d5a88f744.bin",
+                "retrieved_at": "2026-09-07T01:47:59.072907+00:00",
+                "checked_at": "2026-09-07T01:47:59.072907+00:00",
+                "etag": null,
+                "last_modified": null,
+                "bytes": 29774
+              },
+              "cpc_advisory": {
+                "url": "https://www.cpc.ncep.noaa.gov/products/analysis_monitoring/enso_advisory/ensodisc.shtml",
+                "sha256": "8647a3804260856f979bba518475d63ffb69c2716d10e4f730658df530c3cc2d",
+                "file": "cpc_advisory/8647a3804260856f979bba518475d63ffb69c2716d10e4f730658df530c3cc2d.bin",
+                "retrieved_at": "2026-09-07T01:48:56.679758+00:00",
+                "checked_at": "2026-09-07T01:48:56.679758+00:00",
+                "etag": null,
+                "last_modified": null,
+                "bytes": 13382
+              },
+              "event_imf_revenue_pct_gdp": {
+                "url": "https://www.imf.org/external/datamapper/api/v2/GGR_G01_GDP_PT",
+                "sha256": "1963930b9e4c636481c81e06e20448822be5e3a4641240e57f849f4824745323",
+                "file": "event_imf_revenue_pct_gdp/1963930b9e4c636481c81e06e20448822be5e3a4641240e57f849f4824745323.bin",
+                "retrieved_at": "2026-09-07T01:51:18.869418+00:00",
+                "checked_at": "2026-09-07T01:51:18.869418+00:00",
+                "etag": null,
+                "last_modified": null,
+                "bytes": 185573
+              },
+              "event_imf_gdp_usd_bn": {
+                "url": "https://www.imf.org/external/datamapper/api/v2/NGDPD",
+                "sha256": "5592998446e9bdae68d4f04c45ff4dacb0eb429441dfa7dbfc8d59ffa1df05cf",
+                "file": "event_imf_gdp_usd_bn/5592998446e9bdae68d4f04c45ff4dacb0eb429441dfa7dbfc8d59ffa1df05cf.bin",
+                "retrieved_at": "2026-09-07T01:51:29.558558+00:00",
+                "checked_at": "2026-09-07T01:51:29.558558+00:00",
+                "etag": null,
+                "last_modified": null,
+                "bytes": 158018
+              },
+              "event_imf_gdp_growth_pct": {
+                "url": "https://www.imf.org/external/datamapper/api/v2/NGDP_RPCH",
+                "sha256": "689860c3b985d99078145c6f171c4b7a9c4e8baa6a4e6ee89a27dd2411d13ead",
+                "file": "event_imf_gdp_growth_pct/689860c3b985d99078145c6f171c4b7a9c4e8baa6a4e6ee89a27dd2411d13ead.bin",
+                "retrieved_at": "2026-09-07T01:51:39.583093+00:00",
+                "checked_at": "2026-09-07T01:51:39.583093+00:00",
+                "etag": null,
+                "last_modified": null,
+                "bytes": 122208
+              },
+              "event_agri_real_usd": {
+                "url": "https://api.worldbank.org/v2/country/IDN;MYS;PHL;THA;VNM;PNG;FJI;SLB;VUT;WSM;TON;AUS/indicator/NV.AGR.TOTL.KD?format=json&per_page=20000&date=1961:2100",
+                "sha256": "dbe09d723ac6bf90c00557d4e683d80c9d1e1f1b1d99b75cd3df06cd81998de9",
+                "file": "event_agri_real_usd/dbe09d723ac6bf90c00557d4e683d80c9d1e1f1b1d99b75cd3df06cd81998de9.bin",
+                "retrieved_at": "2026-09-07T01:51:48.032102+00:00",
+                "checked_at": "2026-09-07T01:51:48.032102+00:00",
+                "etag": null,
+                "last_modified": "Mon, 07 Sep 2026 01:51:47 GMT",
+                "bytes": 199366
+              },
+              "event_gdp_real_usd": {
+                "url": "https://api.worldbank.org/v2/country/IDN;MYS;PHL;THA;VNM;PNG;FJI;SLB;VUT;WSM;TON;AUS/indicator/NY.GDP.MKTP.KD?format=json&per_page=20000&date=1961:2100",
+                "sha256": "97eef8b96d996fda0eb804e9a17f458fe7664a10d7194e7409f1b7e61d176c76",
+                "file": "event_gdp_real_usd/97eef8b96d996fda0eb804e9a17f458fe7664a10d7194e7409f1b7e61d176c76.bin",
+                "retrieved_at": "2026-09-07T01:51:50.803486+00:00",
+                "checked_at": "2026-09-07T01:51:50.803486+00:00",
+                "etag": null,
+                "last_modified": "Mon, 07 Sep 2026 01:51:50 GMT",
+                "bytes": 166449
+              },
+              "event_agri_current_usd": {
+                "url": "https://api.worldbank.org/v2/country/IDN;MYS;PHL;THA;VNM;PNG;FJI;SLB;VUT;WSM;TON;AUS/indicator/NV.AGR.TOTL.CD?format=json&per_page=20000&date=1961:2100",
+                "sha256": "199db3b1909444c1355e1cb604616d3c4e08ddeff3f0a6f4169aabcb64927b74",
+                "file": "event_agri_current_usd/199db3b1909444c1355e1cb604616d3c4e08ddeff3f0a6f4169aabcb64927b74.bin",
+                "retrieved_at": "2026-09-07T01:51:54.756505+00:00",
+                "checked_at": "2026-09-07T01:51:54.756505+00:00",
+                "etag": null,
+                "last_modified": "Mon, 07 Sep 2026 01:51:54 GMT",
+                "bytes": 195055
+              }
+            }
+          },
+          "causal_identification": false
+        },
+        "fiscal": {
+          "kind": "fiscal",
+          "countries": [
+            "AUS",
+            "FJI",
+            "IDN",
+            "MYS",
+            "PHL",
+            "PNG",
+            "SLB",
+            "THA",
+            "TON",
+            "VNM",
+            "VUT",
+            "WSM"
+          ],
+          "features": [
+            "agri_contribution",
+            "nonagri_contribution",
+            "lag_revenue_growth",
+            "trend",
+            "pandemic"
+          ],
+          "target": "revenue_growth",
+          "training_start": 1992,
+          "training_end": 2024,
+          "observations": 341,
+          "max_rhat": 1.0014819654795397,
+          "min_bulk_ess": 3454.3309326916674,
+          "divergences": 0,
+          "min_bfmi": 0.7832373045779862,
+          "diagnostics_pass": true,
+          "prior_scale": 2.0,
+          "fingerprint": "f81e72838c60f5996b1ae6d6d077ab66193f65e6484cdce25934e5176d57e20c",
+          "source_snapshot": {
+            "forecast_issue": "2026-08",
+            "forecast_issue_date": "2026-08-13",
+            "official_last_center_month": "2027-04-01",
+            "imf_metadata": {
+              "revenue_pct_gdp": {
+                "label": "Revenue",
+                "description": "Revenue",
+                "source": "Fiscal Monitor (April 2026)",
+                "unit": "% of GDP",
+                "dataset": "FM",
+                "projection-year": 2026,
+                "last-modified": "2026-04-15 00:15:26"
+              },
+              "gdp_usd_bn": {
+                "label": "GDP, current prices",
+                "description": "Gross domestic product is the most commonly used single measure of a country's overall economic activity. It represents the total value at current prices of final goods and services produced within a country during a specified time period, such as one year.",
+                "source": "World Economic Outlook (April 2026)",
+                "unit": "Billions of U.S. dollars",
+                "dataset": "WEO",
+                "projection-year": 2026,
+                "last-modified": "2026-04-08 16:07:35"
+              },
+              "gdp_growth_pct": {
+                "label": "Real GDP growth",
+                "description": "Gross domestic product is the most commonly used single measure of a country's overall economic activity. It represents the total value at constant prices of final goods and services produced within a country during a specified time period, such as one year.",
+                "source": "World Economic Outlook (April 2026)",
+                "unit": "Annual percent change",
+                "dataset": "WEO",
+                "projection-year": 2026,
+                "last-modified": "2026-04-08 16:07:34"
+              }
+            },
+            "sources": {
+              "cpc_outlook": {
+                "url": "https://www.cpc.ncep.noaa.gov/products/analysis_monitoring/enso/roni/outlook/",
+                "sha256": "831e00183ec55ef98c042a9ef711bb19245765d05c62ea887814301d5a88f744",
+                "file": "cpc_outlook/831e00183ec55ef98c042a9ef711bb19245765d05c62ea887814301d5a88f744.bin",
+                "retrieved_at": "2026-09-07T01:47:59.072907+00:00",
+                "checked_at": "2026-09-07T01:47:59.072907+00:00",
+                "etag": null,
+                "last_modified": null,
+                "bytes": 29774
+              },
+              "cpc_advisory": {
+                "url": "https://www.cpc.ncep.noaa.gov/products/analysis_monitoring/enso_advisory/ensodisc.shtml",
+                "sha256": "8647a3804260856f979bba518475d63ffb69c2716d10e4f730658df530c3cc2d",
+                "file": "cpc_advisory/8647a3804260856f979bba518475d63ffb69c2716d10e4f730658df530c3cc2d.bin",
+                "retrieved_at": "2026-09-07T01:48:56.679758+00:00",
+                "checked_at": "2026-09-07T01:48:56.679758+00:00",
+                "etag": null,
+                "last_modified": null,
+                "bytes": 13382
+              },
+              "event_imf_revenue_pct_gdp": {
+                "url": "https://www.imf.org/external/datamapper/api/v2/GGR_G01_GDP_PT",
+                "sha256": "1963930b9e4c636481c81e06e20448822be5e3a4641240e57f849f4824745323",
+                "file": "event_imf_revenue_pct_gdp/1963930b9e4c636481c81e06e20448822be5e3a4641240e57f849f4824745323.bin",
+                "retrieved_at": "2026-09-07T01:51:18.869418+00:00",
+                "checked_at": "2026-09-07T01:51:18.869418+00:00",
+                "etag": null,
+                "last_modified": null,
+                "bytes": 185573
+              },
+              "event_imf_gdp_usd_bn": {
+                "url": "https://www.imf.org/external/datamapper/api/v2/NGDPD",
+                "sha256": "5592998446e9bdae68d4f04c45ff4dacb0eb429441dfa7dbfc8d59ffa1df05cf",
+                "file": "event_imf_gdp_usd_bn/5592998446e9bdae68d4f04c45ff4dacb0eb429441dfa7dbfc8d59ffa1df05cf.bin",
+                "retrieved_at": "2026-09-07T01:51:29.558558+00:00",
+                "checked_at": "2026-09-07T01:51:29.558558+00:00",
+                "etag": null,
+                "last_modified": null,
+                "bytes": 158018
+              },
+              "event_imf_gdp_growth_pct": {
+                "url": "https://www.imf.org/external/datamapper/api/v2/NGDP_RPCH",
+                "sha256": "689860c3b985d99078145c6f171c4b7a9c4e8baa6a4e6ee89a27dd2411d13ead",
+                "file": "event_imf_gdp_growth_pct/689860c3b985d99078145c6f171c4b7a9c4e8baa6a4e6ee89a27dd2411d13ead.bin",
+                "retrieved_at": "2026-09-07T01:51:39.583093+00:00",
+                "checked_at": "2026-09-07T01:51:39.583093+00:00",
+                "etag": null,
+                "last_modified": null,
+                "bytes": 122208
+              },
+              "event_agri_real_usd": {
+                "url": "https://api.worldbank.org/v2/country/IDN;MYS;PHL;THA;VNM;PNG;FJI;SLB;VUT;WSM;TON;AUS/indicator/NV.AGR.TOTL.KD?format=json&per_page=20000&date=1961:2100",
+                "sha256": "dbe09d723ac6bf90c00557d4e683d80c9d1e1f1b1d99b75cd3df06cd81998de9",
+                "file": "event_agri_real_usd/dbe09d723ac6bf90c00557d4e683d80c9d1e1f1b1d99b75cd3df06cd81998de9.bin",
+                "retrieved_at": "2026-09-07T01:51:48.032102+00:00",
+                "checked_at": "2026-09-07T01:51:48.032102+00:00",
+                "etag": null,
+                "last_modified": "Mon, 07 Sep 2026 01:51:47 GMT",
+                "bytes": 199366
+              },
+              "event_gdp_real_usd": {
+                "url": "https://api.worldbank.org/v2/country/IDN;MYS;PHL;THA;VNM;PNG;FJI;SLB;VUT;WSM;TON;AUS/indicator/NY.GDP.MKTP.KD?format=json&per_page=20000&date=1961:2100",
+                "sha256": "97eef8b96d996fda0eb804e9a17f458fe7664a10d7194e7409f1b7e61d176c76",
+                "file": "event_gdp_real_usd/97eef8b96d996fda0eb804e9a17f458fe7664a10d7194e7409f1b7e61d176c76.bin",
+                "retrieved_at": "2026-09-07T01:51:50.803486+00:00",
+                "checked_at": "2026-09-07T01:51:50.803486+00:00",
+                "etag": null,
+                "last_modified": "Mon, 07 Sep 2026 01:51:50 GMT",
+                "bytes": 166449
+              },
+              "event_agri_current_usd": {
+                "url": "https://api.worldbank.org/v2/country/IDN;MYS;PHL;THA;VNM;PNG;FJI;SLB;VUT;WSM;TON;AUS/indicator/NV.AGR.TOTL.CD?format=json&per_page=20000&date=1961:2100",
+                "sha256": "199db3b1909444c1355e1cb604616d3c4e08ddeff3f0a6f4169aabcb64927b74",
+                "file": "event_agri_current_usd/199db3b1909444c1355e1cb604616d3c4e08ddeff3f0a6f4169aabcb64927b74.bin",
+                "retrieved_at": "2026-09-07T01:51:54.756505+00:00",
+                "checked_at": "2026-09-07T01:51:54.756505+00:00",
+                "etag": null,
+                "last_modified": "Mon, 07 Sep 2026 01:51:54 GMT",
+                "bytes": 195055
+              }
+            }
+          },
+          "causal_identification": false
+        }
+      },
+      "countries": [
+        "AUS",
+        "FJI",
+        "IDN",
+        "MYS",
+        "PHL",
+        "PNG",
+        "SLB",
+        "THA",
+        "TON",
+        "VNM",
+        "VUT",
+        "WSM"
+      ],
+      "omitted_countries": [],
+      "simulations": 10000,
+      "units": "constant 2025 USD, GDP-deflated; fixed 2025 exchange rate",
+      "scope": "Agriculture, forestry and fishing value added; conditional government revenue transmission",
+      "revenue_includes_grants": true,
+      "residual_dependence": "shared_year",
+      "nonagriculture_scenario": "IMF total real GDP growth used as an external non-agriculture growth proxy, shared across cases",
+      "price_and_fx_response_modeled": false,
+      "causal_identification": false,
+      "historical_validation_is_conditional": true,
+      "risk_definition": "Positive = neutral revenue minus event revenue. Gains retained in signed estimates; VaR/ES apply to positive shortfall.",
+      "not_total_economy_loss": true,
+      "not_sovereign_default_probability": true,
+      "fiscal_coefficient_override": null
+    },
+    "unit": null,
+    "scenario_id": null
+  },
+  "7abd5499be5a9a5a842fb1da": {
+    "assessment_id": "20260907T153857705816Z",
+    "artifact": "reports/event_risk_metadata.json",
+    "artifact_hash": "8cb8943ac32e010a5bed8976184ee08fb11e320b854ec8ab165a5b4ac0998780",
+    "bundle_hash": "07603bf49b655531ed9fa5a418ddd640366466f6a80a90428a003f31b50d61f7",
+    "selector": {
+      "section": "models"
+    },
+    "value": {
+      "agriculture": {
+        "kind": "agriculture",
+        "countries": [
+          "AUS",
+          "FJI",
+          "IDN",
+          "MYS",
+          "PHL",
+          "PNG",
+          "SLB",
+          "THA",
+          "TON",
+          "VNM",
+          "VUT",
+          "WSM"
+        ],
+        "features": [
+          "warm",
+          "warm_lag1",
+          "warm_lag2",
+          "cold",
+          "extreme",
+          "cold_lag1",
+          "cold_lag2",
+          "trend",
+          "lag_agri_growth",
+          "lag_nonagri_growth"
+        ],
+        "target": "agri_growth",
+        "training_start": 1963,
+        "training_end": 2024,
+        "observations": 535,
+        "max_rhat": 1.0010326272537367,
+        "min_bulk_ess": 1996.903685348023,
+        "divergences": 0,
+        "min_bfmi": 0.6131600846349942,
+        "diagnostics_pass": true,
+        "prior_scale": 2.0,
+        "fingerprint": "df17c4c46fea83fe1bc76c0ac30fb3d6825b6be1ce69e6a83027071e1cf5689e",
+        "source_snapshot": {
+          "forecast_issue": "2026-08",
+          "forecast_issue_date": "2026-08-13",
+          "official_last_center_month": "2027-04-01",
+          "imf_metadata": {
+            "revenue_pct_gdp": {
+              "label": "Revenue",
+              "description": "Revenue",
+              "source": "Fiscal Monitor (April 2026)",
+              "unit": "% of GDP",
+              "dataset": "FM",
+              "projection-year": 2026,
+              "last-modified": "2026-04-15 00:15:26"
+            },
+            "gdp_usd_bn": {
+              "label": "GDP, current prices",
+              "description": "Gross domestic product is the most commonly used single measure of a country's overall economic activity. It represents the total value at current prices of final goods and services produced within a country during a specified time period, such as one year.",
+              "source": "World Economic Outlook (April 2026)",
+              "unit": "Billions of U.S. dollars",
+              "dataset": "WEO",
+              "projection-year": 2026,
+              "last-modified": "2026-04-08 16:07:35"
+            },
+            "gdp_growth_pct": {
+              "label": "Real GDP growth",
+              "description": "Gross domestic product is the most commonly used single measure of a country's overall economic activity. It represents the total value at constant prices of final goods and services produced within a country during a specified time period, such as one year.",
+              "source": "World Economic Outlook (April 2026)",
+              "unit": "Annual percent change",
+              "dataset": "WEO",
+              "projection-year": 2026,
+              "last-modified": "2026-04-08 16:07:34"
+            }
+          },
+          "sources": {
+            "cpc_outlook": {
+              "url": "https://www.cpc.ncep.noaa.gov/products/analysis_monitoring/enso/roni/outlook/",
+              "sha256": "831e00183ec55ef98c042a9ef711bb19245765d05c62ea887814301d5a88f744",
+              "file": "cpc_outlook/831e00183ec55ef98c042a9ef711bb19245765d05c62ea887814301d5a88f744.bin",
+              "retrieved_at": "2026-09-07T01:47:59.072907+00:00",
+              "checked_at": "2026-09-07T01:47:59.072907+00:00",
+              "etag": null,
+              "last_modified": null,
+              "bytes": 29774
+            },
+            "cpc_advisory": {
+              "url": "https://www.cpc.ncep.noaa.gov/products/analysis_monitoring/enso_advisory/ensodisc.shtml",
+              "sha256": "8647a3804260856f979bba518475d63ffb69c2716d10e4f730658df530c3cc2d",
+              "file": "cpc_advisory/8647a3804260856f979bba518475d63ffb69c2716d10e4f730658df530c3cc2d.bin",
+              "retrieved_at": "2026-09-07T01:48:56.679758+00:00",
+              "checked_at": "2026-09-07T01:48:56.679758+00:00",
+              "etag": null,
+              "last_modified": null,
+              "bytes": 13382
+            },
+            "event_imf_revenue_pct_gdp": {
+              "url": "https://www.imf.org/external/datamapper/api/v2/GGR_G01_GDP_PT",
+              "sha256": "1963930b9e4c636481c81e06e20448822be5e3a4641240e57f849f4824745323",
+              "file": "event_imf_revenue_pct_gdp/1963930b9e4c636481c81e06e20448822be5e3a4641240e57f849f4824745323.bin",
+              "retrieved_at": "2026-09-07T01:51:18.869418+00:00",
+              "checked_at": "2026-09-07T01:51:18.869418+00:00",
+              "etag": null,
+              "last_modified": null,
+              "bytes": 185573
+            },
+            "event_imf_gdp_usd_bn": {
+              "url": "https://www.imf.org/external/datamapper/api/v2/NGDPD",
+              "sha256": "5592998446e9bdae68d4f04c45ff4dacb0eb429441dfa7dbfc8d59ffa1df05cf",
+              "file": "event_imf_gdp_usd_bn/5592998446e9bdae68d4f04c45ff4dacb0eb429441dfa7dbfc8d59ffa1df05cf.bin",
+              "retrieved_at": "2026-09-07T01:51:29.558558+00:00",
+              "checked_at": "2026-09-07T01:51:29.558558+00:00",
+              "etag": null,
+              "last_modified": null,
+              "bytes": 158018
+            },
+            "event_imf_gdp_growth_pct": {
+              "url": "https://www.imf.org/external/datamapper/api/v2/NGDP_RPCH",
+              "sha256": "689860c3b985d99078145c6f171c4b7a9c4e8baa6a4e6ee89a27dd2411d13ead",
+              "file": "event_imf_gdp_growth_pct/689860c3b985d99078145c6f171c4b7a9c4e8baa6a4e6ee89a27dd2411d13ead.bin",
+              "retrieved_at": "2026-09-07T01:51:39.583093+00:00",
+              "checked_at": "2026-09-07T01:51:39.583093+00:00",
+              "etag": null,
+              "last_modified": null,
+              "bytes": 122208
+            },
+            "event_agri_real_usd": {
+              "url": "https://api.worldbank.org/v2/country/IDN;MYS;PHL;THA;VNM;PNG;FJI;SLB;VUT;WSM;TON;AUS/indicator/NV.AGR.TOTL.KD?format=json&per_page=20000&date=1961:2100",
+              "sha256": "dbe09d723ac6bf90c00557d4e683d80c9d1e1f1b1d99b75cd3df06cd81998de9",
+              "file": "event_agri_real_usd/dbe09d723ac6bf90c00557d4e683d80c9d1e1f1b1d99b75cd3df06cd81998de9.bin",
+              "retrieved_at": "2026-09-07T01:51:48.032102+00:00",
+              "checked_at": "2026-09-07T01:51:48.032102+00:00",
+              "etag": null,
+              "last_modified": "Mon, 07 Sep 2026 01:51:47 GMT",
+              "bytes": 199366
+            },
+            "event_gdp_real_usd": {
+              "url": "https://api.worldbank.org/v2/country/IDN;MYS;PHL;THA;VNM;PNG;FJI;SLB;VUT;WSM;TON;AUS/indicator/NY.GDP.MKTP.KD?format=json&per_page=20000&date=1961:2100",
+              "sha256": "97eef8b96d996fda0eb804e9a17f458fe7664a10d7194e7409f1b7e61d176c76",
+              "file": "event_gdp_real_usd/97eef8b96d996fda0eb804e9a17f458fe7664a10d7194e7409f1b7e61d176c76.bin",
+              "retrieved_at": "2026-09-07T01:51:50.803486+00:00",
+              "checked_at": "2026-09-07T01:51:50.803486+00:00",
+              "etag": null,
+              "last_modified": "Mon, 07 Sep 2026 01:51:50 GMT",
+              "bytes": 166449
+            },
+            "event_agri_current_usd": {
+              "url": "https://api.worldbank.org/v2/country/IDN;MYS;PHL;THA;VNM;PNG;FJI;SLB;VUT;WSM;TON;AUS/indicator/NV.AGR.TOTL.CD?format=json&per_page=20000&date=1961:2100",
+              "sha256": "199db3b1909444c1355e1cb604616d3c4e08ddeff3f0a6f4169aabcb64927b74",
+              "file": "event_agri_current_usd/199db3b1909444c1355e1cb604616d3c4e08ddeff3f0a6f4169aabcb64927b74.bin",
+              "retrieved_at": "2026-09-07T01:51:54.756505+00:00",
+              "checked_at": "2026-09-07T01:51:54.756505+00:00",
+              "etag": null,
+              "last_modified": "Mon, 07 Sep 2026 01:51:54 GMT",
+              "bytes": 195055
+            }
+          }
+        },
+        "causal_identification": false
+      },
+      "fiscal": {
+        "kind": "fiscal",
+        "countries": [
+          "AUS",
+          "FJI",
+          "IDN",
+          "MYS",
+          "PHL",
+          "PNG",
+          "SLB",
+          "THA",
+          "TON",
+          "VNM",
+          "VUT",
+          "WSM"
+        ],
+        "features": [
+          "agri_contribution",
+          "nonagri_contribution",
+          "lag_revenue_growth",
+          "trend",
+          "pandemic"
+        ],
+        "target": "revenue_growth",
+        "training_start": 1992,
+        "training_end": 2024,
+        "observations": 341,
+        "max_rhat": 1.0014819654795397,
+        "min_bulk_ess": 3454.3309326916674,
+        "divergences": 0,
+        "min_bfmi": 0.7832373045779862,
+        "diagnostics_pass": true,
+        "prior_scale": 2.0,
+        "fingerprint": "f81e72838c60f5996b1ae6d6d077ab66193f65e6484cdce25934e5176d57e20c",
+        "source_snapshot": {
+          "forecast_issue": "2026-08",
+          "forecast_issue_date": "2026-08-13",
+          "official_last_center_month": "2027-04-01",
+          "imf_metadata": {
+            "revenue_pct_gdp": {
+              "label": "Revenue",
+              "description": "Revenue",
+              "source": "Fiscal Monitor (April 2026)",
+              "unit": "% of GDP",
+              "dataset": "FM",
+              "projection-year": 2026,
+              "last-modified": "2026-04-15 00:15:26"
+            },
+            "gdp_usd_bn": {
+              "label": "GDP, current prices",
+              "description": "Gross domestic product is the most commonly used single measure of a country's overall economic activity. It represents the total value at current prices of final goods and services produced within a country during a specified time period, such as one year.",
+              "source": "World Economic Outlook (April 2026)",
+              "unit": "Billions of U.S. dollars",
+              "dataset": "WEO",
+              "projection-year": 2026,
+              "last-modified": "2026-04-08 16:07:35"
+            },
+            "gdp_growth_pct": {
+              "label": "Real GDP growth",
+              "description": "Gross domestic product is the most commonly used single measure of a country's overall economic activity. It represents the total value at constant prices of final goods and services produced within a country during a specified time period, such as one year.",
+              "source": "World Economic Outlook (April 2026)",
+              "unit": "Annual percent change",
+              "dataset": "WEO",
+              "projection-year": 2026,
+              "last-modified": "2026-04-08 16:07:34"
+            }
+          },
+          "sources": {
+            "cpc_outlook": {
+              "url": "https://www.cpc.ncep.noaa.gov/products/analysis_monitoring/enso/roni/outlook/",
+              "sha256": "831e00183ec55ef98c042a9ef711bb19245765d05c62ea887814301d5a88f744",
+              "file": "cpc_outlook/831e00183ec55ef98c042a9ef711bb19245765d05c62ea887814301d5a88f744.bin",
+              "retrieved_at": "2026-09-07T01:47:59.072907+00:00",
+              "checked_at": "2026-09-07T01:47:59.072907+00:00",
+              "etag": null,
+              "last_modified": null,
+              "bytes": 29774
+            },
+            "cpc_advisory": {
+              "url": "https://www.cpc.ncep.noaa.gov/products/analysis_monitoring/enso_advisory/ensodisc.shtml",
+              "sha256": "8647a3804260856f979bba518475d63ffb69c2716d10e4f730658df530c3cc2d",
+              "file": "cpc_advisory/8647a3804260856f979bba518475d63ffb69c2716d10e4f730658df530c3cc2d.bin",
+              "retrieved_at": "2026-09-07T01:48:56.679758+00:00",
+              "checked_at": "2026-09-07T01:48:56.679758+00:00",
+              "etag": null,
+              "last_modified": null,
+              "bytes": 13382
+            },
+            "event_imf_revenue_pct_gdp": {
+              "url": "https://www.imf.org/external/datamapper/api/v2/GGR_G01_GDP_PT",
+              "sha256": "1963930b9e4c636481c81e06e20448822be5e3a4641240e57f849f4824745323",
+              "file": "event_imf_revenue_pct_gdp/1963930b9e4c636481c81e06e20448822be5e3a4641240e57f849f4824745323.bin",
+              "retrieved_at": "2026-09-07T01:51:18.869418+00:00",
+              "checked_at": "2026-09-07T01:51:18.869418+00:00",
+              "etag": null,
+              "last_modified": null,
+              "bytes": 185573
+            },
+            "event_imf_gdp_usd_bn": {
+              "url": "https://www.imf.org/external/datamapper/api/v2/NGDPD",
+              "sha256": "5592998446e9bdae68d4f04c45ff4dacb0eb429441dfa7dbfc8d59ffa1df05cf",
+              "file": "event_imf_gdp_usd_bn/5592998446e9bdae68d4f04c45ff4dacb0eb429441dfa7dbfc8d59ffa1df05cf.bin",
+              "retrieved_at": "2026-09-07T01:51:29.558558+00:00",
+              "checked_at": "2026-09-07T01:51:29.558558+00:00",
+              "etag": null,
+              "last_modified": null,
+              "bytes": 158018
+            },
+            "event_imf_gdp_growth_pct": {
+              "url": "https://www.imf.org/external/datamapper/api/v2/NGDP_RPCH",
+              "sha256": "689860c3b985d99078145c6f171c4b7a9c4e8baa6a4e6ee89a27dd2411d13ead",
+              "file": "event_imf_gdp_growth_pct/689860c3b985d99078145c6f171c4b7a9c4e8baa6a4e6ee89a27dd2411d13ead.bin",
+              "retrieved_at": "2026-09-07T01:51:39.583093+00:00",
+              "checked_at": "2026-09-07T01:51:39.583093+00:00",
+              "etag": null,
+              "last_modified": null,
+              "bytes": 122208
+            },
+            "event_agri_real_usd": {
+              "url": "https://api.worldbank.org/v2/country/IDN;MYS;PHL;THA;VNM;PNG;FJI;SLB;VUT;WSM;TON;AUS/indicator/NV.AGR.TOTL.KD?format=json&per_page=20000&date=1961:2100",
+              "sha256": "dbe09d723ac6bf90c00557d4e683d80c9d1e1f1b1d99b75cd3df06cd81998de9",
+              "file": "event_agri_real_usd/dbe09d723ac6bf90c00557d4e683d80c9d1e1f1b1d99b75cd3df06cd81998de9.bin",
+              "retrieved_at": "2026-09-07T01:51:48.032102+00:00",
+              "checked_at": "2026-09-07T01:51:48.032102+00:00",
+              "etag": null,
+              "last_modified": "Mon, 07 Sep 2026 01:51:47 GMT",
+              "bytes": 199366
+            },
+            "event_gdp_real_usd": {
+              "url": "https://api.worldbank.org/v2/country/IDN;MYS;PHL;THA;VNM;PNG;FJI;SLB;VUT;WSM;TON;AUS/indicator/NY.GDP.MKTP.KD?format=json&per_page=20000&date=1961:2100",
+              "sha256": "97eef8b96d996fda0eb804e9a17f458fe7664a10d7194e7409f1b7e61d176c76",
+              "file": "event_gdp_real_usd/97eef8b96d996fda0eb804e9a17f458fe7664a10d7194e7409f1b7e61d176c76.bin",
+              "retrieved_at": "2026-09-07T01:51:50.803486+00:00",
+              "checked_at": "2026-09-07T01:51:50.803486+00:00",
+              "etag": null,
+              "last_modified": "Mon, 07 Sep 2026 01:51:50 GMT",
+              "bytes": 166449
+            },
+            "event_agri_current_usd": {
+              "url": "https://api.worldbank.org/v2/country/IDN;MYS;PHL;THA;VNM;PNG;FJI;SLB;VUT;WSM;TON;AUS/indicator/NV.AGR.TOTL.CD?format=json&per_page=20000&date=1961:2100",
+              "sha256": "199db3b1909444c1355e1cb604616d3c4e08ddeff3f0a6f4169aabcb64927b74",
+              "file": "event_agri_current_usd/199db3b1909444c1355e1cb604616d3c4e08ddeff3f0a6f4169aabcb64927b74.bin",
+              "retrieved_at": "2026-09-07T01:51:54.756505+00:00",
+              "checked_at": "2026-09-07T01:51:54.756505+00:00",
+              "etag": null,
+              "last_modified": "Mon, 07 Sep 2026 01:51:54 GMT",
+              "bytes": 195055
+            }
+          }
+        },
+        "causal_identification": false
+      }
+    },
+    "unit": null,
+    "scenario_id": null
+  },
+  "7bec50c5aa2cba9f3fcba42c": {
+    "assessment_id": "20260907T153857705816Z",
+    "artifact": "reports/agriculture_bayesian_validation.json",
+    "artifact_hash": "2a7c5b7d3b91761624b49cb7316f09162817b0cbd8b0c38fa4f0c52dd629d0c6",
+    "bundle_hash": "07603bf49b655531ed9fa5a418ddd640366466f6a80a90428a003f31b50d61f7",
+    "selector": {},
+    "value": {
+      "kind": "agriculture",
+      "training_end": 2018,
+      "n": 60,
+      "rmse": 0.06000061973006384,
+      "crps": 0.029388616378595325,
+      "coverage90": 0.9333333333333333,
+      "type": "Bayesian conditional holdout with realized inputs; latest revised history"
+    },
+    "unit": null,
+    "scenario_id": null
+  },
+  "48658736654193b4b92b3460": {
+    "assessment_id": "20260907T153857705816Z",
+    "artifact": "reports/fiscal_bayesian_validation.json",
+    "artifact_hash": "19cca46ea99afcc0e29642be35f1423150b62cbcb0e6f2828fe2f3d687e27e62",
+    "bundle_hash": "07603bf49b655531ed9fa5a418ddd640366466f6a80a90428a003f31b50d61f7",
+    "selector": {},
+    "value": {
+      "kind": "fiscal",
+      "training_end": 2018,
+      "n": 66,
+      "rmse": 0.08244289244070911,
+      "crps": 0.04571586072955261,
+      "coverage90": 0.9393939393939394,
+      "type": "Bayesian conditional holdout with realized inputs; latest revised history"
+    },
+    "unit": null,
+    "scenario_id": null
+  },
+  "fcd942bceffdc9776e5c28fd": {
+    "assessment_id": "20260907T153857705816Z",
+    "artifact": "reports/macro_validation.csv",
+    "artifact_hash": "360697080ea618dfcc6b222236cd5cbba157f4f756a7fefa7e4783df97e81c27",
+    "bundle_hash": "07603bf49b655531ed9fa5a418ddd640366466f6a80a90428a003f31b50d61f7",
+    "selector": {
+      "table": "all"
+    },
+    "value": [
+      {
+        "kind": "agriculture",
+        "model": "baseline",
+        "n": 180,
+        "rmse": 0.056136846029297,
+        "crps": 0.028122554109536,
+        "coverage90": 0.872222222222222,
+        "validation_type": "conditional final-vintage rolling hindcast; ridge challenger"
+      },
+      {
+        "kind": "agriculture",
+        "model": "with_climate",
+        "n": 180,
+        "rmse": 0.05875595099814,
+        "crps": 0.031469330927203,
+        "coverage90": 0.738888888888889,
+        "validation_type": "conditional final-vintage rolling hindcast; ridge challenger"
+      },
+      {
+        "kind": "fiscal",
+        "model": "baseline",
+        "n": 180,
+        "rmse": 0.09057917685843,
+        "crps": 0.048746893623015,
+        "coverage90": 0.827777777777778,
+        "validation_type": "conditional final-vintage rolling hindcast; ridge challenger"
+      },
+      {
+        "kind": "fiscal",
+        "model": "with_agriculture",
+        "n": 180,
+        "rmse": 0.093557833187244,
+        "crps": 0.050640051295598,
+        "coverage90": 0.811111111111111,
+        "validation_type": "conditional final-vintage rolling hindcast; ridge challenger"
+      }
+    ],
+    "unit": null,
+    "scenario_id": null
+  },
+  "4f42001c805c4bda23b1893b": {
+    "assessment_id": "20260907T153857705816Z",
+    "artifact": "reports/event_risk_metadata.json",
+    "artifact_hash": "8cb8943ac32e010a5bed8976184ee08fb11e320b854ec8ab165a5b4ac0998780",
+    "bundle_hash": "07603bf49b655531ed9fa5a418ddd640366466f6a80a90428a003f31b50d61f7",
+    "selector": {
+      "json_path": [
+        "climate",
+        "as_of"
+      ]
+    },
+    "value": "2026-09-07",
+    "unit": "ISO date",
+    "scenario_id": null
+  },
+  "fac6ca3fd4b1ee0242e119e3": {
+    "assessment_id": "20260907T153857705816Z",
+    "artifact": "reports/event_risk_metadata.json",
+    "artifact_hash": "8cb8943ac32e010a5bed8976184ee08fb11e320b854ec8ab165a5b4ac0998780",
+    "bundle_hash": "07603bf49b655531ed9fa5a418ddd640366466f6a80a90428a003f31b50d61f7",
+    "selector": {
+      "json_path": [
+        "climate",
+        "forecast_issue"
+      ]
+    },
+    "value": "2026-08",
+    "unit": "ISO month",
+    "scenario_id": null
+  },
+  "26ae4c9b3f1ec8ecff864061": {
+    "assessment_id": "20260907T153857705816Z",
+    "artifact": "docs/EVENT_METHODOLOGY.md",
+    "artifact_hash": "f00928a0bef5df7f2327d85613b0918a6e01e4bef480eff092b78e6ca72bc00e",
+    "bundle_hash": "07603bf49b655531ed9fa5a418ddd640366466f6a80a90428a003f31b50d61f7",
+    "selector": {
+      "retrieval_query": "IMF data use limitations fiscal revenue projection not official forecast"
+    },
+    "value": " \u2026 evolution, dependence, onset and direct fiscal transmission. No subset of favorable results is selected as the headline.\n\nDaily refresh does not imply daily official crop data. Climate inputs advance with published observations/forecasts. IMF projections revise at their own release frequency. Economic fitting uses data through assessment-year minus two \u2026 ",
+    "unit": null,
+    "scenario_id": null
+  },
+  "84c3273694a5e0d6c352f35b": {
+    "assessment_id": "20260907T153857705816Z",
+    "artifact": "docs/EVENT_SOURCES.md",
+    "artifact_hash": "0dbae7bb2d4b9b345b152a9ea6de05660c6a9a04d7715385a8c1e66d4422c25e",
+    "bundle_hash": "07603bf49b655531ed9fa5a418ddd640366466f6a80a90428a003f31b50d61f7",
+    "selector": {
+      "retrieval_query": "IMF data use limitations fiscal revenue projection not official forecast"
+    },
+    "value": " \u2026 forecast status |\n| Government revenue | [IMF Fiscal Monitor API v2](https://www.imf.org/external/datamapper/api/v2/GGR_G01_GDP_PT) | General government revenue, percent GDP; historical estimates and projections |\n| GDP projections | [IMF WEO GDP](https://www.imf.org/external/datamapper/api/v2/NGDPD), [real growth](https://www.imf.org \u2026 ",
+    "unit": null,
+    "scenario_id": null
+  },
+  "309a8c6fe5627a699d367c13": {
+    "assessment_id": "20260907T153857705816Z",
+    "artifact": "reports/event_risk_metadata.json",
+    "artifact_hash": "8cb8943ac32e010a5bed8976184ee08fb11e320b854ec8ab165a5b4ac0998780",
+    "bundle_hash": "07603bf49b655531ed9fa5a418ddd640366466f6a80a90428a003f31b50d61f7",
+    "selector": {
+      "retrieval_query": "IMF data use limitations fiscal revenue projection not official forecast"
+    },
+    "value": "{\n  \"climate\": {\n    \"forecast_issue\": \"2026-08\",\n    \"forecast_issue_date\": \"2026-08-13\",\n    \"official_last_center_month\": \"2027-04-01\",\n    \"imf_metadata\": {\n      \"revenue_pct_gdp\": {\n        \"label\": \"Revenue\",\n        \"description\": \"Revenue\",\n        \"source\": \"Fiscal Monitor (April 2026)\",\n        \"unit\": \"% of GDP\",\n        \"dataset\": \"FM\",\n        \"projection-year\": 2026,\n        \"last-modified\": \"2026-04-15 00:15:26\"\n      },\n      \"gdp_usd \u2026 ",
+    "unit": null,
+    "scenario_id": null
+  },
+  "4d05b2a3c3b503c98df9fbe0": {
+    "assessment_id": "20260907T153857705816Z",
+    "artifact": "docs/DATA_SOURCES.md",
+    "artifact_hash": "9a011130eadade3be74f7cd23fd72d76830ccfacaaee886bcc970b4c93d060f4",
+    "bundle_hash": "07603bf49b655531ed9fa5a418ddd640366466f6a80a90428a003f31b50d61f7",
+    "selector": {
+      "retrieval_query": "IMF data use limitations fiscal revenue projection not official forecast"
+    },
+    "value": " \u2026 Generic fiscal-capture assumptions below do not apply to the primary event pipeline.\n\n# Data sources and selection rationale\n\nAll implemented economic and climate observations come directly from official providers.\nThe Fortune article supplied the topic, not training labels or a numeric loss target.\nExact retrieval timestamps, URLs, byte counts, last \u2026 ",
+    "unit": null,
+    "scenario_id": null
+  },
+  "76396b9d49bd5afa7bc97ea3": {
+    "assessment_id": "20260907T153857705816Z",
+    "artifact": "docs/OPERATIONS.md",
+    "artifact_hash": "57e79da8d523dbb70382d41e3caa0ea3fec31074e2cd6341171d7aad51dd945f",
+    "bundle_hash": "07603bf49b655531ed9fa5a418ddd640366466f6a80a90428a003f31b50d61f7",
+    "selector": {
+      "retrieval_query": "IMF data use limitations fiscal revenue projection not official forecast"
+    },
+    "value": " \u2026 Generic fiscal-capture assumptions below do not apply to the primary event pipeline.\n\n# Operating the update pipeline\n\n`uv run tradewinds update` refreshes official sources, normalizes data, checks training fingerprints,\nrefits changed training inputs, reruns analyses when needed, refreshes the statistical ENSO outlook,\nand generates a self-contained report directory. Source \u2026 ",
+    "unit": null,
+    "scenario_id": null
+  }
+}

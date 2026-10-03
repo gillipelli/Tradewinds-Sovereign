@@ -1,0 +1,47 @@
+{
+  "title": "Fiscal model and causal tax policy response for Papua New Guinea",
+  "claims": [
+    {
+      "kind": "interpretation",
+      "text": "No. The fiscal model for Papua New Guinea does not support a causal estimate of the tax policy response. The fiscal model estimates conditional government revenue transmission from agricultural and non-agricultural growth contributions, lagged revenue growth, a trend, and a pandemic indicator; it is not a policy-response model.",
+      "evidence_ids": [
+        "52391358d41f75e82a6cac8e"
+      ],
+      "value": null,
+      "unit": null
+    },
+    {
+      "kind": "descriptive",
+      "text": "The assessment's metadata explicitly sets causal identification to false for the fiscal model, the agriculture model, and the assessment as a whole, and states that historical validation is conditional.",
+      "evidence_ids": [
+        "52391358d41f75e82a6cac8e"
+      ],
+      "value": null,
+      "unit": null
+    },
+    {
+      "kind": "interpretation",
+      "text": "The fiscal relationship is an empirically estimated association between sectoral growth and revenue growth in historical training data; it cannot separate discretionary tax policy changes from automatic revenue responses, so any fiscal figure for Papua New Guinea should be read as a scenario-based conditional estimate, not a causal tax policy effect.",
+      "evidence_ids": [
+        "6a3609e226c50f9727c0b471"
+      ],
+      "value": null,
+      "unit": null
+    },
+    {
+      "kind": "descriptive",
+      "text": "Generic fiscal-capture assumptions in historical supporting documents do not transfer to the primary event pipeline and must not be used to construct such a causal claim.",
+      "evidence_ids": [
+        "ab0e3fe45342154052fccef1"
+      ],
+      "value": null,
+      "unit": null
+    }
+  ],
+  "limitations": [
+    "Causal identification is explicitly false throughout the assessment; no causal tax policy response can be estimated for any modeled country, including Papua New Guinea.",
+    "The fiscal model covers general government revenue including grants, not tax policy instruments specifically.",
+    "Historical supporting crop and fiscal-capture assumptions from supporting documents do not apply to the primary event model.",
+    "Historical input provenance is incomplete; the assessment is available for inspection only and cannot be recomputed."
+  ]
+}

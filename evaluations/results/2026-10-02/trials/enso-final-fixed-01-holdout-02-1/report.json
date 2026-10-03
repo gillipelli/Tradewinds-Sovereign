@@ -1,0 +1,69 @@
+{
+  "title": "Indonesia and Thailand loss probabilities",
+  "claims": [
+    {
+      "kind": "metadata",
+      "text": "{'json_path': ['climate', 'as_of']}",
+      "evidence_ids": [
+        "4f42001c805c4bda23b1893b"
+      ],
+      "value": "2026-09-07",
+      "unit": "ISO date"
+    },
+    {
+      "kind": "numeric",
+      "text": "{'country': 'IDN', 'year': '2026', 'metric': 'p_revenue_loss'}",
+      "evidence_ids": [
+        "80bb1de056df5d2aec8b9c08"
+      ],
+      "value": 0.5971,
+      "unit": "probability"
+    },
+    {
+      "kind": "numeric",
+      "text": "{'country': 'IDN', 'year': '2027', 'metric': 'p_revenue_loss'}",
+      "evidence_ids": [
+        "3faa69665a5de6602911cd2e"
+      ],
+      "value": 0.5325,
+      "unit": "probability"
+    },
+    {
+      "kind": "numeric",
+      "text": "{'country': 'THA', 'year': '2026', 'metric': 'p_revenue_loss'}",
+      "evidence_ids": [
+        "10e0b97287f3ad31fe608f97"
+      ],
+      "value": 0.6512,
+      "unit": "probability"
+    },
+    {
+      "kind": "numeric",
+      "text": "{'country': 'THA', 'year': '2027', 'metric': 'p_revenue_loss'}",
+      "evidence_ids": [
+        "b7c2b4e8189dbc79e398f8eb"
+      ],
+      "value": 0.5869,
+      "unit": "probability"
+    },
+    {
+      "kind": "interpretation",
+      "text": "In both modeled years Thailand's probability of a conditional revenue loss exceeds Indonesia's, so on the annual evidence available Thailand shows the higher loss probability each year.",
+      "evidence_ids": [
+        "80bb1de056df5d2aec8b9c08",
+        "3faa69665a5de6602911cd2e",
+        "10e0b97287f3ad31fe608f97",
+        "b7c2b4e8189dbc79e398f8eb"
+      ],
+      "value": null,
+      "unit": null
+    }
+  ],
+  "limitations": [
+    "The evidence packet does not include cumulative two-year (joint) loss probabilities for Indonesia or Thailand; the only cumulative country cell provided is Australia, so the requested cumulative comparison cannot be made from this fixed evidence.",
+    "Cumulative probabilities cannot be derived by summing annual probabilities, and no adaptive tool was available to retrieve or compute them.",
+    "Probabilities are reported as tool-returned probabilities; no unit-conversion tool was available to render them as percentages, so the conversion is left to the application.",
+    "Values are conditional on the assessment's stated ENSO scenario and macroeconomic path; they are not causal identifications and not sovereign default probabilities.",
+    "Historical input provenance is incomplete per the manifest; the assessment is marked for inspection only and not recomputable."
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "title": "Pacific islands expected loss versus tail shortfall",
+  "claims": [
+    {
+      "kind": "numeric",
+      "text": "{'scope': 'Pacific_islands', 'period': '2026', 'metric': 'revenue_loss_2025usd_mean'}",
+      "evidence_ids": [
+        "b11d96e380384aff6c6f30a3"
+      ],
+      "value": 6849618.363448219,
+      "unit": "2025 USD"
+    },
+    {
+      "kind": "numeric",
+      "text": "{'scope': 'Pacific_islands', 'period': '2026', 'metric': 'es95_2025usd'}",
+      "evidence_ids": [
+        "2851df2260f5d843832c3447"
+      ],
+      "value": 103793649.58191334,
+      "unit": "2025 USD"
+    },
+    {
+      "kind": "descriptive",
+      "text": "The two measures differ because they describe different parts of the loss distribution. The mean is a signed average over all simulated outcomes, retaining cases of revenue gain as well as loss, so gains offset losses. The expected shortfall is a positive-part tail measure: it averages only the losses beyond the extreme upper percentile of the loss distribution, ignoring gains and near-average outcomes entirely. A right-skewed distribution with a modest central tendency but a fat adverse tail therefore shows a tail shortfall far above the mean.",
+      "evidence_ids": [
+        "34ae8a6ade18c07833e38523"
+      ],
+      "value": null,
+      "unit": null
+    },
+    {
+      "kind": "interpretation",
+      "text": "For planning purposes the mean quantifies the expected central-case fiscal drag, while the expected shortfall quantifies the size of severe-but-plausible outcomes in the worst tail, making it the more relevant figure for contingency buffers. The two figures should not be compared as if one were an error in the other; they answer different questions by construction.",
+      "evidence_ids": [
+        "34ae8a6ade18c07833e38523"
+      ],
+      "value": null,
+      "unit": null
+    }
+  ],
+  "limitations": [
+    "Assessment inputs have incomplete historical provenance and are for inspection only; recomputation is not supported.",
+    "Estimates are conditional event-specific risk figures, not observed losses, a total-economy loss measure, or a sovereign default probability.",
+    "The fiscal model captures historical associations, not causal identification.",
+    "Monetary values are in constant 2025 USD at a fixed 2025 exchange rate; price and exchange-rate responses are not modeled.",
+    "Aggregate figures are joint simulation-based; country quantiles are never summed and the Pacific islands aggregate is not a validated official budget forecast."
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "title": "Likelihood of revenue loss in the late-year rebound scenario",
+  "claims": [
+    {
+      "kind": "numeric",
+      "text": "{'scope': 'all_modeled', 'period': '2026\u20132027', 'metric': 'p_revenue_loss'}",
+      "evidence_ids": [
+        "53279b54b498a5782e8004a1"
+      ],
+      "value": 0.6245,
+      "unit": "probability"
+    },
+    {
+      "kind": "numeric",
+      "text": "{'scope': 'all_modeled', 'period': '2026\u20132027', 'metric': 'p_revenue_loss'}",
+      "evidence_ids": [
+        "43237dd56abe2bf1f46a13aa"
+      ],
+      "value": 0.625,
+      "unit": "probability"
+    },
+    {
+      "kind": "numeric",
+      "text": "{'comparison': 'central minus la_nina_late_2027', 'scope': 'all_modeled', 'period': '2026\u20132027', 'metric': 'p_revenue_loss'}",
+      "evidence_ids": [
+        "62155d7eb8759f70116d9727"
+      ],
+      "value": 0.0004999999999999449,
+      "unit": "probability"
+    },
+    {
+      "kind": "descriptive",
+      "text": "The late-year rebound variant applies a La Nina rebound climate extension with empirical dependence and is drawn from the sensitivity table; scenario labels are labels, not ratios to fitted central parameters.",
+      "evidence_ids": [
+        "406b9dc11097e3324284ba3d"
+      ],
+      "value": null,
+      "unit": null
+    },
+    {
+      "kind": "interpretation",
+      "text": "The reported value is the probability of any revenue loss in that scenario's conditional distribution, not the probability that the scenario itself occurs; the sensitivity alternatives are not assigned occurrence probabilities and do not define a calibrated credible interval.",
+      "evidence_ids": [
+        "2277d2c750323c99e529a03c"
+      ],
+      "value": null,
+      "unit": null
+    }
+  ],
+  "limitations": [
+    "Scenario values are conditional sensitivities, not occurrence likelihoods; alternatives do not bracket a calibrated credible interval.",
+    "The probability of loss is reported for the all_modeled aggregate over the joint two-year horizon; country quantiles are never summed.",
+    "Values derive from a conditional event study whose historical validation is conditional and does not establish causal identification."
+  ]
+}

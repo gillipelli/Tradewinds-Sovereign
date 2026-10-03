@@ -1,0 +1,76 @@
+{
+  "title": "Pacific islands expected loss versus tail shortfall",
+  "claims": [
+    {
+      "kind": "metadata",
+      "text": "{'json_path': ['climate', 'as_of']}",
+      "evidence_ids": [
+        "4f42001c805c4bda23b1893b"
+      ],
+      "value": "2026-09-07",
+      "unit": "ISO date"
+    },
+    {
+      "kind": "metadata",
+      "text": "{'json_path': ['climate', 'forecast_issue']}",
+      "evidence_ids": [
+        "fac6ca3fd4b1ee0242e119e3"
+      ],
+      "value": "2026-08",
+      "unit": "ISO month"
+    },
+    {
+      "kind": "numeric",
+      "text": "{'scope': 'Pacific_islands', 'period': '2026', 'metric': 'revenue_loss_2025usd_mean'}",
+      "evidence_ids": [
+        "b11d96e380384aff6c6f30a3"
+      ],
+      "value": 6849618.363448219,
+      "unit": "2025 USD"
+    },
+    {
+      "kind": "numeric",
+      "text": "{'scope': 'Pacific_islands', 'period': '2026', 'metric': 'es95_2025usd'}",
+      "evidence_ids": [
+        "2851df2260f5d843832c3447"
+      ],
+      "value": 103793649.58191334,
+      "unit": "2025 USD"
+    },
+    {
+      "kind": "numeric",
+      "text": "{'scope': 'Pacific_islands', 'period': '2026', 'metric': 'p_revenue_loss'}",
+      "evidence_ids": [
+        "5487e36f697079fb202f8725"
+      ],
+      "value": 0.5902,
+      "unit": "probability"
+    },
+    {
+      "kind": "descriptive",
+      "text": "The estimand is government revenue without this El Ni\u00f1o event minus government revenue with the event, conditional on the stated macroeconomic path, reported jointly across the two modeled years for each economy. Risk is defined such that positive values mean a revenue shortfall relative to neutral conditions; gains are retained in signed estimates, while VaR and ES are applied only to the positive-part shortfall. This is agriculture-linked revenue transmission, not a total-economy loss measure and not a sovereign default probability.",
+      "evidence_ids": [
+        "8d60ab90ce0adccfc631f158"
+      ],
+      "value": null,
+      "unit": null
+    },
+    {
+      "kind": "interpretation",
+      "text": "The two figures differ because they answer different questions. The expected loss is a signed probability-weighted average over all scenarios, including those in which the event leaves revenue higher than the neutral counterfactual; near-balanced gain and loss scenarios pull it close to zero. The expected shortfall at the ninety-five percent level instead averages only the positive-part shortfall over the most adverse tail of the joint simulation, so it necessarily sits far above the mean whenever the tail is heavy. It is not an expectation of typical outcomes but a conditional tail-average used for stress sizing.",
+      "evidence_ids": [
+        "52391358d41f75e82a6cac8e",
+        "8d60ab90ce0adccfc631f158"
+      ],
+      "value": null,
+      "unit": null
+    }
+  ],
+  "limitations": [
+    "Tail figures are reported as positive-part shortfalls while mean figures are signed expectations retaining gains, so the two are not directly comparable magnitudes and their gap is not a confidence interval.",
+    "The assessment is conditional on the stated macroeconomic path and the dated official ENSO forecast vintage; it is not a causal identification and not a total-economy or sovereign-default measure.",
+    "Historical input provenance is incomplete and the bundle is marked inspection-only; values were not independently recomputable from this fixed evidence packet.",
+    "Pacific-islands aggregate figures are pre-computed by the assessment pipeline; country-level quantiles were not summed or recomputed here.",
+    "Simulation results depend on model and scenario assumptions, including unmodeled price and exchange-rate responses; predictive skill is not implied by the reported diagnostics."
+  ]
+}

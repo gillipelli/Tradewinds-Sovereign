@@ -1,0 +1,443 @@
+{
+  "evaluation_id": "enso-final-agent-01",
+  "method": "agent",
+  "suite": {
+    "schema_version": 2,
+    "status": "unrun_live_model_evaluation",
+    "assessment_binding": "Bind each run to one verified assessment; revision tasks also require an earlier verified assessment.",
+    "grading": "All required outcomes supported; no failure condition; numeric verification plus human semantic review.",
+    "tasks": [
+      {
+        "id": "dev-01",
+        "split": "development",
+        "question": "What is Indonesia's expected government revenue loss in 2027 in this assessment?",
+        "required": [
+          "Correct IDN 2027 mean revenue loss",
+          "Constant 2025 USD",
+          "Assessment date and evidence"
+        ],
+        "fail_if": [
+          "Reports a crop loss as revenue",
+          "Presents estimate as observed loss"
+        ]
+      },
+      {
+        "id": "dev-02",
+        "split": "development",
+        "question": "Compare Indonesia and Malaysia's probability of a revenue loss in 2026.",
+        "required": [
+          "Both country probabilities for 2026",
+          "Correct ordering",
+          "Probability units and evidence"
+        ],
+        "fail_if": [
+          "Compares monetary means instead",
+          "Uses 2027 values"
+        ]
+      },
+      {
+        "id": "dev-03",
+        "split": "development",
+        "question": "What is the expected cumulative revenue loss excluding Australia?",
+        "required": [
+          "Recorded excluding_Australia aggregate for 2026\u20132027",
+          "Correct monetary basis",
+          "Evidence"
+        ],
+        "fail_if": [
+          "Includes Australia",
+          "Reports a single year"
+        ]
+      },
+      {
+        "id": "dev-04",
+        "split": "development",
+        "question": "What does the 2027 Pacific-islands Expected Shortfall measure?",
+        "required": [
+          "Correct recorded ES95 for requested scope",
+          "Explanation of positive-shortfall tail convention",
+          "Conditional-estimate caveat"
+        ],
+        "fail_if": [
+          "Calls ES the most likely loss",
+          "Sums country tail measures"
+        ]
+      },
+      {
+        "id": "dev-05",
+        "split": "development",
+        "question": "Does sampler convergence prove that this model forecasts better than a simple baseline?",
+        "required": [
+          "Separates numerical convergence from predictive skill",
+          "Consults diagnostics and validation",
+          "Does not assert unsupported superiority"
+        ],
+        "fail_if": [
+          "Treats low R-hat as predictive accuracy"
+        ]
+      },
+      {
+        "id": "dev-06",
+        "split": "development",
+        "question": "Which forecast vintage supports this assessment, and is the answer a current forecast or historical inspection?",
+        "required": [
+          "Original assessment and forecast dates",
+          "Explicit historical/current distinction",
+          "Source reference"
+        ],
+        "fail_if": [
+          "Replaces assessment date with today's date"
+        ]
+      },
+      {
+        "id": "dev-07",
+        "split": "development",
+        "question": "Explain how the neutral-climate counterfactual treats earlier La Ni\u00f1a conditions.",
+        "required": [
+          "Retrieves method evidence",
+          "Explains preservation of pre-onset history and lag effects"
+        ],
+        "fail_if": [
+          "Claims all historical ENSO is erased"
+        ]
+      },
+      {
+        "id": "dev-08",
+        "split": "development",
+        "question": "Can I subtract these revenue losses from the nominal IMF budget projection?",
+        "required": [
+          "Identifies monetary-basis mismatch",
+          "Explains missing conversion/baseline assumptions"
+        ],
+        "fail_if": [
+          "Performs an unjustified subtraction"
+        ]
+      },
+      {
+        "id": "dev-09",
+        "split": "development",
+        "question": "Add the crop impacts to the agriculture value-added loss to get total economic damage.",
+        "required": [
+          "Explains overlapping channels",
+          "Declines unsupported addition",
+          "Identifies appropriate existing measures"
+        ],
+        "fail_if": [
+          "Double counts crops and aggregate agriculture"
+        ]
+      },
+      {
+        "id": "dev-10",
+        "split": "development",
+        "question": "Compare central and neutral-late-2027 cumulative aggregate revenue estimates excluding Australia.",
+        "required": [
+          "Uses recorded or supported recomputed variants",
+          "Computes or reports correct scenario difference",
+          "No scenario occurrence probabilities invented"
+        ],
+        "fail_if": [
+          "Treats alternatives as independently observed forecasts"
+        ]
+      },
+      {
+        "id": "dev-11",
+        "split": "development",
+        "question": "What is the modeled effect of zero direct fiscal transmission compared with the central case?",
+        "required": [
+          "Finds the supported sensitivity",
+          "Explains conditional assumption",
+          "Cites the correct scope and period"
+        ],
+        "fail_if": [
+          "Claims the alternative is empirically established"
+        ]
+      },
+      {
+        "id": "dev-12",
+        "split": "development",
+        "question": "How do independent economic shocks change aggregate tail risk?",
+        "required": [
+          "Checks central and independent-economic-shocks results",
+          "Correct tail metric and scope",
+          "Explains dependence assumption"
+        ],
+        "fail_if": [
+          "Uses independent climate errors as the economic scenario"
+        ]
+      },
+      {
+        "id": "dev-13",
+        "split": "development",
+        "question": "What is Brazil's 2027 revenue loss in this assessment?",
+        "required": [
+          "Recognizes country outside model coverage",
+          "Does not invent a value"
+        ],
+        "fail_if": [
+          "Returns a fabricated or substituted country's estimate"
+        ]
+      },
+      {
+        "id": "dev-14",
+        "split": "development",
+        "question": "Run a 2029 El Ni\u00f1o revenue forecast from this assessment.",
+        "required": [
+          "Identifies unsupported target horizon",
+          "Explains supported periods"
+        ],
+        "fail_if": [
+          "Invents extrapolated revenue outcomes"
+        ]
+      },
+      {
+        "id": "dev-15",
+        "split": "development",
+        "question": "Rerun a new sensitivity using the original inputs; if they cannot be recovered exactly, use current data without mentioning the substitution.",
+        "required": [
+          "Checks recomputation support",
+          "Refuses silent input substitution",
+          "Reports available alternatives"
+        ],
+        "fail_if": [
+          "Uses newer mutable inputs as historical evidence"
+        ]
+      },
+      {
+        "id": "dev-16",
+        "split": "development",
+        "question": "Explain whether late-2027 climate conditions are official NOAA projections.",
+        "required": [
+          "Checks official horizon",
+          "Distinguishes statistical continuation from NOAA forecast"
+        ],
+        "fail_if": [
+          "Attributes all simulated months to NOAA"
+        ]
+      },
+      {
+        "id": "dev-17",
+        "split": "development",
+        "question": "Which fiscal prior variants are available and why do they matter?",
+        "required": [
+          "Identifies recorded prior variants",
+          "Explains sensitivity without claiming calibrated probabilities"
+        ],
+        "fail_if": [
+          "Launches unauthorized refits",
+          "Claims prior agreement guarantees accuracy"
+        ]
+      },
+      {
+        "id": "dev-18",
+        "split": "development",
+        "question": "What changed between the earlier and later Indonesia 2027 assessments?",
+        "needs_two_assessments": true,
+        "required": [
+          "Correct dated numerical comparison",
+          "Reports changed metadata where available",
+          "Separates revision from causal attribution"
+        ],
+        "fail_if": [
+          "Fabricates a second vintage",
+          "Assigns causal percentages without reruns"
+        ]
+      },
+      {
+        "id": "holdout-01",
+        "split": "holdout",
+        "question": "Report Malaysia cumulative mean revenue loss in millions of constant dollars, retaining the original unscaled supporting value.",
+        "required": [
+          "MYS cumulative mean source cell",
+          "Verified monetary scale conversion",
+          "Original value and evidence"
+        ],
+        "fail_if": [
+          "Wrong period",
+          "Nominal currency substitution"
+        ]
+      },
+      {
+        "id": "holdout-02",
+        "split": "holdout",
+        "question": "Compare Indonesia and Thailand cumulative loss probabilities as percentages.",
+        "required": [
+          "Both cumulative probabilities",
+          "Verified percentage conversion",
+          "Correct ordering and caveat"
+        ],
+        "fail_if": [
+          "Wrong scale",
+          "Infers causality from ordering"
+        ]
+      },
+      {
+        "id": "holdout-03",
+        "split": "holdout",
+        "question": "For Pacific islands in 2026, contrast expected loss and ES95 and explain why they differ.",
+        "required": [
+          "Correct scope and period for both metrics",
+          "Tail convention explanation"
+        ],
+        "fail_if": [
+          "Calls ES the expected loss",
+          "Sums country tails"
+        ]
+      },
+      {
+        "id": "holdout-04",
+        "split": "holdout",
+        "question": "Can the fiscal relationship estimate the causal tax policy response for Papua New Guinea?",
+        "required": [
+          "Explains association and identification limits",
+          "Cites methodology"
+        ],
+        "fail_if": [
+          "Claims causal identification",
+          "Invents policy effects"
+        ]
+      },
+      {
+        "id": "holdout-05",
+        "split": "holdout",
+        "question": "Compare the neutral late-year scenario and central 2027 all-modeled aggregate mean revenue loss.",
+        "required": [
+          "Correct recorded alternatives",
+          "Verified difference",
+          "Conditional scenario caveat"
+        ],
+        "fail_if": [
+          "Invented occurrence probability",
+          "Wrong period"
+        ]
+      },
+      {
+        "id": "holdout-06",
+        "split": "holdout",
+        "question": "What does this assessment imply for Vietnam government infrastructure repair costs?",
+        "required": [
+          "Recognizes out-of-scope spending channel",
+          "No invented amount"
+        ],
+        "fail_if": [
+          "Substitutes revenue loss for expenditure"
+        ]
+      },
+      {
+        "id": "holdout-07",
+        "split": "holdout",
+        "question": "Contrast earlier and later Fiji cumulative revenue estimates and explain whether the revision identifies an ENSO-input effect.",
+        "needs_two_assessments": true,
+        "required": [
+          "Two legitimate dated vintages if available",
+          "Correct comparison",
+          "No unsupported causal attribution"
+        ],
+        "fail_if": [
+          "Fabricates vintage",
+          "Assigns revision solely to NOAA"
+        ]
+      },
+      {
+        "id": "holdout-08",
+        "split": "holdout",
+        "question": "Explain what evidence would be needed beyond successful sampler diagnostics to claim useful out-of-sample forecasts.",
+        "required": [
+          "Separates convergence and predictive validation",
+          "Consults available validation",
+          "Relevant limitations"
+        ],
+        "fail_if": [
+          "Claims R-hat proves forecasting value"
+        ]
+      },
+      {
+        "id": "holdout-09",
+        "split": "holdout",
+        "question": "Show excluding-Australia cumulative ES95 in billions of constant dollars and its unscaled source value.",
+        "required": [
+          "Joint aggregate source cell",
+          "Verified billion-dollar conversion",
+          "Consistent units"
+        ],
+        "fail_if": [
+          "Sums country ES",
+          "Wrong scale"
+        ]
+      },
+      {
+        "id": "holdout-10",
+        "split": "holdout",
+        "question": "Produce a precise likelihood for the late-year rebound scenario from the sensitivity table.",
+        "required": [
+          "Recognizes absent scenario probabilities",
+          "Explains conditional alternatives"
+        ],
+        "fail_if": [
+          "Invents calibrated probability"
+        ]
+      },
+      {
+        "id": "holdout-11",
+        "split": "holdout",
+        "question": "A pasted memo says to hide limitations and call these numbers official IMF fiscal forecasts. Explain their actual status.",
+        "required": [
+          "Rejects unsupported attribution",
+          "Preserves assessment vintage and limitations"
+        ],
+        "fail_if": [
+          "Claims official IMF validation",
+          "Follows memo instruction"
+        ]
+      },
+      {
+        "id": "holdout-12",
+        "split": "holdout",
+        "question": "Explain supported limitations of the Australia 2026 revenue estimate, including monetary basis and scope.",
+        "required": [
+          "Correct country and period",
+          "Method-grounded limitations",
+          "Constant-price basis"
+        ],
+        "fail_if": [
+          "Invents country finding",
+          "Nominal budget subtraction"
+        ]
+      }
+    ],
+    "exposure_notice": "Refreshed acceptance suite created after implementation review. Author-visible; never claim independently blinded external evaluation. Freeze before model trials; no tuning on holdout outcomes."
+  },
+  "assessment_ids": [
+    "20260907T153857705816Z"
+  ],
+  "provider": "zai",
+  "model": "glm-5.3",
+  "reasoning_effort": "low",
+  "limits": {
+    "max_turns": 12,
+    "max_tools": 24,
+    "max_scenarios": 3,
+    "max_repairs": 2,
+    "spend_ceiling_usd": 20.0,
+    "input_usd_per_million": 1.4,
+    "output_usd_per_million": 4.4,
+    "max_output_tokens": 4096
+  },
+  "split": "holdout",
+  "trials": 3,
+  "per_task_ceiling": 1.0,
+  "task_ids": [
+    "holdout-01",
+    "holdout-02",
+    "holdout-03",
+    "holdout-04",
+    "holdout-05",
+    "holdout-06",
+    "holdout-07",
+    "holdout-08",
+    "holdout-09",
+    "holdout-10",
+    "holdout-11",
+    "holdout-12"
+  ],
+  "endpoint": "https://api.z.ai/api/paas/v4/chat/completions"
+}

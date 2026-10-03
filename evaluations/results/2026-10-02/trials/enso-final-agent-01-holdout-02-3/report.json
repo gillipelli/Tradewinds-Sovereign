@@ -1,0 +1,40 @@
+{
+  "title": "Indonesia and Thailand cumulative revenue-loss probabilities compared",
+  "claims": [
+    {
+      "kind": "numeric",
+      "text": "{'country': 'IDN', 'year': '2026\u20132027', 'metric': 'p_revenue_loss'}",
+      "evidence_ids": [
+        "5053852baf259a384a00c251"
+      ],
+      "value": 57.69,
+      "unit": "percent"
+    },
+    {
+      "kind": "numeric",
+      "text": "{'country': 'THA', 'year': '2026\u20132027', 'metric': 'p_revenue_loss'}",
+      "evidence_ids": [
+        "94a12b5598e7d2f42e88942b"
+      ],
+      "value": 62.27,
+      "unit": "percent"
+    },
+    {
+      "kind": "interpretation",
+      "text": "Thailand shows a higher cumulative probability of revenue loss than Indonesia, though the gap between the two is modest; this is an association under the conditional model, not a causal ranking.",
+      "evidence_ids": [
+        "5053852baf259a384a00c251",
+        "94a12b5598e7d2f42e88942b"
+      ],
+      "value": null,
+      "unit": null
+    }
+  ],
+  "limitations": [
+    "Cumulative probabilities are conditional on the ENSO event scenario and fiscal transmission assumptions; they are not sovereign default probabilities.",
+    "Historical input provenance is incomplete; this assessment is for inspection only and is not recomputable.",
+    "The measure reflects agriculture, forestry and fishing value added plus conditional government revenue transmission, not total-economy loss.",
+    "Price and exchange-rate responses are not modeled; results are in constant 2025 USD at a fixed 2025 exchange rate.",
+    "Country-level probabilities are marginal to each country and cannot be summed or combined across countries."
+  ]
+}

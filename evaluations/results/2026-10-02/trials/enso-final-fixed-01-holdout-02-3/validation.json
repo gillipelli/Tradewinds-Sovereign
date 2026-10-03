@@ -1,0 +1,14 @@
+{
+  "passed": false,
+  "errors": [
+    {
+      "claim": 0,
+      "error": "Metadata claims require exactly one matching verified date or month"
+    },
+    {
+      "claim": 1,
+      "error": "Metadata claims require exactly one matching verified date or month"
+    }
+  ],
+  "semantic_review": "Descriptive and interpretive prose is not automatically scientifically validated."
+}

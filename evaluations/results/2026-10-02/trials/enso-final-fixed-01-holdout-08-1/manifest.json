@@ -1,0 +1,8 @@
+{
+  "run_id": "enso-final-fixed-01-holdout-08-1",
+  "method": "fixed_evidence",
+  "provider": "zai",
+  "model": "glm-5.3",
+  "schema_hash": "13decbbb1c10be88db821e0b217f55a50aaea10b37934089b88a4c29bc09d999",
+  "system_hash": "7a35a52da0faeb86c360864a14948eb0656a4dfa362dcd11c8791966006412dd"
+}

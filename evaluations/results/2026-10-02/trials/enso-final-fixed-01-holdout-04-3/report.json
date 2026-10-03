@@ -1,0 +1,85 @@
+{
+  "title": "Causal tax policy response for Papua New Guinea is not identified",
+  "claims": [
+    {
+      "kind": "interpretation",
+      "text": "No. The fiscal model is explicitly flagged with causal identification disabled, so its estimated agriculture-to-revenue relationship cannot be used to estimate a causal tax policy response for Papua New Guinea or any other country. The estimates are conditional scenario differences under a stated macroeconomic path, not causal effects of tax policy changes.",
+      "evidence_ids": [
+        "52391358d41f75e82a6cac8e"
+      ],
+      "value": null,
+      "unit": null
+    },
+    {
+      "kind": "descriptive",
+      "text": "The fiscal model is a conditional government revenue transmission model trained on panel observations with features limited to sector growth contributions, lagged revenue growth, a trend, and a pandemic indicator. It contains no tax policy or fiscal instrument variables, so it cannot isolate how tax rates, exemptions, or administrative measures respond to or offset an El Ni\u00f1o shock.",
+      "evidence_ids": [
+        "52391358d41f75e82a6cac8e"
+      ],
+      "value": null,
+      "unit": null
+    },
+    {
+      "kind": "descriptive",
+      "text": "The assessment frames its output as government revenue without the event minus government revenue with the event, conditional on the stated macroeconomic path. This is a scenario contrast, not a policy-response counterfactual: any endogenous tax policy action by authorities is not separately identified or modeled.",
+      "evidence_ids": [
+        "52391358d41f75e82a6cac8e"
+      ],
+      "value": null,
+      "unit": null
+    },
+    {
+      "kind": "numeric",
+      "text": "{'country': 'PNG', 'year': '2026', 'metric': 'revenue_loss_2025usd_mean'}",
+      "evidence_ids": [
+        "d3179129b4b44b93fa7defae"
+      ],
+      "value": 5669605.225507055,
+      "unit": "2025 USD"
+    },
+    {
+      "kind": "numeric",
+      "text": "{'country': 'PNG', 'year': '2026', 'metric': 'p_revenue_loss'}",
+      "evidence_ids": [
+        "de0d174660e0c7fcbfa4ce21"
+      ],
+      "value": 0.59,
+      "unit": "probability"
+    },
+    {
+      "kind": "numeric",
+      "text": "{'country': 'PNG', 'year': '2026', 'metric': 'revenue_loss_es95_2025usd'}",
+      "evidence_ids": [
+        "46e9656e8332da089168e69b"
+      ],
+      "value": 91744250.78602137,
+      "unit": "2025 USD"
+    },
+    {
+      "kind": "descriptive",
+      "text": "Convergence diagnostics pass for the fiscal model, but passing diagnostics support computational reliability only; they do not establish causal identification and must not be read as predictive skill for policy responses.",
+      "evidence_ids": [
+        "52391358d41f75e82a6cac8e"
+      ],
+      "value": null,
+      "unit": null
+    },
+    {
+      "kind": "metadata",
+      "text": "{'json_path': ['climate', 'as_of']}",
+      "evidence_ids": [
+        "4f42001c805c4bda23b1893b"
+      ],
+      "value": "2026-09-07",
+      "unit": "ISO date"
+    }
+  ],
+  "limitations": [
+    "Causal identification is explicitly disabled in the assessment metadata for the fiscal model, so no causal tax policy response can be estimated for Papua New Guinea from this evidence.",
+    "The fiscal model includes no tax policy variables; revenue outcomes are modeled as conditional on sector growth contributions, lagged revenue growth, trend, and a pandemic indicator.",
+    "Historical validation is conditional on realized inputs and latest revised history; it does not demonstrate out-of-sample skill for policy interventions.",
+    "Price and exchange-rate responses are not modeled, and revenue includes grants, which further limits interpretation as a tax policy quantity.",
+    "The signed mean loss and the positive-part expected shortfall are distinct quantities; the shortfall applies only to the positive part of the loss distribution.",
+    "The evidence packet is fixed and bounded; no adaptive retrieval was available to obtain additional country-specific or scenario-parameter evidence."
+  ]
+}

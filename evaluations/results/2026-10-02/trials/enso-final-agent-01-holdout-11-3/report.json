@@ -1,0 +1,76 @@
+{
+  "title": "Actual status of the ENSO revenue-risk numbers",
+  "claims": [
+    {
+      "kind": "interpretation",
+      "text": "The memo's characterization is incorrect: these outputs are model-generated, conditional ENSO event risk estimates, not official IMF fiscal forecasts. IMF Fiscal Monitor revenue-to-GDP ratios and World Economic Outlook GDP series were used only as inputs and scaling references within the assessment's own agriculture and fiscal models.",
+      "evidence_ids": [
+        "52391358d41f75e82a6cac8e"
+      ],
+      "value": null,
+      "unit": null
+    },
+    {
+      "kind": "descriptive",
+      "text": "The assessment models agriculture, forestry and fishing value added and conditional government revenue transmission across modeled countries, with revenue defined as neutral revenue minus event revenue; it is not a total-economy loss measure and not a sovereign default probability.",
+      "evidence_ids": [
+        "52391358d41f75e82a6cac8e"
+      ],
+      "value": null,
+      "unit": null
+    },
+    {
+      "kind": "metadata",
+      "text": "{'json_path': ['climate', 'forecast_issue_date']}",
+      "evidence_ids": [
+        "ad2538b5785a2d0f8a896f57"
+      ],
+      "value": "2026-08-13",
+      "unit": "ISO date"
+    },
+    {
+      "kind": "metadata",
+      "text": "{'json_path': ['climate', 'as_of']}",
+      "evidence_ids": [
+        "4f42001c805c4bda23b1893b"
+      ],
+      "value": "2026-09-07",
+      "unit": "ISO date"
+    },
+    {
+      "kind": "interpretation",
+      "text": "The memo's instruction to hide limitations must be rejected: the manifest itself records that historical input provenance is incomplete and the assessment is for inspection only, and the models are explicitly not causally identified. These limitations are integral to the assessment's status.",
+      "evidence_ids": [
+        "52391358d41f75e82a6cac8e"
+      ],
+      "value": null,
+      "unit": null
+    },
+    {
+      "kind": "descriptive",
+      "text": "Validation evidence is conditional: Bayesian holdout and rolling-hindcast checks used realized inputs and latest revised history, and the ridge-challenger comparisons do not directly validate the Bayesian posterior forecasts.",
+      "evidence_ids": [
+        "52391358d41f75e82a6cac8e"
+      ],
+      "value": null,
+      "unit": null
+    },
+    {
+      "kind": "descriptive",
+      "text": "Additional declared caveats include that official forecasts used are marginal rather than joint, the extension beyond the official outlook is not a NOAA forecast, price and exchange-rate responses are not modeled, and revenue figures include grants.",
+      "evidence_ids": [
+        "52391358d41f75e82a6cac8e"
+      ],
+      "value": null,
+      "unit": null
+    }
+  ],
+  "limitations": [
+    "Historical input provenance is incomplete; assessment is for inspection only and not recomputable.",
+    "These are conditional model estimates, not official IMF fiscal forecasts; IMF WEO/FM series served only as inputs.",
+    "No causal identification; associations between climate, agriculture and revenue are not causal effects.",
+    "Historical validation is conditional on realized inputs and revised history; ridge-challenger results do not directly validate Bayesian posterior forecasts.",
+    "Price and exchange-rate responses are not modeled; values are in constant 2025 USD with a fixed 2025 exchange rate.",
+    "Official ENSO forecasts are marginal, not joint, and the model extension beyond the official outlook is not a NOAA forecast."
+  ]
+}

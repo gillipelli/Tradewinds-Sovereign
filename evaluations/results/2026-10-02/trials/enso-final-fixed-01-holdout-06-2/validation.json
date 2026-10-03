@@ -1,0 +1,22 @@
+{
+  "passed": false,
+  "errors": [
+    {
+      "claim": 3,
+      "error": "Numeric value or unit does not match evidence"
+    },
+    {
+      "claim": 5,
+      "error": "Numeric value or unit does not match evidence"
+    },
+    {
+      "claim": 6,
+      "error": "Numeric value or unit does not match evidence"
+    },
+    {
+      "claim": 8,
+      "error": "Numeric value or unit does not match evidence"
+    }
+  ],
+  "semantic_review": "Descriptive and interpretive prose is not automatically scientifically validated."
+}

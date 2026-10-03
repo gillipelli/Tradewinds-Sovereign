@@ -1,0 +1,694 @@
+{
+  "created_utc": "2026-10-03T01:01:46.604828+00:00",
+  "status": "Execution complete; independent model-assisted semantic review separate; human review pending",
+  "source_freeze_sha256": "4363656b13d121b0a9364b56eefdf898397d56097686cac4a6a9ade681a14682",
+  "project_budget": {
+    "limit": 6000000,
+    "charged": 4314254,
+    "remaining": 1685746
+  },
+  "evaluations": {
+    "enso-final-agent-01": {
+      "machine_summary": {
+        "trial_count": 36,
+        "status_counts": {
+          "completed": 32,
+          "unavailable": 3,
+          "failed": 1
+        },
+        "available_trials": 33,
+        "reviewed_trials": 0,
+        "input_tokens": 1080652,
+        "output_tokens": 29399
+      },
+      "ledger": {
+        "requests": 129,
+        "input_tokens": 1080652,
+        "output_tokens": 29399,
+        "charged_or_reserved": 1173054,
+        "status_counts": {
+          "settled": 128,
+          "uncertain": 1
+        },
+        "unresolved": [
+          {
+            "request_id": "bc55220eb1f3438e938a42644016238f",
+            "run_id": "enso-final-agent-01-holdout-11-1",
+            "status": "uncertain",
+            "charged": 63003
+          }
+        ]
+      },
+      "per_task": {
+        "holdout-01": [
+          {
+            "trial": 1,
+            "status": "completed",
+            "reason": null
+          },
+          {
+            "trial": 2,
+            "status": "completed",
+            "reason": null
+          },
+          {
+            "trial": 3,
+            "status": "completed",
+            "reason": null
+          }
+        ],
+        "holdout-02": [
+          {
+            "trial": 1,
+            "status": "completed",
+            "reason": null
+          },
+          {
+            "trial": 2,
+            "status": "completed",
+            "reason": null
+          },
+          {
+            "trial": 3,
+            "status": "completed",
+            "reason": null
+          }
+        ],
+        "holdout-03": [
+          {
+            "trial": 1,
+            "status": "completed",
+            "reason": null
+          },
+          {
+            "trial": 2,
+            "status": "completed",
+            "reason": null
+          },
+          {
+            "trial": 3,
+            "status": "completed",
+            "reason": null
+          }
+        ],
+        "holdout-04": [
+          {
+            "trial": 1,
+            "status": "completed",
+            "reason": null
+          },
+          {
+            "trial": 2,
+            "status": "completed",
+            "reason": null
+          },
+          {
+            "trial": 3,
+            "status": "completed",
+            "reason": null
+          }
+        ],
+        "holdout-05": [
+          {
+            "trial": 1,
+            "status": "completed",
+            "reason": null
+          },
+          {
+            "trial": 2,
+            "status": "completed",
+            "reason": null
+          },
+          {
+            "trial": 3,
+            "status": "completed",
+            "reason": null
+          }
+        ],
+        "holdout-06": [
+          {
+            "trial": 1,
+            "status": "completed",
+            "reason": null
+          },
+          {
+            "trial": 2,
+            "status": "completed",
+            "reason": null
+          },
+          {
+            "trial": 3,
+            "status": "completed",
+            "reason": null
+          }
+        ],
+        "holdout-07": [
+          {
+            "trial": 1,
+            "status": "unavailable",
+            "reason": "Requires two legitimate assessment vintages"
+          },
+          {
+            "trial": 2,
+            "status": "unavailable",
+            "reason": "Requires two legitimate assessment vintages"
+          },
+          {
+            "trial": 3,
+            "status": "unavailable",
+            "reason": "Requires two legitimate assessment vintages"
+          }
+        ],
+        "holdout-08": [
+          {
+            "trial": 1,
+            "status": "completed",
+            "reason": null
+          },
+          {
+            "trial": 2,
+            "status": "completed",
+            "reason": null
+          },
+          {
+            "trial": 3,
+            "status": "completed",
+            "reason": null
+          }
+        ],
+        "holdout-09": [
+          {
+            "trial": 1,
+            "status": "completed",
+            "reason": null
+          },
+          {
+            "trial": 2,
+            "status": "completed",
+            "reason": null
+          },
+          {
+            "trial": 3,
+            "status": "completed",
+            "reason": null
+          }
+        ],
+        "holdout-10": [
+          {
+            "trial": 1,
+            "status": "completed",
+            "reason": null
+          },
+          {
+            "trial": 2,
+            "status": "completed",
+            "reason": null
+          },
+          {
+            "trial": 3,
+            "status": "completed",
+            "reason": null
+          }
+        ],
+        "holdout-11": [
+          {
+            "trial": 1,
+            "status": "failed",
+            "reason": "The read operation timed out"
+          },
+          {
+            "trial": 2,
+            "status": "completed",
+            "reason": null
+          },
+          {
+            "trial": 3,
+            "status": "completed",
+            "reason": null
+          }
+        ],
+        "holdout-12": [
+          {
+            "trial": 1,
+            "status": "completed",
+            "reason": null
+          },
+          {
+            "trial": 2,
+            "status": "completed",
+            "reason": null
+          },
+          {
+            "trial": 3,
+            "status": "completed",
+            "reason": null
+          }
+        ]
+      }
+    },
+    "enso-final-fixed-01": {
+      "machine_summary": {
+        "trial_count": 36,
+        "status_counts": {
+          "incomplete": 18,
+          "completed": 14,
+          "unavailable": 3,
+          "failed": 1
+        },
+        "available_trials": 33,
+        "reviewed_trials": 0,
+        "input_tokens": 788394,
+        "output_tokens": 34173
+      },
+      "ledger": {
+        "requests": 33,
+        "input_tokens": 813033,
+        "output_tokens": 38269,
+        "charged_or_reserved": 851302,
+        "status_counts": {
+          "settled": 33
+        },
+        "unresolved": []
+      },
+      "per_task": {
+        "holdout-01": [
+          {
+            "trial": 1,
+            "status": "incomplete",
+            "reason": "Execution or correction budget exhausted"
+          },
+          {
+            "trial": 2,
+            "status": "incomplete",
+            "reason": "Execution or correction budget exhausted"
+          },
+          {
+            "trial": 3,
+            "status": "completed",
+            "reason": null
+          }
+        ],
+        "holdout-02": [
+          {
+            "trial": 1,
+            "status": "completed",
+            "reason": null
+          },
+          {
+            "trial": 2,
+            "status": "incomplete",
+            "reason": "Execution or correction budget exhausted"
+          },
+          {
+            "trial": 3,
+            "status": "incomplete",
+            "reason": "Execution or correction budget exhausted"
+          }
+        ],
+        "holdout-03": [
+          {
+            "trial": 1,
+            "status": "completed",
+            "reason": null
+          },
+          {
+            "trial": 2,
+            "status": "incomplete",
+            "reason": "Execution or correction budget exhausted"
+          },
+          {
+            "trial": 3,
+            "status": "incomplete",
+            "reason": "Execution or correction budget exhausted"
+          }
+        ],
+        "holdout-04": [
+          {
+            "trial": 1,
+            "status": "completed",
+            "reason": null
+          },
+          {
+            "trial": 2,
+            "status": "completed",
+            "reason": null
+          },
+          {
+            "trial": 3,
+            "status": "completed",
+            "reason": null
+          }
+        ],
+        "holdout-05": [
+          {
+            "trial": 1,
+            "status": "completed",
+            "reason": null
+          },
+          {
+            "trial": 2,
+            "status": "completed",
+            "reason": null
+          },
+          {
+            "trial": 3,
+            "status": "incomplete",
+            "reason": "Execution or correction budget exhausted"
+          }
+        ],
+        "holdout-06": [
+          {
+            "trial": 1,
+            "status": "completed",
+            "reason": null
+          },
+          {
+            "trial": 2,
+            "status": "incomplete",
+            "reason": "Execution or correction budget exhausted"
+          },
+          {
+            "trial": 3,
+            "status": "incomplete",
+            "reason": "Execution or correction budget exhausted"
+          }
+        ],
+        "holdout-07": [
+          {
+            "trial": 1,
+            "status": "unavailable",
+            "reason": "Requires two legitimate assessment vintages"
+          },
+          {
+            "trial": 2,
+            "status": "unavailable",
+            "reason": "Requires two legitimate assessment vintages"
+          },
+          {
+            "trial": 3,
+            "status": "unavailable",
+            "reason": "Requires two legitimate assessment vintages"
+          }
+        ],
+        "holdout-08": [
+          {
+            "trial": 1,
+            "status": "failed",
+            "reason": "Unterminated string starting at: line 1 column 6798 (char 6797)"
+          },
+          {
+            "trial": 2,
+            "status": "incomplete",
+            "reason": "Execution or correction budget exhausted"
+          },
+          {
+            "trial": 3,
+            "status": "incomplete",
+            "reason": "Execution or correction budget exhausted"
+          }
+        ],
+        "holdout-09": [
+          {
+            "trial": 1,
+            "status": "incomplete",
+            "reason": "Execution or correction budget exhausted"
+          },
+          {
+            "trial": 2,
+            "status": "incomplete",
+            "reason": "Execution or correction budget exhausted"
+          },
+          {
+            "trial": 3,
+            "status": "incomplete",
+            "reason": "Execution or correction budget exhausted"
+          }
+        ],
+        "holdout-10": [
+          {
+            "trial": 1,
+            "status": "completed",
+            "reason": null
+          },
+          {
+            "trial": 2,
+            "status": "completed",
+            "reason": null
+          },
+          {
+            "trial": 3,
+            "status": "completed",
+            "reason": null
+          }
+        ],
+        "holdout-11": [
+          {
+            "trial": 1,
+            "status": "incomplete",
+            "reason": "Execution or correction budget exhausted"
+          },
+          {
+            "trial": 2,
+            "status": "completed",
+            "reason": null
+          },
+          {
+            "trial": 3,
+            "status": "incomplete",
+            "reason": "Execution or correction budget exhausted"
+          }
+        ],
+        "holdout-12": [
+          {
+            "trial": 1,
+            "status": "completed",
+            "reason": null
+          },
+          {
+            "trial": 2,
+            "status": "incomplete",
+            "reason": "Execution or correction budget exhausted"
+          },
+          {
+            "trial": 3,
+            "status": "incomplete",
+            "reason": "Execution or correction budget exhausted"
+          }
+        ]
+      }
+    },
+    "enso-adversarial-01": {
+      "machine_summary": {
+        "trial_count": 6,
+        "status_counts": {
+          "completed": 5,
+          "incomplete": 1
+        },
+        "available_trials": 6,
+        "reviewed_trials": 0,
+        "input_tokens": 190249,
+        "output_tokens": 5664
+      },
+      "ledger": {
+        "requests": 21,
+        "input_tokens": 190249,
+        "output_tokens": 5664,
+        "charged_or_reserved": 195913,
+        "status_counts": {
+          "settled": 21
+        },
+        "unresolved": []
+      },
+      "per_task": {
+        "adversarial-dev-01": [
+          {
+            "trial": 1,
+            "status": "completed",
+            "reason": null
+          }
+        ],
+        "adversarial-dev-02": [
+          {
+            "trial": 1,
+            "status": "completed",
+            "reason": null
+          }
+        ],
+        "adversarial-dev-03": [
+          {
+            "trial": 1,
+            "status": "completed",
+            "reason": null
+          }
+        ],
+        "adversarial-dev-04": [
+          {
+            "trial": 1,
+            "status": "incomplete",
+            "reason": "Model stopped without verified findings"
+          }
+        ],
+        "adversarial-dev-05": [
+          {
+            "trial": 1,
+            "status": "completed",
+            "reason": null
+          }
+        ],
+        "adversarial-dev-06": [
+          {
+            "trial": 1,
+            "status": "completed",
+            "reason": null
+          }
+        ]
+      }
+    },
+    "enso-effort-low-01": {
+      "machine_summary": {
+        "trial_count": 6,
+        "status_counts": {
+          "completed": 5,
+          "incomplete": 1
+        },
+        "available_trials": 6,
+        "reviewed_trials": 0,
+        "input_tokens": 146957,
+        "output_tokens": 3850
+      },
+      "ledger": {
+        "requests": 23,
+        "input_tokens": 146957,
+        "output_tokens": 3850,
+        "charged_or_reserved": 150807,
+        "status_counts": {
+          "settled": 23
+        },
+        "unresolved": []
+      },
+      "per_task": {
+        "dev-01": [
+          {
+            "trial": 1,
+            "status": "completed",
+            "reason": null
+          }
+        ],
+        "dev-04": [
+          {
+            "trial": 1,
+            "status": "completed",
+            "reason": null
+          }
+        ],
+        "dev-07": [
+          {
+            "trial": 1,
+            "status": "completed",
+            "reason": null
+          }
+        ],
+        "dev-10": [
+          {
+            "trial": 1,
+            "status": "completed",
+            "reason": null
+          }
+        ],
+        "dev-13": [
+          {
+            "trial": 1,
+            "status": "incomplete",
+            "reason": "Model stopped without verified findings"
+          }
+        ],
+        "dev-15": [
+          {
+            "trial": 1,
+            "status": "completed",
+            "reason": null
+          }
+        ]
+      }
+    },
+    "enso-effort-high-01": {
+      "machine_summary": {
+        "trial_count": 6,
+        "status_counts": {
+          "completed": 6
+        },
+        "available_trials": 6,
+        "reviewed_trials": 0,
+        "input_tokens": 376603,
+        "output_tokens": 12712
+      },
+      "ledger": {
+        "requests": 33,
+        "input_tokens": 376603,
+        "output_tokens": 12712,
+        "charged_or_reserved": 389315,
+        "status_counts": {
+          "settled": 33
+        },
+        "unresolved": []
+      },
+      "per_task": {
+        "dev-01": [
+          {
+            "trial": 1,
+            "status": "completed",
+            "reason": null
+          }
+        ],
+        "dev-04": [
+          {
+            "trial": 1,
+            "status": "completed",
+            "reason": null
+          }
+        ],
+        "dev-07": [
+          {
+            "trial": 1,
+            "status": "completed",
+            "reason": null
+          }
+        ],
+        "dev-10": [
+          {
+            "trial": 1,
+            "status": "completed",
+            "reason": null
+          }
+        ],
+        "dev-13": [
+          {
+            "trial": 1,
+            "status": "completed",
+            "reason": null
+          }
+        ],
+        "dev-15": [
+          {
+            "trial": 1,
+            "status": "completed",
+            "reason": null
+          }
+        ]
+      }
+    }
+  },
+  "limitations": [
+    "Completion is delivery of a validator-approved report, not semantic scientific accuracy.",
+    "One genuinely absent second forecast vintage makes three trials unavailable in each core method.",
+    "Fixed evidence is a bounded single-response pipeline; missing conversions/scenario-parameter cells are structural coverage differences, not evidence of an intrinsically weaker language model.",
+    "Fixed baseline allows no iterative repair; the adaptive pipeline allows bounded tool use and repairs.",
+    "False-positive narrative guards, format errors, and model scientific errors require separate manual attribution.",
+    "The refreshed holdout suite was visible to its author and uses one frozen assessment; it is not an independently blinded external benchmark.",
+    "Six-task reasoning-effort ablation uses development questions and one replicate, insufficient for a superiority claim.",
+    "Elapsed time includes cold packet construction and global dispatch queues; it is not pure inference latency.",
+    "Direct adversarial prompts do not establish retrieved-content injection resistance.",
+    "No source or prompt changes were made based on final holdout outcomes.",
+    "Numeric evidence verification does not validate underlying scientific forecasts or causal assumptions."
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "title": "Neutral late-year versus central aggregate mean revenue loss",
+  "claims": [
+    {
+      "kind": "numeric",
+      "text": "{'scope': 'all_modeled', 'period': '2027', 'metric': 'revenue_loss_2025usd_mean'}",
+      "evidence_ids": [
+        "af560a6a83dd96e6eb4ff527"
+      ],
+      "value": 451369354.3574615,
+      "unit": "2025 USD"
+    },
+    {
+      "kind": "numeric",
+      "text": "{'scope': 'all_modeled', 'period': '2027', 'metric': 'revenue_loss_2025usd_mean'}",
+      "evidence_ids": [
+        "24c7f4ddfa777906d7c86454"
+      ],
+      "value": 460446606.9292434,
+      "unit": "2025 USD"
+    },
+    {
+      "kind": "numeric",
+      "text": "{'comparison': 'central minus neutral_late_2027', 'scope': 'all_modeled', 'period': '2027', 'metric': 'revenue_loss_2025usd_mean'}",
+      "evidence_ids": [
+        "6e0f203fe2f593c43d307956"
+      ],
+      "value": 9077252.571781874,
+      "unit": "2025 USD"
+    },
+    {
+      "kind": "interpretation",
+      "text": "The neutral late-year scenario produces a slightly lower mean aggregate revenue loss than the central scenario; this is a sensitivity comparison reflecting the neutral late-year assumption, not a causal attribution or an estimate of the probability of that scenario occurring.",
+      "evidence_ids": [
+        "6e0f203fe2f593c43d307956"
+      ],
+      "value": null,
+      "unit": null
+    }
+  ],
+  "limitations": [
+    "Scenario names are labels, not ratios to the fitted central parameters; actual values were read from the scenario metadata.",
+    "Sensitivity alternatives are not assigned occurrence probabilities and do not define a calibrated credible interval.",
+    "Values are modeled conditional means for the all-modeled aggregate and should not be compared to country-level quantiles or summed across countries."
+  ]
+}

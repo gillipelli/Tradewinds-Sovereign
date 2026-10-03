@@ -1,0 +1,121 @@
+{
+  "title": "Papua New Guinea fiscal relationship and causal tax policy response",
+  "claims": [
+    {
+      "kind": "metadata",
+      "text": "{'json_path': ['climate', 'as_of']}",
+      "evidence_ids": [
+        "4f42001c805c4bda23b1893b"
+      ],
+      "value": "2026-09-07",
+      "unit": "ISO date"
+    },
+    {
+      "kind": "metadata",
+      "text": "{'json_path': ['climate', 'forecast_issue']}",
+      "evidence_ids": [
+        "fac6ca3fd4b1ee0242e119e3"
+      ],
+      "value": "2026-08",
+      "unit": "ISO month"
+    },
+    {
+      "kind": "interpretation",
+      "text": "No. The fiscal relationship in this assessment is explicitly flagged as not causally identified, at the model level and assessment level. It estimates conditional government revenue growth given agricultural and non-agricultural growth contributions, a trend, lagged revenue growth, and a pandemic indicator. It cannot support a causal estimate of Papua New Guinea's tax policy response.",
+      "evidence_ids": [
+        "52391358d41f75e82a6cac8e"
+      ],
+      "value": null,
+      "unit": null
+    },
+    {
+      "kind": "descriptive",
+      "text": "The fiscal model for the modeled economies including Papua New Guinea is trained on revenue growth with features for agricultural contribution, non-agricultural contribution, lagged revenue growth, trend, and pandemic. Tax policy variables are not among its features, so no policy response coefficient is estimated.",
+      "evidence_ids": [
+        "7abd5499be5a9a5a842fb1da"
+      ],
+      "value": null,
+      "unit": null
+    },
+    {
+      "kind": "descriptive",
+      "text": "Historical validation of the fiscal relationship is conditional, price and exchange-rate responses are not modeled, and the assessment states that this is not a total-economy loss estimate and not a sovereign default probability. None of these supports causal policy-response claims for Papua New Guinea.",
+      "evidence_ids": [
+        "52391358d41f75e82a6cac8e"
+      ],
+      "value": null,
+      "unit": null
+    },
+    {
+      "kind": "numeric",
+      "text": "{'country': 'PNG', 'year': '2026', 'metric': 'revenue_loss_2025usd_mean'}",
+      "evidence_ids": [
+        "d3179129b4b44b93fa7defae"
+      ],
+      "value": 5669605.225507055,
+      "unit": "2025 USD"
+    },
+    {
+      "kind": "numeric",
+      "text": "{'country': 'PNG', 'year': '2026', 'metric': 'p_revenue_loss'}",
+      "evidence_ids": [
+        "de0d174660e0c7fcbfa4ce21"
+      ],
+      "value": 0.59,
+      "unit": "probability"
+    },
+    {
+      "kind": "numeric",
+      "text": "{'country': 'PNG', 'year': '2026', 'metric': 'revenue_loss_es95_2025usd'}",
+      "evidence_ids": [
+        "46e9656e8332da089168e69b"
+      ],
+      "value": 91744250.78602137,
+      "unit": "2025 USD"
+    },
+    {
+      "kind": "numeric",
+      "text": "{'country': 'PNG', 'year': '2027', 'metric': 'revenue_loss_2025usd_mean'}",
+      "evidence_ids": [
+        "539cbb83dfa9062364b4c2df"
+      ],
+      "value": 6250345.017239304,
+      "unit": "2025 USD"
+    },
+    {
+      "kind": "numeric",
+      "text": "{'country': 'PNG', 'year': '2027', 'metric': 'p_revenue_loss'}",
+      "evidence_ids": [
+        "9381c728cd4a0bdec98f5121"
+      ],
+      "value": 0.563,
+      "unit": "probability"
+    },
+    {
+      "kind": "numeric",
+      "text": "{'country': 'PNG', 'year': '2027', 'metric': 'revenue_loss_es95_2025usd'}",
+      "evidence_ids": [
+        "2399c51979e62cd7e66601be"
+      ],
+      "value": 125114519.0707198,
+      "unit": "2025 USD"
+    },
+    {
+      "kind": "descriptive",
+      "text": "The methodology defines the estimand as revenue without this event minus revenue with the event, conditional on a stated macroeconomic path. This is a scenario-difference estimand for the El Ni\u00f1o event, not a causal tax-policy estimand, and it does not transfer to policy-response questions.",
+      "evidence_ids": [
+        "8d60ab90ce0adccfc631f158"
+      ],
+      "value": null,
+      "unit": null
+    }
+  ],
+  "limitations": [
+    "The fiscal model is flagged as not causally identified; its coefficients describe conditional association and cannot be interpreted as causal tax-policy effects for Papua New Guinea or any other modeled economy.",
+    "Tax policy variables are absent from the model features, so no policy-response parameter exists to report.",
+    "Historical input provenance is incomplete and the assessment is marked for inspection only; it is not recomputable.",
+    "Price and exchange-rate responses are not modeled, and the historical validation is conditional, limiting any inference beyond the stated macroeconomic path.",
+    "Risk figures are signed mean losses with gains retained, while tail measures apply to the positive shortfall only; these are not causal quantities.",
+    "The evidence packet is fixed and bounded; no adaptive tools or additional evidence were available for this response."
+  ]
+}

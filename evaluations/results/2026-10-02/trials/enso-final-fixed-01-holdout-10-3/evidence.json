@@ -1,0 +1,2395 @@
+{
+  "52391358d41f75e82a6cac8e": {
+    "assessment_id": "20260907T153857705816Z",
+    "artifact": "reports/event_risk_metadata.json",
+    "artifact_hash": "8cb8943ac32e010a5bed8976184ee08fb11e320b854ec8ab165a5b4ac0998780",
+    "bundle_hash": "07603bf49b655531ed9fa5a418ddd640366466f6a80a90428a003f31b50d61f7",
+    "selector": {},
+    "value": {
+      "climate": {
+        "forecast_issue": "2026-08",
+        "forecast_issue_date": "2026-08-13",
+        "official_last_center_month": "2027-04-01",
+        "imf_metadata": {
+          "revenue_pct_gdp": {
+            "label": "Revenue",
+            "description": "Revenue",
+            "source": "Fiscal Monitor (April 2026)",
+            "unit": "% of GDP",
+            "dataset": "FM",
+            "projection-year": 2026,
+            "last-modified": "2026-04-15 00:15:26"
+          },
+          "gdp_usd_bn": {
+            "label": "GDP, current prices",
+            "description": "Gross domestic product is the most commonly used single measure of a country's overall economic activity. It represents the total value at current prices of final goods and services produced within a country during a specified time period, such as one year.",
+            "source": "World Economic Outlook (April 2026)",
+            "unit": "Billions of U.S. dollars",
+            "dataset": "WEO",
+            "projection-year": 2026,
+            "last-modified": "2026-04-08 16:07:35"
+          },
+          "gdp_growth_pct": {
+            "label": "Real GDP growth",
+            "description": "Gross domestic product is the most commonly used single measure of a country's overall economic activity. It represents the total value at constant prices of final goods and services produced within a country during a specified time period, such as one year.",
+            "source": "World Economic Outlook (April 2026)",
+            "unit": "Annual percent change",
+            "dataset": "WEO",
+            "projection-year": 2026,
+            "last-modified": "2026-04-08 16:07:34"
+          }
+        },
+        "sources": {
+          "cpc_outlook": {
+            "url": "https://www.cpc.ncep.noaa.gov/products/analysis_monitoring/enso/roni/outlook/",
+            "sha256": "831e00183ec55ef98c042a9ef711bb19245765d05c62ea887814301d5a88f744",
+            "file": "cpc_outlook/831e00183ec55ef98c042a9ef711bb19245765d05c62ea887814301d5a88f744.bin",
+            "retrieved_at": "2026-09-07T01:47:59.072907+00:00",
+            "checked_at": "2026-09-07T15:39:18.678055+00:00",
+            "etag": null,
+            "last_modified": null,
+            "bytes": 29774
+          },
+          "cpc_advisory": {
+            "url": "https://www.cpc.ncep.noaa.gov/products/analysis_monitoring/enso_advisory/ensodisc.shtml",
+            "sha256": "8647a3804260856f979bba518475d63ffb69c2716d10e4f730658df530c3cc2d",
+            "file": "cpc_advisory/8647a3804260856f979bba518475d63ffb69c2716d10e4f730658df530c3cc2d.bin",
+            "retrieved_at": "2026-09-07T01:48:56.679758+00:00",
+            "checked_at": "2026-09-07T15:39:18.734282+00:00",
+            "etag": null,
+            "last_modified": null,
+            "bytes": 13382
+          },
+          "event_imf_revenue_pct_gdp": {
+            "url": "https://www.imf.org/external/datamapper/api/v2/GGR_G01_GDP_PT",
+            "sha256": "1963930b9e4c636481c81e06e20448822be5e3a4641240e57f849f4824745323",
+            "file": "event_imf_revenue_pct_gdp/1963930b9e4c636481c81e06e20448822be5e3a4641240e57f849f4824745323.bin",
+            "retrieved_at": "2026-09-07T01:51:18.869418+00:00",
+            "checked_at": "2026-09-07T15:39:28.643722+00:00",
+            "etag": null,
+            "last_modified": null,
+            "bytes": 185573
+          },
+          "event_imf_gdp_usd_bn": {
+            "url": "https://www.imf.org/external/datamapper/api/v2/NGDPD",
+            "sha256": "5592998446e9bdae68d4f04c45ff4dacb0eb429441dfa7dbfc8d59ffa1df05cf",
+            "file": "event_imf_gdp_usd_bn/5592998446e9bdae68d4f04c45ff4dacb0eb429441dfa7dbfc8d59ffa1df05cf.bin",
+            "retrieved_at": "2026-09-07T01:51:29.558558+00:00",
+            "checked_at": "2026-09-07T15:39:37.502810+00:00",
+            "etag": null,
+            "last_modified": null,
+            "bytes": 158018
+          },
+          "event_imf_gdp_growth_pct": {
+            "url": "https://www.imf.org/external/datamapper/api/v2/NGDP_RPCH",
+            "sha256": "689860c3b985d99078145c6f171c4b7a9c4e8baa6a4e6ee89a27dd2411d13ead",
+            "file": "event_imf_gdp_growth_pct/689860c3b985d99078145c6f171c4b7a9c4e8baa6a4e6ee89a27dd2411d13ead.bin",
+            "retrieved_at": "2026-09-07T01:51:39.583093+00:00",
+            "checked_at": "2026-09-07T15:39:47.165031+00:00",
+            "etag": null,
+            "last_modified": null,
+            "bytes": 122208
+          },
+          "event_agri_real_usd": {
+            "url": "https://api.worldbank.org/v2/country/IDN;MYS;PHL;THA;VNM;PNG;FJI;SLB;VUT;WSM;TON;AUS/indicator/NV.AGR.TOTL.KD?format=json&per_page=20000&date=1961:2100",
+            "sha256": "dbe09d723ac6bf90c00557d4e683d80c9d1e1f1b1d99b75cd3df06cd81998de9",
+            "file": "event_agri_real_usd/dbe09d723ac6bf90c00557d4e683d80c9d1e1f1b1d99b75cd3df06cd81998de9.bin",
+            "retrieved_at": "2026-09-07T01:51:48.032102+00:00",
+            "checked_at": "2026-09-07T15:39:47.313000+00:00",
+            "etag": null,
+            "last_modified": "Mon, 07 Sep 2026 01:51:47 GMT",
+            "bytes": 199366
+          },
+          "event_gdp_real_usd": {
+            "url": "https://api.worldbank.org/v2/country/IDN;MYS;PHL;THA;VNM;PNG;FJI;SLB;VUT;WSM;TON;AUS/indicator/NY.GDP.MKTP.KD?format=json&per_page=20000&date=1961:2100",
+            "sha256": "97eef8b96d996fda0eb804e9a17f458fe7664a10d7194e7409f1b7e61d176c76",
+            "file": "event_gdp_real_usd/97eef8b96d996fda0eb804e9a17f458fe7664a10d7194e7409f1b7e61d176c76.bin",
+            "retrieved_at": "2026-09-07T01:51:50.803486+00:00",
+            "checked_at": "2026-09-07T15:39:47.384876+00:00",
+            "etag": null,
+            "last_modified": "Mon, 07 Sep 2026 01:51:50 GMT",
+            "bytes": 166449
+          },
+          "event_agri_current_usd": {
+            "url": "https://api.worldbank.org/v2/country/IDN;MYS;PHL;THA;VNM;PNG;FJI;SLB;VUT;WSM;TON;AUS/indicator/NV.AGR.TOTL.CD?format=json&per_page=20000&date=1961:2100",
+            "sha256": "199db3b1909444c1355e1cb604616d3c4e08ddeff3f0a6f4169aabcb64927b74",
+            "file": "event_agri_current_usd/199db3b1909444c1355e1cb604616d3c4e08ddeff3f0a6f4169aabcb64927b74.bin",
+            "retrieved_at": "2026-09-07T01:51:54.756505+00:00",
+            "checked_at": "2026-09-07T15:39:47.442622+00:00",
+            "etag": null,
+            "last_modified": "Mon, 07 Sep 2026 01:51:54 GMT",
+            "bytes": 195055
+          }
+        },
+        "as_of": "2026-09-07",
+        "counterfactual_start": "2026-05-01",
+        "extension": "ar2",
+        "dependence": "empirical",
+        "copula_training_origins": 184,
+        "latest_observed_center": "2026-07-01",
+        "no_event_definition": "Keep pre-onset history; set all subsequent centered RONI seasons to zero.",
+        "official_forecasts_are_marginal_not_joint": true,
+        "extension_is_not_NOAA_forecast": true
+      },
+      "models": {
+        "agriculture": {
+          "kind": "agriculture",
+          "countries": [
+            "AUS",
+            "FJI",
+            "IDN",
+            "MYS",
+            "PHL",
+            "PNG",
+            "SLB",
+            "THA",
+            "TON",
+            "VNM",
+            "VUT",
+            "WSM"
+          ],
+          "features": [
+            "warm",
+            "warm_lag1",
+            "warm_lag2",
+            "cold",
+            "extreme",
+            "cold_lag1",
+            "cold_lag2",
+            "trend",
+            "lag_agri_growth",
+            "lag_nonagri_growth"
+          ],
+          "target": "agri_growth",
+          "training_start": 1963,
+          "training_end": 2024,
+          "observations": 535,
+          "max_rhat": 1.0010326272537367,
+          "min_bulk_ess": 1996.903685348023,
+          "divergences": 0,
+          "min_bfmi": 0.6131600846349942,
+          "diagnostics_pass": true,
+          "prior_scale": 2.0,
+          "fingerprint": "df17c4c46fea83fe1bc76c0ac30fb3d6825b6be1ce69e6a83027071e1cf5689e",
+          "source_snapshot": {
+            "forecast_issue": "2026-08",
+            "forecast_issue_date": "2026-08-13",
+            "official_last_center_month": "2027-04-01",
+            "imf_metadata": {
+              "revenue_pct_gdp": {
+                "label": "Revenue",
+                "description": "Revenue",
+                "source": "Fiscal Monitor (April 2026)",
+                "unit": "% of GDP",
+                "dataset": "FM",
+                "projection-year": 2026,
+                "last-modified": "2026-04-15 00:15:26"
+              },
+              "gdp_usd_bn": {
+                "label": "GDP, current prices",
+                "description": "Gross domestic product is the most commonly used single measure of a country's overall economic activity. It represents the total value at current prices of final goods and services produced within a country during a specified time period, such as one year.",
+                "source": "World Economic Outlook (April 2026)",
+                "unit": "Billions of U.S. dollars",
+                "dataset": "WEO",
+                "projection-year": 2026,
+                "last-modified": "2026-04-08 16:07:35"
+              },
+              "gdp_growth_pct": {
+                "label": "Real GDP growth",
+                "description": "Gross domestic product is the most commonly used single measure of a country's overall economic activity. It represents the total value at constant prices of final goods and services produced within a country during a specified time period, such as one year.",
+                "source": "World Economic Outlook (April 2026)",
+                "unit": "Annual percent change",
+                "dataset": "WEO",
+                "projection-year": 2026,
+                "last-modified": "2026-04-08 16:07:34"
+              }
+            },
+            "sources": {
+              "cpc_outlook": {
+                "url": "https://www.cpc.ncep.noaa.gov/products/analysis_monitoring/enso/roni/outlook/",
+                "sha256": "831e00183ec55ef98c042a9ef711bb19245765d05c62ea887814301d5a88f744",
+                "file": "cpc_outlook/831e00183ec55ef98c042a9ef711bb19245765d05c62ea887814301d5a88f744.bin",
+                "retrieved_at": "2026-09-07T01:47:59.072907+00:00",
+                "checked_at": "2026-09-07T01:47:59.072907+00:00",
+                "etag": null,
+                "last_modified": null,
+                "bytes": 29774
+              },
+              "cpc_advisory": {
+                "url": "https://www.cpc.ncep.noaa.gov/products/analysis_monitoring/enso_advisory/ensodisc.shtml",
+                "sha256": "8647a3804260856f979bba518475d63ffb69c2716d10e4f730658df530c3cc2d",
+                "file": "cpc_advisory/8647a3804260856f979bba518475d63ffb69c2716d10e4f730658df530c3cc2d.bin",
+                "retrieved_at": "2026-09-07T01:48:56.679758+00:00",
+                "checked_at": "2026-09-07T01:48:56.679758+00:00",
+                "etag": null,
+                "last_modified": null,
+                "bytes": 13382
+              },
+              "event_imf_revenue_pct_gdp": {
+                "url": "https://www.imf.org/external/datamapper/api/v2/GGR_G01_GDP_PT",
+                "sha256": "1963930b9e4c636481c81e06e20448822be5e3a4641240e57f849f4824745323",
+                "file": "event_imf_revenue_pct_gdp/1963930b9e4c636481c81e06e20448822be5e3a4641240e57f849f4824745323.bin",
+                "retrieved_at": "2026-09-07T01:51:18.869418+00:00",
+                "checked_at": "2026-09-07T01:51:18.869418+00:00",
+                "etag": null,
+                "last_modified": null,
+                "bytes": 185573
+              },
+              "event_imf_gdp_usd_bn": {
+                "url": "https://www.imf.org/external/datamapper/api/v2/NGDPD",
+                "sha256": "5592998446e9bdae68d4f04c45ff4dacb0eb429441dfa7dbfc8d59ffa1df05cf",
+                "file": "event_imf_gdp_usd_bn/5592998446e9bdae68d4f04c45ff4dacb0eb429441dfa7dbfc8d59ffa1df05cf.bin",
+                "retrieved_at": "2026-09-07T01:51:29.558558+00:00",
+                "checked_at": "2026-09-07T01:51:29.558558+00:00",
+                "etag": null,
+                "last_modified": null,
+                "bytes": 158018
+              },
+              "event_imf_gdp_growth_pct": {
+                "url": "https://www.imf.org/external/datamapper/api/v2/NGDP_RPCH",
+                "sha256": "689860c3b985d99078145c6f171c4b7a9c4e8baa6a4e6ee89a27dd2411d13ead",
+                "file": "event_imf_gdp_growth_pct/689860c3b985d99078145c6f171c4b7a9c4e8baa6a4e6ee89a27dd2411d13ead.bin",
+                "retrieved_at": "2026-09-07T01:51:39.583093+00:00",
+                "checked_at": "2026-09-07T01:51:39.583093+00:00",
+                "etag": null,
+                "last_modified": null,
+                "bytes": 122208
+              },
+              "event_agri_real_usd": {
+                "url": "https://api.worldbank.org/v2/country/IDN;MYS;PHL;THA;VNM;PNG;FJI;SLB;VUT;WSM;TON;AUS/indicator/NV.AGR.TOTL.KD?format=json&per_page=20000&date=1961:2100",
+                "sha256": "dbe09d723ac6bf90c00557d4e683d80c9d1e1f1b1d99b75cd3df06cd81998de9",
+                "file": "event_agri_real_usd/dbe09d723ac6bf90c00557d4e683d80c9d1e1f1b1d99b75cd3df06cd81998de9.bin",
+                "retrieved_at": "2026-09-07T01:51:48.032102+00:00",
+                "checked_at": "2026-09-07T01:51:48.032102+00:00",
+                "etag": null,
+                "last_modified": "Mon, 07 Sep 2026 01:51:47 GMT",
+                "bytes": 199366
+              },
+              "event_gdp_real_usd": {
+                "url": "https://api.worldbank.org/v2/country/IDN;MYS;PHL;THA;VNM;PNG;FJI;SLB;VUT;WSM;TON;AUS/indicator/NY.GDP.MKTP.KD?format=json&per_page=20000&date=1961:2100",
+                "sha256": "97eef8b96d996fda0eb804e9a17f458fe7664a10d7194e7409f1b7e61d176c76",
+                "file": "event_gdp_real_usd/97eef8b96d996fda0eb804e9a17f458fe7664a10d7194e7409f1b7e61d176c76.bin",
+                "retrieved_at": "2026-09-07T01:51:50.803486+00:00",
+                "checked_at": "2026-09-07T01:51:50.803486+00:00",
+                "etag": null,
+                "last_modified": "Mon, 07 Sep 2026 01:51:50 GMT",
+                "bytes": 166449
+              },
+              "event_agri_current_usd": {
+                "url": "https://api.worldbank.org/v2/country/IDN;MYS;PHL;THA;VNM;PNG;FJI;SLB;VUT;WSM;TON;AUS/indicator/NV.AGR.TOTL.CD?format=json&per_page=20000&date=1961:2100",
+                "sha256": "199db3b1909444c1355e1cb604616d3c4e08ddeff3f0a6f4169aabcb64927b74",
+                "file": "event_agri_current_usd/199db3b1909444c1355e1cb604616d3c4e08ddeff3f0a6f4169aabcb64927b74.bin",
+                "retrieved_at": "2026-09-07T01:51:54.756505+00:00",
+                "checked_at": "2026-09-07T01:51:54.756505+00:00",
+                "etag": null,
+                "last_modified": "Mon, 07 Sep 2026 01:51:54 GMT",
+                "bytes": 195055
+              }
+            }
+          },
+          "causal_identification": false
+        },
+        "fiscal": {
+          "kind": "fiscal",
+          "countries": [
+            "AUS",
+            "FJI",
+            "IDN",
+            "MYS",
+            "PHL",
+            "PNG",
+            "SLB",
+            "THA",
+            "TON",
+            "VNM",
+            "VUT",
+            "WSM"
+          ],
+          "features": [
+            "agri_contribution",
+            "nonagri_contribution",
+            "lag_revenue_growth",
+            "trend",
+            "pandemic"
+          ],
+          "target": "revenue_growth",
+          "training_start": 1992,
+          "training_end": 2024,
+          "observations": 341,
+          "max_rhat": 1.0014819654795397,
+          "min_bulk_ess": 3454.3309326916674,
+          "divergences": 0,
+          "min_bfmi": 0.7832373045779862,
+          "diagnostics_pass": true,
+          "prior_scale": 2.0,
+          "fingerprint": "f81e72838c60f5996b1ae6d6d077ab66193f65e6484cdce25934e5176d57e20c",
+          "source_snapshot": {
+            "forecast_issue": "2026-08",
+            "forecast_issue_date": "2026-08-13",
+            "official_last_center_month": "2027-04-01",
+            "imf_metadata": {
+              "revenue_pct_gdp": {
+                "label": "Revenue",
+                "description": "Revenue",
+                "source": "Fiscal Monitor (April 2026)",
+                "unit": "% of GDP",
+                "dataset": "FM",
+                "projection-year": 2026,
+                "last-modified": "2026-04-15 00:15:26"
+              },
+              "gdp_usd_bn": {
+                "label": "GDP, current prices",
+                "description": "Gross domestic product is the most commonly used single measure of a country's overall economic activity. It represents the total value at current prices of final goods and services produced within a country during a specified time period, such as one year.",
+                "source": "World Economic Outlook (April 2026)",
+                "unit": "Billions of U.S. dollars",
+                "dataset": "WEO",
+                "projection-year": 2026,
+                "last-modified": "2026-04-08 16:07:35"
+              },
+              "gdp_growth_pct": {
+                "label": "Real GDP growth",
+                "description": "Gross domestic product is the most commonly used single measure of a country's overall economic activity. It represents the total value at constant prices of final goods and services produced within a country during a specified time period, such as one year.",
+                "source": "World Economic Outlook (April 2026)",
+                "unit": "Annual percent change",
+                "dataset": "WEO",
+                "projection-year": 2026,
+                "last-modified": "2026-04-08 16:07:34"
+              }
+            },
+            "sources": {
+              "cpc_outlook": {
+                "url": "https://www.cpc.ncep.noaa.gov/products/analysis_monitoring/enso/roni/outlook/",
+                "sha256": "831e00183ec55ef98c042a9ef711bb19245765d05c62ea887814301d5a88f744",
+                "file": "cpc_outlook/831e00183ec55ef98c042a9ef711bb19245765d05c62ea887814301d5a88f744.bin",
+                "retrieved_at": "2026-09-07T01:47:59.072907+00:00",
+                "checked_at": "2026-09-07T01:47:59.072907+00:00",
+                "etag": null,
+                "last_modified": null,
+                "bytes": 29774
+              },
+              "cpc_advisory": {
+                "url": "https://www.cpc.ncep.noaa.gov/products/analysis_monitoring/enso_advisory/ensodisc.shtml",
+                "sha256": "8647a3804260856f979bba518475d63ffb69c2716d10e4f730658df530c3cc2d",
+                "file": "cpc_advisory/8647a3804260856f979bba518475d63ffb69c2716d10e4f730658df530c3cc2d.bin",
+                "retrieved_at": "2026-09-07T01:48:56.679758+00:00",
+                "checked_at": "2026-09-07T01:48:56.679758+00:00",
+                "etag": null,
+                "last_modified": null,
+                "bytes": 13382
+              },
+              "event_imf_revenue_pct_gdp": {
+                "url": "https://www.imf.org/external/datamapper/api/v2/GGR_G01_GDP_PT",
+                "sha256": "1963930b9e4c636481c81e06e20448822be5e3a4641240e57f849f4824745323",
+                "file": "event_imf_revenue_pct_gdp/1963930b9e4c636481c81e06e20448822be5e3a4641240e57f849f4824745323.bin",
+                "retrieved_at": "2026-09-07T01:51:18.869418+00:00",
+                "checked_at": "2026-09-07T01:51:18.869418+00:00",
+                "etag": null,
+                "last_modified": null,
+                "bytes": 185573
+              },
+              "event_imf_gdp_usd_bn": {
+                "url": "https://www.imf.org/external/datamapper/api/v2/NGDPD",
+                "sha256": "5592998446e9bdae68d4f04c45ff4dacb0eb429441dfa7dbfc8d59ffa1df05cf",
+                "file": "event_imf_gdp_usd_bn/5592998446e9bdae68d4f04c45ff4dacb0eb429441dfa7dbfc8d59ffa1df05cf.bin",
+                "retrieved_at": "2026-09-07T01:51:29.558558+00:00",
+                "checked_at": "2026-09-07T01:51:29.558558+00:00",
+                "etag": null,
+                "last_modified": null,
+                "bytes": 158018
+              },
+              "event_imf_gdp_growth_pct": {
+                "url": "https://www.imf.org/external/datamapper/api/v2/NGDP_RPCH",
+                "sha256": "689860c3b985d99078145c6f171c4b7a9c4e8baa6a4e6ee89a27dd2411d13ead",
+                "file": "event_imf_gdp_growth_pct/689860c3b985d99078145c6f171c4b7a9c4e8baa6a4e6ee89a27dd2411d13ead.bin",
+                "retrieved_at": "2026-09-07T01:51:39.583093+00:00",
+                "checked_at": "2026-09-07T01:51:39.583093+00:00",
+                "etag": null,
+                "last_modified": null,
+                "bytes": 122208
+              },
+              "event_agri_real_usd": {
+                "url": "https://api.worldbank.org/v2/country/IDN;MYS;PHL;THA;VNM;PNG;FJI;SLB;VUT;WSM;TON;AUS/indicator/NV.AGR.TOTL.KD?format=json&per_page=20000&date=1961:2100",
+                "sha256": "dbe09d723ac6bf90c00557d4e683d80c9d1e1f1b1d99b75cd3df06cd81998de9",
+                "file": "event_agri_real_usd/dbe09d723ac6bf90c00557d4e683d80c9d1e1f1b1d99b75cd3df06cd81998de9.bin",
+                "retrieved_at": "2026-09-07T01:51:48.032102+00:00",
+                "checked_at": "2026-09-07T01:51:48.032102+00:00",
+                "etag": null,
+                "last_modified": "Mon, 07 Sep 2026 01:51:47 GMT",
+                "bytes": 199366
+              },
+              "event_gdp_real_usd": {
+                "url": "https://api.worldbank.org/v2/country/IDN;MYS;PHL;THA;VNM;PNG;FJI;SLB;VUT;WSM;TON;AUS/indicator/NY.GDP.MKTP.KD?format=json&per_page=20000&date=1961:2100",
+                "sha256": "97eef8b96d996fda0eb804e9a17f458fe7664a10d7194e7409f1b7e61d176c76",
+                "file": "event_gdp_real_usd/97eef8b96d996fda0eb804e9a17f458fe7664a10d7194e7409f1b7e61d176c76.bin",
+                "retrieved_at": "2026-09-07T01:51:50.803486+00:00",
+                "checked_at": "2026-09-07T01:51:50.803486+00:00",
+                "etag": null,
+                "last_modified": "Mon, 07 Sep 2026 01:51:50 GMT",
+                "bytes": 166449
+              },
+              "event_agri_current_usd": {
+                "url": "https://api.worldbank.org/v2/country/IDN;MYS;PHL;THA;VNM;PNG;FJI;SLB;VUT;WSM;TON;AUS/indicator/NV.AGR.TOTL.CD?format=json&per_page=20000&date=1961:2100",
+                "sha256": "199db3b1909444c1355e1cb604616d3c4e08ddeff3f0a6f4169aabcb64927b74",
+                "file": "event_agri_current_usd/199db3b1909444c1355e1cb604616d3c4e08ddeff3f0a6f4169aabcb64927b74.bin",
+                "retrieved_at": "2026-09-07T01:51:54.756505+00:00",
+                "checked_at": "2026-09-07T01:51:54.756505+00:00",
+                "etag": null,
+                "last_modified": "Mon, 07 Sep 2026 01:51:54 GMT",
+                "bytes": 195055
+              }
+            }
+          },
+          "causal_identification": false
+        }
+      },
+      "countries": [
+        "AUS",
+        "FJI",
+        "IDN",
+        "MYS",
+        "PHL",
+        "PNG",
+        "SLB",
+        "THA",
+        "TON",
+        "VNM",
+        "VUT",
+        "WSM"
+      ],
+      "omitted_countries": [],
+      "simulations": 10000,
+      "units": "constant 2025 USD, GDP-deflated; fixed 2025 exchange rate",
+      "scope": "Agriculture, forestry and fishing value added; conditional government revenue transmission",
+      "revenue_includes_grants": true,
+      "residual_dependence": "shared_year",
+      "nonagriculture_scenario": "IMF total real GDP growth used as an external non-agriculture growth proxy, shared across cases",
+      "price_and_fx_response_modeled": false,
+      "causal_identification": false,
+      "historical_validation_is_conditional": true,
+      "risk_definition": "Positive = neutral revenue minus event revenue. Gains retained in signed estimates; VaR/ES apply to positive shortfall.",
+      "not_total_economy_loss": true,
+      "not_sovereign_default_probability": true,
+      "fiscal_coefficient_override": null
+    },
+    "unit": null,
+    "scenario_id": null
+  },
+  "7abd5499be5a9a5a842fb1da": {
+    "assessment_id": "20260907T153857705816Z",
+    "artifact": "reports/event_risk_metadata.json",
+    "artifact_hash": "8cb8943ac32e010a5bed8976184ee08fb11e320b854ec8ab165a5b4ac0998780",
+    "bundle_hash": "07603bf49b655531ed9fa5a418ddd640366466f6a80a90428a003f31b50d61f7",
+    "selector": {
+      "section": "models"
+    },
+    "value": {
+      "agriculture": {
+        "kind": "agriculture",
+        "countries": [
+          "AUS",
+          "FJI",
+          "IDN",
+          "MYS",
+          "PHL",
+          "PNG",
+          "SLB",
+          "THA",
+          "TON",
+          "VNM",
+          "VUT",
+          "WSM"
+        ],
+        "features": [
+          "warm",
+          "warm_lag1",
+          "warm_lag2",
+          "cold",
+          "extreme",
+          "cold_lag1",
+          "cold_lag2",
+          "trend",
+          "lag_agri_growth",
+          "lag_nonagri_growth"
+        ],
+        "target": "agri_growth",
+        "training_start": 1963,
+        "training_end": 2024,
+        "observations": 535,
+        "max_rhat": 1.0010326272537367,
+        "min_bulk_ess": 1996.903685348023,
+        "divergences": 0,
+        "min_bfmi": 0.6131600846349942,
+        "diagnostics_pass": true,
+        "prior_scale": 2.0,
+        "fingerprint": "df17c4c46fea83fe1bc76c0ac30fb3d6825b6be1ce69e6a83027071e1cf5689e",
+        "source_snapshot": {
+          "forecast_issue": "2026-08",
+          "forecast_issue_date": "2026-08-13",
+          "official_last_center_month": "2027-04-01",
+          "imf_metadata": {
+            "revenue_pct_gdp": {
+              "label": "Revenue",
+              "description": "Revenue",
+              "source": "Fiscal Monitor (April 2026)",
+              "unit": "% of GDP",
+              "dataset": "FM",
+              "projection-year": 2026,
+              "last-modified": "2026-04-15 00:15:26"
+            },
+            "gdp_usd_bn": {
+              "label": "GDP, current prices",
+              "description": "Gross domestic product is the most commonly used single measure of a country's overall economic activity. It represents the total value at current prices of final goods and services produced within a country during a specified time period, such as one year.",
+              "source": "World Economic Outlook (April 2026)",
+              "unit": "Billions of U.S. dollars",
+              "dataset": "WEO",
+              "projection-year": 2026,
+              "last-modified": "2026-04-08 16:07:35"
+            },
+            "gdp_growth_pct": {
+              "label": "Real GDP growth",
+              "description": "Gross domestic product is the most commonly used single measure of a country's overall economic activity. It represents the total value at constant prices of final goods and services produced within a country during a specified time period, such as one year.",
+              "source": "World Economic Outlook (April 2026)",
+              "unit": "Annual percent change",
+              "dataset": "WEO",
+              "projection-year": 2026,
+              "last-modified": "2026-04-08 16:07:34"
+            }
+          },
+          "sources": {
+            "cpc_outlook": {
+              "url": "https://www.cpc.ncep.noaa.gov/products/analysis_monitoring/enso/roni/outlook/",
+              "sha256": "831e00183ec55ef98c042a9ef711bb19245765d05c62ea887814301d5a88f744",
+              "file": "cpc_outlook/831e00183ec55ef98c042a9ef711bb19245765d05c62ea887814301d5a88f744.bin",
+              "retrieved_at": "2026-09-07T01:47:59.072907+00:00",
+              "checked_at": "2026-09-07T01:47:59.072907+00:00",
+              "etag": null,
+              "last_modified": null,
+              "bytes": 29774
+            },
+            "cpc_advisory": {
+              "url": "https://www.cpc.ncep.noaa.gov/products/analysis_monitoring/enso_advisory/ensodisc.shtml",
+              "sha256": "8647a3804260856f979bba518475d63ffb69c2716d10e4f730658df530c3cc2d",
+              "file": "cpc_advisory/8647a3804260856f979bba518475d63ffb69c2716d10e4f730658df530c3cc2d.bin",
+              "retrieved_at": "2026-09-07T01:48:56.679758+00:00",
+              "checked_at": "2026-09-07T01:48:56.679758+00:00",
+              "etag": null,
+              "last_modified": null,
+              "bytes": 13382
+            },
+            "event_imf_revenue_pct_gdp": {
+              "url": "https://www.imf.org/external/datamapper/api/v2/GGR_G01_GDP_PT",
+              "sha256": "1963930b9e4c636481c81e06e20448822be5e3a4641240e57f849f4824745323",
+              "file": "event_imf_revenue_pct_gdp/1963930b9e4c636481c81e06e20448822be5e3a4641240e57f849f4824745323.bin",
+              "retrieved_at": "2026-09-07T01:51:18.869418+00:00",
+              "checked_at": "2026-09-07T01:51:18.869418+00:00",
+              "etag": null,
+              "last_modified": null,
+              "bytes": 185573
+            },
+            "event_imf_gdp_usd_bn": {
+              "url": "https://www.imf.org/external/datamapper/api/v2/NGDPD",
+              "sha256": "5592998446e9bdae68d4f04c45ff4dacb0eb429441dfa7dbfc8d59ffa1df05cf",
+              "file": "event_imf_gdp_usd_bn/5592998446e9bdae68d4f04c45ff4dacb0eb429441dfa7dbfc8d59ffa1df05cf.bin",
+              "retrieved_at": "2026-09-07T01:51:29.558558+00:00",
+              "checked_at": "2026-09-07T01:51:29.558558+00:00",
+              "etag": null,
+              "last_modified": null,
+              "bytes": 158018
+            },
+            "event_imf_gdp_growth_pct": {
+              "url": "https://www.imf.org/external/datamapper/api/v2/NGDP_RPCH",
+              "sha256": "689860c3b985d99078145c6f171c4b7a9c4e8baa6a4e6ee89a27dd2411d13ead",
+              "file": "event_imf_gdp_growth_pct/689860c3b985d99078145c6f171c4b7a9c4e8baa6a4e6ee89a27dd2411d13ead.bin",
+              "retrieved_at": "2026-09-07T01:51:39.583093+00:00",
+              "checked_at": "2026-09-07T01:51:39.583093+00:00",
+              "etag": null,
+              "last_modified": null,
+              "bytes": 122208
+            },
+            "event_agri_real_usd": {
+              "url": "https://api.worldbank.org/v2/country/IDN;MYS;PHL;THA;VNM;PNG;FJI;SLB;VUT;WSM;TON;AUS/indicator/NV.AGR.TOTL.KD?format=json&per_page=20000&date=1961:2100",
+              "sha256": "dbe09d723ac6bf90c00557d4e683d80c9d1e1f1b1d99b75cd3df06cd81998de9",
+              "file": "event_agri_real_usd/dbe09d723ac6bf90c00557d4e683d80c9d1e1f1b1d99b75cd3df06cd81998de9.bin",
+              "retrieved_at": "2026-09-07T01:51:48.032102+00:00",
+              "checked_at": "2026-09-07T01:51:48.032102+00:00",
+              "etag": null,
+              "last_modified": "Mon, 07 Sep 2026 01:51:47 GMT",
+              "bytes": 199366
+            },
+            "event_gdp_real_usd": {
+              "url": "https://api.worldbank.org/v2/country/IDN;MYS;PHL;THA;VNM;PNG;FJI;SLB;VUT;WSM;TON;AUS/indicator/NY.GDP.MKTP.KD?format=json&per_page=20000&date=1961:2100",
+              "sha256": "97eef8b96d996fda0eb804e9a17f458fe7664a10d7194e7409f1b7e61d176c76",
+              "file": "event_gdp_real_usd/97eef8b96d996fda0eb804e9a17f458fe7664a10d7194e7409f1b7e61d176c76.bin",
+              "retrieved_at": "2026-09-07T01:51:50.803486+00:00",
+              "checked_at": "2026-09-07T01:51:50.803486+00:00",
+              "etag": null,
+              "last_modified": "Mon, 07 Sep 2026 01:51:50 GMT",
+              "bytes": 166449
+            },
+            "event_agri_current_usd": {
+              "url": "https://api.worldbank.org/v2/country/IDN;MYS;PHL;THA;VNM;PNG;FJI;SLB;VUT;WSM;TON;AUS/indicator/NV.AGR.TOTL.CD?format=json&per_page=20000&date=1961:2100",
+              "sha256": "199db3b1909444c1355e1cb604616d3c4e08ddeff3f0a6f4169aabcb64927b74",
+              "file": "event_agri_current_usd/199db3b1909444c1355e1cb604616d3c4e08ddeff3f0a6f4169aabcb64927b74.bin",
+              "retrieved_at": "2026-09-07T01:51:54.756505+00:00",
+              "checked_at": "2026-09-07T01:51:54.756505+00:00",
+              "etag": null,
+              "last_modified": "Mon, 07 Sep 2026 01:51:54 GMT",
+              "bytes": 195055
+            }
+          }
+        },
+        "causal_identification": false
+      },
+      "fiscal": {
+        "kind": "fiscal",
+        "countries": [
+          "AUS",
+          "FJI",
+          "IDN",
+          "MYS",
+          "PHL",
+          "PNG",
+          "SLB",
+          "THA",
+          "TON",
+          "VNM",
+          "VUT",
+          "WSM"
+        ],
+        "features": [
+          "agri_contribution",
+          "nonagri_contribution",
+          "lag_revenue_growth",
+          "trend",
+          "pandemic"
+        ],
+        "target": "revenue_growth",
+        "training_start": 1992,
+        "training_end": 2024,
+        "observations": 341,
+        "max_rhat": 1.0014819654795397,
+        "min_bulk_ess": 3454.3309326916674,
+        "divergences": 0,
+        "min_bfmi": 0.7832373045779862,
+        "diagnostics_pass": true,
+        "prior_scale": 2.0,
+        "fingerprint": "f81e72838c60f5996b1ae6d6d077ab66193f65e6484cdce25934e5176d57e20c",
+        "source_snapshot": {
+          "forecast_issue": "2026-08",
+          "forecast_issue_date": "2026-08-13",
+          "official_last_center_month": "2027-04-01",
+          "imf_metadata": {
+            "revenue_pct_gdp": {
+              "label": "Revenue",
+              "description": "Revenue",
+              "source": "Fiscal Monitor (April 2026)",
+              "unit": "% of GDP",
+              "dataset": "FM",
+              "projection-year": 2026,
+              "last-modified": "2026-04-15 00:15:26"
+            },
+            "gdp_usd_bn": {
+              "label": "GDP, current prices",
+              "description": "Gross domestic product is the most commonly used single measure of a country's overall economic activity. It represents the total value at current prices of final goods and services produced within a country during a specified time period, such as one year.",
+              "source": "World Economic Outlook (April 2026)",
+              "unit": "Billions of U.S. dollars",
+              "dataset": "WEO",
+              "projection-year": 2026,
+              "last-modified": "2026-04-08 16:07:35"
+            },
+            "gdp_growth_pct": {
+              "label": "Real GDP growth",
+              "description": "Gross domestic product is the most commonly used single measure of a country's overall economic activity. It represents the total value at constant prices of final goods and services produced within a country during a specified time period, such as one year.",
+              "source": "World Economic Outlook (April 2026)",
+              "unit": "Annual percent change",
+              "dataset": "WEO",
+              "projection-year": 2026,
+              "last-modified": "2026-04-08 16:07:34"
+            }
+          },
+          "sources": {
+            "cpc_outlook": {
+              "url": "https://www.cpc.ncep.noaa.gov/products/analysis_monitoring/enso/roni/outlook/",
+              "sha256": "831e00183ec55ef98c042a9ef711bb19245765d05c62ea887814301d5a88f744",
+              "file": "cpc_outlook/831e00183ec55ef98c042a9ef711bb19245765d05c62ea887814301d5a88f744.bin",
+              "retrieved_at": "2026-09-07T01:47:59.072907+00:00",
+              "checked_at": "2026-09-07T01:47:59.072907+00:00",
+              "etag": null,
+              "last_modified": null,
+              "bytes": 29774
+            },
+            "cpc_advisory": {
+              "url": "https://www.cpc.ncep.noaa.gov/products/analysis_monitoring/enso_advisory/ensodisc.shtml",
+              "sha256": "8647a3804260856f979bba518475d63ffb69c2716d10e4f730658df530c3cc2d",
+              "file": "cpc_advisory/8647a3804260856f979bba518475d63ffb69c2716d10e4f730658df530c3cc2d.bin",
+              "retrieved_at": "2026-09-07T01:48:56.679758+00:00",
+              "checked_at": "2026-09-07T01:48:56.679758+00:00",
+              "etag": null,
+              "last_modified": null,
+              "bytes": 13382
+            },
+            "event_imf_revenue_pct_gdp": {
+              "url": "https://www.imf.org/external/datamapper/api/v2/GGR_G01_GDP_PT",
+              "sha256": "1963930b9e4c636481c81e06e20448822be5e3a4641240e57f849f4824745323",
+              "file": "event_imf_revenue_pct_gdp/1963930b9e4c636481c81e06e20448822be5e3a4641240e57f849f4824745323.bin",
+              "retrieved_at": "2026-09-07T01:51:18.869418+00:00",
+              "checked_at": "2026-09-07T01:51:18.869418+00:00",
+              "etag": null,
+              "last_modified": null,
+              "bytes": 185573
+            },
+            "event_imf_gdp_usd_bn": {
+              "url": "https://www.imf.org/external/datamapper/api/v2/NGDPD",
+              "sha256": "5592998446e9bdae68d4f04c45ff4dacb0eb429441dfa7dbfc8d59ffa1df05cf",
+              "file": "event_imf_gdp_usd_bn/5592998446e9bdae68d4f04c45ff4dacb0eb429441dfa7dbfc8d59ffa1df05cf.bin",
+              "retrieved_at": "2026-09-07T01:51:29.558558+00:00",
+              "checked_at": "2026-09-07T01:51:29.558558+00:00",
+              "etag": null,
+              "last_modified": null,
+              "bytes": 158018
+            },
+            "event_imf_gdp_growth_pct": {
+              "url": "https://www.imf.org/external/datamapper/api/v2/NGDP_RPCH",
+              "sha256": "689860c3b985d99078145c6f171c4b7a9c4e8baa6a4e6ee89a27dd2411d13ead",
+              "file": "event_imf_gdp_growth_pct/689860c3b985d99078145c6f171c4b7a9c4e8baa6a4e6ee89a27dd2411d13ead.bin",
+              "retrieved_at": "2026-09-07T01:51:39.583093+00:00",
+              "checked_at": "2026-09-07T01:51:39.583093+00:00",
+              "etag": null,
+              "last_modified": null,
+              "bytes": 122208
+            },
+            "event_agri_real_usd": {
+              "url": "https://api.worldbank.org/v2/country/IDN;MYS;PHL;THA;VNM;PNG;FJI;SLB;VUT;WSM;TON;AUS/indicator/NV.AGR.TOTL.KD?format=json&per_page=20000&date=1961:2100",
+              "sha256": "dbe09d723ac6bf90c00557d4e683d80c9d1e1f1b1d99b75cd3df06cd81998de9",
+              "file": "event_agri_real_usd/dbe09d723ac6bf90c00557d4e683d80c9d1e1f1b1d99b75cd3df06cd81998de9.bin",
+              "retrieved_at": "2026-09-07T01:51:48.032102+00:00",
+              "checked_at": "2026-09-07T01:51:48.032102+00:00",
+              "etag": null,
+              "last_modified": "Mon, 07 Sep 2026 01:51:47 GMT",
+              "bytes": 199366
+            },
+            "event_gdp_real_usd": {
+              "url": "https://api.worldbank.org/v2/country/IDN;MYS;PHL;THA;VNM;PNG;FJI;SLB;VUT;WSM;TON;AUS/indicator/NY.GDP.MKTP.KD?format=json&per_page=20000&date=1961:2100",
+              "sha256": "97eef8b96d996fda0eb804e9a17f458fe7664a10d7194e7409f1b7e61d176c76",
+              "file": "event_gdp_real_usd/97eef8b96d996fda0eb804e9a17f458fe7664a10d7194e7409f1b7e61d176c76.bin",
+              "retrieved_at": "2026-09-07T01:51:50.803486+00:00",
+              "checked_at": "2026-09-07T01:51:50.803486+00:00",
+              "etag": null,
+              "last_modified": "Mon, 07 Sep 2026 01:51:50 GMT",
+              "bytes": 166449
+            },
+            "event_agri_current_usd": {
+              "url": "https://api.worldbank.org/v2/country/IDN;MYS;PHL;THA;VNM;PNG;FJI;SLB;VUT;WSM;TON;AUS/indicator/NV.AGR.TOTL.CD?format=json&per_page=20000&date=1961:2100",
+              "sha256": "199db3b1909444c1355e1cb604616d3c4e08ddeff3f0a6f4169aabcb64927b74",
+              "file": "event_agri_current_usd/199db3b1909444c1355e1cb604616d3c4e08ddeff3f0a6f4169aabcb64927b74.bin",
+              "retrieved_at": "2026-09-07T01:51:54.756505+00:00",
+              "checked_at": "2026-09-07T01:51:54.756505+00:00",
+              "etag": null,
+              "last_modified": "Mon, 07 Sep 2026 01:51:54 GMT",
+              "bytes": 195055
+            }
+          }
+        },
+        "causal_identification": false
+      }
+    },
+    "unit": null,
+    "scenario_id": null
+  },
+  "7bec50c5aa2cba9f3fcba42c": {
+    "assessment_id": "20260907T153857705816Z",
+    "artifact": "reports/agriculture_bayesian_validation.json",
+    "artifact_hash": "2a7c5b7d3b91761624b49cb7316f09162817b0cbd8b0c38fa4f0c52dd629d0c6",
+    "bundle_hash": "07603bf49b655531ed9fa5a418ddd640366466f6a80a90428a003f31b50d61f7",
+    "selector": {},
+    "value": {
+      "kind": "agriculture",
+      "training_end": 2018,
+      "n": 60,
+      "rmse": 0.06000061973006384,
+      "crps": 0.029388616378595325,
+      "coverage90": 0.9333333333333333,
+      "type": "Bayesian conditional holdout with realized inputs; latest revised history"
+    },
+    "unit": null,
+    "scenario_id": null
+  },
+  "48658736654193b4b92b3460": {
+    "assessment_id": "20260907T153857705816Z",
+    "artifact": "reports/fiscal_bayesian_validation.json",
+    "artifact_hash": "19cca46ea99afcc0e29642be35f1423150b62cbcb0e6f2828fe2f3d687e27e62",
+    "bundle_hash": "07603bf49b655531ed9fa5a418ddd640366466f6a80a90428a003f31b50d61f7",
+    "selector": {},
+    "value": {
+      "kind": "fiscal",
+      "training_end": 2018,
+      "n": 66,
+      "rmse": 0.08244289244070911,
+      "crps": 0.04571586072955261,
+      "coverage90": 0.9393939393939394,
+      "type": "Bayesian conditional holdout with realized inputs; latest revised history"
+    },
+    "unit": null,
+    "scenario_id": null
+  },
+  "fcd942bceffdc9776e5c28fd": {
+    "assessment_id": "20260907T153857705816Z",
+    "artifact": "reports/macro_validation.csv",
+    "artifact_hash": "360697080ea618dfcc6b222236cd5cbba157f4f756a7fefa7e4783df97e81c27",
+    "bundle_hash": "07603bf49b655531ed9fa5a418ddd640366466f6a80a90428a003f31b50d61f7",
+    "selector": {
+      "table": "all"
+    },
+    "value": [
+      {
+        "kind": "agriculture",
+        "model": "baseline",
+        "n": 180,
+        "rmse": 0.056136846029297,
+        "crps": 0.028122554109536,
+        "coverage90": 0.872222222222222,
+        "validation_type": "conditional final-vintage rolling hindcast; ridge challenger"
+      },
+      {
+        "kind": "agriculture",
+        "model": "with_climate",
+        "n": 180,
+        "rmse": 0.05875595099814,
+        "crps": 0.031469330927203,
+        "coverage90": 0.738888888888889,
+        "validation_type": "conditional final-vintage rolling hindcast; ridge challenger"
+      },
+      {
+        "kind": "fiscal",
+        "model": "baseline",
+        "n": 180,
+        "rmse": 0.09057917685843,
+        "crps": 0.048746893623015,
+        "coverage90": 0.827777777777778,
+        "validation_type": "conditional final-vintage rolling hindcast; ridge challenger"
+      },
+      {
+        "kind": "fiscal",
+        "model": "with_agriculture",
+        "n": 180,
+        "rmse": 0.093557833187244,
+        "crps": 0.050640051295598,
+        "coverage90": 0.811111111111111,
+        "validation_type": "conditional final-vintage rolling hindcast; ridge challenger"
+      }
+    ],
+    "unit": null,
+    "scenario_id": null
+  },
+  "4f42001c805c4bda23b1893b": {
+    "assessment_id": "20260907T153857705816Z",
+    "artifact": "reports/event_risk_metadata.json",
+    "artifact_hash": "8cb8943ac32e010a5bed8976184ee08fb11e320b854ec8ab165a5b4ac0998780",
+    "bundle_hash": "07603bf49b655531ed9fa5a418ddd640366466f6a80a90428a003f31b50d61f7",
+    "selector": {
+      "json_path": [
+        "climate",
+        "as_of"
+      ]
+    },
+    "value": "2026-09-07",
+    "unit": "ISO date",
+    "scenario_id": null
+  },
+  "fac6ca3fd4b1ee0242e119e3": {
+    "assessment_id": "20260907T153857705816Z",
+    "artifact": "reports/event_risk_metadata.json",
+    "artifact_hash": "8cb8943ac32e010a5bed8976184ee08fb11e320b854ec8ab165a5b4ac0998780",
+    "bundle_hash": "07603bf49b655531ed9fa5a418ddd640366466f6a80a90428a003f31b50d61f7",
+    "selector": {
+      "json_path": [
+        "climate",
+        "forecast_issue"
+      ]
+    },
+    "value": "2026-08",
+    "unit": "ISO month",
+    "scenario_id": null
+  },
+  "ad2538b5785a2d0f8a896f57": {
+    "assessment_id": "20260907T153857705816Z",
+    "artifact": "reports/event_risk_metadata.json",
+    "artifact_hash": "8cb8943ac32e010a5bed8976184ee08fb11e320b854ec8ab165a5b4ac0998780",
+    "bundle_hash": "07603bf49b655531ed9fa5a418ddd640366466f6a80a90428a003f31b50d61f7",
+    "selector": {
+      "json_path": [
+        "climate",
+        "forecast_issue_date"
+      ]
+    },
+    "value": "2026-08-13",
+    "unit": "ISO date",
+    "scenario_id": null
+  },
+  "8e9a3b0245e229fb91fb4980": {
+    "assessment_id": "20260907T153857705816Z",
+    "artifact": "reports/event_risk_metadata.json",
+    "artifact_hash": "8cb8943ac32e010a5bed8976184ee08fb11e320b854ec8ab165a5b4ac0998780",
+    "bundle_hash": "07603bf49b655531ed9fa5a418ddd640366466f6a80a90428a003f31b50d61f7",
+    "selector": {
+      "json_path": [
+        "climate",
+        "official_last_center_month"
+      ]
+    },
+    "value": "2027-04-01",
+    "unit": "ISO date",
+    "scenario_id": null
+  },
+  "73b22553df54b439226dff52": {
+    "assessment_id": "20260907T153857705816Z",
+    "artifact": "reports/event_risk_metadata.json",
+    "artifact_hash": "8cb8943ac32e010a5bed8976184ee08fb11e320b854ec8ab165a5b4ac0998780",
+    "bundle_hash": "07603bf49b655531ed9fa5a418ddd640366466f6a80a90428a003f31b50d61f7",
+    "selector": {
+      "json_path": [
+        "climate",
+        "latest_observed_center"
+      ]
+    },
+    "value": "2026-07-01",
+    "unit": "ISO date",
+    "scenario_id": null
+  },
+  "8d60ab90ce0adccfc631f158": {
+    "assessment_id": "20260907T153857705816Z",
+    "artifact": "docs/EVENT_METHODOLOGY.md",
+    "artifact_hash": "f00928a0bef5df7f2327d85613b0918a6e01e4bef480eff092b78e6ca72bc00e",
+    "bundle_hash": "07603bf49b655531ed9fa5a418ddd640366466f6a80a90428a003f31b50d61f7",
+    "selector": {
+      "retrieval_query": "forecast conditional revenue uncertainty limitations"
+    },
+    "value": " \u2026 The earlier generic stress experiment is background research and is not the answer to the 2026\u20132027 question.\n\n## Estimand and scope\n\nFor each economy and each year, estimate **government revenue without this event minus government revenue with this event**, conditional on the stated macroeconomic path. Report the joint two-year \u2026 ",
+    "unit": null,
+    "scenario_id": null
+  },
+  "2d49b5b31301c58f2b3b6e93": {
+    "assessment_id": "20260907T153857705816Z",
+    "artifact": "docs/EVENT_SOURCES.md",
+    "artifact_hash": "0dbae7bb2d4b9b345b152a9ea6de05660c6a9a04d7715385a8c1e66d4422c25e",
+    "bundle_hash": "07603bf49b655531ed9fa5a418ddd640366466f6a80a90428a003f31b50d61f7",
+    "selector": {
+      "retrieval_query": "forecast conditional revenue uncertainty limitations"
+    },
+    "value": " \u2026 noaa.gov/products/analysis_monitoring/enso/roni/outlook/) | Dated forecast marginals, refreshed monthly |\n| Event status | [CPC advisory](https://www.cpc.ncep.noaa.gov/products/analysis_monitoring/enso_advisory/ensodisc.shtml) | Issue-date consistency and observed versus forecast status |\n| Government revenue | [IMF Fiscal Monitor API v2](https://www.imf.org/external \u2026 ",
+    "unit": null,
+    "scenario_id": null
+  },
+  "1d22f26501f090cd00fc31c0": {
+    "assessment_id": "20260907T153857705816Z",
+    "artifact": "reports/event_risk_metadata.json",
+    "artifact_hash": "8cb8943ac32e010a5bed8976184ee08fb11e320b854ec8ab165a5b4ac0998780",
+    "bundle_hash": "07603bf49b655531ed9fa5a418ddd640366466f6a80a90428a003f31b50d61f7",
+    "selector": {
+      "retrieval_query": "forecast conditional revenue uncertainty limitations"
+    },
+    "value": "{\n  \"climate\": {\n    \"forecast_issue\": \"2026-08\",\n    \"forecast_issue_date\": \"2026-08-13\",\n    \"official_last_center_month\": \"2027-04-01\",\n    \"imf_metadata\": {\n      \"revenue_pct_gdp\": {\n        \"label\": \"Revenue\",\n        \"description\": \"Revenue\",\n        \"source\": \"Fiscal Monitor (April 2026)\",\n        \"unit\": \"% of GDP\",\n        \"dataset\": \"FM\",\n        \"projection-year\": 2026,\n        \"last-modified\": \"2026-04-15 00:15:26\"\n      },\n      \"gdp_usd \u2026 ",
+    "unit": null,
+    "scenario_id": null
+  },
+  "a03373dd0c952c4c3984de91": {
+    "assessment_id": "20260907T153857705816Z",
+    "artifact": "reports/event_aggregate_risk.csv",
+    "artifact_hash": "a806721c6ac0c496ba4ea8ac329d3e4b7b095049dac7391ce96f1168dcb8f8a4",
+    "bundle_hash": "07603bf49b655531ed9fa5a418ddd640366466f6a80a90428a003f31b50d61f7",
+    "selector": {
+      "scope": "all_modeled",
+      "period": "2026",
+      "metric": "revenue_loss_2025usd_mean"
+    },
+    "value": 357334289.8141756,
+    "unit": "2025 USD",
+    "scenario_id": null
+  },
+  "1b4d440e0a019d853d6fcc75": {
+    "assessment_id": "20260907T153857705816Z",
+    "artifact": "reports/event_aggregate_risk.csv",
+    "artifact_hash": "a806721c6ac0c496ba4ea8ac329d3e4b7b095049dac7391ce96f1168dcb8f8a4",
+    "bundle_hash": "07603bf49b655531ed9fa5a418ddd640366466f6a80a90428a003f31b50d61f7",
+    "selector": {
+      "scope": "all_modeled",
+      "period": "2026",
+      "metric": "p_revenue_loss"
+    },
+    "value": 0.6306,
+    "unit": "probability",
+    "scenario_id": null
+  },
+  "d582c4b9b6d777482bbb4631": {
+    "assessment_id": "20260907T153857705816Z",
+    "artifact": "reports/event_aggregate_risk.csv",
+    "artifact_hash": "a806721c6ac0c496ba4ea8ac329d3e4b7b095049dac7391ce96f1168dcb8f8a4",
+    "bundle_hash": "07603bf49b655531ed9fa5a418ddd640366466f6a80a90428a003f31b50d61f7",
+    "selector": {
+      "scope": "all_modeled",
+      "period": "2026",
+      "metric": "es95_2025usd"
+    },
+    "value": 3324366437.36935,
+    "unit": "2025 USD",
+    "scenario_id": null
+  },
+  "b11d96e380384aff6c6f30a3": {
+    "assessment_id": "20260907T153857705816Z",
+    "artifact": "reports/event_aggregate_risk.csv",
+    "artifact_hash": "a806721c6ac0c496ba4ea8ac329d3e4b7b095049dac7391ce96f1168dcb8f8a4",
+    "bundle_hash": "07603bf49b655531ed9fa5a418ddd640366466f6a80a90428a003f31b50d61f7",
+    "selector": {
+      "scope": "Pacific_islands",
+      "period": "2026",
+      "metric": "revenue_loss_2025usd_mean"
+    },
+    "value": 6849618.363448219,
+    "unit": "2025 USD",
+    "scenario_id": null
+  },
+  "5487e36f697079fb202f8725": {
+    "assessment_id": "20260907T153857705816Z",
+    "artifact": "reports/event_aggregate_risk.csv",
+    "artifact_hash": "a806721c6ac0c496ba4ea8ac329d3e4b7b095049dac7391ce96f1168dcb8f8a4",
+    "bundle_hash": "07603bf49b655531ed9fa5a418ddd640366466f6a80a90428a003f31b50d61f7",
+    "selector": {
+      "scope": "Pacific_islands",
+      "period": "2026",
+      "metric": "p_revenue_loss"
+    },
+    "value": 0.5902,
+    "unit": "probability",
+    "scenario_id": null
+  },
+  "2851df2260f5d843832c3447": {
+    "assessment_id": "20260907T153857705816Z",
+    "artifact": "reports/event_aggregate_risk.csv",
+    "artifact_hash": "a806721c6ac0c496ba4ea8ac329d3e4b7b095049dac7391ce96f1168dcb8f8a4",
+    "bundle_hash": "07603bf49b655531ed9fa5a418ddd640366466f6a80a90428a003f31b50d61f7",
+    "selector": {
+      "scope": "Pacific_islands",
+      "period": "2026",
+      "metric": "es95_2025usd"
+    },
+    "value": 103793649.58191334,
+    "unit": "2025 USD",
+    "scenario_id": null
+  },
+  "0f378c0e54e74fe2f2524f99": {
+    "assessment_id": "20260907T153857705816Z",
+    "artifact": "reports/event_aggregate_risk.csv",
+    "artifact_hash": "a806721c6ac0c496ba4ea8ac329d3e4b7b095049dac7391ce96f1168dcb8f8a4",
+    "bundle_hash": "07603bf49b655531ed9fa5a418ddd640366466f6a80a90428a003f31b50d61f7",
+    "selector": {
+      "scope": "excluding_Australia",
+      "period": "2026",
+      "metric": "revenue_loss_2025usd_mean"
+    },
+    "value": 312843543.5795689,
+    "unit": "2025 USD",
+    "scenario_id": null
+  },
+  "ff167d442fd606c0a2c3d7b4": {
+    "assessment_id": "20260907T153857705816Z",
+    "artifact": "reports/event_aggregate_risk.csv",
+    "artifact_hash": "a806721c6ac0c496ba4ea8ac329d3e4b7b095049dac7391ce96f1168dcb8f8a4",
+    "bundle_hash": "07603bf49b655531ed9fa5a418ddd640366466f6a80a90428a003f31b50d61f7",
+    "selector": {
+      "scope": "excluding_Australia",
+      "period": "2026",
+      "metric": "p_revenue_loss"
+    },
+    "value": 0.6366,
+    "unit": "probability",
+    "scenario_id": null
+  },
+  "4753f6bb7fbbb65ab2434829": {
+    "assessment_id": "20260907T153857705816Z",
+    "artifact": "reports/event_aggregate_risk.csv",
+    "artifact_hash": "a806721c6ac0c496ba4ea8ac329d3e4b7b095049dac7391ce96f1168dcb8f8a4",
+    "bundle_hash": "07603bf49b655531ed9fa5a418ddd640366466f6a80a90428a003f31b50d61f7",
+    "selector": {
+      "scope": "excluding_Australia",
+      "period": "2026",
+      "metric": "es95_2025usd"
+    },
+    "value": 2799798457.06025,
+    "unit": "2025 USD",
+    "scenario_id": null
+  },
+  "24c7f4ddfa777906d7c86454": {
+    "assessment_id": "20260907T153857705816Z",
+    "artifact": "reports/event_aggregate_risk.csv",
+    "artifact_hash": "a806721c6ac0c496ba4ea8ac329d3e4b7b095049dac7391ce96f1168dcb8f8a4",
+    "bundle_hash": "07603bf49b655531ed9fa5a418ddd640366466f6a80a90428a003f31b50d61f7",
+    "selector": {
+      "scope": "all_modeled",
+      "period": "2027",
+      "metric": "revenue_loss_2025usd_mean"
+    },
+    "value": 460446606.9292434,
+    "unit": "2025 USD",
+    "scenario_id": null
+  },
+  "d0cc7f83fb4447a35a4c346a": {
+    "assessment_id": "20260907T153857705816Z",
+    "artifact": "reports/event_aggregate_risk.csv",
+    "artifact_hash": "a806721c6ac0c496ba4ea8ac329d3e4b7b095049dac7391ce96f1168dcb8f8a4",
+    "bundle_hash": "07603bf49b655531ed9fa5a418ddd640366466f6a80a90428a003f31b50d61f7",
+    "selector": {
+      "scope": "all_modeled",
+      "period": "2027",
+      "metric": "p_revenue_loss"
+    },
+    "value": 0.6175,
+    "unit": "probability",
+    "scenario_id": null
+  },
+  "0ff45ef7de12d58c07982f7f": {
+    "assessment_id": "20260907T153857705816Z",
+    "artifact": "reports/event_aggregate_risk.csv",
+    "artifact_hash": "a806721c6ac0c496ba4ea8ac329d3e4b7b095049dac7391ce96f1168dcb8f8a4",
+    "bundle_hash": "07603bf49b655531ed9fa5a418ddd640366466f6a80a90428a003f31b50d61f7",
+    "selector": {
+      "scope": "all_modeled",
+      "period": "2027",
+      "metric": "es95_2025usd"
+    },
+    "value": 4614392933.514657,
+    "unit": "2025 USD",
+    "scenario_id": null
+  },
+  "aa7cc2c95a8af8ff88ad78d7": {
+    "assessment_id": "20260907T153857705816Z",
+    "artifact": "reports/event_aggregate_risk.csv",
+    "artifact_hash": "a806721c6ac0c496ba4ea8ac329d3e4b7b095049dac7391ce96f1168dcb8f8a4",
+    "bundle_hash": "07603bf49b655531ed9fa5a418ddd640366466f6a80a90428a003f31b50d61f7",
+    "selector": {
+      "scope": "Pacific_islands",
+      "period": "2027",
+      "metric": "revenue_loss_2025usd_mean"
+    },
+    "value": 7616061.657946312,
+    "unit": "2025 USD",
+    "scenario_id": null
+  },
+  "894da8778fd0a1ff641745de": {
+    "assessment_id": "20260907T153857705816Z",
+    "artifact": "reports/event_aggregate_risk.csv",
+    "artifact_hash": "a806721c6ac0c496ba4ea8ac329d3e4b7b095049dac7391ce96f1168dcb8f8a4",
+    "bundle_hash": "07603bf49b655531ed9fa5a418ddd640366466f6a80a90428a003f31b50d61f7",
+    "selector": {
+      "scope": "Pacific_islands",
+      "period": "2027",
+      "metric": "p_revenue_loss"
+    },
+    "value": 0.5702,
+    "unit": "probability",
+    "scenario_id": null
+  },
+  "ffd607c9e89529a828b68368": {
+    "assessment_id": "20260907T153857705816Z",
+    "artifact": "reports/event_aggregate_risk.csv",
+    "artifact_hash": "a806721c6ac0c496ba4ea8ac329d3e4b7b095049dac7391ce96f1168dcb8f8a4",
+    "bundle_hash": "07603bf49b655531ed9fa5a418ddd640366466f6a80a90428a003f31b50d61f7",
+    "selector": {
+      "scope": "Pacific_islands",
+      "period": "2027",
+      "metric": "es95_2025usd"
+    },
+    "value": 140443610.18201944,
+    "unit": "2025 USD",
+    "scenario_id": null
+  },
+  "f1ddde7d3b18c17a25a96d4d": {
+    "assessment_id": "20260907T153857705816Z",
+    "artifact": "reports/event_aggregate_risk.csv",
+    "artifact_hash": "a806721c6ac0c496ba4ea8ac329d3e4b7b095049dac7391ce96f1168dcb8f8a4",
+    "bundle_hash": "07603bf49b655531ed9fa5a418ddd640366466f6a80a90428a003f31b50d61f7",
+    "selector": {
+      "scope": "excluding_Australia",
+      "period": "2027",
+      "metric": "revenue_loss_2025usd_mean"
+    },
+    "value": 364634800.3656341,
+    "unit": "2025 USD",
+    "scenario_id": null
+  },
+  "3b8c2e5094256d2d1c72d335": {
+    "assessment_id": "20260907T153857705816Z",
+    "artifact": "reports/event_aggregate_risk.csv",
+    "artifact_hash": "a806721c6ac0c496ba4ea8ac329d3e4b7b095049dac7391ce96f1168dcb8f8a4",
+    "bundle_hash": "07603bf49b655531ed9fa5a418ddd640366466f6a80a90428a003f31b50d61f7",
+    "selector": {
+      "scope": "excluding_Australia",
+      "period": "2027",
+      "metric": "p_revenue_loss"
+    },
+    "value": 0.6198,
+    "unit": "probability",
+    "scenario_id": null
+  },
+  "219d6c5b3d1fcb1d35b7f077": {
+    "assessment_id": "20260907T153857705816Z",
+    "artifact": "reports/event_aggregate_risk.csv",
+    "artifact_hash": "a806721c6ac0c496ba4ea8ac329d3e4b7b095049dac7391ce96f1168dcb8f8a4",
+    "bundle_hash": "07603bf49b655531ed9fa5a418ddd640366466f6a80a90428a003f31b50d61f7",
+    "selector": {
+      "scope": "excluding_Australia",
+      "period": "2027",
+      "metric": "es95_2025usd"
+    },
+    "value": 3552546449.290297,
+    "unit": "2025 USD",
+    "scenario_id": null
+  },
+  "e518268b4e6bf1094a72717f": {
+    "assessment_id": "20260907T153857705816Z",
+    "artifact": "reports/event_aggregate_risk.csv",
+    "artifact_hash": "a806721c6ac0c496ba4ea8ac329d3e4b7b095049dac7391ce96f1168dcb8f8a4",
+    "bundle_hash": "07603bf49b655531ed9fa5a418ddd640366466f6a80a90428a003f31b50d61f7",
+    "selector": {
+      "scope": "all_modeled",
+      "period": "2026\u20132027",
+      "metric": "revenue_loss_2025usd_mean"
+    },
+    "value": 817780896.7434188,
+    "unit": "2025 USD",
+    "scenario_id": null
+  },
+  "43237dd56abe2bf1f46a13aa": {
+    "assessment_id": "20260907T153857705816Z",
+    "artifact": "reports/event_aggregate_risk.csv",
+    "artifact_hash": "a806721c6ac0c496ba4ea8ac329d3e4b7b095049dac7391ce96f1168dcb8f8a4",
+    "bundle_hash": "07603bf49b655531ed9fa5a418ddd640366466f6a80a90428a003f31b50d61f7",
+    "selector": {
+      "scope": "all_modeled",
+      "period": "2026\u20132027",
+      "metric": "p_revenue_loss"
+    },
+    "value": 0.625,
+    "unit": "probability",
+    "scenario_id": null
+  },
+  "d7329d24573d308581021d53": {
+    "assessment_id": "20260907T153857705816Z",
+    "artifact": "reports/event_aggregate_risk.csv",
+    "artifact_hash": "a806721c6ac0c496ba4ea8ac329d3e4b7b095049dac7391ce96f1168dcb8f8a4",
+    "bundle_hash": "07603bf49b655531ed9fa5a418ddd640366466f6a80a90428a003f31b50d61f7",
+    "selector": {
+      "scope": "all_modeled",
+      "period": "2026\u20132027",
+      "metric": "es95_2025usd"
+    },
+    "value": 7767766552.847349,
+    "unit": "2025 USD",
+    "scenario_id": null
+  },
+  "340fa68694bcf0332d35e306": {
+    "assessment_id": "20260907T153857705816Z",
+    "artifact": "reports/event_aggregate_risk.csv",
+    "artifact_hash": "a806721c6ac0c496ba4ea8ac329d3e4b7b095049dac7391ce96f1168dcb8f8a4",
+    "bundle_hash": "07603bf49b655531ed9fa5a418ddd640366466f6a80a90428a003f31b50d61f7",
+    "selector": {
+      "scope": "Pacific_islands",
+      "period": "2026\u20132027",
+      "metric": "revenue_loss_2025usd_mean"
+    },
+    "value": 14465680.021394532,
+    "unit": "2025 USD",
+    "scenario_id": null
+  },
+  "5c17713eb7522bfe76f6a139": {
+    "assessment_id": "20260907T153857705816Z",
+    "artifact": "reports/event_aggregate_risk.csv",
+    "artifact_hash": "a806721c6ac0c496ba4ea8ac329d3e4b7b095049dac7391ce96f1168dcb8f8a4",
+    "bundle_hash": "07603bf49b655531ed9fa5a418ddd640366466f6a80a90428a003f31b50d61f7",
+    "selector": {
+      "scope": "Pacific_islands",
+      "period": "2026\u20132027",
+      "metric": "p_revenue_loss"
+    },
+    "value": 0.5812,
+    "unit": "probability",
+    "scenario_id": null
+  },
+  "20da1c2e1db1c2e19238c9e1": {
+    "assessment_id": "20260907T153857705816Z",
+    "artifact": "reports/event_aggregate_risk.csv",
+    "artifact_hash": "a806721c6ac0c496ba4ea8ac329d3e4b7b095049dac7391ce96f1168dcb8f8a4",
+    "bundle_hash": "07603bf49b655531ed9fa5a418ddd640366466f6a80a90428a003f31b50d61f7",
+    "selector": {
+      "scope": "Pacific_islands",
+      "period": "2026\u20132027",
+      "metric": "es95_2025usd"
+    },
+    "value": 239868714.23911777,
+    "unit": "2025 USD",
+    "scenario_id": null
+  },
+  "2dc640090e756ce2e37ce25d": {
+    "assessment_id": "20260907T153857705816Z",
+    "artifact": "reports/event_aggregate_risk.csv",
+    "artifact_hash": "a806721c6ac0c496ba4ea8ac329d3e4b7b095049dac7391ce96f1168dcb8f8a4",
+    "bundle_hash": "07603bf49b655531ed9fa5a418ddd640366466f6a80a90428a003f31b50d61f7",
+    "selector": {
+      "scope": "excluding_Australia",
+      "period": "2026\u20132027",
+      "metric": "revenue_loss_2025usd_mean"
+    },
+    "value": 677478343.9452031,
+    "unit": "2025 USD",
+    "scenario_id": null
+  },
+  "ceb6295f423d615c8a967a05": {
+    "assessment_id": "20260907T153857705816Z",
+    "artifact": "reports/event_aggregate_risk.csv",
+    "artifact_hash": "a806721c6ac0c496ba4ea8ac329d3e4b7b095049dac7391ce96f1168dcb8f8a4",
+    "bundle_hash": "07603bf49b655531ed9fa5a418ddd640366466f6a80a90428a003f31b50d61f7",
+    "selector": {
+      "scope": "excluding_Australia",
+      "period": "2026\u20132027",
+      "metric": "p_revenue_loss"
+    },
+    "value": 0.6329,
+    "unit": "probability",
+    "scenario_id": null
+  },
+  "f7018a174e615a82c8b40a6f": {
+    "assessment_id": "20260907T153857705816Z",
+    "artifact": "reports/event_aggregate_risk.csv",
+    "artifact_hash": "a806721c6ac0c496ba4ea8ac329d3e4b7b095049dac7391ce96f1168dcb8f8a4",
+    "bundle_hash": "07603bf49b655531ed9fa5a418ddd640366466f6a80a90428a003f31b50d61f7",
+    "selector": {
+      "scope": "excluding_Australia",
+      "period": "2026\u20132027",
+      "metric": "es95_2025usd"
+    },
+    "value": 6207708177.732723,
+    "unit": "2025 USD",
+    "scenario_id": null
+  },
+  "c86ea3d5303e4b1f7812987c": {
+    "assessment_id": "20260907T153857705816Z",
+    "artifact": "reports/event_country_risk.csv",
+    "artifact_hash": "e0e5ef6ca26a5ac8962f684b860878bd3032a1d5baf8c64b4b1c219ef072137e",
+    "bundle_hash": "07603bf49b655531ed9fa5a418ddd640366466f6a80a90428a003f31b50d61f7",
+    "selector": {
+      "country": "AUS",
+      "year": "2026",
+      "metric": "revenue_loss_2025usd_mean"
+    },
+    "value": 44490746.23460664,
+    "unit": "2025 USD",
+    "scenario_id": null
+  },
+  "b24d5167fc28799d92d2672c": {
+    "assessment_id": "20260907T153857705816Z",
+    "artifact": "reports/event_country_risk.csv",
+    "artifact_hash": "e0e5ef6ca26a5ac8962f684b860878bd3032a1d5baf8c64b4b1c219ef072137e",
+    "bundle_hash": "07603bf49b655531ed9fa5a418ddd640366466f6a80a90428a003f31b50d61f7",
+    "selector": {
+      "country": "AUS",
+      "year": "2026",
+      "metric": "p_revenue_loss"
+    },
+    "value": 0.5503,
+    "unit": "probability",
+    "scenario_id": null
+  },
+  "1bcc0633480d9c2a6b78a06a": {
+    "assessment_id": "20260907T153857705816Z",
+    "artifact": "reports/event_country_risk.csv",
+    "artifact_hash": "e0e5ef6ca26a5ac8962f684b860878bd3032a1d5baf8c64b4b1c219ef072137e",
+    "bundle_hash": "07603bf49b655531ed9fa5a418ddd640366466f6a80a90428a003f31b50d61f7",
+    "selector": {
+      "country": "AUS",
+      "year": "2026",
+      "metric": "revenue_loss_es95_2025usd"
+    },
+    "value": 1042120311.9580626,
+    "unit": "2025 USD",
+    "scenario_id": null
+  },
+  "c8cd0e888a61c98ce232d923": {
+    "assessment_id": "20260907T153857705816Z",
+    "artifact": "reports/event_country_risk.csv",
+    "artifact_hash": "e0e5ef6ca26a5ac8962f684b860878bd3032a1d5baf8c64b4b1c219ef072137e",
+    "bundle_hash": "07603bf49b655531ed9fa5a418ddd640366466f6a80a90428a003f31b50d61f7",
+    "selector": {
+      "country": "FJI",
+      "year": "2026",
+      "metric": "revenue_loss_2025usd_mean"
+    },
+    "value": 748098.3583733675,
+    "unit": "2025 USD",
+    "scenario_id": null
+  },
+  "5334e099c4ec893c32308990": {
+    "assessment_id": "20260907T153857705816Z",
+    "artifact": "reports/event_country_risk.csv",
+    "artifact_hash": "e0e5ef6ca26a5ac8962f684b860878bd3032a1d5baf8c64b4b1c219ef072137e",
+    "bundle_hash": "07603bf49b655531ed9fa5a418ddd640366466f6a80a90428a003f31b50d61f7",
+    "selector": {
+      "country": "FJI",
+      "year": "2026",
+      "metric": "p_revenue_loss"
+    },
+    "value": 0.5695,
+    "unit": "probability",
+    "scenario_id": null
+  },
+  "0a4ed93661b7c01de8b45fec": {
+    "assessment_id": "20260907T153857705816Z",
+    "artifact": "reports/event_country_risk.csv",
+    "artifact_hash": "e0e5ef6ca26a5ac8962f684b860878bd3032a1d5baf8c64b4b1c219ef072137e",
+    "bundle_hash": "07603bf49b655531ed9fa5a418ddd640366466f6a80a90428a003f31b50d61f7",
+    "selector": {
+      "country": "FJI",
+      "year": "2026",
+      "metric": "revenue_loss_es95_2025usd"
+    },
+    "value": 13873952.04041234,
+    "unit": "2025 USD",
+    "scenario_id": null
+  },
+  "b4f02c7bd166d69aaebdc6d4": {
+    "assessment_id": "20260907T153857705816Z",
+    "artifact": "reports/event_country_risk.csv",
+    "artifact_hash": "e0e5ef6ca26a5ac8962f684b860878bd3032a1d5baf8c64b4b1c219ef072137e",
+    "bundle_hash": "07603bf49b655531ed9fa5a418ddd640366466f6a80a90428a003f31b50d61f7",
+    "selector": {
+      "country": "IDN",
+      "year": "2026",
+      "metric": "revenue_loss_2025usd_mean"
+    },
+    "value": 107140752.04279028,
+    "unit": "2025 USD",
+    "scenario_id": null
+  },
+  "80bb1de056df5d2aec8b9c08": {
+    "assessment_id": "20260907T153857705816Z",
+    "artifact": "reports/event_country_risk.csv",
+    "artifact_hash": "e0e5ef6ca26a5ac8962f684b860878bd3032a1d5baf8c64b4b1c219ef072137e",
+    "bundle_hash": "07603bf49b655531ed9fa5a418ddd640366466f6a80a90428a003f31b50d61f7",
+    "selector": {
+      "country": "IDN",
+      "year": "2026",
+      "metric": "p_revenue_loss"
+    },
+    "value": 0.5971,
+    "unit": "probability",
+    "scenario_id": null
+  },
+  "5f4bb530a50314992507bf7d": {
+    "assessment_id": "20260907T153857705816Z",
+    "artifact": "reports/event_country_risk.csv",
+    "artifact_hash": "e0e5ef6ca26a5ac8962f684b860878bd3032a1d5baf8c64b4b1c219ef072137e",
+    "bundle_hash": "07603bf49b655531ed9fa5a418ddd640366466f6a80a90428a003f31b50d61f7",
+    "selector": {
+      "country": "IDN",
+      "year": "2026",
+      "metric": "revenue_loss_es95_2025usd"
+    },
+    "value": 1558767354.6305797,
+    "unit": "2025 USD",
+    "scenario_id": null
+  },
+  "27acbd2abe4fa36844296466": {
+    "assessment_id": "20260907T153857705816Z",
+    "artifact": "reports/event_country_risk.csv",
+    "artifact_hash": "e0e5ef6ca26a5ac8962f684b860878bd3032a1d5baf8c64b4b1c219ef072137e",
+    "bundle_hash": "07603bf49b655531ed9fa5a418ddd640366466f6a80a90428a003f31b50d61f7",
+    "selector": {
+      "country": "MYS",
+      "year": "2026",
+      "metric": "revenue_loss_2025usd_mean"
+    },
+    "value": 14691048.577458847,
+    "unit": "2025 USD",
+    "scenario_id": null
+  },
+  "a56854cc91c3c60bfbcc528d": {
+    "assessment_id": "20260907T153857705816Z",
+    "artifact": "reports/event_country_risk.csv",
+    "artifact_hash": "e0e5ef6ca26a5ac8962f684b860878bd3032a1d5baf8c64b4b1c219ef072137e",
+    "bundle_hash": "07603bf49b655531ed9fa5a418ddd640366466f6a80a90428a003f31b50d61f7",
+    "selector": {
+      "country": "MYS",
+      "year": "2026",
+      "metric": "p_revenue_loss"
+    },
+    "value": 0.5579,
+    "unit": "probability",
+    "scenario_id": null
+  },
+  "1f44e44b826bfa9a45f304c9": {
+    "assessment_id": "20260907T153857705816Z",
+    "artifact": "reports/event_country_risk.csv",
+    "artifact_hash": "e0e5ef6ca26a5ac8962f684b860878bd3032a1d5baf8c64b4b1c219ef072137e",
+    "bundle_hash": "07603bf49b655531ed9fa5a418ddd640366466f6a80a90428a003f31b50d61f7",
+    "selector": {
+      "country": "MYS",
+      "year": "2026",
+      "metric": "revenue_loss_es95_2025usd"
+    },
+    "value": 349510138.01382285,
+    "unit": "2025 USD",
+    "scenario_id": null
+  },
+  "fb30d06fc01da05345d26b6c": {
+    "assessment_id": "20260907T153857705816Z",
+    "artifact": "reports/event_country_risk.csv",
+    "artifact_hash": "e0e5ef6ca26a5ac8962f684b860878bd3032a1d5baf8c64b4b1c219ef072137e",
+    "bundle_hash": "07603bf49b655531ed9fa5a418ddd640366466f6a80a90428a003f31b50d61f7",
+    "selector": {
+      "country": "PHL",
+      "year": "2026",
+      "metric": "revenue_loss_2025usd_mean"
+    },
+    "value": 56459226.657528855,
+    "unit": "2025 USD",
+    "scenario_id": null
+  },
+  "33e7f1865a930d83502798b2": {
+    "assessment_id": "20260907T153857705816Z",
+    "artifact": "reports/event_country_risk.csv",
+    "artifact_hash": "e0e5ef6ca26a5ac8962f684b860878bd3032a1d5baf8c64b4b1c219ef072137e",
+    "bundle_hash": "07603bf49b655531ed9fa5a418ddd640366466f6a80a90428a003f31b50d61f7",
+    "selector": {
+      "country": "PHL",
+      "year": "2026",
+      "metric": "p_revenue_loss"
+    },
+    "value": 0.6255,
+    "unit": "probability",
+    "scenario_id": null
+  },
+  "5387afd2ecb081ded4a1eabf": {
+    "assessment_id": "20260907T153857705816Z",
+    "artifact": "reports/event_country_risk.csv",
+    "artifact_hash": "e0e5ef6ca26a5ac8962f684b860878bd3032a1d5baf8c64b4b1c219ef072137e",
+    "bundle_hash": "07603bf49b655531ed9fa5a418ddd640366466f6a80a90428a003f31b50d61f7",
+    "selector": {
+      "country": "PHL",
+      "year": "2026",
+      "metric": "revenue_loss_es95_2025usd"
+    },
+    "value": 582514319.4002979,
+    "unit": "2025 USD",
+    "scenario_id": null
+  },
+  "d3179129b4b44b93fa7defae": {
+    "assessment_id": "20260907T153857705816Z",
+    "artifact": "reports/event_country_risk.csv",
+    "artifact_hash": "e0e5ef6ca26a5ac8962f684b860878bd3032a1d5baf8c64b4b1c219ef072137e",
+    "bundle_hash": "07603bf49b655531ed9fa5a418ddd640366466f6a80a90428a003f31b50d61f7",
+    "selector": {
+      "country": "PNG",
+      "year": "2026",
+      "metric": "revenue_loss_2025usd_mean"
+    },
+    "value": 5669605.225507055,
+    "unit": "2025 USD",
+    "scenario_id": null
+  },
+  "de0d174660e0c7fcbfa4ce21": {
+    "assessment_id": "20260907T153857705816Z",
+    "artifact": "reports/event_country_risk.csv",
+    "artifact_hash": "e0e5ef6ca26a5ac8962f684b860878bd3032a1d5baf8c64b4b1c219ef072137e",
+    "bundle_hash": "07603bf49b655531ed9fa5a418ddd640366466f6a80a90428a003f31b50d61f7",
+    "selector": {
+      "country": "PNG",
+      "year": "2026",
+      "metric": "p_revenue_loss"
+    },
+    "value": 0.59,
+    "unit": "probability",
+    "scenario_id": null
+  },
+  "46e9656e8332da089168e69b": {
+    "assessment_id": "20260907T153857705816Z",
+    "artifact": "reports/event_country_risk.csv",
+    "artifact_hash": "e0e5ef6ca26a5ac8962f684b860878bd3032a1d5baf8c64b4b1c219ef072137e",
+    "bundle_hash": "07603bf49b655531ed9fa5a418ddd640366466f6a80a90428a003f31b50d61f7",
+    "selector": {
+      "country": "PNG",
+      "year": "2026",
+      "metric": "revenue_loss_es95_2025usd"
+    },
+    "value": 91744250.78602137,
+    "unit": "2025 USD",
+    "scenario_id": null
+  },
+  "2d272ce7f6e76980c2f16813": {
+    "assessment_id": "20260907T153857705816Z",
+    "artifact": "reports/event_country_risk.csv",
+    "artifact_hash": "e0e5ef6ca26a5ac8962f684b860878bd3032a1d5baf8c64b4b1c219ef072137e",
+    "bundle_hash": "07603bf49b655531ed9fa5a418ddd640366466f6a80a90428a003f31b50d61f7",
+    "selector": {
+      "country": "SLB",
+      "year": "2026",
+      "metric": "revenue_loss_2025usd_mean"
+    },
+    "value": -697.2273026502669,
+    "unit": "2025 USD",
+    "scenario_id": null
+  },
+  "9f8814a5901e26607899de84": {
+    "assessment_id": "20260907T153857705816Z",
+    "artifact": "reports/event_country_risk.csv",
+    "artifact_hash": "e0e5ef6ca26a5ac8962f684b860878bd3032a1d5baf8c64b4b1c219ef072137e",
+    "bundle_hash": "07603bf49b655531ed9fa5a418ddd640366466f6a80a90428a003f31b50d61f7",
+    "selector": {
+      "country": "SLB",
+      "year": "2026",
+      "metric": "p_revenue_loss"
+    },
+    "value": 0.504,
+    "unit": "probability",
+    "scenario_id": null
+  },
+  "c0836720b9d7b9e27fe7c987": {
+    "assessment_id": "20260907T153857705816Z",
+    "artifact": "reports/event_country_risk.csv",
+    "artifact_hash": "e0e5ef6ca26a5ac8962f684b860878bd3032a1d5baf8c64b4b1c219ef072137e",
+    "bundle_hash": "07603bf49b655531ed9fa5a418ddd640366466f6a80a90428a003f31b50d61f7",
+    "selector": {
+      "country": "SLB",
+      "year": "2026",
+      "metric": "revenue_loss_es95_2025usd"
+    },
+    "value": 11076770.05393603,
+    "unit": "2025 USD",
+    "scenario_id": null
+  },
+  "92f24966e7989e06e80a1e1a": {
+    "assessment_id": "20260907T153857705816Z",
+    "artifact": "reports/event_country_risk.csv",
+    "artifact_hash": "e0e5ef6ca26a5ac8962f684b860878bd3032a1d5baf8c64b4b1c219ef072137e",
+    "bundle_hash": "07603bf49b655531ed9fa5a418ddd640366466f6a80a90428a003f31b50d61f7",
+    "selector": {
+      "country": "THA",
+      "year": "2026",
+      "metric": "revenue_loss_2025usd_mean"
+    },
+    "value": 115334879.80208226,
+    "unit": "2025 USD",
+    "scenario_id": null
+  },
+  "10e0b97287f3ad31fe608f97": {
+    "assessment_id": "20260907T153857705816Z",
+    "artifact": "reports/event_country_risk.csv",
+    "artifact_hash": "e0e5ef6ca26a5ac8962f684b860878bd3032a1d5baf8c64b4b1c219ef072137e",
+    "bundle_hash": "07603bf49b655531ed9fa5a418ddd640366466f6a80a90428a003f31b50d61f7",
+    "selector": {
+      "country": "THA",
+      "year": "2026",
+      "metric": "p_revenue_loss"
+    },
+    "value": 0.6512,
+    "unit": "probability",
+    "scenario_id": null
+  },
+  "a5bc1f44c01c1c6577345c98": {
+    "assessment_id": "20260907T153857705816Z",
+    "artifact": "reports/event_country_risk.csv",
+    "artifact_hash": "e0e5ef6ca26a5ac8962f684b860878bd3032a1d5baf8c64b4b1c219ef072137e",
+    "bundle_hash": "07603bf49b655531ed9fa5a418ddd640366466f6a80a90428a003f31b50d61f7",
+    "selector": {
+      "country": "THA",
+      "year": "2026",
+      "metric": "revenue_loss_es95_2025usd"
+    },
+    "value": 1035663588.0744004,
+    "unit": "2025 USD",
+    "scenario_id": null
+  },
+  "6a9b8c156bb053522ab7212f": {
+    "assessment_id": "20260907T153857705816Z",
+    "artifact": "reports/event_country_risk.csv",
+    "artifact_hash": "e0e5ef6ca26a5ac8962f684b860878bd3032a1d5baf8c64b4b1c219ef072137e",
+    "bundle_hash": "07603bf49b655531ed9fa5a418ddd640366466f6a80a90428a003f31b50d61f7",
+    "selector": {
+      "country": "TON",
+      "year": "2026",
+      "metric": "revenue_loss_2025usd_mean"
+    },
+    "value": 86942.97158326444,
+    "unit": "2025 USD",
+    "scenario_id": null
+  },
+  "e87706f08e81e96814c4aeea": {
+    "assessment_id": "20260907T153857705816Z",
+    "artifact": "reports/event_country_risk.csv",
+    "artifact_hash": "e0e5ef6ca26a5ac8962f684b860878bd3032a1d5baf8c64b4b1c219ef072137e",
+    "bundle_hash": "07603bf49b655531ed9fa5a418ddd640366466f6a80a90428a003f31b50d61f7",
+    "selector": {
+      "country": "TON",
+      "year": "2026",
+      "metric": "p_revenue_loss"
+    },
+    "value": 0.5352,
+    "unit": "probability",
+    "scenario_id": null
+  },
+  "3a919df29e7be35ba6753634": {
+    "assessment_id": "20260907T153857705816Z",
+    "artifact": "reports/event_country_risk.csv",
+    "artifact_hash": "e0e5ef6ca26a5ac8962f684b860878bd3032a1d5baf8c64b4b1c219ef072137e",
+    "bundle_hash": "07603bf49b655531ed9fa5a418ddd640366466f6a80a90428a003f31b50d61f7",
+    "selector": {
+      "country": "TON",
+      "year": "2026",
+      "metric": "revenue_loss_es95_2025usd"
+    },
+    "value": 2798570.5538060903,
+    "unit": "2025 USD",
+    "scenario_id": null
+  },
+  "dafeb7b8ba2e720c70a4e68a": {
+    "assessment_id": "20260907T153857705816Z",
+    "artifact": "reports/event_country_risk.csv",
+    "artifact_hash": "e0e5ef6ca26a5ac8962f684b860878bd3032a1d5baf8c64b4b1c219ef072137e",
+    "bundle_hash": "07603bf49b655531ed9fa5a418ddd640366466f6a80a90428a003f31b50d61f7",
+    "selector": {
+      "country": "VNM",
+      "year": "2026",
+      "metric": "revenue_loss_2025usd_mean"
+    },
+    "value": 12368018.136260483,
+    "unit": "2025 USD",
+    "scenario_id": null
+  },
+  "2ede46301f9dc35e91475e14": {
+    "assessment_id": "20260907T153857705816Z",
+    "artifact": "reports/event_country_risk.csv",
+    "artifact_hash": "e0e5ef6ca26a5ac8962f684b860878bd3032a1d5baf8c64b4b1c219ef072137e",
+    "bundle_hash": "07603bf49b655531ed9fa5a418ddd640366466f6a80a90428a003f31b50d61f7",
+    "selector": {
+      "country": "VNM",
+      "year": "2026",
+      "metric": "p_revenue_loss"
+    },
+    "value": 0.5369,
+    "unit": "probability",
+    "scenario_id": null
+  },
+  "42286f1b7ac3134dd24af5c3": {
+    "assessment_id": "20260907T153857705816Z",
+    "artifact": "reports/event_country_risk.csv",
+    "artifact_hash": "e0e5ef6ca26a5ac8962f684b860878bd3032a1d5baf8c64b4b1c219ef072137e",
+    "bundle_hash": "07603bf49b655531ed9fa5a418ddd640366466f6a80a90428a003f31b50d61f7",
+    "selector": {
+      "country": "VNM",
+      "year": "2026",
+      "metric": "revenue_loss_es95_2025usd"
+    },
+    "value": 466006499.7014757,
+    "unit": "2025 USD",
+    "scenario_id": null
+  },
+  "61e9180fb188dcb3e6789cbc": {
+    "assessment_id": "20260907T153857705816Z",
+    "artifact": "reports/event_country_risk.csv",
+    "artifact_hash": "e0e5ef6ca26a5ac8962f684b860878bd3032a1d5baf8c64b4b1c219ef072137e",
+    "bundle_hash": "07603bf49b655531ed9fa5a418ddd640366466f6a80a90428a003f31b50d61f7",
+    "selector": {
+      "country": "VUT",
+      "year": "2026",
+      "metric": "revenue_loss_2025usd_mean"
+    },
+    "value": 129491.39614088336,
+    "unit": "2025 USD",
+    "scenario_id": null
+  },
+  "8aec57000be1eede3c50f6ab": {
+    "assessment_id": "20260907T153857705816Z",
+    "artifact": "reports/event_country_risk.csv",
+    "artifact_hash": "e0e5ef6ca26a5ac8962f684b860878bd3032a1d5baf8c64b4b1c219ef072137e",
+    "bundle_hash": "07603bf49b655531ed9fa5a418ddd640366466f6a80a90428a003f31b50d61f7",
+    "selector": {
+      "country": "VUT",
+      "year": "2026",
+      "metric": "p_revenue_loss"
+    },
+    "value": 0.535,
+    "unit": "probability",
+    "scenario_id": null
+  },
+  "e2bede32d3d9cbe2f87c9476": {
+    "assessment_id": "20260907T153857705816Z",
+    "artifact": "reports/event_country_risk.csv",
+    "artifact_hash": "e0e5ef6ca26a5ac8962f684b860878bd3032a1d5baf8c64b4b1c219ef072137e",
+    "bundle_hash": "07603bf49b655531ed9fa5a418ddd640366466f6a80a90428a003f31b50d61f7",
+    "selector": {
+      "country": "VUT",
+      "year": "2026",
+      "metric": "revenue_loss_es95_2025usd"
+    },
+    "value": 7701399.863187754,
+    "unit": "2025 USD",
+    "scenario_id": null
+  },
+  "217657ccf028b323f211517d": {
+    "assessment_id": "20260907T153857705816Z",
+    "artifact": "reports/event_country_risk.csv",
+    "artifact_hash": "e0e5ef6ca26a5ac8962f684b860878bd3032a1d5baf8c64b4b1c219ef072137e",
+    "bundle_hash": "07603bf49b655531ed9fa5a418ddd640366466f6a80a90428a003f31b50d61f7",
+    "selector": {
+      "country": "WSM",
+      "year": "2026",
+      "metric": "revenue_loss_2025usd_mean"
+    },
+    "value": 216177.63914629832,
+    "unit": "2025 USD",
+    "scenario_id": null
+  },
+  "b13fc9b695e19c9b3c460473": {
+    "assessment_id": "20260907T153857705816Z",
+    "artifact": "reports/event_country_risk.csv",
+    "artifact_hash": "e0e5ef6ca26a5ac8962f684b860878bd3032a1d5baf8c64b4b1c219ef072137e",
+    "bundle_hash": "07603bf49b655531ed9fa5a418ddd640366466f6a80a90428a003f31b50d61f7",
+    "selector": {
+      "country": "WSM",
+      "year": "2026",
+      "metric": "p_revenue_loss"
+    },
+    "value": 0.6122,
+    "unit": "probability",
+    "scenario_id": null
+  },
+  "c52f3c58c0373eb46a42ac41": {
+    "assessment_id": "20260907T153857705816Z",
+    "artifact": "reports/event_country_risk.csv",
+    "artifact_hash": "e0e5ef6ca26a5ac8962f684b860878bd3032a1d5baf8c64b4b1c219ef072137e",
+    "bundle_hash": "07603bf49b655531ed9fa5a418ddd640366466f6a80a90428a003f31b50d61f7",
+    "selector": {
+      "country": "WSM",
+      "year": "2026",
+      "metric": "revenue_loss_es95_2025usd"
+    },
+    "value": 2605637.651712671,
+    "unit": "2025 USD",
+    "scenario_id": null
+  },
+  "0d29a772ea5d5ff55ff184f4": {
+    "assessment_id": "20260907T153857705816Z",
+    "artifact": "reports/event_country_risk.csv",
+    "artifact_hash": "e0e5ef6ca26a5ac8962f684b860878bd3032a1d5baf8c64b4b1c219ef072137e",
+    "bundle_hash": "07603bf49b655531ed9fa5a418ddd640366466f6a80a90428a003f31b50d61f7",
+    "selector": {
+      "country": "AUS",
+      "year": "2027",
+      "metric": "revenue_loss_2025usd_mean"
+    },
+    "value": 95811806.56360915,
+    "unit": "2025 USD",
+    "scenario_id": null
+  },
+  "a8ace9c3974ef29162fc5ff4": {
+    "assessment_id": "20260907T153857705816Z",
+    "artifact": "reports/event_country_risk.csv",
+    "artifact_hash": "e0e5ef6ca26a5ac8962f684b860878bd3032a1d5baf8c64b4b1c219ef072137e",
+    "bundle_hash": "07603bf49b655531ed9fa5a418ddd640366466f6a80a90428a003f31b50d61f7",
+    "selector": {
+      "country": "AUS",
+      "year": "2027",
+      "metric": "p_revenue_loss"
+    },
+    "value": 0.5586,
+    "unit": "probability",
+    "scenario_id": null
+  },
+  "1acb5b8c1b0ea3e103c5434e": {
+    "assessment_id": "20260907T153857705816Z",
+    "artifact": "reports/event_country_risk.csv",
+    "artifact_hash": "e0e5ef6ca26a5ac8962f684b860878bd3032a1d5baf8c64b4b1c219ef072137e",
+    "bundle_hash": "07603bf49b655531ed9fa5a418ddd640366466f6a80a90428a003f31b50d61f7",
+    "selector": {
+      "country": "AUS",
+      "year": "2027",
+      "metric": "revenue_loss_es95_2025usd"
+    },
+    "value": 1893337829.0640745,
+    "unit": "2025 USD",
+    "scenario_id": null
+  },
+  "bb91787b59659a3249c8d9d7": {
+    "assessment_id": "20260907T153857705816Z",
+    "artifact": "reports/event_country_risk.csv",
+    "artifact_hash": "e0e5ef6ca26a5ac8962f684b860878bd3032a1d5baf8c64b4b1c219ef072137e",
+    "bundle_hash": "07603bf49b655531ed9fa5a418ddd640366466f6a80a90428a003f31b50d61f7",
+    "selector": {
+      "country": "FJI",
+      "year": "2027",
+      "metric": "revenue_loss_2025usd_mean"
+    },
+    "value": 1085474.6141345068,
+    "unit": "2025 USD",
+    "scenario_id": null
+  },
+  "a184369646a687d0f0590541": {
+    "assessment_id": "20260907T153857705816Z",
+    "artifact": "reports/event_country_risk.csv",
+    "artifact_hash": "e0e5ef6ca26a5ac8962f684b860878bd3032a1d5baf8c64b4b1c219ef072137e",
+    "bundle_hash": "07603bf49b655531ed9fa5a418ddd640366466f6a80a90428a003f31b50d61f7",
+    "selector": {
+      "country": "FJI",
+      "year": "2027",
+      "metric": "p_revenue_loss"
+    },
+    "value": 0.5645,
+    "unit": "probability",
+    "scenario_id": null
+  },
+  "55c6ecfc64507f0dc20eb8fa": {
+    "assessment_id": "20260907T153857705816Z",
+    "artifact": "reports/event_country_risk.csv",
+    "artifact_hash": "e0e5ef6ca26a5ac8962f684b860878bd3032a1d5baf8c64b4b1c219ef072137e",
+    "bundle_hash": "07603bf49b655531ed9fa5a418ddd640366466f6a80a90428a003f31b50d61f7",
+    "selector": {
+      "country": "FJI",
+      "year": "2027",
+      "metric": "revenue_loss_es95_2025usd"
+    },
+    "value": 20337048.08192004,
+    "unit": "2025 USD",
+    "scenario_id": null
+  },
+  "b9cf840baf908d0ee76396fa": {
+    "assessment_id": "20260907T153857705816Z",
+    "artifact": "reports/event_country_risk.csv",
+    "artifact_hash": "e0e5ef6ca26a5ac8962f684b860878bd3032a1d5baf8c64b4b1c219ef072137e",
+    "bundle_hash": "07603bf49b655531ed9fa5a418ddd640366466f6a80a90428a003f31b50d61f7",
+    "selector": {
+      "country": "IDN",
+      "year": "2027",
+      "metric": "revenue_loss_2025usd_mean"
+    },
+    "value": 67490065.81869538,
+    "unit": "2025 USD",
+    "scenario_id": null
+  },
+  "3faa69665a5de6602911cd2e": {
+    "assessment_id": "20260907T153857705816Z",
+    "artifact": "reports/event_country_risk.csv",
+    "artifact_hash": "e0e5ef6ca26a5ac8962f684b860878bd3032a1d5baf8c64b4b1c219ef072137e",
+    "bundle_hash": "07603bf49b655531ed9fa5a418ddd640366466f6a80a90428a003f31b50d61f7",
+    "selector": {
+      "country": "IDN",
+      "year": "2027",
+      "metric": "p_revenue_loss"
+    },
+    "value": 0.5325,
+    "unit": "probability",
+    "scenario_id": null
+  },
+  "6299990a367d43998a8750fc": {
+    "assessment_id": "20260907T153857705816Z",
+    "artifact": "reports/event_country_risk.csv",
+    "artifact_hash": "e0e5ef6ca26a5ac8962f684b860878bd3032a1d5baf8c64b4b1c219ef072137e",
+    "bundle_hash": "07603bf49b655531ed9fa5a418ddd640366466f6a80a90428a003f31b50d61f7",
+    "selector": {
+      "country": "IDN",
+      "year": "2027",
+      "metric": "revenue_loss_es95_2025usd"
+    },
+    "value": 1663712446.1544058,
+    "unit": "2025 USD",
+    "scenario_id": null
+  },
+  "781b65b15694f851b4cdd3fb": {
+    "assessment_id": "20260907T153857705816Z",
+    "artifact": "reports/event_country_risk.csv",
+    "artifact_hash": "e0e5ef6ca26a5ac8962f684b860878bd3032a1d5baf8c64b4b1c219ef072137e",
+    "bundle_hash": "07603bf49b655531ed9fa5a418ddd640366466f6a80a90428a003f31b50d61f7",
+    "selector": {
+      "country": "MYS",
+      "year": "2027",
+      "metric": "revenue_loss_2025usd_mean"
+    },
+    "value": 29891762.45820713,
+    "unit": "2025 USD",
+    "scenario_id": null
+  },
+  "dee9abfe86f695b5ddc8b445": {
+    "assessment_id": "20260907T153857705816Z",
+    "artifact": "reports/event_country_risk.csv",
+    "artifact_hash": "e0e5ef6ca26a5ac8962f684b860878bd3032a1d5baf8c64b4b1c219ef072137e",
+    "bundle_hash": "07603bf49b655531ed9fa5a418ddd640366466f6a80a90428a003f31b50d61f7",
+    "selector": {
+      "country": "MYS",
+      "year": "2027",
+      "metric": "p_revenue_loss"
+    },
+    "value": 0.5645,
+    "unit": "probability",
+    "scenario_id": null
+  },
+  "d4f61e9722864a390b39f569": {
+    "assessment_id": "20260907T153857705816Z",
+    "artifact": "reports/event_country_risk.csv",
+    "artifact_hash": "e0e5ef6ca26a5ac8962f684b860878bd3032a1d5baf8c64b4b1c219ef072137e",
+    "bundle_hash": "07603bf49b655531ed9fa5a418ddd640366466f6a80a90428a003f31b50d61f7",
+    "selector": {
+      "country": "MYS",
+      "year": "2027",
+      "metric": "revenue_loss_es95_2025usd"
+    },
+    "value": 585486510.7257212,
+    "unit": "2025 USD",
+    "scenario_id": null
+  },
+  "d946fe623dea7de2566f5da6": {
+    "assessment_id": "20260907T153857705816Z",
+    "artifact": "reports/event_country_risk.csv",
+    "artifact_hash": "e0e5ef6ca26a5ac8962f684b860878bd3032a1d5baf8c64b4b1c219ef072137e",
+    "bundle_hash": "07603bf49b655531ed9fa5a418ddd640366466f6a80a90428a003f31b50d61f7",
+    "selector": {
+      "country": "PHL",
+      "year": "2027",
+      "metric": "revenue_loss_2025usd_mean"
+    },
+    "value": 128299911.21003586,
+    "unit": "2025 USD",
+    "scenario_id": null
+  },
+  "83ad431a7d68faf420636ec1": {
+    "assessment_id": "20260907T153857705816Z",
+    "artifact": "reports/event_country_risk.csv",
+    "artifact_hash": "e0e5ef6ca26a5ac8962f684b860878bd3032a1d5baf8c64b4b1c219ef072137e",
+    "bundle_hash": "07603bf49b655531ed9fa5a418ddd640366466f6a80a90428a003f31b50d61f7",
+    "selector": {
+      "country": "PHL",
+      "year": "2027",
+      "metric": "p_revenue_loss"
+    },
+    "value": 0.6511,
+    "unit": "probability",
+    "scenario_id": null
+  },
+  "8ad68e25129aeeef79e0f112": {
+    "assessment_id": "20260907T153857705816Z",
+    "artifact": "reports/event_country_risk.csv",
+    "artifact_hash": "e0e5ef6ca26a5ac8962f684b860878bd3032a1d5baf8c64b4b1c219ef072137e",
+    "bundle_hash": "07603bf49b655531ed9fa5a418ddd640366466f6a80a90428a003f31b50d61f7",
+    "selector": {
+      "country": "PHL",
+      "year": "2027",
+      "metric": "revenue_loss_es95_2025usd"
+    },
+    "value": 1165919759.7836185,
+    "unit": "2025 USD",
+    "scenario_id": null
+  },
+  "539cbb83dfa9062364b4c2df": {
+    "assessment_id": "20260907T153857705816Z",
+    "artifact": "reports/event_country_risk.csv",
+    "artifact_hash": "e0e5ef6ca26a5ac8962f684b860878bd3032a1d5baf8c64b4b1c219ef072137e",
+    "bundle_hash": "07603bf49b655531ed9fa5a418ddd640366466f6a80a90428a003f31b50d61f7",
+    "selector": {
+      "country": "PNG",
+      "year": "2027",
+      "metric": "revenue_loss_2025usd_mean"
+    },
+    "value": 6250345.017239304,
+    "unit": "2025 USD",
+    "scenario_id": null
+  },
+  "9381c728cd4a0bdec98f5121": {
+    "assessment_id": "20260907T153857705816Z",
+    "artifact": "reports/event_country_risk.csv",
+    "artifact_hash": "e0e5ef6ca26a5ac8962f684b860878bd3032a1d5baf8c64b4b1c219ef072137e",
+    "bundle_hash": "07603bf49b655531ed9fa5a418ddd640366466f6a80a90428a003f31b50d61f7",
+    "selector": {
+      "country": "PNG",
+      "year": "2027",
+      "metric": "p_revenue_loss"
+    },
+    "value": 0.563,
+    "unit": "probability",
+    "scenario_id": null
+  },
+  "2399c51979e62cd7e66601be": {
+    "assessment_id": "20260907T153857705816Z",
+    "artifact": "reports/event_country_risk.csv",
+    "artifact_hash": "e0e5ef6ca26a5ac8962f684b860878bd3032a1d5baf8c64b4b1c219ef072137e",
+    "bundle_hash": "07603bf49b655531ed9fa5a418ddd640366466f6a80a90428a003f31b50d61f7",
+    "selector": {
+      "country": "PNG",
+      "year": "2027",
+      "metric": "revenue_loss_es95_2025usd"
+    },
+    "value": 125114519.0707198,
+    "unit": "2025 USD",
+    "scenario_id": null
+  },
+  "46ac99922e5e7b18293c1d90": {
+    "assessment_id": "20260907T153857705816Z",
+    "artifact": "reports/event_country_risk.csv",
+    "artifact_hash": "e0e5ef6ca26a5ac8962f684b860878bd3032a1d5baf8c64b4b1c219ef072137e",
+    "bundle_hash": "07603bf49b655531ed9fa5a418ddd640366466f6a80a90428a003f31b50d61f7",
+    "selector": {
+      "country": "SLB",
+      "year": "2027",
+      "metric": "revenue_loss_2025usd_mean"
+    },
+    "value": -84848.17063735785,
+    "unit": "2025 USD",
+    "scenario_id": null
+  },
+  "59409418d6bb70f2fce97741": {
+    "assessment_id": "20260907T153857705816Z",
+    "artifact": "reports/event_country_risk.csv",
+    "artifact_hash": "e0e5ef6ca26a5ac8962f684b860878bd3032a1d5baf8c64b4b1c219ef072137e",
+    "bundle_hash": "07603bf49b655531ed9fa5a418ddd640366466f6a80a90428a003f31b50d61f7",
+    "selector": {
+      "country": "SLB",
+      "year": "2027",
+      "metric": "p_revenue_loss"
+    },
+    "value": 0.4921,
+    "unit": "probability",
+    "scenario_id": null
+  },
+  "5b33c0947666e0a011ffa5e5": {
+    "assessment_id": "20260907T153857705816Z",
+    "artifact": "reports/event_country_risk.csv",
+    "artifact_hash": "e0e5ef6ca26a5ac8962f684b860878bd3032a1d5baf8c64b4b1c219ef072137e",
+    "bundle_hash": "07603bf49b655531ed9fa5a418ddd640366466f6a80a90428a003f31b50d61f7",
+    "selector": {
+      "country": "SLB",
+      "year": "2027",
+      "metric": "revenue_loss_es95_2025usd"
+    },
+    "value": 17690777.485655207,
+    "unit": "2025 USD",
+    "scenario_id": null
+  },
+  "3f76956466a30eb708c2b83c": {
+    "assessment_id": "20260907T153857705816Z",
+    "artifact": "reports/event_country_risk.csv",
+    "artifact_hash": "e0e5ef6ca26a5ac8962f684b860878bd3032a1d5baf8c64b4b1c219ef072137e",
+    "bundle_hash": "07603bf49b655531ed9fa5a418ddd640366466f6a80a90428a003f31b50d61f7",
+    "selector": {
+      "country": "THA",
+      "year": "2027",
+      "metric": "revenue_loss_2025usd_mean"
+    },
+    "value": 102433010.94400913,
+    "unit": "2025 USD",
+    "scenario_id": null
+  },
+  "b7c2b4e8189dbc79e398f8eb": {
+    "assessment_id": "20260907T153857705816Z",
+    "artifact": "reports/event_country_risk.csv",
+    "artifact_hash": "e0e5ef6ca26a5ac8962f684b860878bd3032a1d5baf8c64b4b1c219ef072137e",
+    "bundle_hash": "07603bf49b655531ed9fa5a418ddd640366466f6a80a90428a003f31b50d61f7",
+    "selector": {
+      "country": "THA",
+      "year": "2027",
+      "metric": "p_revenue_loss"
+    },
+    "value": 0.5869,
+    "unit": "probability",
+    "scenario_id": null
+  },
+  "036f2f1b7d29de17fd44365c": {
+    "assessment_id": "20260907T153857705816Z",
+    "artifact": "reports/event_country_risk.csv",
+    "artifact_hash": "e0e5ef6ca26a5ac8962f684b860878bd3032a1d5baf8c64b4b1c219ef072137e",
+    "bundle_hash": "07603bf49b655531ed9fa5a418ddd640366466f6a80a90428a003f31b50d61f7",
+    "selector": {
+      "country": "THA",
+      "year": "2027",
+      "metric": "revenue_loss_es95_2025usd"
+    },
+    "value": 1244779652.631942,
+    "unit": "2025 USD",
+    "scenario_id": null
+  },
+  "715798bb2ef51a70d7cad61c": {
+    "assessment_id": "20260907T153857705816Z",
+    "artifact": "reports/event_country_risk.csv",
+    "artifact_hash": "e0e5ef6ca26a5ac8962f684b860878bd3032a1d5baf8c64b4b1c219ef072137e",
+    "bundle_hash": "07603bf49b655531ed9fa5a418ddd640366466f6a80a90428a003f31b50d61f7",
+    "selector": {
+      "country": "TON",
+      "year": "2027",
+      "metric": "revenue_loss_2025usd_mean"
+    },
+    "value": 172655.61395035204,
+    "unit": "2025 USD",
+    "scenario_id": null
+  },
+  "ff3dd2841a0ee6d44bc8ab91": {
+    "assessment_id": "20260907T153857705816Z",
+    "artifact": "reports/event_country_risk.csv",
+    "artifact_hash": "e0e5ef6ca26a5ac8962f684b860878bd3032a1d5baf8c64b4b1c219ef072137e",
+    "bundle_hash": "07603bf49b655531ed9fa5a418ddd640366466f6a80a90428a003f31b50d61f7",
+    "selector": {
+      "country": "TON",
+      "year": "2027",
+      "metric": "p_revenue_loss"
+    },
+    "value": 0.5441,
+    "unit": "probability",
+    "scenario_id": null
+  },
+  "9178bdb5980ba0468606e0dd": {
+    "assessment_id": "20260907T153857705816Z",
+    "artifact": "reports/event_country_risk.csv",
+    "artifact_hash": "e0e5ef6ca26a5ac8962f684b860878bd3032a1d5baf8c64b4b1c219ef072137e",
+    "bundle_hash": "07603bf49b655531ed9fa5a418ddd640366466f6a80a90428a003f31b50d61f7",
+    "selector": {
+      "country": "TON",
+      "year": "2027",
+      "metric": "revenue_loss_es95_2025usd"
+    },
+    "value": 4218541.544411731,
+    "unit": "2025 USD",
+    "scenario_id": null
+  },
+  "23ffcfc949516b627475d6a4": {
+    "assessment_id": "20260907T153857705816Z",
+    "artifact": "reports/event_country_risk.csv",
+    "artifact_hash": "e0e5ef6ca26a5ac8962f684b860878bd3032a1d5baf8c64b4b1c219ef072137e",
+    "bundle_hash": "07603bf49b655531ed9fa5a418ddd640366466f6a80a90428a003f31b50d61f7",
+    "selector": {
+      "country": "VNM",
+      "year": "2027",
+      "metric": "revenue_loss_2025usd_mean"
+    },
+    "value": 28903988.27674032,
+    "unit": "2025 USD",
+    "scenario_id": null
+  },
+  "cfaac645de1f1993b90bc08c": {
+    "assessment_id": "20260907T153857705816Z",
+    "artifact": "reports/event_country_risk.csv",
+    "artifact_hash": "e0e5ef6ca26a5ac8962f684b860878bd3032a1d5baf8c64b4b1c219ef072137e",
+    "bundle_hash": "07603bf49b655531ed9fa5a418ddd640366466f6a80a90428a003f31b50d61f7",
+    "selector": {
+      "country": "VNM",
+      "year": "2027",
+      "metric": "p_revenue_loss"
+    },
+    "value": 0.5564,
+    "unit": "probability",
+    "scenario_id": null
+  },
+  "931e040f50d2f5c6b3f121c1": {
+    "assessment_id": "20260907T153857705816Z",
+    "artifact": "reports/event_country_risk.csv",
+    "artifact_hash": "e0e5ef6ca26a5ac8962f684b860878bd3032a1d5baf8c64b4b1c219ef072137e",
+    "bundle_hash": "07603bf49b655531ed9fa5a418ddd640366466f6a80a90428a003f31b50d61f7",
+    "selector": {
+      "country": "VNM",
+      "year": "2027",
+      "metric": "revenue_loss_es95_2025usd"
+    },
+    "value": 726953360.6176267,
+    "unit": "2025 USD",
+    "scenario_id": null
+  },
+  "4fa24a56cf4d1cae49c30c64": {
+    "assessment_id": "20260907T153857705816Z",
+    "artifact": "reports/event_country_risk.csv",
+    "artifact_hash": "e0e5ef6ca26a5ac8962f684b860878bd3032a1d5baf8c64b4b1c219ef072137e",
+    "bundle_hash": "07603bf49b655531ed9fa5a418ddd640366466f6a80a90428a003f31b50d61f7",
+    "selector": {
+      "country": "VUT",
+      "year": "2027",
+      "metric": "revenue_loss_2025usd_mean"
+    },
+    "value": 16520.89150110221,
+    "unit": "2025 USD",
+    "scenario_id": null
+  },
+  "b95db26ea32d9fa4510fe422": {
+    "assessment_id": "20260907T153857705816Z",
+    "artifact": "reports/event_country_risk.csv",
+    "artifact_hash": "e0e5ef6ca26a5ac8962f684b860878bd3032a1d5baf8c64b4b1c219ef072137e",
+    "bundle_hash": "07603bf49b655531ed9fa5a418ddd640366466f6a80a90428a003f31b50d61f7",
+    "selector": {
+      "country": "VUT",
+      "year": "2027",
+      "metric": "p_revenue_loss"
+    },
+    "value": 0.4977,
+    "unit": "probability",
+    "scenario_id": null
+  },
+  "194b0195ccfe2fb27db49b0f": {
+    "assessment_id": "20260907T153857705816Z",
+    "artifact": "reports/event_country_risk.csv",
+    "artifact_hash": "e0e5ef6ca26a5ac8962f684b860878bd3032a1d5baf8c64b4b1c219ef072137e",
+    "bundle_hash": "07603bf49b655531ed9fa5a418ddd640366466f6a80a90428a003f31b50d61f7",
+    "selector": {
+      "country": "VUT",
+      "year": "2027",
+      "metric": "revenue_loss_es95_2025usd"
+    },
+    "value": 9780843.339605154,
+    "unit": "2025 USD",
+    "scenario_id": null
+  },
+  "7b4eed029aceaa69348d50ad": {
+    "assessment_id": "20260907T153857705816Z",
+    "artifact": "reports/event_country_risk.csv",
+    "artifact_hash": "e0e5ef6ca26a5ac8962f684b860878bd3032a1d5baf8c64b4b1c219ef072137e",
+    "bundle_hash": "07603bf49b655531ed9fa5a418ddd640366466f6a80a90428a003f31b50d61f7",
+    "selector": {
+      "country": "WSM",
+      "year": "2027",
+      "metric": "revenue_loss_2025usd_mean"
+    },
+    "value": 175913.69175840504,
+    "unit": "2025 USD",
+    "scenario_id": null
+  },
+  "b24537c4fc4a1f75a4baa3aa": {
+    "assessment_id": "20260907T153857705816Z",
+    "artifact": "reports/event_country_risk.csv",
+    "artifact_hash": "e0e5ef6ca26a5ac8962f684b860878bd3032a1d5baf8c64b4b1c219ef072137e",
+    "bundle_hash": "07603bf49b655531ed9fa5a418ddd640366466f6a80a90428a003f31b50d61f7",
+    "selector": {
+      "country": "WSM",
+      "year": "2027",
+      "metric": "p_revenue_loss"
+    },
+    "value": 0.5662,
+    "unit": "probability",
+    "scenario_id": null
+  },
+  "4e0f53c30c629f5ae9641fcc": {
+    "assessment_id": "20260907T153857705816Z",
+    "artifact": "reports/event_country_risk.csv",
+    "artifact_hash": "e0e5ef6ca26a5ac8962f684b860878bd3032a1d5baf8c64b4b1c219ef072137e",
+    "bundle_hash": "07603bf49b655531ed9fa5a418ddd640366466f6a80a90428a003f31b50d61f7",
+    "selector": {
+      "country": "WSM",
+      "year": "2027",
+      "metric": "revenue_loss_es95_2025usd"
+    },
+    "value": 3000566.563036825,
+    "unit": "2025 USD",
+    "scenario_id": null
+  },
+  "c3040ffb12b3d6c0d4083dac": {
+    "assessment_id": "20260907T153857705816Z",
+    "artifact": "reports/event_country_risk.csv",
+    "artifact_hash": "e0e5ef6ca26a5ac8962f684b860878bd3032a1d5baf8c64b4b1c219ef072137e",
+    "bundle_hash": "07603bf49b655531ed9fa5a418ddd640366466f6a80a90428a003f31b50d61f7",
+    "selector": {
+      "country": "AUS",
+      "year": "2026\u20132027",
+      "metric": "revenue_loss_2025usd_mean"
+    },
+    "value": 140302552.7982158,
+    "unit": "2025 USD",
+    "scenario_id": null
+  }
+}

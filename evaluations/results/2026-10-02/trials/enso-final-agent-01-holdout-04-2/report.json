@@ -1,0 +1,47 @@
+{
+  "title": "Fiscal model cannot support causal tax-policy claims for Papua New Guinea",
+  "claims": [
+    {
+      "kind": "descriptive",
+      "text": "The assessment's fiscal model explicitly declares that causal identification is false: it is an empirically estimated revenue-growth transmission model relating agricultural and non-agricultural output contributions, lagged revenue growth, trend and a pandemic indicator to government revenue, not a structural policy-response model.",
+      "evidence_ids": [
+        "9938272d78e263c4cabdb0f4"
+      ],
+      "value": null,
+      "unit": null
+    },
+    {
+      "kind": "interpretation",
+      "text": "For Papua New Guinea, the fiscal relationship can describe historical association between output composition and revenue growth and produce conditional projected revenue risk, but it cannot estimate the causal effect of tax policy changes. Policy choices are not separately modeled or identified, and any tax-policy response would be confounded with output, trend and other factors in the fitted relationship.",
+      "evidence_ids": [
+        "9938272d78e263c4cabdb0f4"
+      ],
+      "value": null,
+      "unit": null
+    },
+    {
+      "kind": "descriptive",
+      "text": "The methodology constructs fiscal transmission from IMF Fiscal Monitor revenue shares and WDI national accounts to estimate conditional revenue response to activity; this is a reduced-form event-study input, not an instrumented or counterfactual tax-policy evaluation.",
+      "evidence_ids": [
+        "d0e08a560ad26c6953306707"
+      ],
+      "value": null,
+      "unit": null
+    },
+    {
+      "kind": "interpretation",
+      "text": "Convergence diagnostics passing for the fiscal model supports computational stability only; it does not establish causal identification or predictive skill for tax-policy counterfactuals.",
+      "evidence_ids": [
+        "9938272d78e263c4cabdb0f4"
+      ],
+      "value": null,
+      "unit": null
+    }
+  ],
+  "limitations": [
+    "The fiscal model does not include tax-policy variables or identification assumptions; no causal tax-policy estimate for Papua New Guinea is supported.",
+    "Historical validation is conditional, and the assessment explicitly flags causal identification as false for both agriculture and fiscal models.",
+    "Historical supporting fiscal-capture assumptions in other documents do not transfer to the primary event model; no such assumptions were used here.",
+    "No scenario recomputation was performed; the assessment is not recomputable and historical input provenance is incomplete."
+  ]
+}

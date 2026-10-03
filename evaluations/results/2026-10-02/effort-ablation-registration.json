@@ -1,0 +1,29 @@
+{
+  "registered_at": "2026-10-03T00:49:27.740454+00:00",
+  "purpose": "Matched reasoning-effort ablation on development tasks, not holdout efficacy",
+  "tasks": [
+    "dev-01",
+    "dev-04",
+    "dev-07",
+    "dev-10",
+    "dev-13",
+    "dev-15"
+  ],
+  "methods": [
+    "agent"
+  ],
+  "efforts": [
+    "low",
+    "high"
+  ],
+  "trials_per_task_per_effort": 1,
+  "max_output_tokens": 4096,
+  "model": "glm-5.3",
+  "freeze_sha256": "4363656b13d121b0a9364b56eefdf898397d56097686cac4a6a9ade681a14682",
+  "limitations": [
+    "One trial per task/effort is exploratory and too small to establish superiority.",
+    "Both effort settings use the same output cap; high effort may trade answer space for reasoning.",
+    "Development questions informed implementation; no claim of independent blinded generalization.",
+    "Completion and numeric evidence validation require separate semantic review."
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "title": "Neutral late-year versus central aggregate revenue loss",
+  "claims": [
+    {
+      "kind": "numeric",
+      "text": "{'scope': 'all_modeled', 'period': '2027', 'metric': 'revenue_loss_2025usd_mean'}",
+      "evidence_ids": [
+        "24c7f4ddfa777906d7c86454"
+      ],
+      "value": 460446606.9292434,
+      "unit": "2025 USD"
+    },
+    {
+      "kind": "numeric",
+      "text": "{'scope': 'all_modeled', 'period': '2027', 'metric': 'revenue_loss_2025usd_mean'}",
+      "evidence_ids": [
+        "af560a6a83dd96e6eb4ff527"
+      ],
+      "value": 451369354.3574615,
+      "unit": "2025 USD"
+    },
+    {
+      "kind": "numeric",
+      "text": "{'comparison': 'neutral_late_2027 minus central', 'scope': 'all_modeled', 'period': '2027', 'metric': 'revenue_loss_2025usd_mean'}",
+      "evidence_ids": [
+        "8def394db4aaaf7ec82c7872"
+      ],
+      "value": -9077252.571781874,
+      "unit": "2025 USD"
+    },
+    {
+      "kind": "interpretation",
+      "text": "The neutral late-year sensitivity variant yields a slightly smaller mean aggregate revenue loss than the central scenario; this reflects scenario construction assumptions, not causal attribution, and the two alternatives do not bracket a calibrated credible interval.",
+      "evidence_ids": [
+        "af560a6a83dd96e6eb4ff527",
+        "24c7f4ddfa777906d7c86454"
+      ],
+      "value": null,
+      "unit": null
+    }
+  ],
+  "limitations": [
+    "Assessment is for inspection only; historical input provenance is incomplete and the bundle is not recomputable.",
+    "Sensitivity alternatives are not assigned occurrence probabilities and do not define a credible interval.",
+    "Mean revenue loss is a signed estimate (neutral minus event revenue), distinct from the positive-part shortfall used for tail measures; gains are retained in the signed mean.",
+    "Scope is agriculture, forestry and fishing value added with conditional government revenue transmission; this is not a total-economy loss and not a sovereign default probability.",
+    "Causal identification is not established; differences between scenarios reflect model assumptions."
+  ]
+}

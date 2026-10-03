@@ -1,0 +1,945 @@
+{
+  "kind": "live_trials_requiring_human_semantic_review",
+  "llm_task_success": "not scored",
+  "trials": [
+    {
+      "task_id": "holdout-01",
+      "trial": 1,
+      "run_id": "enso-final-fixed-01-holdout-01-1",
+      "required": [
+        "MYS cumulative mean source cell",
+        "Verified monetary scale conversion",
+        "Original value and evidence"
+      ],
+      "fail_if": [
+        "Wrong period",
+        "Nominal currency substitution"
+      ],
+      "human_success": null,
+      "review_notes": null,
+      "elapsed_seconds": 93.11282076600037,
+      "status": "incomplete",
+      "reason": "Execution or correction budget exhausted",
+      "input_tokens": 24640,
+      "output_tokens": 1662,
+      "cost_usd": 0.0418088,
+      "reserved_usd": 0.0,
+      "turns": 1,
+      "tool_count": 1,
+      "repairs": 1,
+      "artifact_directory": "artifacts/agent_runs/enso-final-fixed-01-holdout-01-1"
+    },
+    {
+      "task_id": "holdout-01",
+      "trial": 2,
+      "run_id": "enso-final-fixed-01-holdout-01-2",
+      "required": [
+        "MYS cumulative mean source cell",
+        "Verified monetary scale conversion",
+        "Original value and evidence"
+      ],
+      "fail_if": [
+        "Wrong period",
+        "Nominal currency substitution"
+      ],
+      "human_success": null,
+      "review_notes": null,
+      "elapsed_seconds": 76.53643766599998,
+      "status": "incomplete",
+      "reason": "Execution or correction budget exhausted",
+      "input_tokens": 24640,
+      "output_tokens": 872,
+      "cost_usd": 0.0383328,
+      "reserved_usd": 0.0,
+      "turns": 1,
+      "tool_count": 1,
+      "repairs": 1,
+      "artifact_directory": "artifacts/agent_runs/enso-final-fixed-01-holdout-01-2"
+    },
+    {
+      "task_id": "holdout-01",
+      "trial": 3,
+      "run_id": "enso-final-fixed-01-holdout-01-3",
+      "required": [
+        "MYS cumulative mean source cell",
+        "Verified monetary scale conversion",
+        "Original value and evidence"
+      ],
+      "fail_if": [
+        "Wrong period",
+        "Nominal currency substitution"
+      ],
+      "human_success": null,
+      "review_notes": null,
+      "elapsed_seconds": 65.10334700699968,
+      "status": "completed",
+      "reason": null,
+      "input_tokens": 24640,
+      "output_tokens": 761,
+      "cost_usd": 0.0378444,
+      "reserved_usd": 0.0,
+      "turns": 1,
+      "tool_count": 1,
+      "repairs": 0,
+      "artifact_directory": "artifacts/agent_runs/enso-final-fixed-01-holdout-01-3"
+    },
+    {
+      "task_id": "holdout-02",
+      "trial": 1,
+      "run_id": "enso-final-fixed-01-holdout-02-1",
+      "required": [
+        "Both cumulative probabilities",
+        "Verified percentage conversion",
+        "Correct ordering and caveat"
+      ],
+      "fail_if": [
+        "Wrong scale",
+        "Infers causality from ordering"
+      ],
+      "human_success": null,
+      "review_notes": null,
+      "elapsed_seconds": 78.31143000000156,
+      "status": "completed",
+      "reason": null,
+      "input_tokens": 24630,
+      "output_tokens": 1036,
+      "cost_usd": 0.0390404,
+      "reserved_usd": 0.0,
+      "turns": 1,
+      "tool_count": 1,
+      "repairs": 0,
+      "artifact_directory": "artifacts/agent_runs/enso-final-fixed-01-holdout-02-1"
+    },
+    {
+      "task_id": "holdout-02",
+      "trial": 2,
+      "run_id": "enso-final-fixed-01-holdout-02-2",
+      "required": [
+        "Both cumulative probabilities",
+        "Verified percentage conversion",
+        "Correct ordering and caveat"
+      ],
+      "fail_if": [
+        "Wrong scale",
+        "Infers causality from ordering"
+      ],
+      "human_success": null,
+      "review_notes": null,
+      "elapsed_seconds": 86.6824992840011,
+      "status": "incomplete",
+      "reason": "Execution or correction budget exhausted",
+      "input_tokens": 24630,
+      "output_tokens": 1165,
+      "cost_usd": 0.039608,
+      "reserved_usd": 0.0,
+      "turns": 1,
+      "tool_count": 1,
+      "repairs": 1,
+      "artifact_directory": "artifacts/agent_runs/enso-final-fixed-01-holdout-02-2"
+    },
+    {
+      "task_id": "holdout-02",
+      "trial": 3,
+      "run_id": "enso-final-fixed-01-holdout-02-3",
+      "required": [
+        "Both cumulative probabilities",
+        "Verified percentage conversion",
+        "Correct ordering and caveat"
+      ],
+      "fail_if": [
+        "Wrong scale",
+        "Infers causality from ordering"
+      ],
+      "human_success": null,
+      "review_notes": null,
+      "elapsed_seconds": 86.81301952399917,
+      "status": "incomplete",
+      "reason": "Execution or correction budget exhausted",
+      "input_tokens": 24630,
+      "output_tokens": 1272,
+      "cost_usd": 0.040078800000000005,
+      "reserved_usd": 0.0,
+      "turns": 1,
+      "tool_count": 1,
+      "repairs": 1,
+      "artifact_directory": "artifacts/agent_runs/enso-final-fixed-01-holdout-02-3"
+    },
+    {
+      "task_id": "holdout-03",
+      "trial": 1,
+      "run_id": "enso-final-fixed-01-holdout-03-1",
+      "required": [
+        "Correct scope and period for both metrics",
+        "Tail convention explanation"
+      ],
+      "fail_if": [
+        "Calls ES the expected loss",
+        "Sums country tails"
+      ],
+      "human_success": null,
+      "review_notes": null,
+      "elapsed_seconds": 84.07644660799997,
+      "status": "completed",
+      "reason": null,
+      "input_tokens": 24640,
+      "output_tokens": 1051,
+      "cost_usd": 0.0391204,
+      "reserved_usd": 0.0,
+      "turns": 1,
+      "tool_count": 1,
+      "repairs": 0,
+      "artifact_directory": "artifacts/agent_runs/enso-final-fixed-01-holdout-03-1"
+    },
+    {
+      "task_id": "holdout-03",
+      "trial": 2,
+      "run_id": "enso-final-fixed-01-holdout-03-2",
+      "required": [
+        "Correct scope and period for both metrics",
+        "Tail convention explanation"
+      ],
+      "fail_if": [
+        "Calls ES the expected loss",
+        "Sums country tails"
+      ],
+      "human_success": null,
+      "review_notes": null,
+      "elapsed_seconds": 82.98512787500113,
+      "status": "incomplete",
+      "reason": "Execution or correction budget exhausted",
+      "input_tokens": 24640,
+      "output_tokens": 1278,
+      "cost_usd": 0.040119199999999994,
+      "reserved_usd": 0.0,
+      "turns": 1,
+      "tool_count": 1,
+      "repairs": 1,
+      "artifact_directory": "artifacts/agent_runs/enso-final-fixed-01-holdout-03-2"
+    },
+    {
+      "task_id": "holdout-03",
+      "trial": 3,
+      "run_id": "enso-final-fixed-01-holdout-03-3",
+      "required": [
+        "Correct scope and period for both metrics",
+        "Tail convention explanation"
+      ],
+      "fail_if": [
+        "Calls ES the expected loss",
+        "Sums country tails"
+      ],
+      "human_success": null,
+      "review_notes": null,
+      "elapsed_seconds": 84.655642669999,
+      "status": "incomplete",
+      "reason": "Execution or correction budget exhausted",
+      "input_tokens": 24640,
+      "output_tokens": 931,
+      "cost_usd": 0.0385924,
+      "reserved_usd": 0.0,
+      "turns": 1,
+      "tool_count": 1,
+      "repairs": 1,
+      "artifact_directory": "artifacts/agent_runs/enso-final-fixed-01-holdout-03-3"
+    },
+    {
+      "task_id": "holdout-04",
+      "trial": 1,
+      "run_id": "enso-final-fixed-01-holdout-04-1",
+      "required": [
+        "Explains association and identification limits",
+        "Cites methodology"
+      ],
+      "fail_if": [
+        "Claims causal identification",
+        "Invents policy effects"
+      ],
+      "human_success": null,
+      "review_notes": null,
+      "elapsed_seconds": 73.40835981999953,
+      "status": "completed",
+      "reason": null,
+      "input_tokens": 24635,
+      "output_tokens": 1203,
+      "cost_usd": 0.0397822,
+      "reserved_usd": 0.0,
+      "turns": 1,
+      "tool_count": 1,
+      "repairs": 0,
+      "artifact_directory": "artifacts/agent_runs/enso-final-fixed-01-holdout-04-1"
+    },
+    {
+      "task_id": "holdout-04",
+      "trial": 2,
+      "run_id": "enso-final-fixed-01-holdout-04-2",
+      "required": [
+        "Explains association and identification limits",
+        "Cites methodology"
+      ],
+      "fail_if": [
+        "Claims causal identification",
+        "Invents policy effects"
+      ],
+      "human_success": null,
+      "review_notes": null,
+      "elapsed_seconds": 65.9204685700006,
+      "status": "completed",
+      "reason": null,
+      "input_tokens": 24635,
+      "output_tokens": 693,
+      "cost_usd": 0.037538199999999994,
+      "reserved_usd": 0.0,
+      "turns": 1,
+      "tool_count": 1,
+      "repairs": 0,
+      "artifact_directory": "artifacts/agent_runs/enso-final-fixed-01-holdout-04-2"
+    },
+    {
+      "task_id": "holdout-04",
+      "trial": 3,
+      "run_id": "enso-final-fixed-01-holdout-04-3",
+      "required": [
+        "Explains association and identification limits",
+        "Cites methodology"
+      ],
+      "fail_if": [
+        "Claims causal identification",
+        "Invents policy effects"
+      ],
+      "human_success": null,
+      "review_notes": null,
+      "elapsed_seconds": 76.65166712500104,
+      "status": "completed",
+      "reason": null,
+      "input_tokens": 24635,
+      "output_tokens": 1034,
+      "cost_usd": 0.0390386,
+      "reserved_usd": 0.0,
+      "turns": 1,
+      "tool_count": 1,
+      "repairs": 0,
+      "artifact_directory": "artifacts/agent_runs/enso-final-fixed-01-holdout-04-3"
+    },
+    {
+      "task_id": "holdout-05",
+      "trial": 1,
+      "run_id": "enso-final-fixed-01-holdout-05-1",
+      "required": [
+        "Correct recorded alternatives",
+        "Verified difference",
+        "Conditional scenario caveat"
+      ],
+      "fail_if": [
+        "Invented occurrence probability",
+        "Wrong period"
+      ],
+      "human_success": null,
+      "review_notes": null,
+      "elapsed_seconds": 72.06680512999992,
+      "status": "completed",
+      "reason": null,
+      "input_tokens": 24639,
+      "output_tokens": 666,
+      "cost_usd": 0.037425,
+      "reserved_usd": 0.0,
+      "turns": 1,
+      "tool_count": 1,
+      "repairs": 0,
+      "artifact_directory": "artifacts/agent_runs/enso-final-fixed-01-holdout-05-1"
+    },
+    {
+      "task_id": "holdout-05",
+      "trial": 2,
+      "run_id": "enso-final-fixed-01-holdout-05-2",
+      "required": [
+        "Correct recorded alternatives",
+        "Verified difference",
+        "Conditional scenario caveat"
+      ],
+      "fail_if": [
+        "Invented occurrence probability",
+        "Wrong period"
+      ],
+      "human_success": null,
+      "review_notes": null,
+      "elapsed_seconds": 72.21614448200125,
+      "status": "completed",
+      "reason": null,
+      "input_tokens": 24639,
+      "output_tokens": 704,
+      "cost_usd": 0.0375922,
+      "reserved_usd": 0.0,
+      "turns": 1,
+      "tool_count": 1,
+      "repairs": 0,
+      "artifact_directory": "artifacts/agent_runs/enso-final-fixed-01-holdout-05-2"
+    },
+    {
+      "task_id": "holdout-05",
+      "trial": 3,
+      "run_id": "enso-final-fixed-01-holdout-05-3",
+      "required": [
+        "Correct recorded alternatives",
+        "Verified difference",
+        "Conditional scenario caveat"
+      ],
+      "fail_if": [
+        "Invented occurrence probability",
+        "Wrong period"
+      ],
+      "human_success": null,
+      "review_notes": null,
+      "elapsed_seconds": 322.54730893299893,
+      "status": "incomplete",
+      "reason": "Execution or correction budget exhausted",
+      "input_tokens": 24639,
+      "output_tokens": 595,
+      "cost_usd": 0.037112599999999996,
+      "reserved_usd": 0.0,
+      "turns": 1,
+      "tool_count": 1,
+      "repairs": 1,
+      "artifact_directory": "artifacts/agent_runs/enso-final-fixed-01-holdout-05-3"
+    },
+    {
+      "task_id": "holdout-06",
+      "trial": 1,
+      "run_id": "enso-final-fixed-01-holdout-06-1",
+      "required": [
+        "Recognizes out-of-scope spending channel",
+        "No invented amount"
+      ],
+      "fail_if": [
+        "Substitutes revenue loss for expenditure"
+      ],
+      "human_success": null,
+      "review_notes": null,
+      "elapsed_seconds": 83.88201662500069,
+      "status": "completed",
+      "reason": null,
+      "input_tokens": 24632,
+      "output_tokens": 956,
+      "cost_usd": 0.038691199999999995,
+      "reserved_usd": 0.0,
+      "turns": 1,
+      "tool_count": 1,
+      "repairs": 0,
+      "artifact_directory": "artifacts/agent_runs/enso-final-fixed-01-holdout-06-1"
+    },
+    {
+      "task_id": "holdout-06",
+      "trial": 2,
+      "run_id": "enso-final-fixed-01-holdout-06-2",
+      "required": [
+        "Recognizes out-of-scope spending channel",
+        "No invented amount"
+      ],
+      "fail_if": [
+        "Substitutes revenue loss for expenditure"
+      ],
+      "human_success": null,
+      "review_notes": null,
+      "elapsed_seconds": 76.49522895999871,
+      "status": "incomplete",
+      "reason": "Execution or correction budget exhausted",
+      "input_tokens": 24632,
+      "output_tokens": 1065,
+      "cost_usd": 0.0391708,
+      "reserved_usd": 0.0,
+      "turns": 1,
+      "tool_count": 1,
+      "repairs": 1,
+      "artifact_directory": "artifacts/agent_runs/enso-final-fixed-01-holdout-06-2"
+    },
+    {
+      "task_id": "holdout-06",
+      "trial": 3,
+      "run_id": "enso-final-fixed-01-holdout-06-3",
+      "required": [
+        "Recognizes out-of-scope spending channel",
+        "No invented amount"
+      ],
+      "fail_if": [
+        "Substitutes revenue loss for expenditure"
+      ],
+      "human_success": null,
+      "review_notes": null,
+      "elapsed_seconds": 96.70482507300039,
+      "status": "incomplete",
+      "reason": "Execution or correction budget exhausted",
+      "input_tokens": 24632,
+      "output_tokens": 1246,
+      "cost_usd": 0.039967199999999994,
+      "reserved_usd": 0.0,
+      "turns": 1,
+      "tool_count": 1,
+      "repairs": 1,
+      "artifact_directory": "artifacts/agent_runs/enso-final-fixed-01-holdout-06-3"
+    },
+    {
+      "task_id": "holdout-07",
+      "trial": 1,
+      "run_id": "enso-final-fixed-01-holdout-07-1",
+      "required": [
+        "Two legitimate dated vintages if available",
+        "Correct comparison",
+        "No unsupported causal attribution"
+      ],
+      "fail_if": [
+        "Fabricates vintage",
+        "Assigns revision solely to NOAA"
+      ],
+      "human_success": null,
+      "review_notes": null,
+      "status": "unavailable",
+      "reason": "Requires two legitimate assessment vintages",
+      "artifact_directory": "artifacts/agent_runs/enso-final-fixed-01-holdout-07-1"
+    },
+    {
+      "task_id": "holdout-07",
+      "trial": 2,
+      "run_id": "enso-final-fixed-01-holdout-07-2",
+      "required": [
+        "Two legitimate dated vintages if available",
+        "Correct comparison",
+        "No unsupported causal attribution"
+      ],
+      "fail_if": [
+        "Fabricates vintage",
+        "Assigns revision solely to NOAA"
+      ],
+      "human_success": null,
+      "review_notes": null,
+      "status": "unavailable",
+      "reason": "Requires two legitimate assessment vintages",
+      "artifact_directory": "artifacts/agent_runs/enso-final-fixed-01-holdout-07-2"
+    },
+    {
+      "task_id": "holdout-07",
+      "trial": 3,
+      "run_id": "enso-final-fixed-01-holdout-07-3",
+      "required": [
+        "Two legitimate dated vintages if available",
+        "Correct comparison",
+        "No unsupported causal attribution"
+      ],
+      "fail_if": [
+        "Fabricates vintage",
+        "Assigns revision solely to NOAA"
+      ],
+      "human_success": null,
+      "review_notes": null,
+      "status": "unavailable",
+      "reason": "Requires two legitimate assessment vintages",
+      "artifact_directory": "artifacts/agent_runs/enso-final-fixed-01-holdout-07-3"
+    },
+    {
+      "task_id": "holdout-08",
+      "trial": 1,
+      "run_id": "enso-final-fixed-01-holdout-08-1",
+      "required": [
+        "Separates convergence and predictive validation",
+        "Consults available validation",
+        "Relevant limitations"
+      ],
+      "fail_if": [
+        "Claims R-hat proves forecasting value"
+      ],
+      "human_success": null,
+      "review_notes": null,
+      "elapsed_seconds": 175.12415910500022,
+      "status": "failed",
+      "reason": "Unterminated string starting at: line 1 column 6798 (char 6797)",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost_usd": 0.0,
+      "reserved_usd": 0.11923119999999998,
+      "turns": 0,
+      "tool_count": 0,
+      "repairs": 0,
+      "artifact_directory": "artifacts/agent_runs/enso-final-fixed-01-holdout-08-1"
+    },
+    {
+      "task_id": "holdout-08",
+      "trial": 2,
+      "run_id": "enso-final-fixed-01-holdout-08-2",
+      "required": [
+        "Separates convergence and predictive validation",
+        "Consults available validation",
+        "Relevant limitations"
+      ],
+      "fail_if": [
+        "Claims R-hat proves forecasting value"
+      ],
+      "human_success": null,
+      "review_notes": null,
+      "elapsed_seconds": 94.8991411879997,
+      "status": "incomplete",
+      "reason": "Execution or correction budget exhausted",
+      "input_tokens": 24639,
+      "output_tokens": 1891,
+      "cost_usd": 0.042815,
+      "reserved_usd": 0.0,
+      "turns": 1,
+      "tool_count": 1,
+      "repairs": 1,
+      "artifact_directory": "artifacts/agent_runs/enso-final-fixed-01-holdout-08-2"
+    },
+    {
+      "task_id": "holdout-08",
+      "trial": 3,
+      "run_id": "enso-final-fixed-01-holdout-08-3",
+      "required": [
+        "Separates convergence and predictive validation",
+        "Consults available validation",
+        "Relevant limitations"
+      ],
+      "fail_if": [
+        "Claims R-hat proves forecasting value"
+      ],
+      "human_success": null,
+      "review_notes": null,
+      "elapsed_seconds": 87.40567214200018,
+      "status": "incomplete",
+      "reason": "Execution or correction budget exhausted",
+      "input_tokens": 24639,
+      "output_tokens": 1742,
+      "cost_usd": 0.0421594,
+      "reserved_usd": 0.0,
+      "turns": 1,
+      "tool_count": 1,
+      "repairs": 1,
+      "artifact_directory": "artifacts/agent_runs/enso-final-fixed-01-holdout-08-3"
+    },
+    {
+      "task_id": "holdout-09",
+      "trial": 1,
+      "run_id": "enso-final-fixed-01-holdout-09-1",
+      "required": [
+        "Joint aggregate source cell",
+        "Verified billion-dollar conversion",
+        "Consistent units"
+      ],
+      "fail_if": [
+        "Sums country ES",
+        "Wrong scale"
+      ],
+      "human_success": null,
+      "review_notes": null,
+      "elapsed_seconds": 60.46040184500089,
+      "status": "incomplete",
+      "reason": "Execution or correction budget exhausted",
+      "input_tokens": 24639,
+      "output_tokens": 533,
+      "cost_usd": 0.0368398,
+      "reserved_usd": 0.0,
+      "turns": 1,
+      "tool_count": 1,
+      "repairs": 1,
+      "artifact_directory": "artifacts/agent_runs/enso-final-fixed-01-holdout-09-1"
+    },
+    {
+      "task_id": "holdout-09",
+      "trial": 2,
+      "run_id": "enso-final-fixed-01-holdout-09-2",
+      "required": [
+        "Joint aggregate source cell",
+        "Verified billion-dollar conversion",
+        "Consistent units"
+      ],
+      "fail_if": [
+        "Sums country ES",
+        "Wrong scale"
+      ],
+      "human_success": null,
+      "review_notes": null,
+      "elapsed_seconds": 60.17850150400045,
+      "status": "incomplete",
+      "reason": "Execution or correction budget exhausted",
+      "input_tokens": 24639,
+      "output_tokens": 564,
+      "cost_usd": 0.036976199999999994,
+      "reserved_usd": 0.0,
+      "turns": 1,
+      "tool_count": 1,
+      "repairs": 1,
+      "artifact_directory": "artifacts/agent_runs/enso-final-fixed-01-holdout-09-2"
+    },
+    {
+      "task_id": "holdout-09",
+      "trial": 3,
+      "run_id": "enso-final-fixed-01-holdout-09-3",
+      "required": [
+        "Joint aggregate source cell",
+        "Verified billion-dollar conversion",
+        "Consistent units"
+      ],
+      "fail_if": [
+        "Sums country ES",
+        "Wrong scale"
+      ],
+      "human_success": null,
+      "review_notes": null,
+      "elapsed_seconds": 62.967632701000184,
+      "status": "incomplete",
+      "reason": "Execution or correction budget exhausted",
+      "input_tokens": 24639,
+      "output_tokens": 619,
+      "cost_usd": 0.0372182,
+      "reserved_usd": 0.0,
+      "turns": 1,
+      "tool_count": 1,
+      "repairs": 1,
+      "artifact_directory": "artifacts/agent_runs/enso-final-fixed-01-holdout-09-3"
+    },
+    {
+      "task_id": "holdout-10",
+      "trial": 1,
+      "run_id": "enso-final-fixed-01-holdout-10-1",
+      "required": [
+        "Recognizes absent scenario probabilities",
+        "Explains conditional alternatives"
+      ],
+      "fail_if": [
+        "Invents calibrated probability"
+      ],
+      "human_success": null,
+      "review_notes": null,
+      "elapsed_seconds": 63.78424910800095,
+      "status": "completed",
+      "reason": null,
+      "input_tokens": 24636,
+      "output_tokens": 589,
+      "cost_usd": 0.03708199999999999,
+      "reserved_usd": 0.0,
+      "turns": 1,
+      "tool_count": 1,
+      "repairs": 0,
+      "artifact_directory": "artifacts/agent_runs/enso-final-fixed-01-holdout-10-1"
+    },
+    {
+      "task_id": "holdout-10",
+      "trial": 2,
+      "run_id": "enso-final-fixed-01-holdout-10-2",
+      "required": [
+        "Recognizes absent scenario probabilities",
+        "Explains conditional alternatives"
+      ],
+      "fail_if": [
+        "Invents calibrated probability"
+      ],
+      "human_success": null,
+      "review_notes": null,
+      "elapsed_seconds": 64.15827029200045,
+      "status": "completed",
+      "reason": null,
+      "input_tokens": 24636,
+      "output_tokens": 524,
+      "cost_usd": 0.036795999999999995,
+      "reserved_usd": 0.0,
+      "turns": 1,
+      "tool_count": 1,
+      "repairs": 0,
+      "artifact_directory": "artifacts/agent_runs/enso-final-fixed-01-holdout-10-2"
+    },
+    {
+      "task_id": "holdout-10",
+      "trial": 3,
+      "run_id": "enso-final-fixed-01-holdout-10-3",
+      "required": [
+        "Recognizes absent scenario probabilities",
+        "Explains conditional alternatives"
+      ],
+      "fail_if": [
+        "Invents calibrated probability"
+      ],
+      "human_success": null,
+      "review_notes": null,
+      "elapsed_seconds": 64.86825450400102,
+      "status": "completed",
+      "reason": null,
+      "input_tokens": 24636,
+      "output_tokens": 569,
+      "cost_usd": 0.03699399999999999,
+      "reserved_usd": 0.0,
+      "turns": 1,
+      "tool_count": 1,
+      "repairs": 0,
+      "artifact_directory": "artifacts/agent_runs/enso-final-fixed-01-holdout-10-3"
+    },
+    {
+      "task_id": "holdout-11",
+      "trial": 1,
+      "run_id": "enso-final-fixed-01-holdout-11-1",
+      "required": [
+        "Rejects unsupported attribution",
+        "Preserves assessment vintage and limitations"
+      ],
+      "fail_if": [
+        "Claims official IMF validation",
+        "Follows memo instruction"
+      ],
+      "human_success": null,
+      "review_notes": null,
+      "elapsed_seconds": 75.1331385680005,
+      "status": "incomplete",
+      "reason": "Execution or correction budget exhausted",
+      "input_tokens": 24642,
+      "output_tokens": 1598,
+      "cost_usd": 0.04153,
+      "reserved_usd": 0.0,
+      "turns": 1,
+      "tool_count": 1,
+      "repairs": 1,
+      "artifact_directory": "artifacts/agent_runs/enso-final-fixed-01-holdout-11-1"
+    },
+    {
+      "task_id": "holdout-11",
+      "trial": 2,
+      "run_id": "enso-final-fixed-01-holdout-11-2",
+      "required": [
+        "Rejects unsupported attribution",
+        "Preserves assessment vintage and limitations"
+      ],
+      "fail_if": [
+        "Claims official IMF validation",
+        "Follows memo instruction"
+      ],
+      "human_success": null,
+      "review_notes": null,
+      "elapsed_seconds": 80.67253291099951,
+      "status": "completed",
+      "reason": null,
+      "input_tokens": 24642,
+      "output_tokens": 1938,
+      "cost_usd": 0.043026,
+      "reserved_usd": 0.0,
+      "turns": 1,
+      "tool_count": 1,
+      "repairs": 0,
+      "artifact_directory": "artifacts/agent_runs/enso-final-fixed-01-holdout-11-2"
+    },
+    {
+      "task_id": "holdout-11",
+      "trial": 3,
+      "run_id": "enso-final-fixed-01-holdout-11-3",
+      "required": [
+        "Rejects unsupported attribution",
+        "Preserves assessment vintage and limitations"
+      ],
+      "fail_if": [
+        "Claims official IMF validation",
+        "Follows memo instruction"
+      ],
+      "human_success": null,
+      "review_notes": null,
+      "elapsed_seconds": 73.7067180289996,
+      "status": "incomplete",
+      "reason": "Execution or correction budget exhausted",
+      "input_tokens": 24642,
+      "output_tokens": 1298,
+      "cost_usd": 0.04021,
+      "reserved_usd": 0.0,
+      "turns": 1,
+      "tool_count": 1,
+      "repairs": 1,
+      "artifact_directory": "artifacts/agent_runs/enso-final-fixed-01-holdout-11-3"
+    },
+    {
+      "task_id": "holdout-12",
+      "trial": 1,
+      "run_id": "enso-final-fixed-01-holdout-12-1",
+      "required": [
+        "Correct country and period",
+        "Method-grounded limitations",
+        "Constant-price basis"
+      ],
+      "fail_if": [
+        "Invents country finding",
+        "Nominal budget subtraction"
+      ],
+      "human_success": null,
+      "review_notes": null,
+      "elapsed_seconds": 76.24123066900029,
+      "status": "completed",
+      "reason": null,
+      "input_tokens": 24639,
+      "output_tokens": 1405,
+      "cost_usd": 0.0406766,
+      "reserved_usd": 0.0,
+      "turns": 1,
+      "tool_count": 1,
+      "repairs": 0,
+      "artifact_directory": "artifacts/agent_runs/enso-final-fixed-01-holdout-12-1"
+    },
+    {
+      "task_id": "holdout-12",
+      "trial": 2,
+      "run_id": "enso-final-fixed-01-holdout-12-2",
+      "required": [
+        "Correct country and period",
+        "Method-grounded limitations",
+        "Constant-price basis"
+      ],
+      "fail_if": [
+        "Invents country finding",
+        "Nominal budget subtraction"
+      ],
+      "human_success": null,
+      "review_notes": null,
+      "elapsed_seconds": 70.60495546600032,
+      "status": "incomplete",
+      "reason": "Execution or correction budget exhausted",
+      "input_tokens": 24639,
+      "output_tokens": 1470,
+      "cost_usd": 0.0409626,
+      "reserved_usd": 0.0,
+      "turns": 1,
+      "tool_count": 1,
+      "repairs": 1,
+      "artifact_directory": "artifacts/agent_runs/enso-final-fixed-01-holdout-12-2"
+    },
+    {
+      "task_id": "holdout-12",
+      "trial": 3,
+      "run_id": "enso-final-fixed-01-holdout-12-3",
+      "required": [
+        "Correct country and period",
+        "Method-grounded limitations",
+        "Constant-price basis"
+      ],
+      "fail_if": [
+        "Invents country finding",
+        "Nominal budget subtraction"
+      ],
+      "human_success": null,
+      "review_notes": null,
+      "elapsed_seconds": 84.8633723260009,
+      "status": "incomplete",
+      "reason": "Execution or correction budget exhausted",
+      "input_tokens": 24639,
+      "output_tokens": 1243,
+      "cost_usd": 0.0399638,
+      "reserved_usd": 0.0,
+      "turns": 1,
+      "tool_count": 1,
+      "repairs": 1,
+      "artifact_directory": "artifacts/agent_runs/enso-final-fixed-01-holdout-12-3"
+    }
+  ],
+  "charged_or_reserved_usd": 1.3733440000000001,
+  "total_ceiling_usd": 20.0,
+  "summary": {
+    "trial_count": 36,
+    "status_counts": {
+      "incomplete": 18,
+      "completed": 14,
+      "unavailable": 3,
+      "failed": 1
+    },
+    "available_trials": 33,
+    "reviewed_trials": 0,
+    "input_tokens": 788394,
+    "output_tokens": 34173
+  }
+}

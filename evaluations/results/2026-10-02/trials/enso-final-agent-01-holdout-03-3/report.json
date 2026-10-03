@@ -1,0 +1,58 @@
+{
+  "title": "Pacific islands expected loss versus tail shortfall",
+  "claims": [
+    {
+      "kind": "numeric",
+      "text": "{'scope': 'Pacific_islands', 'period': '2026', 'metric': 'revenue_loss_2025usd_mean'}",
+      "evidence_ids": [
+        "b11d96e380384aff6c6f30a3"
+      ],
+      "value": 6849618.363448219,
+      "unit": "2025 USD"
+    },
+    {
+      "kind": "numeric",
+      "text": "{'scope': 'Pacific_islands', 'period': '2026', 'metric': 'es95_2025usd'}",
+      "evidence_ids": [
+        "2851df2260f5d843832c3447"
+      ],
+      "value": 103793649.58191334,
+      "unit": "2025 USD"
+    },
+    {
+      "kind": "interpretation",
+      "text": "The expected loss and the expected shortfall differ because they summarize different aspects of the same joint simulation distribution. The expected loss is a signed mean across all simulated cases, so scenarios in which the event yields revenue gains offset part of the loss cases. The expected shortfall instead averages only the most severe tail of the positive shortfall distribution, so gains are excluded and severe joint outcomes dominate.",
+      "evidence_ids": [
+        "9d35448983dd2405f8bfa281"
+      ],
+      "value": null,
+      "unit": null
+    },
+    {
+      "kind": "descriptive",
+      "text": "Per the risk definition, positive values mean neutral revenue minus event revenue; gains remain in the signed estimates, while the tail measures are applied only to the positive shortfall.",
+      "evidence_ids": [
+        "85204d8bdb19070b9a46ca7e"
+      ],
+      "value": null,
+      "unit": null
+    },
+    {
+      "kind": "descriptive",
+      "text": "The aggregate uses common simulation draws and country quantiles are never summed, so the tail figure reflects joint comovement across the islands rather than a sum of country tails.",
+      "evidence_ids": [
+        "9d35448983dd2405f8bfa281"
+      ],
+      "value": null,
+      "unit": null
+    }
+  ],
+  "limitations": [
+    "Historical input provenance is incomplete; the assessment is inspection-only and not recomputable.",
+    "Estimates are conditional on the modelled event and are not causal attributions; causal identification is false.",
+    "Scope is agriculture, forestry and fishing value added plus conditional government revenue transmission; figures are not total-economy losses and not a sovereign default probability.",
+    "Monetary outcomes use constant 2025 USD and a fixed 2025 exchange rate; price and exchange-rate responses are not modelled.",
+    "Tail measures use positive-part shortfall while the mean is signed, so the two figures are not directly comparable point estimates of the same quantity.",
+    "The model has no independent institutional validation of country-by-country sovereign agricultural-revenue loss distributions."
+  ]
+}

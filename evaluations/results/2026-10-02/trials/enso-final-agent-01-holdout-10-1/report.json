@@ -1,0 +1,49 @@
+{
+  "title": "Late-year rebound scenario revenue-loss likelihood",
+  "claims": [
+    {
+      "kind": "numeric",
+      "text": "{'scope': 'all_modeled', 'period': '2027', 'metric': 'p_revenue_loss'}",
+      "evidence_ids": [
+        "fb727e8670efa84ef98c65b3"
+      ],
+      "value": 0.6153,
+      "unit": "probability"
+    },
+    {
+      "kind": "numeric",
+      "text": "{'scope': 'all_modeled', 'period': '2027', 'metric': 'p_revenue_loss'}",
+      "evidence_ids": [
+        "d0cc7f83fb4447a35a4c346a"
+      ],
+      "value": 0.6175,
+      "unit": "probability"
+    },
+    {
+      "kind": "numeric",
+      "text": "{'comparison': 'central minus la_nina_late_2027', 'scope': 'all_modeled', 'period': '2027', 'metric': 'p_revenue_loss'}",
+      "evidence_ids": [
+        "8f9b19f0beb1c298d68f255b"
+      ],
+      "value": 0.0022,
+      "unit": "probability"
+    },
+    {
+      "kind": "numeric",
+      "text": "{'json_path': ['models', 'fiscal', 'prior_scale'], 'scenario': 'la_nina_late_2027'}",
+      "evidence_ids": [
+        "9f8bc9670d839e19deda2ada"
+      ],
+      "value": 2.0,
+      "unit": "prior scale"
+    }
+  ],
+  "limitations": [
+    "Scenario alternatives are sensitivity cases, not assigned occurrence probabilities; the reported probability is the modeled probability of revenue loss conditional on that scenario holding, not the likelihood of the rebound itself.",
+    "Sensitivity alternatives do not define a calibrated credible interval.",
+    "The assessment is not causally identified and the bundle is inspection-only; recomputation is not supported.",
+    "Historical input provenance is incomplete for this assessment.",
+    "Risk is defined as neutral revenue minus event revenue; gains are retained in signed estimates, while tail measures apply to the positive shortfall.",
+    "Results cover all modeled countries jointly and are not a country-level or total-economy loss estimate, and are not a sovereign default probability."
+  ]
+}

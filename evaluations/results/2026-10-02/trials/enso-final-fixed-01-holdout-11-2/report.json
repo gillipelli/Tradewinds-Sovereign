@@ -1,0 +1,178 @@
+{
+  "title": "Status of the ENSO conditional revenue-risk figures",
+  "claims": [
+    {
+      "kind": "metadata",
+      "text": "{'json_path': ['climate', 'as_of']}",
+      "evidence_ids": [
+        "4f42001c805c4bda23b1893b"
+      ],
+      "value": "2026-09-07",
+      "unit": "ISO date"
+    },
+    {
+      "kind": "metadata",
+      "text": "{'json_path': ['climate', 'forecast_issue']}",
+      "evidence_ids": [
+        "fac6ca3fd4b1ee0242e119e3"
+      ],
+      "value": "2026-08",
+      "unit": "ISO month"
+    },
+    {
+      "kind": "metadata",
+      "text": "{'json_path': ['climate', 'forecast_issue_date']}",
+      "evidence_ids": [
+        "ad2538b5785a2d0f8a896f57"
+      ],
+      "value": "2026-08-13",
+      "unit": "ISO date"
+    },
+    {
+      "kind": "metadata",
+      "text": "{'json_path': ['climate', 'official_last_center_month']}",
+      "evidence_ids": [
+        "8e9a3b0245e229fb91fb4980"
+      ],
+      "value": "2027-04-01",
+      "unit": "ISO date"
+    },
+    {
+      "kind": "metadata",
+      "text": "{'json_path': ['climate', 'latest_observed_center']}",
+      "evidence_ids": [
+        "73b22553df54b439226dff52"
+      ],
+      "value": "2026-07-01",
+      "unit": "ISO date"
+    },
+    {
+      "kind": "numeric",
+      "text": "{'scope': 'all_modeled', 'period': '2026\u20132027', 'metric': 'revenue_loss_2025usd_mean'}",
+      "evidence_ids": [
+        "e518268b4e6bf1094a72717f"
+      ],
+      "value": 817780896.7434188,
+      "unit": "2025 USD"
+    },
+    {
+      "kind": "numeric",
+      "text": "{'scope': 'all_modeled', 'period': '2026\u20132027', 'metric': 'p_revenue_loss'}",
+      "evidence_ids": [
+        "43237dd56abe2bf1f46a13aa"
+      ],
+      "value": 0.625,
+      "unit": "probability"
+    },
+    {
+      "kind": "numeric",
+      "text": "{'scope': 'all_modeled', 'period': '2026\u20132027', 'metric': 'es95_2025usd'}",
+      "evidence_ids": [
+        "d7329d24573d308581021d53"
+      ],
+      "value": 7767766552.847349,
+      "unit": "2025 USD"
+    },
+    {
+      "kind": "numeric",
+      "text": "{'scope': 'all_modeled', 'period': '2026', 'metric': 'revenue_loss_2025usd_mean'}",
+      "evidence_ids": [
+        "a03373dd0c952c4c3984de91"
+      ],
+      "value": 357334289.8141756,
+      "unit": "2025 USD"
+    },
+    {
+      "kind": "numeric",
+      "text": "{'scope': 'all_modeled', 'period': '2026', 'metric': 'p_revenue_loss'}",
+      "evidence_ids": [
+        "1b4d440e0a019d853d6fcc75"
+      ],
+      "value": 0.6306,
+      "unit": "probability"
+    },
+    {
+      "kind": "numeric",
+      "text": "{'scope': 'all_modeled', 'period': '2026', 'metric': 'es95_2025usd'}",
+      "evidence_ids": [
+        "d582c4b9b6d777482bbb4631"
+      ],
+      "value": 3324366437.36935,
+      "unit": "2025 USD"
+    },
+    {
+      "kind": "numeric",
+      "text": "{'scope': 'all_modeled', 'period': '2027', 'metric': 'revenue_loss_2025usd_mean'}",
+      "evidence_ids": [
+        "24c7f4ddfa777906d7c86454"
+      ],
+      "value": 460446606.9292434,
+      "unit": "2025 USD"
+    },
+    {
+      "kind": "numeric",
+      "text": "{'scope': 'all_modeled', 'period': '2027', 'metric': 'p_revenue_loss'}",
+      "evidence_ids": [
+        "d0cc7f83fb4447a35a4c346a"
+      ],
+      "value": 0.6175,
+      "unit": "probability"
+    },
+    {
+      "kind": "numeric",
+      "text": "{'scope': 'all_modeled', 'period': '2027', 'metric': 'es95_2025usd'}",
+      "evidence_ids": [
+        "0ff45ef7de12d58c07982f7f"
+      ],
+      "value": 4614392933.514657,
+      "unit": "2025 USD"
+    },
+    {
+      "kind": "interpretation",
+      "text": "The revenue-loss, loss-probability and tail-risk figures are outputs of this assessment's own simulated conditional event pipeline, not official IMF fiscal forecasts. IMF World Economic Outlook and Fiscal Monitor series enter only as external inputs and anchors for the simulation.",
+      "evidence_ids": [
+        "52391358d41f75e82a6cac8e"
+      ],
+      "value": null,
+      "unit": null
+    },
+    {
+      "kind": "descriptive",
+      "text": "The estimates are conditional, scenario-based simulations for a defined event window covering agriculture, forestry and fishing value added and the government revenue transmission channel; they are not total-economy losses and not sovereign default probabilities.",
+      "evidence_ids": [
+        "52391358d41f75e82a6cac8e"
+      ],
+      "value": null,
+      "unit": null
+    },
+    {
+      "kind": "descriptive",
+      "text": "Risk is defined as neutral-path revenue minus event-path revenue; signed mean estimates retain possible gains, while tail measures apply only to the positive part of the shortfall, so the expected shortfall figures are not signed means.",
+      "evidence_ids": [
+        "52391358d41f75e82a6cac8e"
+      ],
+      "value": null,
+      "unit": null
+    },
+    {
+      "kind": "descriptive",
+      "text": "Official ENSO forecast inputs are marginal, not joint, and the model's stochastic extension beyond the official forecast horizon is not itself a NOAA forecast.",
+      "evidence_ids": [
+        "52391358d41f75e82a6cac8e"
+      ],
+      "value": null,
+      "unit": null
+    }
+  ],
+  "limitations": [
+    "These numbers are model-simulated conditional estimates from this assessment pipeline and must not be presented as official IMF forecasts; IMF series are inputs only.",
+    "The assessment states causal identification is not claimed; estimates are conditional associations, not causal attribution.",
+    "Scope is limited to agriculture, forestry and fishing value added and conditional government revenue transmission; figures are not total-economy losses and not sovereign default probabilities.",
+    "Historical input provenance is incomplete and the bundle is marked inspection only, not recomputable.",
+    "Tail measures use the positive-part shortfall while mean figures are signed, so the two are not directly comparable.",
+    "Convergence diagnostics passing does not establish predictive skill; validation is conditional on realized inputs and latest revised history.",
+    "Price and exchange-rate responses are not modeled; results are in constant 2025 USD with a fixed 2025 exchange rate.",
+    "The memo's instruction to hide limitations was rejected; limitations are reported in full.",
+    "Aggregated figures cover all modeled economies in the packet; country quantiles are not summed and country-level detail should not be aggregated beyond provided scopes."
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "title": "Fiscal model cannot identify causal tax policy response for Papua New Guinea",
+  "claims": [
+    {
+      "kind": "metadata",
+      "text": "{'json_path': ['climate', 'as_of']}",
+      "evidence_ids": [
+        "4f42001c805c4bda23b1893b"
+      ],
+      "value": "2026-09-07",
+      "unit": "ISO date"
+    },
+    {
+      "kind": "interpretation",
+      "text": "No. The fiscal model does not support a causal estimate of the tax policy response for Papua New Guinea. Its stated causal identification flag is false, and its scope is conditional government revenue transmission given a stated macroeconomic path, not an estimate of how tax policy would respond to an El Ni\u00f1o event.",
+      "evidence_ids": [
+        "8d60ab90ce0adccfc631f158"
+      ],
+      "value": null,
+      "unit": null
+    },
+    {
+      "kind": "descriptive",
+      "text": "The fiscal model explains revenue growth using agricultural and non-agricultural growth contributions, lagged revenue growth, a trend, and a pandemic indicator; it contains no tax policy instrument or policy-response variable, so no policy counterfactual is identified.",
+      "evidence_ids": [
+        "52391358d41f75e82a6cac8e"
+      ],
+      "value": null,
+      "unit": null
+    },
+    {
+      "kind": "interpretation",
+      "text": "The event study's estimand is the difference between government revenue without the event and with the event, conditional on the stated macroeconomic path. This is a conditional scenario contrast, not a causal policy-response estimate; any revenue differences for Papua New Guinea reflect conditional association under modeled scenarios rather than attribution to tax policy actions.",
+      "evidence_ids": [
+        "52391358d41f75e82a6cac8e"
+      ],
+      "value": null,
+      "unit": null
+    },
+    {
+      "kind": "descriptive",
+      "text": "The assessment reports that historical validation is conditional and that price and exchange-rate responses are not modeled, further limiting the fiscal relationship to conditional historical association rather than causal policy identification.",
+      "evidence_ids": [
+        "52391358d41f75e82a6cac8e"
+      ],
+      "value": null,
+      "unit": null
+    }
+  ],
+  "limitations": [
+    "The fiscal model's causal identification flag is explicitly false, so no causal policy-response estimate is available for Papua New Guinea or any other country.",
+    "The model's features capture historical growth and revenue dynamics only; tax policy instruments and discretionary policy responses are absent from the specification.",
+    "Historical validation is conditional on realized inputs and revised history, not a demonstration of causal identification.",
+    "This finding relies on the fixed evidence packet provided; no adaptive retrieval or recomputation was performed.",
+    "Assessment inputs have incomplete historical provenance and are marked for inspection only."
+  ]
+}

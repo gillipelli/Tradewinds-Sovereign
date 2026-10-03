@@ -1,0 +1,29 @@
+{
+  "title": "Late-year rebound scenario likelihood unavailable",
+  "claims": [
+    {
+      "kind": "metadata",
+      "text": "{'json_path': ['climate', 'as_of']}",
+      "evidence_ids": [
+        "4f42001c805c4bda23b1893b"
+      ],
+      "value": "2026-09-07",
+      "unit": "ISO date"
+    },
+    {
+      "kind": "descriptive",
+      "text": "The provided evidence packet does not contain the sensitivity table or any numeric likelihood for the late-year rebound scenario. The packet's stated coverage confirms that scenario parameters were not included as scalar parameter evidence, and no scenario likelihood value is present among the supplied risk cells, which report only conditional revenue-loss probabilities under the central event case. Therefore a precise likelihood for the late-year rebound scenario cannot be produced from this evidence.",
+      "evidence_ids": [
+        "8d60ab90ce0adccfc631f158"
+      ],
+      "value": null,
+      "unit": null
+    }
+  ],
+  "limitations": [
+    "The sensitivity table containing the late-year rebound scenario is absent from the fixed evidence packet; the packet explicitly states scenario parameters were not included as scalar parameter evidence.",
+    "No adaptive tools were available to query scenario parameters or assessment inputs; retrieval was fixed to the supplied packet only.",
+    "The risk cells present in the packet are conditional on the central event case and cannot be repurposed as a likelihood for an alternative sensitivity scenario.",
+    "Sensitivity alternatives do not establish a calibrated credible interval, and no relative comparison between the central case and the rebound scenario is supported by the available evidence."
+  ]
+}

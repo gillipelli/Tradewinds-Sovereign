@@ -1,0 +1,39 @@
+{
+  "title": "Pacific islands expected loss versus tail shortfall",
+  "claims": [
+    {
+      "kind": "numeric",
+      "text": "{'scope': 'Pacific_islands', 'period': '2026', 'metric': 'revenue_loss_2025usd_mean'}",
+      "evidence_ids": [
+        "b11d96e380384aff6c6f30a3"
+      ],
+      "value": 6849618.363448219,
+      "unit": "2025 USD"
+    },
+    {
+      "kind": "numeric",
+      "text": "{'scope': 'Pacific_islands', 'period': '2026', 'metric': 'es95_2025usd'}",
+      "evidence_ids": [
+        "2851df2260f5d843832c3447"
+      ],
+      "value": 103793649.58191334,
+      "unit": "2025 USD"
+    },
+    {
+      "kind": "interpretation",
+      "text": "The two measures differ because the mean is a signed quantity averaged over every simulation draw, including outcomes where event revenue exceeds neutral revenue, while the expected shortfall conditions on the extreme loss tail of the aggregate positive shortfall, where adverse climate dependence and shared-year shocks combine across islands. Tail risk therefore substantially exceeds the central expectation. Aggregate risk uses common simulation draws; country quantiles are never summed.",
+      "evidence_ids": [
+        "48ec31bd33c00e4bdd703fbc"
+      ],
+      "value": null,
+      "unit": null
+    }
+  ],
+  "limitations": [
+    "Historical input provenance is incomplete; the assessment is for inspection only and is not recomputable.",
+    "Estimates are event-conditional, not observed losses or a validated official budget forecast; the fiscal model estimates historical associations and does not identify a causal tax multiplier.",
+    "Monetary units are constant 2025 USD, GDP-deflated, at a fixed 2025 exchange rate; price and exchange-rate responses are not modeled.",
+    "Aggregate expected shortfall is computed on the joint aggregate distribution with common simulation draws; it is not the sum of country tail measures.",
+    "The signed mean retains gain outcomes, so it is not directly comparable to the positive-part tail shortfall."
+  ]
+}

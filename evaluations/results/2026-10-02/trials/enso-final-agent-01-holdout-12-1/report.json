@@ -1,0 +1,85 @@
+{
+  "title": "Australia revenue estimate: monetary basis, scope, and limitations",
+  "claims": [
+    {
+      "kind": "numeric",
+      "text": "{'country': 'AUS', 'year': '2026', 'metric': 'revenue_loss_2025usd_mean'}",
+      "evidence_ids": [
+        "c86ea3d5303e4b1f7812987c"
+      ],
+      "value": 44490746.23460664,
+      "unit": "2025 USD"
+    },
+    {
+      "kind": "descriptive",
+      "text": "The Australia revenue figure is a conditional, event-specific estimate: government revenue without this El Ni\u00f1o event minus government revenue with the event, for the requested period. It is not a measure of the event's total economic damage and not a sovereign default probability.",
+      "evidence_ids": [
+        "319c7394cd00f86198723ae7"
+      ],
+      "value": null,
+      "unit": null
+    },
+    {
+      "kind": "descriptive",
+      "text": "Monetary basis: figures are expressed in constant 2025 USD, GDP-deflated, using a fixed 2025 exchange rate, so currency conversion and price-response dynamics are not modeled.",
+      "evidence_ids": [
+        "319c7394cd00f86198723ae7"
+      ],
+      "value": null,
+      "unit": null
+    },
+    {
+      "kind": "descriptive",
+      "text": "Scope: the estimate covers agriculture, forestry and fishing value added and its conditional transmission to government revenue (which includes grants); non-agriculture growth is proxied externally by IMF total real GDP growth projections and is shared across scenarios, so it is not independently modeled.",
+      "evidence_ids": [
+        "319c7394cd00f86198723ae7"
+      ],
+      "value": null,
+      "unit": null
+    },
+    {
+      "kind": "interpretation",
+      "text": "Model limitations: the analysis does not claim causal identification (coefficient estimates are associational), historical validation is conditional rather than predictive, and scenario alternatives are labeled sensitivity variants, not a calibrated credible interval or probability of occurrence.",
+      "evidence_ids": [
+        "319c7394cd00f86198723ae7"
+      ],
+      "value": null,
+      "unit": null
+    },
+    {
+      "kind": "descriptive",
+      "text": "Data vintage limitations: climate observations and forecast products update more frequently than official crop and government-revenue series, and IMF and World Bank figures used as monetary anchors are projections rather than final audited observations, so the monetary basis can shift with newer releases.",
+      "evidence_ids": [
+        "319c7394cd00f86198723ae7"
+      ],
+      "value": null,
+      "unit": null
+    },
+    {
+      "kind": "descriptive",
+      "text": "This assessment bundle is marked inspection-only due to incomplete historical input provenance; it cannot be recomputed or scenario-recomputed from the provided tools.",
+      "evidence_ids": [
+        "319c7394cd00f86198723ae7"
+      ],
+      "value": null,
+      "unit": null
+    },
+    {
+      "kind": "metadata",
+      "text": "{'json_path': ['climate', 'forecast_issue_date']}",
+      "evidence_ids": [
+        "ad2538b5785a2d0f8a896f57"
+      ],
+      "value": "2026-08-13",
+      "unit": "ISO date"
+    }
+  ],
+  "limitations": [
+    "Monetary figures are in constant 2025 USD, GDP-deflated, at a fixed 2025 exchange rate; exchange-rate and price responses are not modeled.",
+    "Scope is limited to agriculture, forestry and fishing value added and its conditional government revenue transmission (revenue includes grants); it is not a total-economy loss estimate.",
+    "The model does not claim causal identification; coefficients reflect historical association, and historical validation is conditional.",
+    "Scenario variants are sensitivity labels only; they do not define a calibrated credible interval or event-occurrence probabilities.",
+    "Climate data (RONI forecasts) update more frequently than fiscal and crop series, so the estimate is tied to the specific forecast vintage and may not reflect later observations.",
+    "Assessment bundle is non-recomputable and marked inspection-only due to incomplete historical input provenance."
+  ]
+}

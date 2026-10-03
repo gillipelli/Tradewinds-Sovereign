@@ -1,0 +1,47 @@
+{
+  "title": "Fiscal relationship cannot identify PNG causal tax policy response",
+  "claims": [
+    {
+      "kind": "descriptive",
+      "text": "Papua New Guinea (PNG) is included in the fiscal model, which relates revenue growth to agricultural and non-agricultural contributions, lagged revenue growth, a trend and a pandemic control using IMF revenue data.",
+      "evidence_ids": [
+        "52391358d41f75e82a6cac8e"
+      ],
+      "value": null,
+      "unit": null
+    },
+    {
+      "kind": "interpretation",
+      "text": "No \u2014 the fiscal relationship cannot estimate the causal tax policy response for Papua New Guinea. The assessment is explicitly marked as not achieving causal identification, and the methodology states this observational design cannot separate policy changes, transfers, mineral-revenue shocks or endogenous agricultural responses.",
+      "evidence_ids": [
+        "2a8b770455b0c54892ba5ceb"
+      ],
+      "value": null,
+      "unit": null
+    },
+    {
+      "kind": "interpretation",
+      "text": "The fiscal coefficient captures the observed historical association between agricultural contribution and revenue growth, not an assumed agricultural tax-capture rate, and the old triangular gross-sales capture assumption is absent from the primary event model.",
+      "evidence_ids": [
+        "2a8b770455b0c54892ba5ceb"
+      ],
+      "value": null,
+      "unit": null
+    },
+    {
+      "kind": "interpretation",
+      "text": "Historical validation is conditional rather than causal, and the event model estimates a neutral-versus-event revenue comparison, so any PNG fiscal estimates describe association and scenario differences, not a causal tax policy response.",
+      "evidence_ids": [
+        "dae3137c00f3b3d3d476ed75"
+      ],
+      "value": null,
+      "unit": null
+    }
+  ],
+  "limitations": [
+    "The assessment's causal_identification flag is false; no causal claim about tax policy response can be supported for Papua New Guinea or any other country.",
+    "The fiscal model is an observational regression on historical IMF revenue and World Bank activity data; policy changes, transfers, mineral-revenue shocks and endogenous responses are not separately identified.",
+    "Historical supporting fiscal-capture assumptions in other documents do not transfer to the primary event pipeline.",
+    "Historical input provenance is incomplete; the assessment is limited to inspection only and is not recomputable."
+  ]
+}

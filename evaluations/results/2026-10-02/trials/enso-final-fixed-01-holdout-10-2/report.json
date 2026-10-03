@@ -1,0 +1,47 @@
+{
+  "title": "Late-year rebound scenario likelihood unavailable",
+  "claims": [
+    {
+      "kind": "metadata",
+      "text": "{'json_path': ['climate', 'as_of']}",
+      "evidence_ids": [
+        "4f42001c805c4bda23b1893b"
+      ],
+      "value": "2026-09-07",
+      "unit": "ISO date"
+    },
+    {
+      "kind": "metadata",
+      "text": "{'json_path': ['climate', 'forecast_issue']}",
+      "evidence_ids": [
+        "fac6ca3fd4b1ee0242e119e3"
+      ],
+      "value": "2026-08",
+      "unit": "ISO month"
+    },
+    {
+      "kind": "metadata",
+      "text": "{'json_path': ['climate', 'forecast_issue_date']}",
+      "evidence_ids": [
+        "ad2538b5785a2d0f8a896f57"
+      ],
+      "value": "2026-08-13",
+      "unit": "ISO date"
+    },
+    {
+      "kind": "descriptive",
+      "text": "The evidence packet contains no sensitivity table and no entries describing a late-year rebound scenario. The packet's stated coverage explicitly notes that scenario parameters were not included as scalar parameter evidence, and no tool exists in this fixed-evidence session to read or compute scenario likelihoods. A precise likelihood for the late-year rebound scenario therefore cannot be produced from the authorized evidence, and substituting a baseline or other risk-cell probability for it would be unsupported.",
+      "evidence_ids": [
+        "4f42001c805c4bda23b1893b"
+      ],
+      "value": null,
+      "unit": null
+    }
+  ],
+  "limitations": [
+    "No sensitivity table or late-year rebound scenario definition is present in the fixed evidence packet; scenario parameter evidence was explicitly excluded from coverage.",
+    "No adaptive tools are available in this session to query scenario parameters, recompute scenario likelihoods, or retrieve additional evidence.",
+    "The assessment is marked non-recomputable, so any likelihood beyond published risk cells cannot be derived from the packet.",
+    "Baseline risk-cell probabilities measure the probability of any conditional revenue loss and are not probabilities of any specific climate scenario occurring."
+  ]
+}

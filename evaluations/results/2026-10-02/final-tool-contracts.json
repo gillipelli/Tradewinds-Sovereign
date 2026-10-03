@@ -1,0 +1,68 @@
+{
+  "kind": "offline_tool_contract_checks",
+  "llm_task_success": "not measured",
+  "passed": 12,
+  "total": 12,
+  "results": [
+    {
+      "id": "metadata",
+      "passed": true,
+      "status": "ok"
+    },
+    {
+      "id": "diagnostics",
+      "passed": true,
+      "status": "ok"
+    },
+    {
+      "id": "country_mean",
+      "passed": true,
+      "status": "ok"
+    },
+    {
+      "id": "aggregate_es",
+      "passed": true,
+      "status": "ok"
+    },
+    {
+      "id": "missing_country",
+      "passed": true,
+      "status": "unavailable"
+    },
+    {
+      "id": "ambiguous_scope",
+      "passed": true,
+      "status": "unavailable"
+    },
+    {
+      "id": "unsupported_metric",
+      "passed": true,
+      "status": "unavailable"
+    },
+    {
+      "id": "path_escape",
+      "passed": true,
+      "status": "unavailable"
+    },
+    {
+      "id": "unknown_tool",
+      "passed": true,
+      "status": "unavailable"
+    },
+    {
+      "id": "source_search",
+      "passed": true,
+      "status": "ok"
+    },
+    {
+      "id": "sensitivity_list",
+      "passed": true,
+      "status": "ok"
+    },
+    {
+      "id": "sensitivity_compare",
+      "passed": true,
+      "status": "ok"
+    }
+  ]
+}

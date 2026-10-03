@@ -1,0 +1,37 @@
+{
+  "title": "Viet Nam infrastructure repair costs not covered",
+  "claims": [
+    {
+      "kind": "interpretation",
+      "text": "This assessment does not estimate government infrastructure repair costs. Its modeled scope is agriculture, forestry and fishing value added and the conditional transmission to government revenue for the countries in scope, including Viet Nam; it does not model disaster damage, capital stock losses, or public expenditure on repairs.",
+      "evidence_ids": [
+        "52391358d41f75e82a6cac8e"
+      ],
+      "value": null,
+      "unit": null
+    },
+    {
+      "kind": "numeric",
+      "text": "{'country': 'VNM', 'year': '2027', 'metric': 'revenue_loss_2025usd_mean'}",
+      "evidence_ids": [
+        "23ffcfc949516b627475d6a4"
+      ],
+      "value": 28903988.27674032,
+      "unit": "2025 USD"
+    },
+    {
+      "kind": "interpretation",
+      "text": "No infrastructure repair cost figure can be derived from this assessment, and any historical supporting crop or fiscal-capture assumptions in the methodology documents do not transfer to the primary event model, which excludes physical damage valuation.",
+      "evidence_ids": [
+        "6035fc8493335eee6f7d6c7d"
+      ],
+      "value": null,
+      "unit": null
+    }
+  ],
+  "limitations": [
+    "Historical input provenance is incomplete; the assessment is inspection-only and not recomputable.",
+    "The risk measure is defined as neutral revenue minus event revenue; it is not a measure of infrastructure repair expenditure or physical damage.",
+    "Price and exchange-rate responses are not modeled, and the study is not a total-economy loss estimate and not a sovereign default probability."
+  ]
+}

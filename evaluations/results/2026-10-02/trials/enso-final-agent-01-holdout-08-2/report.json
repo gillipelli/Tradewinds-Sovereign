@@ -1,0 +1,68 @@
+{
+  "title": "Evidence required beyond sampler diagnostics for out-of-sample skill",
+  "claims": [
+    {
+      "kind": "interpretation",
+      "text": "Successful sampler diagnostics for the agriculture and fiscal models show only that posterior sampling converged to the target distribution given the training data. They do not establish that the resulting forecasts generalize to future, out-of-sample conditions, and convergence alone must not be read as predictive skill.",
+      "evidence_ids": [
+        "7abd5499be5a9a5a842fb1da"
+      ],
+      "value": null,
+      "unit": null
+    },
+    {
+      "kind": "descriptive",
+      "text": "To claim useful out-of-sample forecasts, evidence would be needed that the models predict realizations outside their training window. This would include genuine rolling-origin or true holdout forecasts issued before the realized outcomes, evaluated with proper scoring rules such as predictive log score or continuous ranked probability score, and calibration checks showing that nominal prediction intervals achieve their stated coverage on new data.",
+      "evidence_ids": [
+        "52391358d41f75e82a6cac8e"
+      ],
+      "value": null,
+      "unit": null
+    },
+    {
+      "kind": "interpretation",
+      "text": "The available Bayesian validation is a conditional holdout with realized inputs and latest revised history, which conditions on inputs actually observed rather than inputs forecast at the time. Useful out-of-sample claims would additionally require validation under inputs as forecast in real time, including ENSO outlook and macroeconomic projection uncertainty, and with data as first released rather than as revised.",
+      "evidence_ids": [
+        "52391358d41f75e82a6cac8e",
+        "7bec50c5aa2cba9f3fcba42c",
+        "48658736654193b4b92b3460"
+      ],
+      "value": null,
+      "unit": null
+    },
+    {
+      "kind": "interpretation",
+      "text": "The rolling hindcast comparisons available come from a ridge challenger specification under conditional final-vintage inputs, not from the Bayesian posterior forecasts themselves. A claim of useful out-of-sample forecasts would need skill evidence for the actual posterior predictive pipeline, including the climate extension, copula dependence structure, and fiscal transmission, benchmarked against naive baselines and shown to add value over a no-climate-signal alternative.",
+      "evidence_ids": [
+        "fcd942bceffdc9776e5c28fd"
+      ],
+      "value": null,
+      "unit": null
+    },
+    {
+      "kind": "descriptive",
+      "text": "Because the assessment states causal identification is not established, out-of-sample skill would also need evidence that the conditional association between ENSO indicators and macroeconomic outcomes is stable across regimes and future events, and that the assessment scope is respected: figures are not total-economy losses and are not sovereign default probabilities.",
+      "evidence_ids": [
+        "52391358d41f75e82a6cac8e"
+      ],
+      "value": null,
+      "unit": null
+    },
+    {
+      "kind": "interpretation",
+      "text": "Finally, useful forecasts imply demonstrated value for decisions. This would require pre-registered forecast vintages with recorded issue dates, evaluation against subsequently realized outcomes, tail-risk measures checked for calibration rather than only mean predictions, and evidence of stability across repeated forecast vintages rather than a single assessment.",
+      "evidence_ids": [
+        "fcd942bceffdc9776e5c28fd"
+      ],
+      "value": null,
+      "unit": null
+    }
+  ],
+  "limitations": [
+    "Sampler diagnostics assess convergence of the posterior sampler, not predictive accuracy; passing diagnostics cannot establish out-of-sample skill.",
+    "Historical validation in this bundle is conditional, using realized inputs and latest revised history, so it does not replicate true real-time forecast conditions.",
+    "The rolling hindcast skill comparisons apply to a ridge challenger under conditional final-vintage inputs, not directly to the Bayesian posterior forecasts produced for the assessment.",
+    "The assessment does not establish causal identification; conditional associations may not transfer to future events or regimes.",
+    "No true out-of-sample forecast vintages with pre-registered evaluations against realized outcomes are available in this bundle."
+  ]
+}

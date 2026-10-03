@@ -1,0 +1,112 @@
+{
+  "title": "Australia event revenue estimate: supported limitations",
+  "claims": [
+    {
+      "kind": "metadata",
+      "text": "{'json_path': ['climate', 'as_of']}",
+      "evidence_ids": [
+        "4f42001c805c4bda23b1893b"
+      ],
+      "value": "2026-09-07",
+      "unit": "ISO date"
+    },
+    {
+      "kind": "metadata",
+      "text": "{'json_path': ['climate', 'forecast_issue']}",
+      "evidence_ids": [
+        "fac6ca3fd4b1ee0242e119e3"
+      ],
+      "value": "2026-08",
+      "unit": "ISO month"
+    },
+    {
+      "kind": "numeric",
+      "text": "{'country': 'AUS', 'year': '2026', 'metric': 'revenue_loss_2025usd_mean'}",
+      "evidence_ids": [
+        "c86ea3d5303e4b1f7812987c"
+      ],
+      "value": 44490746.23460664,
+      "unit": "2025 USD"
+    },
+    {
+      "kind": "numeric",
+      "text": "{'country': 'AUS', 'year': '2026', 'metric': 'p_revenue_loss'}",
+      "evidence_ids": [
+        "b24d5167fc28799d92d2672c"
+      ],
+      "value": 0.5503,
+      "unit": "probability"
+    },
+    {
+      "kind": "numeric",
+      "text": "{'country': 'AUS', 'year': '2026', 'metric': 'revenue_loss_es95_2025usd'}",
+      "evidence_ids": [
+        "1bcc0633480d9c2a6b78a06a"
+      ],
+      "value": 1042120311.9580626,
+      "unit": "2025 USD"
+    },
+    {
+      "kind": "descriptive",
+      "text": "Monetary basis: all estimates are expressed in constant 2025 USD, GDP-deflated, at a fixed 2025 exchange rate. Because the price and exchange-rate response to the event is not modeled, results do not capture event-induced inflation or currency-movement effects on nominal revenue.",
+      "evidence_ids": [
+        "1d22f26501f090cd00fc31c0"
+      ],
+      "value": null,
+      "unit": null
+    },
+    {
+      "kind": "descriptive",
+      "text": "Scope: the estimate is a conditional scenario difference, defined as government revenue without the event minus revenue with the event, conditioned on the stated macroeconomic path. It is not a causal attribution, not a total-economy loss, and not a sovereign default probability.",
+      "evidence_ids": [
+        "8d60ab90ce0adccfc631f158"
+      ],
+      "value": null,
+      "unit": null
+    },
+    {
+      "kind": "descriptive",
+      "text": "Sectoral scope: the transmission channel modeled is agriculture, forestry and fishing value added feeding into conditional government revenue. Revenue figures include grants. Non-agricultural growth is proxied by IMF total real GDP growth shared across cases, which limits the representation of non-agricultural event effects.",
+      "evidence_ids": [
+        "1d22f26501f090cd00fc31c0"
+      ],
+      "value": null,
+      "unit": null
+    },
+    {
+      "kind": "descriptive",
+      "text": "Validation limitation: the fiscal model was validated via conditional holdout with realized inputs on latest revised history, and rolling-hindcast comparisons used a conditional final-vintage ridge challenger. These are conditional checks, not direct validation of Bayesian posterior forecasts, and passing convergence diagnostics alone does not establish predictive skill.",
+      "evidence_ids": [
+        "48658736654193b4b92b3460"
+      ],
+      "value": null,
+      "unit": null
+    },
+    {
+      "kind": "descriptive",
+      "text": "Provenance limitation: the assessment manifest marks historical input provenance as incomplete and the bundle as inspection-only, not recomputable; the underlying modeling does not claim causal identification.",
+      "evidence_ids": [
+        "52391358d41f75e82a6cac8e"
+      ],
+      "value": null,
+      "unit": null
+    },
+    {
+      "kind": "descriptive",
+      "text": "Climate-conditioning limitation: official forecasts provide marginal rather than joint distributions, and the time-series extension used to fill the joint path is not itself a NOAA forecast; residual cross-country dependence is captured only through shared-year residuals.",
+      "evidence_ids": [
+        "52391358d41f75e82a6cac8e"
+      ],
+      "value": null,
+      "unit": null
+    }
+  ],
+  "limitations": [
+    "The fixed evidence packet is bounded; absent quantiles or scenario parameter values cannot be retrieved or recomputed, so distributional detail beyond the reported mean, loss probability and expected shortfall is unavailable.",
+    "All figures are model outputs conditional on the stated macroeconomic path and the forecast vintage; they are scenario differences and associations, not causal estimates.",
+    "Australia estimates are single-country values; they must not be summed with other countries' quantiles, and aggregate scopes in the packet are not substitutes for the Australia-specific cell.",
+    "The signed mean keeps gains and losses, while the expected shortfall applies only to the positive part of the loss distribution; the two measures are not directly comparable.",
+    "Historical input provenance is incomplete and the bundle is marked for inspection only, so independent recomputation of the estimates is not supported.",
+    "Price and exchange-rate responses to the event are not modeled; values are in constant 2025 USD at a fixed 2025 exchange rate, so nominal revenue effects are out of scope."
+  ]
+}

@@ -4,6 +4,8 @@
 
 [Read the event study](reports/event/index.html) · [Findings](reports/event/FINDINGS.md) · [Methodology](docs/EVENT_METHODOLOGY.md) · [Sources and institutional comparison](docs/EVENT_SOURCES.md)
 
+[Published agent evaluation: results, limitations, and trial evidence](evaluations/results/2026-10-02/RESULTS.md)
+
 The primary deliverable now answers a dated event question: **how might government revenue in 2026 and 2027 differ with this El Niño versus a defined neutral-climate counterfactual?** It uses official NOAA forecast probabilities, observed ENSO history, agricultural exposure, and empirically estimated fiscal transmission. It retains the earlier historical crop analyses as supporting research, rather than presenting generic stress tests as the event assessment.
 
 The study covers Indonesia, Malaysia, the Philippines, Thailand, Vietnam, Papua New Guinea, Fiji, Solomon Islands, Vanuatu, Samoa, Tonga and Australia. Crop detail covers oil palm, coconut, sugar cane, rice, maize, cocoa and coffee where the FAOSTAT record passes eligibility checks. Macro agriculture, forestry and fishing value added supplies a separate aggregate economic channel, including islands without recent crop valuation data.

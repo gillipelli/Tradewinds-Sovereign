@@ -1,0 +1,30 @@
+{
+  "passed": false,
+  "errors": [
+    {
+      "claim": 9,
+      "error": "Numeric claims require exactly one numeric cell or calculation"
+    },
+    {
+      "claim": 10,
+      "error": "Numeric claims require exactly one numeric cell or calculation"
+    },
+    {
+      "claim": 11,
+      "error": "Numeric claims require exactly one numeric cell or calculation"
+    },
+    {
+      "claim": 12,
+      "error": "Numeric claims require exactly one numeric cell or calculation"
+    },
+    {
+      "claim": 13,
+      "error": "Numeric claims require exactly one numeric cell or calculation"
+    },
+    {
+      "claim": 14,
+      "error": "Numeric claims require exactly one numeric cell or calculation"
+    }
+  ],
+  "semantic_review": "Descriptive and interpretive prose is not automatically scientifically validated."
+}

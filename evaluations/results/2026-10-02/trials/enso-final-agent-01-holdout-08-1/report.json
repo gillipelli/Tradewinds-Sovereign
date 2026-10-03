@@ -1,0 +1,89 @@
+{
+  "title": "Evidence needed beyond sampler diagnostics for out-of-sample forecast claims",
+  "claims": [
+    {
+      "kind": "descriptive",
+      "text": "Convergence diagnostics alone establish only that the posterior samplers for the agriculture and fiscal models mixed well, with no divergences and all checks passing. Convergence is a property of the computational routine, not of the model's ability to predict events outside its training sample, so no claim of useful out-of-sample forecasts can rest on these diagnostics.",
+      "evidence_ids": [
+        "7abd5499be5a9a5a842fb1da"
+      ],
+      "value": null,
+      "unit": null
+    },
+    {
+      "kind": "descriptive",
+      "text": "The existing Bayesian validation is a conditional holdout using realized inputs and the latest revised history for both the agriculture and fiscal models. Because the explanatory inputs at validation points are the values actually observed, this tests the conditional response surface, not the unconditional forecasting problem, in which future climate and macro inputs must themselves be predicted.",
+      "evidence_ids": [
+        "7bec50c5aa2cba9f3fcba42c",
+        "48658736654193b4b92b3460"
+      ],
+      "value": null,
+      "unit": null
+    },
+    {
+      "kind": "descriptive",
+      "text": "The methodology document itself states that the hindcasts are conditional on realized inputs and revised data, and that they are not recreated real-time forecasts and not an end-to-end multi-year validation. Any claim of useful out-of-sample forecasts would therefore need evidence beyond what this assessment provides.",
+      "evidence_ids": [
+        "e1ef301a9fd687008c9cd216"
+      ],
+      "value": null,
+      "unit": null
+    },
+    {
+      "kind": "descriptive",
+      "text": "To claim genuinely useful out-of-sample forecasts, the needed evidence would include recreated real-time forecast evaluations: rolling predictions produced with only the data vintages available at each historical decision date, before subsequent data revisions, rather than final-vintage revised inputs.",
+      "evidence_ids": [
+        "e1ef301a9fd687008c9cd216"
+      ],
+      "value": null,
+      "unit": null
+    },
+    {
+      "kind": "descriptive",
+      "text": "An end-to-end validation would also be required: forecasts in which the ENSO outlook, non-agriculture growth proxy and other exogenous inputs are themselves forecast as they would be in real time, chained through the agriculture and fiscal models, rather than supplied as realized values. This is exactly what the current pipeline does not do.",
+      "evidence_ids": [
+        "fcd942bceffdc9776e5c28fd",
+        "e1ef301a9fd687008c9cd216"
+      ],
+      "value": null,
+      "unit": null
+    },
+    {
+      "kind": "descriptive",
+      "text": "Useful forecasting claims would further require demonstrated skill relative to honest benchmarks, evaluated on real-time-vintage samples: comparison against naive baselines and challenger models on out-of-sample accuracy, proper scoring rules and interval calibration, rather than the conditional ridge-challenger comparisons on final-vintage data reported here.",
+      "evidence_ids": [
+        "fcd942bceffdc9776e5c28fd",
+        "e1ef301a9fd687008c9cd216"
+      ],
+      "value": null,
+      "unit": null
+    },
+    {
+      "kind": "descriptive",
+      "text": "Because the reported coverage figures come from conditional holdouts with realized inputs, they cannot establish that the predictive intervals of the full pipeline are calibrated. Out-of-sample interval calibration, including of the tail risk measures used in the risk quantification, would need to be demonstrated on real-time-vintage end-to-end forecasts.",
+      "evidence_ids": [
+        "fcd942bceffdc9776e5c28fd",
+        "e1ef301a9fd687008c9cd216"
+      ],
+      "value": null,
+      "unit": null
+    },
+    {
+      "kind": "descriptive",
+      "text": "Finally, since the extension of the climate trajectory is an internal statistical device rather than an official forecast, and official outlooks are marginal rather than joint, validation of the joint predictive distribution across countries and years, including dependence structure, would be required before claiming useful out-of-sample forecasts from the full joint pipeline.",
+      "evidence_ids": [
+        "e1ef301a9fd687008c9cd216"
+      ],
+      "value": null,
+      "unit": null
+    }
+  ],
+  "limitations": [
+    "Sampler convergence does not imply predictive skill; the two are separate properties.",
+    "The Bayesian holdout validation is conditional on realized inputs and latest revised history, so it does not test real-time forecasting.",
+    "The ridge-challenger rolling hindcast comparisons use final-vintage data and do not directly validate the Bayesian posterior forecasts.",
+    "The pipeline's climate extension is not an official forecast, and official outlook quantiles are marginal rather than joint, so joint tail calibration is unverified.",
+    "No causal identification is claimed for either model; validation evidence relates to predictive association, not causal effects.",
+    "Historical input provenance for this assessment is incomplete; the bundle is available for inspection only and is not recomputable."
+  ]
+}

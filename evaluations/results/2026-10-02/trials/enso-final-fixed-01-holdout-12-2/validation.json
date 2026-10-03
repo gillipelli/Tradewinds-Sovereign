@@ -1,0 +1,20 @@
+{
+  "passed": false,
+  "errors": [
+    {
+      "claim": "narrative",
+      "field": "limitations[5]",
+      "error": "Remove unsupported digits from this field; use a verified numeric claim for amounts."
+    },
+    {
+      "claim": "narrative",
+      "field": "limitations[9]",
+      "error": "Remove unsupported digits from this field; use a verified numeric claim for amounts."
+    },
+    {
+      "claim": 9,
+      "error": "Numbers must be submitted as separate verified numeric claims"
+    }
+  ],
+  "semantic_review": "Descriptive and interpretive prose is not automatically scientifically validated."
+}

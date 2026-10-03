@@ -1,0 +1,10 @@
+{
+  "provider": "zai",
+  "model": "glm-5.3",
+  "cost_usd": 0.043463,
+  "reserved_usd": 0.0,
+  "input_tokens": 26139,
+  "output_tokens": 1561,
+  "turns": 6,
+  "tool_count": 6
+}

@@ -1,0 +1,39 @@
+{
+  "title": "Neutral late-year scenario versus central aggregate mean revenue loss",
+  "claims": [
+    {
+      "kind": "numeric",
+      "text": "{'scope': 'all_modeled', 'period': '2027', 'metric': 'revenue_loss_2025usd_mean'}",
+      "evidence_ids": [
+        "24c7f4ddfa777906d7c86454"
+      ],
+      "value": 460446606.9292434,
+      "unit": "2025 USD"
+    },
+    {
+      "kind": "metadata",
+      "text": "{'json_path': ['climate', 'as_of']}",
+      "evidence_ids": [
+        "4f42001c805c4bda23b1893b"
+      ],
+      "value": "2026-09-07",
+      "unit": "ISO date"
+    },
+    {
+      "kind": "interpretation",
+      "text": "The packet provides only the central event-scenario mean for the late-year aggregate; the neutral-scenario counterpart is absent, so a scenario comparison cannot be supported from this fixed evidence, and no recomputation is permitted. The reported figure is a signed mean loss defined as neutral revenue minus event revenue, with gains retained in signed estimates, so it is not directly comparable to positive-part tail shortfall measures such as VaR or ES.",
+      "evidence_ids": [
+        "24c7f4ddfa777906d7c86454"
+      ],
+      "value": null,
+      "unit": null
+    }
+  ],
+  "limitations": [
+    "The neutral late-year scenario value is not present in the fixed evidence packet (scenario parameters were not included as scalar parameter evidence), so the requested comparison between the neutral scenario and the central mean cannot be quantified.",
+    "Assessment is inspection-only; historical input provenance is incomplete and the bundle is not recomputable, so any recomputed difference between scenarios would be unsupported.",
+    "Values are conditional on the dated forecast vintage and the stated macroeconomic path; they are not total-economy losses, not sovereign default probabilities, and the models do not claim causal identification.",
+    "Revenue includes grants; price and exchange-rate responses are not modeled, and units are constant 2025 USD with a fixed 2025 exchange rate.",
+    "Aggregate scopes must not be derived by summing country-level quantiles; only the provided all-modeled aggregate cell is reported."
+  ]
+}

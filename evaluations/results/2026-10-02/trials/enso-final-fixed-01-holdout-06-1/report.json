@@ -1,0 +1,94 @@
+{
+  "title": "Viet Nam government implications of the ENSO revenue event assessment",
+  "claims": [
+    {
+      "kind": "metadata",
+      "text": "{'json_path': ['climate', 'as_of']}",
+      "evidence_ids": [
+        "4f42001c805c4bda23b1893b"
+      ],
+      "value": "2026-09-07",
+      "unit": "ISO date"
+    },
+    {
+      "kind": "interpretation",
+      "text": "This assessment does not estimate infrastructure repair costs for Viet Nam. Its model scope is agriculture, forestry and fishing value added and the conditional transmission to government revenue; it measures the event-versus-neutral difference in government revenue, not spending on infrastructure repair or damage. No infrastructure repair cost quantity is present in the evidence packet, so none can be reported.",
+      "evidence_ids": [
+        "8d60ab90ce0adccfc631f158"
+      ],
+      "value": null,
+      "unit": null
+    },
+    {
+      "kind": "numeric",
+      "text": "{'country': 'VNM', 'year': '2026', 'metric': 'revenue_loss_2025usd_mean'}",
+      "evidence_ids": [
+        "dafeb7b8ba2e720c70a4e68a"
+      ],
+      "value": 12368018.136260483,
+      "unit": "2025 USD"
+    },
+    {
+      "kind": "numeric",
+      "text": "{'country': 'VNM', 'year': '2026', 'metric': 'p_revenue_loss'}",
+      "evidence_ids": [
+        "2ede46301f9dc35e91475e14"
+      ],
+      "value": 0.5369,
+      "unit": "probability"
+    },
+    {
+      "kind": "numeric",
+      "text": "{'country': 'VNM', 'year': '2026', 'metric': 'revenue_loss_es95_2025usd'}",
+      "evidence_ids": [
+        "42286f1b7ac3134dd24af5c3"
+      ],
+      "value": 466006499.7014757,
+      "unit": "2025 USD"
+    },
+    {
+      "kind": "numeric",
+      "text": "{'country': 'VNM', 'year': '2027', 'metric': 'revenue_loss_2025usd_mean'}",
+      "evidence_ids": [
+        "23ffcfc949516b627475d6a4"
+      ],
+      "value": 28903988.27674032,
+      "unit": "2025 USD"
+    },
+    {
+      "kind": "numeric",
+      "text": "{'country': 'VNM', 'year': '2027', 'metric': 'p_revenue_loss'}",
+      "evidence_ids": [
+        "cfaac645de1f1993b90bc08c"
+      ],
+      "value": 0.5564,
+      "unit": "probability"
+    },
+    {
+      "kind": "numeric",
+      "text": "{'country': 'VNM', 'year': '2027', 'metric': 'revenue_loss_es95_2025usd'}",
+      "evidence_ids": [
+        "931e040f50d2f5c6b3f121c1"
+      ],
+      "value": 726953360.6176267,
+      "unit": "2025 USD"
+    },
+    {
+      "kind": "interpretation",
+      "text": "The tail shortfall figures are positive-part expected-shortfall measures applied to the revenue-loss distribution, and thus describe a conditional loss scenario for government revenue, not an infrastructure repair budget.",
+      "evidence_ids": [
+        "52391358d41f75e82a6cac8e"
+      ],
+      "value": null,
+      "unit": null
+    }
+  ],
+  "limitations": [
+    "The assessment contains no infrastructure repair cost estimates for Viet Nam or any other country; the question cannot be answered with an infrastructure-specific number from this evidence.",
+    "The model scope is agriculture, forestry and fishing value added and conditional government revenue transmission; it explicitly does not measure total-economy loss, damage, or repair expenditure.",
+    "Mean revenue loss figures are signed (event minus neutral can be a gain in some draws); only the positive-part shortfall enters the tail measure.",
+    "The evidence is a fixed bounded packet; historical input provenance is incomplete and the assessment is marked as inspection-only and not recomputable.",
+    "Causal identification is not claimed; estimates are conditional scenario differences under the stated macroeconomic path, not causal attribution.",
+    "Fiscal and agricultural supporting assumptions from historical documents do not transfer to the event pipeline model."
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "title": "Late-year rebound scenario likelihood",
+  "claims": [
+    {
+      "kind": "numeric",
+      "text": "{'scope': 'all_modeled', 'period': '2027', 'metric': 'p_revenue_loss'}",
+      "evidence_ids": [
+        "fb727e8670efa84ef98c65b3"
+      ],
+      "value": 0.6153,
+      "unit": "probability"
+    },
+    {
+      "kind": "numeric",
+      "text": "{'scope': 'all_modeled', 'period': '2027', 'metric': 'p_revenue_loss'}",
+      "evidence_ids": [
+        "3ee39c90e266e9f7d6cb9fd6"
+      ],
+      "value": 61.53,
+      "unit": "percent"
+    },
+    {
+      "kind": "numeric",
+      "text": "{'scope': 'all_modeled', 'period': '2027', 'metric': 'p_revenue_loss'}",
+      "evidence_ids": [
+        "d0cc7f83fb4447a35a4c346a"
+      ],
+      "value": 0.6175,
+      "unit": "probability"
+    },
+    {
+      "kind": "numeric",
+      "text": "{'comparison': 'la_nina_late_2027 minus central', 'scope': 'all_modeled', 'period': '2027', 'metric': 'p_revenue_loss'}",
+      "evidence_ids": [
+        "be5d618b7524260cf4596fd1"
+      ],
+      "value": -0.0022,
+      "unit": "probability"
+    },
+    {
+      "kind": "interpretation",
+      "text": "The methodology assigns no occurrence probability to the La Ni\u00f1a rebound scenario itself; it is an alternative extension of the climate outlook beyond the official forecast horizon, not a probabilistic forecast. The quoted likelihood is therefore the conditional probability of revenue loss given that scenario, not the probability that the rebound occurs. Scenario differences versus central are sensitivity comparisons, not causal attribution.",
+      "evidence_ids": [
+        "38414bb0f5ab59e07b1fe9b2",
+        "dc305e76f28e6df24345081d"
+      ],
+      "value": null,
+      "unit": null
+    }
+  ],
+  "limitations": [
+    "The late-year La Ni\u00f1a rebound scenario is an alternative model extension, not an assigned-probability forecast; the reported likelihood is conditional on the scenario.",
+    "Neutral decay and La Ni\u00f1a rebound alternatives do not define a calibrated credible interval or occurrence probabilities.",
+    "Sensitivity alternatives are labels only and do not bracket a calibrated credible interval.",
+    "The probability refers to any revenue loss across the all-modeled country aggregate (including Australia) for the forecast year; it is not a sovereign default probability or total-economy loss measure.",
+    "Validation and diagnostics are conditional; numerical convergence does not establish predictive skill, and no causal identification is claimed.",
+    "Prices and exchange-rate responses are not modeled; historical input provenance is incomplete and the assessment bundle is inspection-only (not recomputable)."
+  ]
+}

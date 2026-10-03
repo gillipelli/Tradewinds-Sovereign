@@ -1,0 +1,38 @@
+{
+  "title": "Viet Nam infrastructure repair costs out of scope",
+  "claims": [
+    {
+      "kind": "descriptive",
+      "text": "This assessment models agriculture, forestry and fishing value added and its conditional transmission to government revenue; it does not estimate government infrastructure repair or damage costs, so it implies nothing about such costs for Viet Nam.",
+      "evidence_ids": [
+        "d5e9ff9d3e1b9adce0e8579e"
+      ],
+      "value": null,
+      "unit": null
+    },
+    {
+      "kind": "descriptive",
+      "text": "The study's estimand is government revenue without the event minus government revenue with the event, reported jointly over the two-year horizon, not public expenditure on infrastructure repair.",
+      "evidence_ids": [
+        "b59229a63cf0ef1999a71cdd"
+      ],
+      "value": null,
+      "unit": null
+    },
+    {
+      "kind": "numeric",
+      "text": "{'country': 'VNM', 'year': '2026\u20132027', 'metric': 'revenue_loss_2025usd_mean'}",
+      "evidence_ids": [
+        "700a755ee677cc76f43159b5"
+      ],
+      "value": 41272006.41300081,
+      "unit": "2025 USD"
+    }
+  ],
+  "limitations": [
+    "The assessment's scope excludes infrastructure damage or repair costs; no tool or evidence source in this bundle quantifies them, so no inference about repair costs is supported.",
+    "The reported Viet Nam figure is a signed mean revenue shortfall in constant 2025 USD at a fixed 2025 exchange rate, conditional on the stated climate and macroeconomic path, and is not a measure of spending needs.",
+    "The historical supporting crop and fiscal-capture assumptions in DATA_SOURCES.md do not transfer to this event pipeline.",
+    "The assessment is not a causal attribution and does not represent total-economy loss or sovereign default probability."
+  ]
+}

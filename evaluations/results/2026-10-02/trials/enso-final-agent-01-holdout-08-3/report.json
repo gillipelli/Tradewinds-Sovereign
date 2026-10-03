@@ -1,0 +1,69 @@
+{
+  "title": "Evidence needed for out-of-sample forecast claims",
+  "claims": [
+    {
+      "kind": "descriptive",
+      "text": "Sampler diagnostics (R-hat, effective sample size, divergences, and other posterior checks) only establish that the posterior draws were computed reliably; they say nothing about whether the fitted model makes useful predictions beyond its training data.",
+      "evidence_ids": [
+        "7abd5499be5a9a5a842fb1da"
+      ],
+      "value": null,
+      "unit": null
+    },
+    {
+      "kind": "interpretation",
+      "text": "The strongest available out-of-sample evidence here is Bayesian conditional holdout validation, in which models trained through an earlier cutoff were scored on held-out outcomes using realized inputs. Predictive accuracy, sharpness, and interval coverage measures from such holdouts, not diagnostics, are the basis for any out-of-sample claim.",
+      "evidence_ids": [
+        "7bec50c5aa2cba9f3fcba42c",
+        "48658736654193b4b92b3460"
+      ],
+      "value": null,
+      "unit": null
+    },
+    {
+      "kind": "interpretation",
+      "text": "Rolling hindcasts on final-vintage data provide complementary evidence, but these were run with a ridge challenger rather than the Bayesian posterior itself, so they cannot directly validate the posterior forecasts actually used for the risk estimates.",
+      "evidence_ids": [
+        "fcd942bceffdc9776e5c28fd"
+      ],
+      "value": null,
+      "unit": null
+    },
+    {
+      "kind": "interpretation",
+      "text": "Even the holdout exercises are conditional: they feed realized, latest-revised inputs to the models. To claim useful out-of-sample forecasts for the assessment's forward-looking risk numbers, one would additionally need validation under genuinely forecast-time inputs, since the published risk figures condition on climate outlook vintages and external growth projections rather than realized values.",
+      "evidence_ids": [
+        "7bec50c5aa2cba9f3fcba42c",
+        "48658736654193b4b92b3460"
+      ],
+      "value": null,
+      "unit": null
+    },
+    {
+      "kind": "interpretation",
+      "text": "Additional evidence needed beyond convergence diagnostics includes: prospective forecast verification against outcomes realized after the assessment; calibration of tail measures such as value-at-risk and expected shortfall, not just central predictive accuracy; comparisons against a null or naive benchmark to show the model beats a simple alternative; robustness to data vintage, since results are fitted on revised rather than real-time data; and demonstration that skill holds for the specific event and period being forecast rather than only in-sample or near-sample conditions.",
+      "evidence_ids": [
+        "7abd5499be5a9a5a842fb1da",
+        "fcd942bceffdc9776e5c28fd"
+      ],
+      "value": null,
+      "unit": null
+    },
+    {
+      "kind": "interpretation",
+      "text": "In short, useful out-of-sample forecasting is an empirical property of predictions compared with realized outcomes and suitable benchmarks; converged samplers are a necessary computational check but never sufficient evidence of predictive skill.",
+      "evidence_ids": [
+        "7abd5499be5a9a5a842fb1da"
+      ],
+      "value": null,
+      "unit": null
+    }
+  ],
+  "limitations": [
+    "Sampler diagnostics for both model components pass, but convergence cannot demonstrate predictive skill.",
+    "Holdout and hindcast validation is conditional on realized, latest-revised inputs and does not validate forecasts made under real-time climate outlook vintages.",
+    "Rolling hindcasts were computed with a ridge challenger, not the Bayesian posterior used for the published risk estimates.",
+    "No prospective verification against outcomes occurring after the assessment date is available.",
+    "The models are conditional ENSO-response models without causal identification, so accuracy claims are conditional on the stated ENSO scenario and input assumptions."
+  ]
+}

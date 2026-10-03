@@ -1,0 +1,29 @@
+{
+  "title": "Excluding-Australia cumulative expected shortfall",
+  "claims": [
+    {
+      "kind": "numeric",
+      "text": "{'scope': 'excluding_Australia', 'period': '2026\u20132027', 'metric': 'es95_2025usd'}",
+      "evidence_ids": [
+        "f7018a174e615a82c8b40a6f"
+      ],
+      "value": 6207708177.732723,
+      "unit": "2025 USD"
+    },
+    {
+      "kind": "numeric",
+      "text": "{'scope': 'excluding_Australia', 'period': '2026\u20132027', 'metric': 'es95_2025usd'}",
+      "evidence_ids": [
+        "b4df6fb77ac212c185c57941"
+      ],
+      "value": 6.207708177732724,
+      "unit": "billion 2025 USD"
+    }
+  ],
+  "limitations": [
+    "The tail shortfall measure is a positive-part expected loss, distinct from the signed mean revenue loss; it reflects tail severity, not the average outcome.",
+    "Scope is the excluding-Australia aggregate; country-level quantiles cannot be summed to reproduce it.",
+    "Historical input provenance is incomplete; assessment is for inspection only and is not recomputable.",
+    "Estimates are conditional on the event pipeline and are not causally identified; not a total-economy loss or sovereign default probability."
+  ]
+}

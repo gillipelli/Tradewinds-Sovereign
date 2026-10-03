@@ -1,0 +1,18 @@
+{
+  "question": "Authorized assessments: 20260907T153857705816Z. Use their original dates and provided tools.\nExplain supported limitations of the Australia 2026 revenue estimate, including monetary basis and scope.",
+  "method": "fixed_evidence",
+  "assessment_ids": [
+    "20260907T153857705816Z"
+  ],
+  "selector": null,
+  "limits": {
+    "max_turns": 1,
+    "max_tools": 24,
+    "max_scenarios": 0,
+    "max_repairs": 0,
+    "spend_ceiling_usd": 1.0,
+    "input_usd_per_million": 1.4,
+    "output_usd_per_million": 4.4,
+    "max_output_tokens": 4096
+  }
+}

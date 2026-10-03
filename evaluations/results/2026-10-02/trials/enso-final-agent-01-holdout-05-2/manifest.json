@@ -1,0 +1,8 @@
+{
+  "run_id": "enso-final-agent-01-holdout-05-2",
+  "method": "agent",
+  "provider": "zai",
+  "model": "glm-5.3",
+  "schema_hash": "3dfbfb0b90fcdaa2dfea09ef079b59783b285e95822c29d06999d9abe908bd0c",
+  "system_hash": "7a35a52da0faeb86c360864a14948eb0656a4dfa362dcd11c8791966006412dd"
+}

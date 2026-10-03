@@ -1,0 +1,37 @@
+{
+  "title": "Indonesia and Thailand cumulative revenue loss probabilities",
+  "claims": [
+    {
+      "kind": "metadata",
+      "text": "{'json_path': ['climate', 'as_of']}",
+      "evidence_ids": [
+        "4f42001c805c4bda23b1893b"
+      ],
+      "value": "2026-09-07",
+      "unit": "ISO date"
+    },
+    {
+      "kind": "numeric",
+      "text": "{'country': 'IDN', 'year': '2026\u20132027', 'metric': 'p_revenue_loss'}",
+      "evidence_ids": [
+        "5053852baf259a384a00c251"
+      ],
+      "value": 57.69,
+      "unit": "percent"
+    },
+    {
+      "kind": "numeric",
+      "text": "{'country': 'THA', 'year': '2026\u20132027', 'metric': 'p_revenue_loss'}",
+      "evidence_ids": [
+        "94a12b5598e7d2f42e88942b"
+      ],
+      "value": 62.27,
+      "unit": "percent"
+    }
+  ],
+  "limitations": [
+    "Probabilities are model-based conditional estimates, not observed frequencies.",
+    "These are cumulative period probabilities for each country separately; they cannot be combined into a joint probability without dependence assumptions.",
+    "Results reflect the assessment's methodology and inputs as of its stated date."
+  ]
+}

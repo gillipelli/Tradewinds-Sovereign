@@ -1,0 +1,30 @@
+{
+  "title": "Excluding-Australia cumulative expected shortfall in constant dollars",
+  "claims": [
+    {
+      "kind": "numeric",
+      "text": "{'scope': 'excluding_Australia', 'period': '2026\u20132027', 'metric': 'es95_2025usd'}",
+      "evidence_ids": [
+        "b4df6fb77ac212c185c57941"
+      ],
+      "value": 6.207708177732724,
+      "unit": "billion 2025 USD"
+    },
+    {
+      "kind": "numeric",
+      "text": "{'scope': 'excluding_Australia', 'period': '2026\u20132027', 'metric': 'es95_2025usd'}",
+      "evidence_ids": [
+        "f7018a174e615a82c8b40a6f"
+      ],
+      "value": 6207708177.732723,
+      "unit": "2025 USD"
+    }
+  ],
+  "limitations": [
+    "Historical input provenance is incomplete; inspection only; the assessment is not recomputable.",
+    "The tail shortfall measure applies to the positive part of revenue loss, whereas the mean loss estimate is signed; these are not directly comparable.",
+    "The measure covers agriculture, forestry and fishing value added and conditional government revenue transmission, not total-economy loss, and is not a sovereign default probability.",
+    "Price and exchange-rate responses are not modeled; values are in constant 2025 USD at a fixed 2025 exchange rate.",
+    "Official forecasts used are marginal, not joint, and the extension is not a NOAA forecast; historical validation is conditional and does not establish causal identification."
+  ]
+}

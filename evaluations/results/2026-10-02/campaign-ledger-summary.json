@@ -1,0 +1,161 @@
+{
+  "note": "Settled tokens are provider-reported usage. Charged includes conservative unresolved reservations; not dollar billing. Runtime reports omit some parse-failed calls. Attribution matches evaluation run-ID prefixes; early pilot calls with other identifiers are included only in the overall project total.",
+  "project": {
+    "limit": 6000000,
+    "charged": 4314254,
+    "remaining": 1685746
+  },
+  "evaluations": {
+    "enso-adversarial-01": {
+      "requests": 21,
+      "input_tokens": 190249,
+      "output_tokens": 5664,
+      "charged_or_reserved": 195913,
+      "status_counts": {
+        "settled": 21
+      },
+      "unresolved": []
+    },
+    "enso-confirm-01": {
+      "requests": 28,
+      "input_tokens": 238221,
+      "output_tokens": 9955,
+      "charged_or_reserved": 248176,
+      "status_counts": {
+        "settled": 28
+      },
+      "unresolved": []
+    },
+    "enso-conversions-01": {
+      "requests": 20,
+      "input_tokens": 129786,
+      "output_tokens": 2932,
+      "charged_or_reserved": 132718,
+      "status_counts": {
+        "settled": 20
+      },
+      "unresolved": []
+    },
+    "enso-conversions-02": {
+      "requests": 7,
+      "input_tokens": 22370,
+      "output_tokens": 625,
+      "charged_or_reserved": 22995,
+      "status_counts": {
+        "settled": 7
+      },
+      "unresolved": []
+    },
+    "enso-dates-confirm-01": {
+      "requests": 3,
+      "input_tokens": 24842,
+      "output_tokens": 458,
+      "charged_or_reserved": 25300,
+      "status_counts": {
+        "settled": 3
+      },
+      "unresolved": []
+    },
+    "enso-dev-agent-01": {
+      "requests": 72,
+      "input_tokens": 615359,
+      "output_tokens": 18094,
+      "charged_or_reserved": 633453,
+      "status_counts": {
+        "settled": 72
+      },
+      "unresolved": []
+    },
+    "enso-dev-fixed-01": {
+      "requests": 2,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "charged_or_reserved": 141397,
+      "status_counts": {
+        "uncertain": 2
+      },
+      "unresolved": [
+        {
+          "request_id": "8fffef4856334126b6fe61a4f4fdb9a8",
+          "run_id": "enso-dev-fixed-01-dev-01-1",
+          "status": "uncertain",
+          "charged": 70703
+        },
+        {
+          "request_id": "911367d1c1404da08a2343e762d822dc",
+          "run_id": "enso-dev-fixed-01-dev-02-1",
+          "status": "uncertain",
+          "charged": 70694
+        }
+      ]
+    },
+    "enso-effort-high-01": {
+      "requests": 33,
+      "input_tokens": 376603,
+      "output_tokens": 12712,
+      "charged_or_reserved": 389315,
+      "status_counts": {
+        "settled": 33
+      },
+      "unresolved": []
+    },
+    "enso-effort-low-01": {
+      "requests": 23,
+      "input_tokens": 146957,
+      "output_tokens": 3850,
+      "charged_or_reserved": 150807,
+      "status_counts": {
+        "settled": 23
+      },
+      "unresolved": []
+    },
+    "enso-final-agent-01": {
+      "requests": 129,
+      "input_tokens": 1080652,
+      "output_tokens": 29399,
+      "charged_or_reserved": 1173054,
+      "status_counts": {
+        "settled": 128,
+        "uncertain": 1
+      },
+      "unresolved": [
+        {
+          "request_id": "bc55220eb1f3438e938a42644016238f",
+          "run_id": "enso-final-agent-01-holdout-11-1",
+          "status": "uncertain",
+          "charged": 63003
+        }
+      ]
+    },
+    "enso-final-fixed-01": {
+      "requests": 33,
+      "input_tokens": 813033,
+      "output_tokens": 38269,
+      "charged_or_reserved": 851302,
+      "status_counts": {
+        "settled": 33
+      },
+      "unresolved": []
+    },
+    "enso-fixed-pilot-02": {
+      "requests": 3,
+      "input_tokens": 72113,
+      "output_tokens": 1850,
+      "charged_or_reserved": 73963,
+      "status_counts": {
+        "settled": 3
+      },
+      "unresolved": []
+    },
+    "enso-pilot-02": {
+      "requests": 11,
+      "input_tokens": 72404,
+      "output_tokens": 1338,
+      "charged_or_reserved": 73742,
+      "status_counts": {
+        "settled": 11
+      },
+      "unresolved": []
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "title": "Malaysia Cumulative Mean Revenue Loss",
+  "claims": [
+    {
+      "kind": "numeric",
+      "text": "{'country': 'MYS', 'year': '2026\u20132027', 'metric': 'revenue_loss_2025usd_mean'}",
+      "evidence_ids": [
+        "32b05e12b515aa49dd63aa73"
+      ],
+      "value": 44.582811035665976,
+      "unit": "million 2025 USD"
+    },
+    {
+      "kind": "numeric",
+      "text": "{'country': 'MYS', 'year': '2026\u20132027', 'metric': 'revenue_loss_2025usd_mean'}",
+      "evidence_ids": [
+        "3b4c390f1dc404817a109b57"
+      ],
+      "value": 44582811.03566598,
+      "unit": "2025 USD"
+    }
+  ],
+  "limitations": [
+    "Historical input provenance is incomplete; the assessment is available for inspection only and is not recomputable.",
+    "The measure is a signed mean loss (neutral revenue minus event revenue), covering agriculture, forestry and fishing value added with conditional government revenue transmission; it is not a total-economy loss.",
+    "Causal identification is not claimed; estimates are conditional associations under the model's scenario assumptions.",
+    "Units are constant 2025 USD, GDP-deflated, with a fixed 2025 exchange rate; price and exchange-rate responses are not modeled."
+  ]
+}

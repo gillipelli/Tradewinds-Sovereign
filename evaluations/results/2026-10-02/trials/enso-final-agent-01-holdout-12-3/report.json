@@ -1,0 +1,66 @@
+{
+  "title": "Australia revenue estimate limitations",
+  "claims": [
+    {
+      "kind": "numeric",
+      "text": "{'country': 'AUS', 'year': '2026', 'metric': 'revenue_loss_2025usd_mean'}",
+      "evidence_ids": [
+        "c86ea3d5303e4b1f7812987c"
+      ],
+      "value": 44490746.23460664,
+      "unit": "2025 USD"
+    },
+    {
+      "kind": "descriptive",
+      "text": "The estimate is expressed in constant 2025 USD, GDP-deflated, using a fixed 2025 exchange rate; price and exchange-rate responses are not modeled.",
+      "evidence_ids": [
+        "52391358d41f75e82a6cac8e"
+      ],
+      "value": null,
+      "unit": null
+    },
+    {
+      "kind": "descriptive",
+      "text": "The scope is agriculture, forestry and fishing value added and its conditional transmission to government revenue; it is not a total-economy loss and not a sovereign default probability.",
+      "evidence_ids": [
+        "52391358d41f75e82a6cac8e"
+      ],
+      "value": null,
+      "unit": null
+    },
+    {
+      "kind": "descriptive",
+      "text": "Revenue includes grants; the estimate is conditional on the event scenario, the model does not claim causal identification, and historical validation is conditional. Non-agriculture growth is proxied externally by IMF total real GDP growth shared across cases.",
+      "evidence_ids": [
+        "52391358d41f75e82a6cac8e"
+      ],
+      "value": null,
+      "unit": null
+    },
+    {
+      "kind": "descriptive",
+      "text": "Risk is defined as neutral revenue minus event revenue, so gains are retained in the signed mean, while tail measures such as VaR and ES apply only to the positive shortfall.",
+      "evidence_ids": [
+        "52391358d41f75e82a6cac8e"
+      ],
+      "value": null,
+      "unit": null
+    },
+    {
+      "kind": "descriptive",
+      "text": "The assessment is dated and conditional: it relies on the NOAA CPC forecast vintage issued as recorded in the metadata, official forecasts are marginal rather than joint, and the seasonal extension beyond the official outlook is not itself a NOAA forecast.",
+      "evidence_ids": [
+        "6ae1a4ae7f42832c81690877"
+      ],
+      "value": null,
+      "unit": null
+    }
+  ],
+  "limitations": [
+    "Historical input provenance is incomplete; the assessment is available for inspection only and cannot be recomputed.",
+    "Estimates are conditional on the stated event scenario and forecast vintage; they are not causal attributions of observed revenue outcomes.",
+    "Monetary basis is constant 2025 USD, GDP-deflated, at a fixed 2025 exchange rate; price and exchange-rate responses are not modeled.",
+    "Scope covers agriculture, forestry and fishing value added transmitted to government revenue including grants; it excludes other sectors and is not a total-economy or default-risk measure.",
+    "The signed mean may include gains; tail measures use the positive-part shortfall definition."
+  ]
+}
