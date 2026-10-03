@@ -53,7 +53,9 @@ def test_credential_precedence_and_no_shell_execution(tmp_path, monkeypatch, env
 def test_cross_project_sqlite_interoperability(tmp_path):
     # Optional integration gate when both portfolio repositories are checked out.
     here = Path(__file__).resolve()
-    root = next((p for p in here.parents if (p / 'Tradewinds-Sovereign').is_dir()), None)
+    root = next((p for p in here.parents if (p / 'Tradewinds-Sovereign/src/tradewinds/agents/zai_provider.py').is_file()
+                 and (p / 'Celllular-Automata-Iso/python/ashfall_agents/zai_provider.py').is_file()
+                 and (p / 'Celllular-Automata-Iso/python/ashfall_agents/campaign_budget.py').is_file()), None)
     if root is None:
         pytest.skip('paired portfolio checkout unavailable')
     other = root / 'Celllular-Automata-Iso/python/ashfall_agents/campaign_budget.py'

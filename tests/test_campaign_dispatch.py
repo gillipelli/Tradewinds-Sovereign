@@ -17,7 +17,9 @@ from tradewinds.agents.campaign_budget import initialize
 @pytest.mark.parametrize('first_failure', [False, True])
 def test_cross_package_dispatch_serializes_and_waits_before_reserving(tmp_path, monkeypatch, first_failure):
     here = Path(__file__).resolve()
-    root = next((p for p in here.parents if (p / 'Tradewinds-Sovereign').is_dir()), None)
+    root = next((p for p in here.parents if (p / 'Tradewinds-Sovereign/src/tradewinds/agents/zai_provider.py').is_file()
+                 and (p / 'Celllular-Automata-Iso/python/ashfall_agents/zai_provider.py').is_file()
+                 and (p / 'Celllular-Automata-Iso/python/ashfall_agents/campaign_budget.py').is_file()), None)
     if root is None:
         pytest.skip('paired portfolio checkout unavailable')
     monkeypatch.syspath_prepend(str(root / 'Celllular-Automata-Iso/python'))
@@ -116,7 +118,9 @@ def _process_request(package, ledger_path, start, active, peak, result):
 def test_dispatch_across_operating_system_processes(tmp_path, monkeypatch):
     import multiprocessing
     here = Path(__file__).resolve()
-    root = next((p for p in here.parents if (p / 'Tradewinds-Sovereign').is_dir()), None)
+    root = next((p for p in here.parents if (p / 'Tradewinds-Sovereign/src/tradewinds/agents/zai_provider.py').is_file()
+                 and (p / 'Celllular-Automata-Iso/python/ashfall_agents/zai_provider.py').is_file()
+                 and (p / 'Celllular-Automata-Iso/python/ashfall_agents/campaign_budget.py').is_file()), None)
     if root is None:
         pytest.skip('paired portfolio checkout unavailable')
     monkeypatch.syspath_prepend(str(root / 'Tradewinds-Sovereign/src'))
