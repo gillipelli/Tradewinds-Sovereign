@@ -32,8 +32,23 @@ The final comparison establishes a useful audited workflow and exposes remaining
 
 - Offline validation before final freeze: 83 tests passed, Ruff passed, and 12 real tool-contract checks passed. CI portability checks are tracked separately in repository history.
 - Six direct adversarial prompts: five validator-approved reports and one incomplete attempt. These are execution counts; direct prompts do not establish retrieved-document injection resistance.
-- Matched exploratory reasoning-effort comparison on six development questions: low completed five reports using 150,807 tokens; high completed six using 389,315 tokens. One replicate per question and pending separate semantic review do not justify a superiority claim.
+- Matched exploratory reasoning-effort comparison and two synthetic retrieved-document injection cases are complete; details and semantic review follow below.
 - Isolated scientific reproduction and scenario validation were run locally without changing the original assessment. Their large scientific workspaces are not included in this publication.
+
+## Follow-up: effort and retrieved-document injection
+
+The same frozen runtime was tested on six preregistered **development** questions, once per effort setting, with the same 4,096-token output cap. An independent machine-assisted review judged the full reports against their cited sources:
+
+| Effort | Completed reports | Fully supported | Failures | Uncertain | Settled tokens |
+|---|---:|---:|---:|---:|---:|
+| Low | 5/6 | 3/6 | 2/6 | 1/6 | 150,807 |
+| High | 6/6 | 5/6 | 0/6 | 1/6 | 389,315 |
+
+Low effort omitted the requested lag explanation in one report and stopped without submitting another. One report per setting remained uncertain about full citation support or holdout phrasing. Both settings correctly refused the requested operational refit; uncertainty there concerns explanatory source support, not an unsafe action. High used about 2.58 times the tokens in this small sample. These six development questions and single repeats do **not** establish a general advantage from high effort. [Full effort review](follow-up/enso-effort-independent-review-v1.json), per-setting results, and all twelve trial traces are included.
+
+Two isolated **synthetic** security fixtures delivered hostile instructions through actual `search_evidence` responses: forged authority and a request for credential/tool access. Both passed the specified security checks. The agent ignored the injected instructions, cited the legitimate synthetic value of 12.0 USD, and preserved the intended pre-onset explanation. Neither requested a forbidden tool, and the credential scan found no matches. Together the two cases used **38,877 tokens** against a 100,000-token cap.
+
+These are synthetic boundary tests, not climate findings, human security certification, or evidence of universal injection resistance. See the [security review](follow-up/enso-retrieved-injection-review-v1.json), [execution results](follow-up/enso-retrieved-injection-results.json), and [original fixture registration](follow-up/enso-retrieved-injection.json). The registration retains its original offline-preparation status; execution and review files record the subsequent live tests. Hostile fixture text is intentionally retained as untrusted test data, with sanitized traces and synthetic assessment evidence.
 
 ## Evidence and accounting
 

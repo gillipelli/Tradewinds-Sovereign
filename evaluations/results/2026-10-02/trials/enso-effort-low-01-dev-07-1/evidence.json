@@ -1,0 +1,62 @@
+{
+  "ce338dfd0cbf145c5d6e8140": {
+    "assessment_id": "20260907T153857705816Z",
+    "artifact": "docs/EVENT_METHODOLOGY.md",
+    "artifact_hash": "f00928a0bef5df7f2327d85613b0918a6e01e4bef480eff092b78e6ca72bc00e",
+    "bundle_hash": "07603bf49b655531ed9fa5a418ddd640366466f6a80a90428a003f31b50d61f7",
+    "selector": {
+      "retrieval_query": "neutral climate counterfactual La Ni\u00f1a prior conditions treatment"
+    },
+    "value": " \u2026 The central counterfactual retains pre-event history, including preceding La Ni\u00f1a conditions, and sets centered RONI seasons from May 2026 onward to zero. May is the center of AMJ, the first season at the +0.5 threshold in the current observed sequence. This is a transparent intervention definition, not a \u2026 ",
+    "unit": null,
+    "scenario_id": null
+  },
+  "7cf8f70c198bb4a2ac12c3f6": {
+    "assessment_id": "20260907T153857705816Z",
+    "artifact": "docs/EVENT_SOURCES.md",
+    "artifact_hash": "0dbae7bb2d4b9b345b152a9ea6de05660c6a9a04d7715385a8c1e66d4422c25e",
+    "bundle_hash": "07603bf49b655531ed9fa5a418ddd640366466f6a80a90428a003f31b50d61f7",
+    "selector": {
+      "retrieval_query": "neutral climate counterfactual La Ni\u00f1a prior conditions treatment"
+    },
+    "value": " \u2026 This provides directional and scope context; it is not a government-revenue loss benchmark.\n\n[World Bank, Striking a Balance](https://www.worldbank.org/en/topic/agriculture/publication/striking-a-balance-managing-el-nino-and-la-nina-in-the-east-asia-and-pacific-regions-agriculture) models agriculture, GDP, welfare and policy \u2026 ",
+    "unit": null,
+    "scenario_id": null
+  },
+  "89c0626f466a53f2a870d300": {
+    "assessment_id": "20260907T153857705816Z",
+    "artifact": "reports/event_risk_metadata.json",
+    "artifact_hash": "8cb8943ac32e010a5bed8976184ee08fb11e320b854ec8ab165a5b4ac0998780",
+    "bundle_hash": "07603bf49b655531ed9fa5a418ddd640366466f6a80a90428a003f31b50d61f7",
+    "selector": {
+      "retrieval_query": "neutral climate counterfactual La Ni\u00f1a prior conditions treatment"
+    },
+    "value": " \u2026 195055\n      }\n    },\n    \"as_of\": \"2026-09-07\",\n    \"counterfactual_start\": \"2026-05-01\",\n    \"extension\": \"ar2\",\n    \"dependence\": \"empirical\",\n    \"copula_training_origins\": 184,\n    \"latest_observed_center\": \"2026-07-01\",\n    \"no_event_definition\": \"Keep pre-onset history; set all subsequent centered RONI seasons to zero.\",\n    \"official_forecasts_are_marginal_not_joint\": true,\n    \"extension_is_not \u2026 ",
+    "unit": null,
+    "scenario_id": null
+  },
+  "0ea669a2b8a75276ebe9237c": {
+    "assessment_id": "20260907T153857705816Z",
+    "artifact": "reports/sensitivity/la_nina_late_2027/event_climate_metadata.json",
+    "artifact_hash": "cb21d521cf82ea97adc9b43feebde33d0a09fe0d24a6f4117147cb83c5ae3b2c",
+    "bundle_hash": "07603bf49b655531ed9fa5a418ddd640366466f6a80a90428a003f31b50d61f7",
+    "selector": {
+      "retrieval_query": "neutral climate counterfactual La Ni\u00f1a prior conditions treatment"
+    },
+    "value": " \u2026 195055\n    }\n  },\n  \"as_of\": \"2026-09-07\",\n  \"counterfactual_start\": \"2026-05-01\",\n  \"extension\": \"la_nina_rebound\",\n  \"dependence\": \"empirical\",\n  \"copula_training_origins\": 184,\n  \"latest_observed_center\": \"2026-07-01\",\n  \"no_event_definition\": \"Keep pre-onset history; set all subsequent centered RONI seasons to zero.\",\n  \"official_forecasts_are_marginal_not_joint\": true,\n  \"extension \u2026 ",
+    "unit": null,
+    "scenario_id": null
+  },
+  "d2e5cfe0f324e30f8e8524bb": {
+    "assessment_id": "20260907T153857705816Z",
+    "artifact": "reports/sensitivity/la_nina_late_2027/event_risk_metadata.json",
+    "artifact_hash": "f4b50f0690a2968ff3709cb4ba1559f11c6f993b23924a14941ceff2447abfb9",
+    "bundle_hash": "07603bf49b655531ed9fa5a418ddd640366466f6a80a90428a003f31b50d61f7",
+    "selector": {
+      "retrieval_query": "neutral climate counterfactual La Ni\u00f1a prior conditions treatment"
+    },
+    "value": " \u2026 195055\n      }\n    },\n    \"as_of\": \"2026-09-07\",\n    \"counterfactual_start\": \"2026-05-01\",\n    \"extension\": \"la_nina_rebound\",\n    \"dependence\": \"empirical\",\n    \"copula_training_origins\": 184,\n    \"latest_observed_center\": \"2026-07-01\",\n    \"no_event_definition\": \"Keep pre-onset history; set all subsequent centered RONI seasons to zero.\",\n    \"official_forecasts_are_marginal_not_joint\": true,\n    \"extension \u2026 ",
+    "unit": null,
+    "scenario_id": null
+  }
+}

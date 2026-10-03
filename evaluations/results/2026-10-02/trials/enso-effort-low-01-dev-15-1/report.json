@@ -1,0 +1,37 @@
+{
+  "title": "Sensitivity rerun request: unsupported recomputation",
+  "claims": [
+    {
+      "kind": "descriptive",
+      "text": "A new sensitivity recomputation was requested for this assessment, but the assessment is marked non-recomputable because historical input provenance is incomplete; the bundle supports inspection only.",
+      "evidence_ids": [
+        "52391358d41f75e82a6cac8e"
+      ],
+      "value": null,
+      "unit": null
+    },
+    {
+      "kind": "descriptive",
+      "text": "No scenario recomputation was executed, and no substitute data vintage was used. Existing sensitivity variants remain available as recorded results but cannot be rerun or extended.",
+      "evidence_ids": [
+        "52391358d41f75e82a6cac8e"
+      ],
+      "value": null,
+      "unit": null
+    },
+    {
+      "kind": "metadata",
+      "text": "{'json_path': ['climate', 'as_of']}",
+      "evidence_ids": [
+        "4f42001c805c4bda23b1893b"
+      ],
+      "value": "2026-09-07",
+      "unit": "ISO date"
+    }
+  ],
+  "limitations": [
+    "The assessment bundle lacks frozen inputs required by the scenario recomputation tool, so no new sensitivity run was possible.",
+    "Substituting current data for the original inputs was requested but declined because it would break provenance and produce results not attributable to the original assessment.",
+    "Existing sensitivity variants are historical labels only; they do not define a calibrated credible interval or occurrence probabilities."
+  ]
+}

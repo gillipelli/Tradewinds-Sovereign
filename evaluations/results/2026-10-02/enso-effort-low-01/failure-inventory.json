@@ -1,0 +1,18 @@
+{
+  "status": "Symptoms only, not causal or semantic grading",
+  "processed_trials": 6,
+  "failures": [
+    {
+      "run_id": "enso-effort-low-01-dev-13-1",
+      "task_id": "dev-13",
+      "trial": 1,
+      "status": "incomplete",
+      "reason": "Model stopped without verified findings",
+      "validation_errors": null,
+      "packet_truncated": null,
+      "packet_numeric_cells": null,
+      "packet_coverage": null,
+      "last_submission": null
+    }
+  ]
+}

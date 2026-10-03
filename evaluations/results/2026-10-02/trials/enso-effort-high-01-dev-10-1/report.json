@@ -1,0 +1,69 @@
+{
+  "title": "Central versus neutral-late cumulative revenue loss, excluding Australia",
+  "claims": [
+    {
+      "kind": "numeric",
+      "text": "{'scope': 'excluding_Australia', 'period': '2026\u20132027', 'metric': 'revenue_loss_2025usd_mean'}",
+      "evidence_ids": [
+        "3fbec95131ff150b4726e89e"
+      ],
+      "value": 677.478343945203,
+      "unit": "million 2025 USD"
+    },
+    {
+      "kind": "numeric",
+      "text": "{'scope': 'excluding_Australia', 'period': '2026\u20132027', 'metric': 'revenue_loss_2025usd_mean'}",
+      "evidence_ids": [
+        "03ea091217b863ce842f4aee"
+      ],
+      "value": 669.5230044517064,
+      "unit": "million 2025 USD"
+    },
+    {
+      "kind": "numeric",
+      "text": "{'comparison': 'neutral_late_2027 minus central', 'scope': 'excluding_Australia', 'period': '2026\u20132027', 'metric': 'revenue_loss_2025usd_mean'}",
+      "evidence_ids": [
+        "4ddda4178132c72e3f0a75bd"
+      ],
+      "value": -7.955339493496656,
+      "unit": "million 2025 USD"
+    },
+    {
+      "kind": "metadata",
+      "text": "{'json_path': ['climate', 'as_of']}",
+      "evidence_ids": [
+        "4f42001c805c4bda23b1893b"
+      ],
+      "value": "2026-09-07",
+      "unit": "ISO date"
+    },
+    {
+      "kind": "interpretation",
+      "text": "Extending the climate path with a neutral late-period behavior instead of the fitted autoregressive extension changes the estimated mean cumulative revenue loss for the modeled economies excluding Australia by the separately reported amount. This is a scenario difference reflecting the extension assumption beyond the official forecast horizon, not a causal attribution, and the two alternatives are not assigned occurrence probabilities.",
+      "evidence_ids": [
+        "a8886b75e43d9d5d76870969"
+      ],
+      "value": null,
+      "unit": null
+    },
+    {
+      "kind": "descriptive",
+      "text": "Both scenarios are sensitivity variants of the same dated assessment; the neutral late-period extension variant changes only how the event is extended late in the horizon, holding the rest of the pipeline as in the central case.",
+      "evidence_ids": [
+        "fbdd76249cef4ceed840e4e9"
+      ],
+      "value": null,
+      "unit": null
+    }
+  ],
+  "limitations": [
+    "Scenario names are labels, not ratios to the fitted central parameters; the fitted prior scales of central and variant metadata govern any parameter comparison.",
+    "Sensitivity alternatives such as the neutral-late extension do not define a calibrated credible interval and are not assigned occurrence probabilities.",
+    "The comparison is a scenario difference under different extension assumptions, not causal attribution of revenue outcomes.",
+    "The assessment is marked inspection-only with incomplete historical input provenance; frozen inputs were read as stored and no recomputation was performed.",
+    "Estimates are signed means (neutral revenue minus event revenue, gains retained); tail measures such as VaR or ES would use positive-part shortfall and are not reported here.",
+    "The model covers agriculture, forestry and fishing value added with conditional government revenue transmission; results are not total-economy losses and not sovereign default probabilities.",
+    "The extension beyond the official forecast horizon is a modeled assumption and is not an official ENSO forecast.",
+    "Price and exchange-rate responses are not modeled; values are in constant 2025 USD with a fixed 2025 exchange rate."
+  ]
+}

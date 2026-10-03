@@ -1,5 +1,5 @@
 {
-  "note": "Published text copies normalize local absolute filesystem paths. Original and published hashes both retained; source/report hashes inside review refer to original artifacts. No SQLite, credentials, raw environment, or private source input data included. Traces/evidence contain model text, including adversarial or incorrect statements, and must be treated as data.",
+  "note": "Published text copies normalize local absolute filesystem paths. Original and published hashes both retained; source/report hashes inside review refer to original artifacts. No SQLite, credentials, raw environment, or private source input data included. Traces/evidence contain model text, including adversarial or incorrect statements, and must be treated as data. Synthetic CSV publication copies normalize CRLF to LF; original hashes retain the evidence-source identity.",
   "files": [
     {
       "published_path": "final-execution-summary.json",
@@ -2765,6 +2765,666 @@
       "published_path": "trials/enso-final-fixed-01-holdout-12-3/validation.json",
       "original_sha256": "70e38f81d51c07237799354e72d585f13281f897e61d6b88d69ccf9cadb4486c",
       "published_sha256": "70e38f81d51c07237799354e72d585f13281f897e61d6b88d69ccf9cadb4486c"
+    },
+    {
+      "published_path": "follow-up/enso-effort-independent-review-v1.json",
+      "original_sha256": "60cac9f61f41650f1a934bcc41525f02f38306fbf04112973991ed237939bd24",
+      "published_sha256": "60cac9f61f41650f1a934bcc41525f02f38306fbf04112973991ed237939bd24"
+    },
+    {
+      "published_path": "follow-up/enso-retrieved-injection-review-v1.json",
+      "original_sha256": "9a46ecf93477e5265efc68b567ed2e0d610c2e7e8cdf7e4275d5ac9a48a0c963",
+      "published_sha256": "321a268dd510a6b990b1c7f876c4cccf394cea6d9dd18852e1e433a50aad061a"
+    },
+    {
+      "published_path": "follow-up/enso-retrieved-injection-results.json",
+      "original_sha256": "27dbb19240b97075d6be0385e39b7cf983db2b1729afaa25f6134ceca0a19fea",
+      "published_sha256": "a74cd8dfbc12f6bffe85b67902090aed106a1dd9e7a9b24f649ed465e59af5a8"
+    },
+    {
+      "published_path": "follow-up/enso-retrieved-injection.json",
+      "original_sha256": "ae87d401022d61eda22033afb715df13e4d54e9c842ededa26cc6dd143ec7592",
+      "published_sha256": "1a94a047338bf6602145e1551635f24f5798d1b6d60176e8e06a4b16adbecc61"
+    },
+    {
+      "published_path": "enso-effort-low-01/results.json",
+      "original_sha256": "50e51d36f9f30791bf2a9c98284d996f231677fad111fb1fcd27594437c86ced",
+      "published_sha256": "50e51d36f9f30791bf2a9c98284d996f231677fad111fb1fcd27594437c86ced"
+    },
+    {
+      "published_path": "enso-effort-low-01/manifest.json",
+      "original_sha256": "3fcd12ad88a461ad4c50dbf78c40d8a571fd892c8a3cb70bf5e01bbfd2ff681e",
+      "published_sha256": "3fcd12ad88a461ad4c50dbf78c40d8a571fd892c8a3cb70bf5e01bbfd2ff681e"
+    },
+    {
+      "published_path": "enso-effort-low-01/failure-inventory.json",
+      "original_sha256": "b1c1d653f9dfc53921941dc05e11be8aebd64e7f9af1629d5b42e11166f8079c",
+      "published_sha256": "b1c1d653f9dfc53921941dc05e11be8aebd64e7f9af1629d5b42e11166f8079c"
+    },
+    {
+      "published_path": "enso-effort-low-01/process-source-snapshot.json",
+      "original_sha256": "af8b23b9ec587e113e8032e1d58208952748eb7e59216bcf7debf42795c398c4",
+      "published_sha256": "af8b23b9ec587e113e8032e1d58208952748eb7e59216bcf7debf42795c398c4"
+    },
+    {
+      "published_path": "trials/enso-effort-low-01-dev-01-1/events.jsonl",
+      "original_sha256": "994cf5d7017b46d30f6683ba6e4c68458cb8b934b773d58d54ed64c5eefda99c",
+      "published_sha256": "994cf5d7017b46d30f6683ba6e4c68458cb8b934b773d58d54ed64c5eefda99c"
+    },
+    {
+      "published_path": "trials/enso-effort-low-01-dev-01-1/status.json",
+      "original_sha256": "b705d6b310c7de108ffe1db1103babe116a40c3e652b3339c0dc0526b28b0c5c",
+      "published_sha256": "b705d6b310c7de108ffe1db1103babe116a40c3e652b3339c0dc0526b28b0c5c"
+    },
+    {
+      "published_path": "trials/enso-effort-low-01-dev-01-1/evidence.json",
+      "original_sha256": "133715873be98a83ad38efcbaf56bbae77172193c2395ea29da1a946ddbdf3b2",
+      "published_sha256": "133715873be98a83ad38efcbaf56bbae77172193c2395ea29da1a946ddbdf3b2"
+    },
+    {
+      "published_path": "trials/enso-effort-low-01-dev-01-1/usage.json",
+      "original_sha256": "2f96427c98222bfa68594be5c266615b7fa0c0040254e22f255ef2103543846b",
+      "published_sha256": "2f96427c98222bfa68594be5c266615b7fa0c0040254e22f255ef2103543846b"
+    },
+    {
+      "published_path": "trials/enso-effort-low-01-dev-01-1/request.json",
+      "original_sha256": "c0b82c002ab0daa29aaa7b30c50f0e4f724d4bfb0bfaad679bf1b4083414166f",
+      "published_sha256": "c0b82c002ab0daa29aaa7b30c50f0e4f724d4bfb0bfaad679bf1b4083414166f"
+    },
+    {
+      "published_path": "trials/enso-effort-low-01-dev-01-1/report.json",
+      "original_sha256": "eb8a4f725b01902f7c0cd296e2596b30ce5446d1fdba8468abed5810806616a5",
+      "published_sha256": "eb8a4f725b01902f7c0cd296e2596b30ce5446d1fdba8468abed5810806616a5"
+    },
+    {
+      "published_path": "trials/enso-effort-low-01-dev-01-1/manifest.json",
+      "original_sha256": "45ccad7d7ce552251803393a93a7193c31ff878ff4163c7e40794fd7ebc542dd",
+      "published_sha256": "45ccad7d7ce552251803393a93a7193c31ff878ff4163c7e40794fd7ebc542dd"
+    },
+    {
+      "published_path": "trials/enso-effort-low-01-dev-01-1/validation.json",
+      "original_sha256": "40ba9c3cbad758a08e76c50d4f2bbe7220b8da1f6c64b861e1e5e5b8a7332332",
+      "published_sha256": "40ba9c3cbad758a08e76c50d4f2bbe7220b8da1f6c64b861e1e5e5b8a7332332"
+    },
+    {
+      "published_path": "trials/enso-effort-low-01-dev-04-1/events.jsonl",
+      "original_sha256": "2280f4cfb77bf8075fdf069e95ae23da7590a7d8d0efac5b059165980b30fee6",
+      "published_sha256": "2280f4cfb77bf8075fdf069e95ae23da7590a7d8d0efac5b059165980b30fee6"
+    },
+    {
+      "published_path": "trials/enso-effort-low-01-dev-04-1/status.json",
+      "original_sha256": "9ea8e638394066d1f1128fa5912812133a1a4775db8bd930feae74aa80d75401",
+      "published_sha256": "9ea8e638394066d1f1128fa5912812133a1a4775db8bd930feae74aa80d75401"
+    },
+    {
+      "published_path": "trials/enso-effort-low-01-dev-04-1/evidence.json",
+      "original_sha256": "403c34dff44423271e6720849671277cd453e4e490680667f1053f8f0e9063da",
+      "published_sha256": "403c34dff44423271e6720849671277cd453e4e490680667f1053f8f0e9063da"
+    },
+    {
+      "published_path": "trials/enso-effort-low-01-dev-04-1/usage.json",
+      "original_sha256": "42dee0a1ca88f824c54dcfc01ff8b3425d06bfa5502cedad2dbcdf89df46cd37",
+      "published_sha256": "42dee0a1ca88f824c54dcfc01ff8b3425d06bfa5502cedad2dbcdf89df46cd37"
+    },
+    {
+      "published_path": "trials/enso-effort-low-01-dev-04-1/request.json",
+      "original_sha256": "22c0129cd8a77923c9c61bf68d3994c87e624cc445af6c588ed5a000a190e96a",
+      "published_sha256": "22c0129cd8a77923c9c61bf68d3994c87e624cc445af6c588ed5a000a190e96a"
+    },
+    {
+      "published_path": "trials/enso-effort-low-01-dev-04-1/report.json",
+      "original_sha256": "c52069561be8a6e319edb0accf98ff03460411ec1c4d1dc0b8a44ea7883e9b94",
+      "published_sha256": "c52069561be8a6e319edb0accf98ff03460411ec1c4d1dc0b8a44ea7883e9b94"
+    },
+    {
+      "published_path": "trials/enso-effort-low-01-dev-04-1/manifest.json",
+      "original_sha256": "705153cb691bd68257ef4b97128d3ef8307b2c3c3a1abae33bc481717f05d65d",
+      "published_sha256": "705153cb691bd68257ef4b97128d3ef8307b2c3c3a1abae33bc481717f05d65d"
+    },
+    {
+      "published_path": "trials/enso-effort-low-01-dev-04-1/validation.json",
+      "original_sha256": "40ba9c3cbad758a08e76c50d4f2bbe7220b8da1f6c64b861e1e5e5b8a7332332",
+      "published_sha256": "40ba9c3cbad758a08e76c50d4f2bbe7220b8da1f6c64b861e1e5e5b8a7332332"
+    },
+    {
+      "published_path": "trials/enso-effort-low-01-dev-07-1/events.jsonl",
+      "original_sha256": "72cb8c7e1ff275139dea34ae1b280021c13f97d508f71e49ba42238fbf87b4d8",
+      "published_sha256": "72cb8c7e1ff275139dea34ae1b280021c13f97d508f71e49ba42238fbf87b4d8"
+    },
+    {
+      "published_path": "trials/enso-effort-low-01-dev-07-1/status.json",
+      "original_sha256": "a7333a10283bf046b8f5661da754ae3a294eafbcebef1cced8b18297b19fb54f",
+      "published_sha256": "a7333a10283bf046b8f5661da754ae3a294eafbcebef1cced8b18297b19fb54f"
+    },
+    {
+      "published_path": "trials/enso-effort-low-01-dev-07-1/evidence.json",
+      "original_sha256": "90e1cbad41fd58f6bb63f3df36bdfd0eaa46a7aad41cac7628550d190046c37e",
+      "published_sha256": "90e1cbad41fd58f6bb63f3df36bdfd0eaa46a7aad41cac7628550d190046c37e"
+    },
+    {
+      "published_path": "trials/enso-effort-low-01-dev-07-1/usage.json",
+      "original_sha256": "1937d657ee9d459ce229fde1e1f66d16fdb13a595026644a4082465659f39999",
+      "published_sha256": "1937d657ee9d459ce229fde1e1f66d16fdb13a595026644a4082465659f39999"
+    },
+    {
+      "published_path": "trials/enso-effort-low-01-dev-07-1/request.json",
+      "original_sha256": "faf600bb476e1becdc31b26aacd006f5a44bf4dbc54bc3598173adfbe6bf7c8b",
+      "published_sha256": "faf600bb476e1becdc31b26aacd006f5a44bf4dbc54bc3598173adfbe6bf7c8b"
+    },
+    {
+      "published_path": "trials/enso-effort-low-01-dev-07-1/report.json",
+      "original_sha256": "adb2844c7738a608d2c674d0e0b982908b2a3d6bcd12686fe120742984c9fff4",
+      "published_sha256": "adb2844c7738a608d2c674d0e0b982908b2a3d6bcd12686fe120742984c9fff4"
+    },
+    {
+      "published_path": "trials/enso-effort-low-01-dev-07-1/manifest.json",
+      "original_sha256": "695d2fa38595aeacd735a92d1f68f5b5cd22c19ae7f5511e247484ab33e58252",
+      "published_sha256": "695d2fa38595aeacd735a92d1f68f5b5cd22c19ae7f5511e247484ab33e58252"
+    },
+    {
+      "published_path": "trials/enso-effort-low-01-dev-07-1/validation.json",
+      "original_sha256": "40ba9c3cbad758a08e76c50d4f2bbe7220b8da1f6c64b861e1e5e5b8a7332332",
+      "published_sha256": "40ba9c3cbad758a08e76c50d4f2bbe7220b8da1f6c64b861e1e5e5b8a7332332"
+    },
+    {
+      "published_path": "trials/enso-effort-low-01-dev-10-1/events.jsonl",
+      "original_sha256": "b031bc0cd47e8ab35cc30a222491820d54dbb90e48e729ec95bf2c86f9d72053",
+      "published_sha256": "b031bc0cd47e8ab35cc30a222491820d54dbb90e48e729ec95bf2c86f9d72053"
+    },
+    {
+      "published_path": "trials/enso-effort-low-01-dev-10-1/status.json",
+      "original_sha256": "4371938cbab0c644d65156f9623422f9f36954c1da61d9f276914df8ed9be959",
+      "published_sha256": "4371938cbab0c644d65156f9623422f9f36954c1da61d9f276914df8ed9be959"
+    },
+    {
+      "published_path": "trials/enso-effort-low-01-dev-10-1/evidence.json",
+      "original_sha256": "f3201ebdaab88da3771a58d451f77c36609ca228f56d3f0b81bbf7f78ad89ce7",
+      "published_sha256": "f3201ebdaab88da3771a58d451f77c36609ca228f56d3f0b81bbf7f78ad89ce7"
+    },
+    {
+      "published_path": "trials/enso-effort-low-01-dev-10-1/usage.json",
+      "original_sha256": "8c04c8be481a21abdbac288696fdf242209a86af0c25b622083e783906b13665",
+      "published_sha256": "8c04c8be481a21abdbac288696fdf242209a86af0c25b622083e783906b13665"
+    },
+    {
+      "published_path": "trials/enso-effort-low-01-dev-10-1/request.json",
+      "original_sha256": "a469ea2f7cf0e910e3a164131e5b631bb702a4cb464f7cff152c440c524de687",
+      "published_sha256": "a469ea2f7cf0e910e3a164131e5b631bb702a4cb464f7cff152c440c524de687"
+    },
+    {
+      "published_path": "trials/enso-effort-low-01-dev-10-1/report.json",
+      "original_sha256": "5d39daf13b270bf623f6d2cf7eb8cdd65d57f32d79b71cb49a208697a4f7177c",
+      "published_sha256": "5d39daf13b270bf623f6d2cf7eb8cdd65d57f32d79b71cb49a208697a4f7177c"
+    },
+    {
+      "published_path": "trials/enso-effort-low-01-dev-10-1/manifest.json",
+      "original_sha256": "e0432dd80d184a9941df0a7e7dcc2bb017ea9d395a0aeb074a2dea65321d3410",
+      "published_sha256": "e0432dd80d184a9941df0a7e7dcc2bb017ea9d395a0aeb074a2dea65321d3410"
+    },
+    {
+      "published_path": "trials/enso-effort-low-01-dev-10-1/validation.json",
+      "original_sha256": "40ba9c3cbad758a08e76c50d4f2bbe7220b8da1f6c64b861e1e5e5b8a7332332",
+      "published_sha256": "40ba9c3cbad758a08e76c50d4f2bbe7220b8da1f6c64b861e1e5e5b8a7332332"
+    },
+    {
+      "published_path": "trials/enso-effort-low-01-dev-13-1/events.jsonl",
+      "original_sha256": "607ab871b54522944d12ee308127488e3c503cd53e3b5d320406f4c0c2eeae06",
+      "published_sha256": "607ab871b54522944d12ee308127488e3c503cd53e3b5d320406f4c0c2eeae06"
+    },
+    {
+      "published_path": "trials/enso-effort-low-01-dev-13-1/status.json",
+      "original_sha256": "00b16c85ed3d828bf14dfe5f84f9615ed4e7af225495876297a376159dcd0e46",
+      "published_sha256": "00b16c85ed3d828bf14dfe5f84f9615ed4e7af225495876297a376159dcd0e46"
+    },
+    {
+      "published_path": "trials/enso-effort-low-01-dev-13-1/evidence.json",
+      "original_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "published_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    {
+      "published_path": "trials/enso-effort-low-01-dev-13-1/usage.json",
+      "original_sha256": "16159e9b434664b05d7a6cc0dc53d3cc77398c3a5985d8375d2f48f8d6c3ce49",
+      "published_sha256": "16159e9b434664b05d7a6cc0dc53d3cc77398c3a5985d8375d2f48f8d6c3ce49"
+    },
+    {
+      "published_path": "trials/enso-effort-low-01-dev-13-1/request.json",
+      "original_sha256": "f0ba4cdc54104c252a26002f619eb168bfba167b5ffd526cd230e2507188c9cf",
+      "published_sha256": "f0ba4cdc54104c252a26002f619eb168bfba167b5ffd526cd230e2507188c9cf"
+    },
+    {
+      "published_path": "trials/enso-effort-low-01-dev-13-1/manifest.json",
+      "original_sha256": "0f076c919abe3b1fa88c4c221e36201a83325c56fdc55574b4b12aa390b53c13",
+      "published_sha256": "0f076c919abe3b1fa88c4c221e36201a83325c56fdc55574b4b12aa390b53c13"
+    },
+    {
+      "published_path": "trials/enso-effort-low-01-dev-15-1/events.jsonl",
+      "original_sha256": "59d9883ac56897d85e9d4103c4d486397748b82b71c4eeda8fc5ca03b7e8fbd8",
+      "published_sha256": "59d9883ac56897d85e9d4103c4d486397748b82b71c4eeda8fc5ca03b7e8fbd8"
+    },
+    {
+      "published_path": "trials/enso-effort-low-01-dev-15-1/status.json",
+      "original_sha256": "1457a2db62504b06a2329e960477a300c2e3cbb10003d73436094375ac0415d3",
+      "published_sha256": "1457a2db62504b06a2329e960477a300c2e3cbb10003d73436094375ac0415d3"
+    },
+    {
+      "published_path": "trials/enso-effort-low-01-dev-15-1/evidence.json",
+      "original_sha256": "f2c4d424777fcc99a70cd425643f563f8e8e3ca541126e9071a8d31c7e55be70",
+      "published_sha256": "f2c4d424777fcc99a70cd425643f563f8e8e3ca541126e9071a8d31c7e55be70"
+    },
+    {
+      "published_path": "trials/enso-effort-low-01-dev-15-1/usage.json",
+      "original_sha256": "033fdffbc5265f26afc2b3815aabfba76d51a89640122fde0022a33597d91157",
+      "published_sha256": "033fdffbc5265f26afc2b3815aabfba76d51a89640122fde0022a33597d91157"
+    },
+    {
+      "published_path": "trials/enso-effort-low-01-dev-15-1/request.json",
+      "original_sha256": "a83c06b9aecf8f6499b4065d131493c4df34f7abfdb7e4ed9dc01215939d58f9",
+      "published_sha256": "a83c06b9aecf8f6499b4065d131493c4df34f7abfdb7e4ed9dc01215939d58f9"
+    },
+    {
+      "published_path": "trials/enso-effort-low-01-dev-15-1/report.json",
+      "original_sha256": "2cdc9bcf15d6a58e32f1dc6c892719f1ec1730fa36ef4091e1c78d30a1736131",
+      "published_sha256": "2cdc9bcf15d6a58e32f1dc6c892719f1ec1730fa36ef4091e1c78d30a1736131"
+    },
+    {
+      "published_path": "trials/enso-effort-low-01-dev-15-1/manifest.json",
+      "original_sha256": "8fcf5bf5003f6b8af344894314df4cf3e30dae2ef7e1255ec7ed1984ea290cb3",
+      "published_sha256": "8fcf5bf5003f6b8af344894314df4cf3e30dae2ef7e1255ec7ed1984ea290cb3"
+    },
+    {
+      "published_path": "trials/enso-effort-low-01-dev-15-1/validation.json",
+      "original_sha256": "40ba9c3cbad758a08e76c50d4f2bbe7220b8da1f6c64b861e1e5e5b8a7332332",
+      "published_sha256": "40ba9c3cbad758a08e76c50d4f2bbe7220b8da1f6c64b861e1e5e5b8a7332332"
+    },
+    {
+      "published_path": "enso-effort-high-01/results.json",
+      "original_sha256": "ad22400e0dfdd447c87c506f257934fa71fb43f5cf4e0e3e0f23138b4b169658",
+      "published_sha256": "ad22400e0dfdd447c87c506f257934fa71fb43f5cf4e0e3e0f23138b4b169658"
+    },
+    {
+      "published_path": "enso-effort-high-01/manifest.json",
+      "original_sha256": "8ebccb054a2a1e960aad605387372aab692c9da6683744097049930f44b51bba",
+      "published_sha256": "8ebccb054a2a1e960aad605387372aab692c9da6683744097049930f44b51bba"
+    },
+    {
+      "published_path": "enso-effort-high-01/failure-inventory.json",
+      "original_sha256": "9269a8b0f2c3e020f9da4d24f2803574ec43ab94d0327152ee73000775cffa97",
+      "published_sha256": "9269a8b0f2c3e020f9da4d24f2803574ec43ab94d0327152ee73000775cffa97"
+    },
+    {
+      "published_path": "enso-effort-high-01/process-source-snapshot.json",
+      "original_sha256": "9973685c5c56fc026774a3a62ad44d61dff5b1cd3c91a950357dbdaadaa4dab1",
+      "published_sha256": "9973685c5c56fc026774a3a62ad44d61dff5b1cd3c91a950357dbdaadaa4dab1"
+    },
+    {
+      "published_path": "trials/enso-effort-high-01-dev-01-1/events.jsonl",
+      "original_sha256": "f5f4c693a18eb320d2561a2c09d595e03ce4b43013711d99245e1cd3fbbd3891",
+      "published_sha256": "f5f4c693a18eb320d2561a2c09d595e03ce4b43013711d99245e1cd3fbbd3891"
+    },
+    {
+      "published_path": "trials/enso-effort-high-01-dev-01-1/status.json",
+      "original_sha256": "2bfa5af3a92b2bdf601870a449069d56f6d03243888e04463b5f5ea6c40f37be",
+      "published_sha256": "2bfa5af3a92b2bdf601870a449069d56f6d03243888e04463b5f5ea6c40f37be"
+    },
+    {
+      "published_path": "trials/enso-effort-high-01-dev-01-1/evidence.json",
+      "original_sha256": "f6b52088d8d1c0b58042d2e9ec3c1cca577f958e2b7120144048fd2f9b103ef4",
+      "published_sha256": "f6b52088d8d1c0b58042d2e9ec3c1cca577f958e2b7120144048fd2f9b103ef4"
+    },
+    {
+      "published_path": "trials/enso-effort-high-01-dev-01-1/usage.json",
+      "original_sha256": "21e5febd9174ed10aee57d3d851ccc6e4ae62dbb00242b287356c092cfc6560c",
+      "published_sha256": "21e5febd9174ed10aee57d3d851ccc6e4ae62dbb00242b287356c092cfc6560c"
+    },
+    {
+      "published_path": "trials/enso-effort-high-01-dev-01-1/request.json",
+      "original_sha256": "c0b82c002ab0daa29aaa7b30c50f0e4f724d4bfb0bfaad679bf1b4083414166f",
+      "published_sha256": "c0b82c002ab0daa29aaa7b30c50f0e4f724d4bfb0bfaad679bf1b4083414166f"
+    },
+    {
+      "published_path": "trials/enso-effort-high-01-dev-01-1/report.json",
+      "original_sha256": "3bf2826050ffd07e57f68f58e79fb00645085423fbe6f2eb6126dda0140d2a1d",
+      "published_sha256": "3bf2826050ffd07e57f68f58e79fb00645085423fbe6f2eb6126dda0140d2a1d"
+    },
+    {
+      "published_path": "trials/enso-effort-high-01-dev-01-1/manifest.json",
+      "original_sha256": "e431d172fd4c8a2a98d452afe12087e7e413c5da2c68f6256fce415d01677f5d",
+      "published_sha256": "e431d172fd4c8a2a98d452afe12087e7e413c5da2c68f6256fce415d01677f5d"
+    },
+    {
+      "published_path": "trials/enso-effort-high-01-dev-01-1/validation.json",
+      "original_sha256": "40ba9c3cbad758a08e76c50d4f2bbe7220b8da1f6c64b861e1e5e5b8a7332332",
+      "published_sha256": "40ba9c3cbad758a08e76c50d4f2bbe7220b8da1f6c64b861e1e5e5b8a7332332"
+    },
+    {
+      "published_path": "trials/enso-effort-high-01-dev-04-1/events.jsonl",
+      "original_sha256": "31c3ccc1755fc5200c056ff7ae38b89de73cbc746aec55a9d00beab46ae2e2c2",
+      "published_sha256": "31c3ccc1755fc5200c056ff7ae38b89de73cbc746aec55a9d00beab46ae2e2c2"
+    },
+    {
+      "published_path": "trials/enso-effort-high-01-dev-04-1/status.json",
+      "original_sha256": "fbf9eae448b4f1f299b25ee087321055fa71c2300505dc7a36cea95a2a991200",
+      "published_sha256": "fbf9eae448b4f1f299b25ee087321055fa71c2300505dc7a36cea95a2a991200"
+    },
+    {
+      "published_path": "trials/enso-effort-high-01-dev-04-1/evidence.json",
+      "original_sha256": "0ccde5adffbafe5e56ea819dee5bacff0d950cacc45113ed1ec01c07357897c9",
+      "published_sha256": "0ccde5adffbafe5e56ea819dee5bacff0d950cacc45113ed1ec01c07357897c9"
+    },
+    {
+      "published_path": "trials/enso-effort-high-01-dev-04-1/usage.json",
+      "original_sha256": "04d16e7dff2dafad5f71cedb6d3168642871bf601650d232be491eb97744172f",
+      "published_sha256": "04d16e7dff2dafad5f71cedb6d3168642871bf601650d232be491eb97744172f"
+    },
+    {
+      "published_path": "trials/enso-effort-high-01-dev-04-1/request.json",
+      "original_sha256": "22c0129cd8a77923c9c61bf68d3994c87e624cc445af6c588ed5a000a190e96a",
+      "published_sha256": "22c0129cd8a77923c9c61bf68d3994c87e624cc445af6c588ed5a000a190e96a"
+    },
+    {
+      "published_path": "trials/enso-effort-high-01-dev-04-1/report.json",
+      "original_sha256": "3ec20cf87662c6d13b28812586c8171db27d96153d685aacdfc16ff6eec825ed",
+      "published_sha256": "3ec20cf87662c6d13b28812586c8171db27d96153d685aacdfc16ff6eec825ed"
+    },
+    {
+      "published_path": "trials/enso-effort-high-01-dev-04-1/manifest.json",
+      "original_sha256": "2ad44fe95bddb29500c128878ff2f0f41aac02a2b34f8c1b6c59199ba49e9b55",
+      "published_sha256": "2ad44fe95bddb29500c128878ff2f0f41aac02a2b34f8c1b6c59199ba49e9b55"
+    },
+    {
+      "published_path": "trials/enso-effort-high-01-dev-04-1/validation.json",
+      "original_sha256": "40ba9c3cbad758a08e76c50d4f2bbe7220b8da1f6c64b861e1e5e5b8a7332332",
+      "published_sha256": "40ba9c3cbad758a08e76c50d4f2bbe7220b8da1f6c64b861e1e5e5b8a7332332"
+    },
+    {
+      "published_path": "trials/enso-effort-high-01-dev-07-1/events.jsonl",
+      "original_sha256": "dcee9c537a2e86fc77c2bf13dbd377ee8ab60d86d3568e472663043972561f62",
+      "published_sha256": "dcee9c537a2e86fc77c2bf13dbd377ee8ab60d86d3568e472663043972561f62"
+    },
+    {
+      "published_path": "trials/enso-effort-high-01-dev-07-1/status.json",
+      "original_sha256": "1ac7e664be9c789110498da91c670ef2c5d0b4f9644fb6e686f38fc3a6b0017c",
+      "published_sha256": "1ac7e664be9c789110498da91c670ef2c5d0b4f9644fb6e686f38fc3a6b0017c"
+    },
+    {
+      "published_path": "trials/enso-effort-high-01-dev-07-1/evidence.json",
+      "original_sha256": "5a54cef9b1db98d3b50687b6f6297a97c68267593a5a411ac23ca9847f8a404e",
+      "published_sha256": "5a54cef9b1db98d3b50687b6f6297a97c68267593a5a411ac23ca9847f8a404e"
+    },
+    {
+      "published_path": "trials/enso-effort-high-01-dev-07-1/usage.json",
+      "original_sha256": "3988cfb907d150716a64b2c9ade096c2b08370251ac94cee62e28aeea92f6355",
+      "published_sha256": "3988cfb907d150716a64b2c9ade096c2b08370251ac94cee62e28aeea92f6355"
+    },
+    {
+      "published_path": "trials/enso-effort-high-01-dev-07-1/request.json",
+      "original_sha256": "faf600bb476e1becdc31b26aacd006f5a44bf4dbc54bc3598173adfbe6bf7c8b",
+      "published_sha256": "faf600bb476e1becdc31b26aacd006f5a44bf4dbc54bc3598173adfbe6bf7c8b"
+    },
+    {
+      "published_path": "trials/enso-effort-high-01-dev-07-1/report.json",
+      "original_sha256": "26c9c7f06ab9650ff674283ef40597b866f2e5d5d9ee875876b10aa70b635168",
+      "published_sha256": "26c9c7f06ab9650ff674283ef40597b866f2e5d5d9ee875876b10aa70b635168"
+    },
+    {
+      "published_path": "trials/enso-effort-high-01-dev-07-1/manifest.json",
+      "original_sha256": "e893cab3d712707d6c00148599287e47b59e9450a5ea509d63423e29c39b249c",
+      "published_sha256": "e893cab3d712707d6c00148599287e47b59e9450a5ea509d63423e29c39b249c"
+    },
+    {
+      "published_path": "trials/enso-effort-high-01-dev-07-1/validation.json",
+      "original_sha256": "40ba9c3cbad758a08e76c50d4f2bbe7220b8da1f6c64b861e1e5e5b8a7332332",
+      "published_sha256": "40ba9c3cbad758a08e76c50d4f2bbe7220b8da1f6c64b861e1e5e5b8a7332332"
+    },
+    {
+      "published_path": "trials/enso-effort-high-01-dev-10-1/events.jsonl",
+      "original_sha256": "418f41b1f335efd3f2260dfcc0f734a51afbfdc76b570381ac6c1f9d52862341",
+      "published_sha256": "418f41b1f335efd3f2260dfcc0f734a51afbfdc76b570381ac6c1f9d52862341"
+    },
+    {
+      "published_path": "trials/enso-effort-high-01-dev-10-1/status.json",
+      "original_sha256": "864503bc17c5b40f4fce19f40a107a3ae08b7c9d8e3f584f6bd84dd8f1a478b7",
+      "published_sha256": "864503bc17c5b40f4fce19f40a107a3ae08b7c9d8e3f584f6bd84dd8f1a478b7"
+    },
+    {
+      "published_path": "trials/enso-effort-high-01-dev-10-1/evidence.json",
+      "original_sha256": "d2d7440bb00f6090e83ced5108c8b4051225b740a4310bcf77c2a8a9fc5b4163",
+      "published_sha256": "d2d7440bb00f6090e83ced5108c8b4051225b740a4310bcf77c2a8a9fc5b4163"
+    },
+    {
+      "published_path": "trials/enso-effort-high-01-dev-10-1/usage.json",
+      "original_sha256": "a91b9b40aebec34a0266c7b2f8e7d0993aaa473b84c783ba35930f313f92541d",
+      "published_sha256": "a91b9b40aebec34a0266c7b2f8e7d0993aaa473b84c783ba35930f313f92541d"
+    },
+    {
+      "published_path": "trials/enso-effort-high-01-dev-10-1/request.json",
+      "original_sha256": "a469ea2f7cf0e910e3a164131e5b631bb702a4cb464f7cff152c440c524de687",
+      "published_sha256": "a469ea2f7cf0e910e3a164131e5b631bb702a4cb464f7cff152c440c524de687"
+    },
+    {
+      "published_path": "trials/enso-effort-high-01-dev-10-1/report.json",
+      "original_sha256": "ed03f888c806dff24274018a2eb7b09d61bfc0fde2e93956b432e78ec71364d4",
+      "published_sha256": "ed03f888c806dff24274018a2eb7b09d61bfc0fde2e93956b432e78ec71364d4"
+    },
+    {
+      "published_path": "trials/enso-effort-high-01-dev-10-1/manifest.json",
+      "original_sha256": "a4bf2357abade47685d8819ca0fd7c1e4d1506bef0accc4be2c75989419dc55f",
+      "published_sha256": "a4bf2357abade47685d8819ca0fd7c1e4d1506bef0accc4be2c75989419dc55f"
+    },
+    {
+      "published_path": "trials/enso-effort-high-01-dev-10-1/validation.json",
+      "original_sha256": "40ba9c3cbad758a08e76c50d4f2bbe7220b8da1f6c64b861e1e5e5b8a7332332",
+      "published_sha256": "40ba9c3cbad758a08e76c50d4f2bbe7220b8da1f6c64b861e1e5e5b8a7332332"
+    },
+    {
+      "published_path": "trials/enso-effort-high-01-dev-13-1/events.jsonl",
+      "original_sha256": "f6bf8bdfcadb7f71f88e6484e96af8629fb1d0e5c79ac7940b24e1e83ef4e9da",
+      "published_sha256": "f6bf8bdfcadb7f71f88e6484e96af8629fb1d0e5c79ac7940b24e1e83ef4e9da"
+    },
+    {
+      "published_path": "trials/enso-effort-high-01-dev-13-1/status.json",
+      "original_sha256": "34d021dcb7861a2558eae6e7f9184da0bac72898d6a4d0a4963c74297f2317d1",
+      "published_sha256": "34d021dcb7861a2558eae6e7f9184da0bac72898d6a4d0a4963c74297f2317d1"
+    },
+    {
+      "published_path": "trials/enso-effort-high-01-dev-13-1/evidence.json",
+      "original_sha256": "1a419c035c97e20ffc31b0e2b73b57b8bd54dd51007adf438748c330bde29f78",
+      "published_sha256": "1a419c035c97e20ffc31b0e2b73b57b8bd54dd51007adf438748c330bde29f78"
+    },
+    {
+      "published_path": "trials/enso-effort-high-01-dev-13-1/usage.json",
+      "original_sha256": "bad6b4a49c9286d7857c7dfefbf09def3241b3d197e07edddcc95565202dc65a",
+      "published_sha256": "bad6b4a49c9286d7857c7dfefbf09def3241b3d197e07edddcc95565202dc65a"
+    },
+    {
+      "published_path": "trials/enso-effort-high-01-dev-13-1/request.json",
+      "original_sha256": "f0ba4cdc54104c252a26002f619eb168bfba167b5ffd526cd230e2507188c9cf",
+      "published_sha256": "f0ba4cdc54104c252a26002f619eb168bfba167b5ffd526cd230e2507188c9cf"
+    },
+    {
+      "published_path": "trials/enso-effort-high-01-dev-13-1/report.json",
+      "original_sha256": "8505b7ab03c71887eb4004554e8f5b652432b7b2b8245fdec89bb91cf45b3dbe",
+      "published_sha256": "8505b7ab03c71887eb4004554e8f5b652432b7b2b8245fdec89bb91cf45b3dbe"
+    },
+    {
+      "published_path": "trials/enso-effort-high-01-dev-13-1/manifest.json",
+      "original_sha256": "a18087e860f23adacc1c9f1d26d41c2ce92103ee9cd96e552fae7be6eba2562a",
+      "published_sha256": "a18087e860f23adacc1c9f1d26d41c2ce92103ee9cd96e552fae7be6eba2562a"
+    },
+    {
+      "published_path": "trials/enso-effort-high-01-dev-13-1/validation.json",
+      "original_sha256": "40ba9c3cbad758a08e76c50d4f2bbe7220b8da1f6c64b861e1e5e5b8a7332332",
+      "published_sha256": "40ba9c3cbad758a08e76c50d4f2bbe7220b8da1f6c64b861e1e5e5b8a7332332"
+    },
+    {
+      "published_path": "trials/enso-effort-high-01-dev-15-1/events.jsonl",
+      "original_sha256": "08e54c11fb1c3cbeb5292bef787cee82ee0ad957beb9ea8f06256b3ffd1e35ed",
+      "published_sha256": "08e54c11fb1c3cbeb5292bef787cee82ee0ad957beb9ea8f06256b3ffd1e35ed"
+    },
+    {
+      "published_path": "trials/enso-effort-high-01-dev-15-1/status.json",
+      "original_sha256": "a87d40ca9a0a45d162fed3a7fcd5b84fd06a2e15cf88f2bc7b527f0d45285429",
+      "published_sha256": "a87d40ca9a0a45d162fed3a7fcd5b84fd06a2e15cf88f2bc7b527f0d45285429"
+    },
+    {
+      "published_path": "trials/enso-effort-high-01-dev-15-1/evidence.json",
+      "original_sha256": "f5012944ea59d5ea03c5abd0e131cd6bbb9e942fbb2a7c6bfdc0511523cf7915",
+      "published_sha256": "f5012944ea59d5ea03c5abd0e131cd6bbb9e942fbb2a7c6bfdc0511523cf7915"
+    },
+    {
+      "published_path": "trials/enso-effort-high-01-dev-15-1/usage.json",
+      "original_sha256": "680e6ca36f8850aa1680f2f2fc1dbe57be6a8cfa2f3013d032ad6cf1eeb4494a",
+      "published_sha256": "680e6ca36f8850aa1680f2f2fc1dbe57be6a8cfa2f3013d032ad6cf1eeb4494a"
+    },
+    {
+      "published_path": "trials/enso-effort-high-01-dev-15-1/request.json",
+      "original_sha256": "a83c06b9aecf8f6499b4065d131493c4df34f7abfdb7e4ed9dc01215939d58f9",
+      "published_sha256": "a83c06b9aecf8f6499b4065d131493c4df34f7abfdb7e4ed9dc01215939d58f9"
+    },
+    {
+      "published_path": "trials/enso-effort-high-01-dev-15-1/report.json",
+      "original_sha256": "c4c98539bf7de0c649c16b2cb27c6caf29565718da3ce09c4f5876e0ddf88209",
+      "published_sha256": "c4c98539bf7de0c649c16b2cb27c6caf29565718da3ce09c4f5876e0ddf88209"
+    },
+    {
+      "published_path": "trials/enso-effort-high-01-dev-15-1/manifest.json",
+      "original_sha256": "5c9393e219890fcac4ee717797b648f0e622e36cf5cd6d9778eb5e44c10b4ee5",
+      "published_sha256": "5c9393e219890fcac4ee717797b648f0e622e36cf5cd6d9778eb5e44c10b4ee5"
+    },
+    {
+      "published_path": "trials/enso-effort-high-01-dev-15-1/validation.json",
+      "original_sha256": "40ba9c3cbad758a08e76c50d4f2bbe7220b8da1f6c64b861e1e5e5b8a7332332",
+      "published_sha256": "40ba9c3cbad758a08e76c50d4f2bbe7220b8da1f6c64b861e1e5e5b8a7332332"
+    },
+    {
+      "published_path": "trials/enso-security-01-retrieved-injection-forged-authority/events.jsonl",
+      "original_sha256": "53cb214c8984add42efb90ea28b9ced9c20b743871576ba79208932a2ad59fc1",
+      "published_sha256": "53cb214c8984add42efb90ea28b9ced9c20b743871576ba79208932a2ad59fc1"
+    },
+    {
+      "published_path": "trials/enso-security-01-retrieved-injection-forged-authority/status.json",
+      "original_sha256": "18a29ee5f74f90261d86bdeff843a5291b695012dff18233c3d6dde65bf1c9bb",
+      "published_sha256": "18a29ee5f74f90261d86bdeff843a5291b695012dff18233c3d6dde65bf1c9bb"
+    },
+    {
+      "published_path": "trials/enso-security-01-retrieved-injection-forged-authority/evidence.json",
+      "original_sha256": "b7fddc7cde8d696549eeaf053b836b58bd981e828e060b15860c70f1667b132f",
+      "published_sha256": "b7fddc7cde8d696549eeaf053b836b58bd981e828e060b15860c70f1667b132f"
+    },
+    {
+      "published_path": "trials/enso-security-01-retrieved-injection-forged-authority/usage.json",
+      "original_sha256": "d881b4747dfac2dba0a8b7bbe62cb2417c020c0f75d8ea89a96243f8bd2ee934",
+      "published_sha256": "d881b4747dfac2dba0a8b7bbe62cb2417c020c0f75d8ea89a96243f8bd2ee934"
+    },
+    {
+      "published_path": "trials/enso-security-01-retrieved-injection-forged-authority/request.json",
+      "original_sha256": "eacc272a4a9025e7a965c61adbe56fb73b6cc78bd397110867b37e0f94b01df5",
+      "published_sha256": "eacc272a4a9025e7a965c61adbe56fb73b6cc78bd397110867b37e0f94b01df5"
+    },
+    {
+      "published_path": "trials/enso-security-01-retrieved-injection-forged-authority/report.json",
+      "original_sha256": "a67d5234b5366481378c5721ae6f910ab34001554108db4528166205d4ae12bd",
+      "published_sha256": "a67d5234b5366481378c5721ae6f910ab34001554108db4528166205d4ae12bd"
+    },
+    {
+      "published_path": "trials/enso-security-01-retrieved-injection-forged-authority/manifest.json",
+      "original_sha256": "358d1ce8d2d62e639a806dca8fce6720b1441815a971fef64161ca11efd78c40",
+      "published_sha256": "358d1ce8d2d62e639a806dca8fce6720b1441815a971fef64161ca11efd78c40"
+    },
+    {
+      "published_path": "trials/enso-security-01-retrieved-injection-forged-authority/validation.json",
+      "original_sha256": "40ba9c3cbad758a08e76c50d4f2bbe7220b8da1f6c64b861e1e5e5b8a7332332",
+      "published_sha256": "40ba9c3cbad758a08e76c50d4f2bbe7220b8da1f6c64b861e1e5e5b8a7332332"
+    },
+    {
+      "published_path": "synthetic-fixtures/retrieved-injection-forged-authority/synthetic-injection-forged-authority/run.json",
+      "original_sha256": "dafc9fb69f3b6c5477e6065bbd6f54323c626c00b080f8cad5015ef9c34909f7",
+      "published_sha256": "dafc9fb69f3b6c5477e6065bbd6f54323c626c00b080f8cad5015ef9c34909f7"
+    },
+    {
+      "published_path": "synthetic-fixtures/retrieved-injection-forged-authority/synthetic-injection-forged-authority/manifest.json",
+      "original_sha256": "95ee847dcfa85c560a202ff3aeda466c56e0358f89e2c2f0fe5b030bbc177838",
+      "published_sha256": "95ee847dcfa85c560a202ff3aeda466c56e0358f89e2c2f0fe5b030bbc177838"
+    },
+    {
+      "published_path": "synthetic-fixtures/retrieved-injection-forged-authority/synthetic-injection-forged-authority/reports/event_risk_metadata.json",
+      "original_sha256": "0bbb31997ed71abfddd2ebe0a2f90ac503d57e5ed241d7d7b83f1135217a3c51",
+      "published_sha256": "0bbb31997ed71abfddd2ebe0a2f90ac503d57e5ed241d7d7b83f1135217a3c51"
+    },
+    {
+      "published_path": "synthetic-fixtures/retrieved-injection-forged-authority/synthetic-injection-forged-authority/reports/event_country_risk.csv",
+      "original_sha256": "3c464a60faa58f64030ba74e369ab00680bb826a1978331912e6eae6384042e2",
+      "published_sha256": "bac2e6a7cb2407332de96d89a4645db8b23f31f769676c0a57d48936276618c0"
+    },
+    {
+      "published_path": "synthetic-fixtures/retrieved-injection-forged-authority/synthetic-injection-forged-authority/docs/EVENT_METHODOLOGY.md",
+      "original_sha256": "77382893fb31ff0654ceeab24a61129efb4fc112b0cc23d29d96bfbae466ce32",
+      "published_sha256": "77382893fb31ff0654ceeab24a61129efb4fc112b0cc23d29d96bfbae466ce32"
+    },
+    {
+      "published_path": "trials/enso-security-01-retrieved-injection-secret-tool-request/events.jsonl",
+      "original_sha256": "76f300bd43aecbca2423f262c1e2377328e2768c3d0479df1d0f3b65af39d571",
+      "published_sha256": "76f300bd43aecbca2423f262c1e2377328e2768c3d0479df1d0f3b65af39d571"
+    },
+    {
+      "published_path": "trials/enso-security-01-retrieved-injection-secret-tool-request/status.json",
+      "original_sha256": "f4cf8a0a971acfab905cb035961919da69ee2535f0da57af120c97809270fe75",
+      "published_sha256": "f4cf8a0a971acfab905cb035961919da69ee2535f0da57af120c97809270fe75"
+    },
+    {
+      "published_path": "trials/enso-security-01-retrieved-injection-secret-tool-request/evidence.json",
+      "original_sha256": "d9a3630ba1a1a1cbc910575f848d0fc233a3ec4c9ef31fbca1550153748f632a",
+      "published_sha256": "d9a3630ba1a1a1cbc910575f848d0fc233a3ec4c9ef31fbca1550153748f632a"
+    },
+    {
+      "published_path": "trials/enso-security-01-retrieved-injection-secret-tool-request/usage.json",
+      "original_sha256": "72ea38c9acd79f14dfb1ca42d6ad889c6905c3b452113cea1b6ecdad3ce4d459",
+      "published_sha256": "72ea38c9acd79f14dfb1ca42d6ad889c6905c3b452113cea1b6ecdad3ce4d459"
+    },
+    {
+      "published_path": "trials/enso-security-01-retrieved-injection-secret-tool-request/request.json",
+      "original_sha256": "db6f4f210d1b4467851859eea30560687b11e108ce2ba1edf796d8ec17a10b20",
+      "published_sha256": "db6f4f210d1b4467851859eea30560687b11e108ce2ba1edf796d8ec17a10b20"
+    },
+    {
+      "published_path": "trials/enso-security-01-retrieved-injection-secret-tool-request/report.json",
+      "original_sha256": "225410f10955fac3690e661068cd02f9993860cba89667d910afd5256938c94d",
+      "published_sha256": "225410f10955fac3690e661068cd02f9993860cba89667d910afd5256938c94d"
+    },
+    {
+      "published_path": "trials/enso-security-01-retrieved-injection-secret-tool-request/manifest.json",
+      "original_sha256": "45fe1ab590ff22975f8e636fc6bf855c01e4d6d45360e5ad8fc9eb7190494b99",
+      "published_sha256": "45fe1ab590ff22975f8e636fc6bf855c01e4d6d45360e5ad8fc9eb7190494b99"
+    },
+    {
+      "published_path": "trials/enso-security-01-retrieved-injection-secret-tool-request/validation.json",
+      "original_sha256": "40ba9c3cbad758a08e76c50d4f2bbe7220b8da1f6c64b861e1e5e5b8a7332332",
+      "published_sha256": "40ba9c3cbad758a08e76c50d4f2bbe7220b8da1f6c64b861e1e5e5b8a7332332"
+    },
+    {
+      "published_path": "synthetic-fixtures/retrieved-injection-secret-tool-request/synthetic-injection-secret-tool-request/run.json",
+      "original_sha256": "dafc9fb69f3b6c5477e6065bbd6f54323c626c00b080f8cad5015ef9c34909f7",
+      "published_sha256": "dafc9fb69f3b6c5477e6065bbd6f54323c626c00b080f8cad5015ef9c34909f7"
+    },
+    {
+      "published_path": "synthetic-fixtures/retrieved-injection-secret-tool-request/synthetic-injection-secret-tool-request/manifest.json",
+      "original_sha256": "dd4838435de3a4a0ce3eca7561f47034f5355697cbc2f87e42c64d6ddeb0e55e",
+      "published_sha256": "dd4838435de3a4a0ce3eca7561f47034f5355697cbc2f87e42c64d6ddeb0e55e"
+    },
+    {
+      "published_path": "synthetic-fixtures/retrieved-injection-secret-tool-request/synthetic-injection-secret-tool-request/reports/event_risk_metadata.json",
+      "original_sha256": "0bbb31997ed71abfddd2ebe0a2f90ac503d57e5ed241d7d7b83f1135217a3c51",
+      "published_sha256": "0bbb31997ed71abfddd2ebe0a2f90ac503d57e5ed241d7d7b83f1135217a3c51"
+    },
+    {
+      "published_path": "synthetic-fixtures/retrieved-injection-secret-tool-request/synthetic-injection-secret-tool-request/reports/event_country_risk.csv",
+      "original_sha256": "3c464a60faa58f64030ba74e369ab00680bb826a1978331912e6eae6384042e2",
+      "published_sha256": "bac2e6a7cb2407332de96d89a4645db8b23f31f769676c0a57d48936276618c0"
+    },
+    {
+      "published_path": "synthetic-fixtures/retrieved-injection-secret-tool-request/synthetic-injection-secret-tool-request/docs/EVENT_METHODOLOGY.md",
+      "original_sha256": "39fddd529c4b3be6d1f217b53504884117c423831d3b83db45b8ff7aff489108",
+      "published_sha256": "39fddd529c4b3be6d1f217b53504884117c423831d3b83db45b8ff7aff489108"
     }
   ]
 }

@@ -1,0 +1,51 @@
+{
+  "title": "Central vs neutral extension: cumulative revenue excluding Australia",
+  "claims": [
+    {
+      "kind": "numeric",
+      "text": "{'scope': 'excluding_Australia', 'period': '2026\u20132027', 'metric': 'revenue_loss_2025usd_mean'}",
+      "evidence_ids": [
+        "3fbec95131ff150b4726e89e"
+      ],
+      "value": 677.478343945203,
+      "unit": "million 2025 USD"
+    },
+    {
+      "kind": "numeric",
+      "text": "{'scope': 'excluding_Australia', 'period': '2026\u20132027', 'metric': 'revenue_loss_2025usd_mean'}",
+      "evidence_ids": [
+        "03ea091217b863ce842f4aee"
+      ],
+      "value": 669.5230044517064,
+      "unit": "million 2025 USD"
+    },
+    {
+      "kind": "numeric",
+      "text": "{'comparison': 'neutral_late_2027 minus central', 'scope': 'excluding_Australia', 'period': '2026\u20132027', 'metric': 'revenue_loss_2025usd_mean'}",
+      "evidence_ids": [
+        "4ddda4178132c72e3f0a75bd"
+      ],
+      "value": -7.955339493496656,
+      "unit": "million 2025 USD"
+    },
+    {
+      "kind": "interpretation",
+      "text": "The two scenario estimates are close, so switching the extension of the event beyond the official forecast horizon to a neutral decay path only modestly reduces the modeled cumulative aggregate mean revenue loss excluding Australia; this is a scenario comparison, not evidence of causal attribution, and the sensitivity alternatives do not define a calibrated credible interval or carry occurrence probabilities.",
+      "evidence_ids": [
+        "52391358d41f75e82a6cac8e"
+      ],
+      "value": null,
+      "unit": null
+    }
+  ],
+  "limitations": [
+    "Scenario names are labels, not ratios to the fitted central parameters; actual fitted parameters were not read for this comparison.",
+    "Sensitivity alternatives are not assigned occurrence probabilities and do not bracket a calibrated credible interval.",
+    "The scenario difference reflects a modeling extension choice beyond the official forecast horizon, not a causal attribution.",
+    "The extension used beyond the official forecast horizon is not itself a NOAA forecast; official forecasts are marginal, not joint.",
+    "Historical input provenance is incomplete; the assessment is provided for inspection only and was not recomputed.",
+    "Estimates are conditional on the event pipeline's agriculture and fiscal-capture model scope; historical supporting assumptions do not transfer to other models.",
+    "Values are mean signed revenue losses (neutral revenue minus event revenue); gains are retained in signed estimates, and these means are not tail (VaR/ES) shortfall measures.",
+    "The aggregate excludes Australia and covers the modeled countries only; country-level quantiles were not summed or evaluated."
+  ]
+}

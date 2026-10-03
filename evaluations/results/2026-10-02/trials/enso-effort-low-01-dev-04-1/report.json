@@ -1,0 +1,38 @@
+{
+  "title": "Pacific islands expected shortfall",
+  "claims": [
+    {
+      "kind": "numeric",
+      "text": "{'scope': 'Pacific_islands', 'period': '2027', 'metric': 'es95_2025usd'}",
+      "evidence_ids": [
+        "ffd607c9e89529a828b68368"
+      ],
+      "value": 140443610.18201944,
+      "unit": "2025 USD"
+    },
+    {
+      "kind": "interpretation",
+      "text": "Expected Shortfall is a positive-part tail measure: the average loss across the worst simulation outcomes beyond the VaR threshold, computed from common simulation draws at the aggregate level. It is distinct from the signed mean loss, which retains gains in the distribution.",
+      "evidence_ids": [
+        "c25efaa8b07f89828476a9fd"
+      ],
+      "value": null,
+      "unit": null
+    },
+    {
+      "kind": "interpretation",
+      "text": "The measure is defined as neutral revenue minus event revenue, with VaR and ES applied only to the positive shortfall; it is an event-specific conditional estimate, not a total-economy loss or a sovereign default probability.",
+      "evidence_ids": [
+        "152f4e744ccfb55e40ce53fb"
+      ],
+      "value": null,
+      "unit": null
+    }
+  ],
+  "limitations": [
+    "Event-specific conditional risk estimates, not observed losses or a validated official budget forecast.",
+    "The fiscal model estimates historical associations; it does not identify a causal tax multiplier.",
+    "The aggregate value reflects common simulation draws; country quantiles are never summed.",
+    "Monetary outcomes use constant 2025 USD at a fixed GDP deflator and fixed 2025 exchange rate."
+  ]
+}

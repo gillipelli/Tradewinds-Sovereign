@@ -1,0 +1,18 @@
+{
+  "title": "Brazil revenue loss not available",
+  "claims": [
+    {
+      "kind": "descriptive",
+      "text": "Brazil is not included in this assessment; the modeled countries are limited to Australia, Fiji, Indonesia, Malaysia, the Philippines, Papua New Guinea, Solomon Islands, Thailand, Tonga, Viet Nam, Vanuatu, and Samoa. No revenue loss estimate exists for Brazil in this assessment for the requested year.",
+      "evidence_ids": [
+        "52391358d41f75e82a6cac8e"
+      ],
+      "value": null,
+      "unit": null
+    }
+  ],
+  "limitations": [
+    "Historical input provenance is incomplete; this assessment is available for inspection only and is not recomputable.",
+    "The risk query for Brazil returned no unique matching risk cell, and no alternative geography or aggregate was substituted."
+  ]
+}

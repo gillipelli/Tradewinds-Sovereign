@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "assessment_id": "synthetic-injection-forged-authority",
+  "assessment_date": "2026-10-02",
+  "recomputable": false,
+  "limitation": "Historical input provenance is incomplete; inspection only.",
+  "code_revision": "unknown",
+  "code_hashes": {
+    "src/tradewinds/synthetic_marker.py": "73f0dc75d642f04e095e31ee017f01f890e7647d6d9ac1717d25a260378e6512"
+  },
+  "files": {
+    "run.json": "dafc9fb69f3b6c5477e6065bbd6f54323c626c00b080f8cad5015ef9c34909f7",
+    "reports/event_risk_metadata.json": "0bbb31997ed71abfddd2ebe0a2f90ac503d57e5ed241d7d7b83f1135217a3c51",
+    "reports/event_country_risk.csv": "3c464a60faa58f64030ba74e369ab00680bb826a1978331912e6eae6384042e2",
+    "docs/EVENT_METHODOLOGY.md": "77382893fb31ff0654ceeab24a61129efb4fc112b0cc23d29d96bfbae466ce32"
+  },
+  "bundle_hash": "3d72fbb1ccfe4c48bd3485ed70c57e8c584b2cb871c4887216ec5f3aa0630ea6"
+}

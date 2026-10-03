@@ -1,0 +1,50 @@
+{
+  "title": "Pacific-islands expected shortfall for the forecast period",
+  "claims": [
+    {
+      "kind": "numeric",
+      "text": "{'scope': 'Pacific_islands', 'period': '2027', 'metric': 'es95_2025usd'}",
+      "evidence_ids": [
+        "ffd607c9e89529a828b68368"
+      ],
+      "value": 140443610.18201944,
+      "unit": "2025 USD"
+    },
+    {
+      "kind": "numeric",
+      "text": "{'scope': 'Pacific_islands', 'period': '2027', 'metric': 'es95_2025usd'}",
+      "evidence_ids": [
+        "d4cd9c96bd7d28ba619f66c5"
+      ],
+      "value": 140.44361018201943,
+      "unit": "million 2025 USD"
+    },
+    {
+      "kind": "descriptive",
+      "text": "The expected shortfall is a positive-part tail measure: it is the conditional average revenue shortfall across the joint simulation draws in which the Pacific-islands aggregate loss exceeds its value-at-risk threshold. Risk is defined as neutral revenue minus event revenue; gains are retained in the signed distribution, so the mean loss and the tail shortfall are distinct quantities, and this measure applies only to the positive shortfall.",
+      "evidence_ids": [
+        "cb924fc84347db0e31e21b86",
+        "d522689df3c5039de942f882"
+      ],
+      "value": null,
+      "unit": null
+    },
+    {
+      "kind": "descriptive",
+      "text": "The Pacific-islands figure is a joint aggregate computed from common simulation draws across the modeled Pacific island countries; country quantiles are never summed.",
+      "evidence_ids": [
+        "cb924fc84347db0e31e21b86"
+      ],
+      "value": null,
+      "unit": null
+    }
+  ],
+  "limitations": [
+    "Historical input provenance for this assessment is incomplete; the bundle is provided for inspection only and is not recomputable.",
+    "The measure is conditional on the event scenario and climate forecast vintage recorded in the assessment metadata; it is not an unconditional or causal attribution.",
+    "The expected shortfall is a positive-part shortfall on the aggregate revenue-loss distribution and must not be read as the signed mean loss, which can be smaller because gains are retained in the signed distribution.",
+    "The figure covers agriculture, forestry and fishing value added with conditional government revenue transmission; it is not a total-economy loss and not a sovereign default probability.",
+    "Monetary outcomes are expressed in constant 2025 USD at a fixed 2025 exchange rate; price and exchange-rate responses are not modeled.",
+    "The assessment does not claim predictive skill for any individual year; convergence diagnostics alone do not establish predictive skill."
+  ]
+}

@@ -1,0 +1,1633 @@
+{
+  "review_kind": "Final machine-assisted semantic review of exploratory development effort ablation; NOT human review",
+  "updated_at": "2026-10-03T01:24:49.104066+00:00",
+  "scope": "Six preregistered development tasks, one replicate each, low versus high effort with same frozen code and4096 output cap. Not heldout, not statistically powered, no superiority claim. Correct required outcomes and full citation support judged separately; uncertain rows excluded from supported numerator.",
+  "source_freeze_sha256": "4363656b13d121b0a9364b56eefdf898397d56097686cac4a6a9ade681a14682",
+  "summary": {
+    "enso-effort-low-01": {
+      "scheduled_trials": 6,
+      "recorded_trials": 6,
+      "completed_trials": 5,
+      "eligible_trials": 6,
+      "supported": 3,
+      "failures": 2,
+      "excluded_unavailable": 0,
+      "pending_semantic_review": 0,
+      "uncertain": 1
+    },
+    "enso-effort-high-01": {
+      "scheduled_trials": 6,
+      "recorded_trials": 6,
+      "completed_trials": 6,
+      "eligible_trials": 6,
+      "supported": 5,
+      "failures": 0,
+      "excluded_unavailable": 0,
+      "pending_semantic_review": 0,
+      "uncertain": 1
+    }
+  },
+  "question_summary": {
+    "enso-effort-low-01": {
+      "scheduled_questions": 6,
+      "intrinsically_eligible_questions": 6,
+      "trials_per_question": 1,
+      "eligible_trial_ceiling": 6,
+      "questions": {
+        "dev-01": {
+          "recorded_trials": 1,
+          "supported_trials": 1,
+          "failure_trials": 0,
+          "uncertain_trials": 0,
+          "pending_trials": 0,
+          "intrinsically_unavailable": false,
+          "single_trial_supported": true
+        },
+        "dev-04": {
+          "recorded_trials": 1,
+          "supported_trials": 1,
+          "failure_trials": 0,
+          "uncertain_trials": 0,
+          "pending_trials": 0,
+          "intrinsically_unavailable": false,
+          "single_trial_supported": true
+        },
+        "dev-07": {
+          "recorded_trials": 1,
+          "supported_trials": 0,
+          "failure_trials": 1,
+          "uncertain_trials": 0,
+          "pending_trials": 0,
+          "intrinsically_unavailable": false,
+          "single_trial_supported": false
+        },
+        "dev-10": {
+          "recorded_trials": 1,
+          "supported_trials": 1,
+          "failure_trials": 0,
+          "uncertain_trials": 0,
+          "pending_trials": 0,
+          "intrinsically_unavailable": false,
+          "single_trial_supported": true
+        },
+        "dev-13": {
+          "recorded_trials": 1,
+          "supported_trials": 0,
+          "failure_trials": 1,
+          "uncertain_trials": 0,
+          "pending_trials": 0,
+          "intrinsically_unavailable": false,
+          "single_trial_supported": false
+        },
+        "dev-15": {
+          "recorded_trials": 1,
+          "supported_trials": 0,
+          "failure_trials": 0,
+          "uncertain_trials": 1,
+          "pending_trials": 0,
+          "intrinsically_unavailable": false,
+          "single_trial_supported": false
+        }
+      }
+    },
+    "enso-effort-high-01": {
+      "scheduled_questions": 6,
+      "intrinsically_eligible_questions": 6,
+      "trials_per_question": 1,
+      "eligible_trial_ceiling": 6,
+      "questions": {
+        "dev-01": {
+          "recorded_trials": 1,
+          "supported_trials": 1,
+          "failure_trials": 0,
+          "uncertain_trials": 0,
+          "pending_trials": 0,
+          "intrinsically_unavailable": false,
+          "single_trial_supported": true
+        },
+        "dev-04": {
+          "recorded_trials": 1,
+          "supported_trials": 1,
+          "failure_trials": 0,
+          "uncertain_trials": 0,
+          "pending_trials": 0,
+          "intrinsically_unavailable": false,
+          "single_trial_supported": true
+        },
+        "dev-07": {
+          "recorded_trials": 1,
+          "supported_trials": 1,
+          "failure_trials": 0,
+          "uncertain_trials": 0,
+          "pending_trials": 0,
+          "intrinsically_unavailable": false,
+          "single_trial_supported": true
+        },
+        "dev-10": {
+          "recorded_trials": 1,
+          "supported_trials": 1,
+          "failure_trials": 0,
+          "uncertain_trials": 0,
+          "pending_trials": 0,
+          "intrinsically_unavailable": false,
+          "single_trial_supported": true
+        },
+        "dev-13": {
+          "recorded_trials": 1,
+          "supported_trials": 1,
+          "failure_trials": 0,
+          "uncertain_trials": 0,
+          "pending_trials": 0,
+          "intrinsically_unavailable": false,
+          "single_trial_supported": true
+        },
+        "dev-15": {
+          "recorded_trials": 1,
+          "supported_trials": 0,
+          "failure_trials": 0,
+          "uncertain_trials": 1,
+          "pending_trials": 0,
+          "intrinsically_unavailable": false,
+          "single_trial_supported": false
+        }
+      }
+    }
+  },
+  "timing_note": "Workflow includes shared dispatch queue; provider timings exclude queue. Single exploratory replicate per task.",
+  "paired_tasks": [],
+  "trials": [
+    {
+      "evaluation_id": "enso-effort-low-01",
+      "trial_id": "enso-effort-low-01-dev-01-1",
+      "task_id": "dev-01",
+      "status": "completed",
+      "classification": "supported",
+      "required_outcomes": [
+        "Correct IDN 2027 mean revenue loss",
+        "Constant 2025 USD",
+        "Assessment date and evidence"
+      ],
+      "fail_if": [
+        "Reports a crop loss as revenue",
+        "Presents estimate as observed loss"
+      ],
+      "semantic_review": {
+        "classification": "supported",
+        "required_outcomes_met": [
+          true,
+          true,
+          true
+        ],
+        "notes": "Correct IDN2027 mean67,490,065.81869538 constant2025USD with pinned cell; rendered HTML automatically includes assessment date2026-09-07. High also correctly converts millions."
+      },
+      "citations_checked": [
+        {
+          "evidence_id": "b9cf840baf908d0ee76396fa",
+          "selector": {
+            "country": "IDN",
+            "year": "2027",
+            "metric": "revenue_loss_2025usd_mean"
+          },
+          "unit": "2025 USD",
+          "artifact": "reports/event_country_risk.csv",
+          "hash_matches": true,
+          "unique_source_row": true,
+          "source_value": 67490065.81869538,
+          "value_matches": true
+        }
+      ],
+      "numeric_metadata_claim_checks": [
+        {
+          "claim_index": 0,
+          "kind": "numeric",
+          "value_matches_source_evidence": true,
+          "unit_matches_source_evidence": true
+        }
+      ],
+      "reason": null,
+      "elapsed_seconds": 19.402836379998917,
+      "provider_request_timings": [
+        {
+          "status": "settled",
+          "provider_seconds": 2.252016067504883,
+          "input_tokens": 3023,
+          "output_tokens": 54
+        },
+        {
+          "status": "settled",
+          "provider_seconds": 5.983471155166626,
+          "input_tokens": 3168,
+          "output_tokens": 123
+        },
+        {
+          "status": "settled",
+          "provider_seconds": 2.328050136566162,
+          "input_tokens": 3365,
+          "output_tokens": 119
+        }
+      ],
+      "input_tokens": 9556,
+      "output_tokens": 296,
+      "report_sha256": "eb8a4f725b01902f7c0cd296e2596b30ce5446d1fdba8468abed5810806616a5",
+      "human_success": null
+    },
+    {
+      "evaluation_id": "enso-effort-low-01",
+      "trial_id": "enso-effort-low-01-dev-04-1",
+      "task_id": "dev-04",
+      "status": "completed",
+      "classification": "supported",
+      "required_outcomes": [
+        "Correct recorded ES95 for requested scope",
+        "Explanation of positive-shortfall tail convention",
+        "Conditional-estimate caveat"
+      ],
+      "fail_if": [
+        "Calls ES the most likely loss",
+        "Sums country tail measures"
+      ],
+      "semantic_review": {
+        "classification": "supported",
+        "required_outcomes_met": [
+          true,
+          true,
+          true
+        ],
+        "notes": "Pacific_islands2027 ES95 matches140,443,610.18201944USD. Correct positive-part tail mean beyond VaR threshold, joint simulation aggregation, conditional scope. Source methodology and metadata checked; high conversion correct."
+      },
+      "citations_checked": [
+        {
+          "evidence_id": "152f4e744ccfb55e40ce53fb",
+          "selector": {
+            "retrieval_query": "expected shortfall ES95 definition tail measure"
+          },
+          "unit": null,
+          "artifact": "reports/event_risk_metadata.json",
+          "hash_matches": true
+        },
+        {
+          "evidence_id": "c25efaa8b07f89828476a9fd",
+          "selector": {
+            "retrieval_query": "expected shortfall ES95 definition tail measure"
+          },
+          "unit": null,
+          "artifact": "docs/EVENT_METHODOLOGY.md",
+          "hash_matches": true
+        },
+        {
+          "evidence_id": "ffd607c9e89529a828b68368",
+          "selector": {
+            "scope": "Pacific_islands",
+            "period": "2027",
+            "metric": "es95_2025usd"
+          },
+          "unit": "2025 USD",
+          "artifact": "reports/event_aggregate_risk.csv",
+          "hash_matches": true,
+          "unique_source_row": true,
+          "source_value": 140443610.18201944,
+          "value_matches": true
+        }
+      ],
+      "numeric_metadata_claim_checks": [
+        {
+          "claim_index": 0,
+          "kind": "numeric",
+          "value_matches_source_evidence": true,
+          "unit_matches_source_evidence": true
+        }
+      ],
+      "reason": null,
+      "elapsed_seconds": 52.794699407000735,
+      "provider_request_timings": [
+        {
+          "status": "settled",
+          "provider_seconds": 2.365119457244873,
+          "input_tokens": 3021,
+          "output_tokens": 103
+        },
+        {
+          "status": "settled",
+          "provider_seconds": 6.555087566375732,
+          "input_tokens": 4427,
+          "output_tokens": 343
+        },
+        {
+          "status": "settled",
+          "provider_seconds": 5.132687091827393,
+          "input_tokens": 4844,
+          "output_tokens": 349
+        }
+      ],
+      "input_tokens": 12292,
+      "output_tokens": 795,
+      "report_sha256": "c52069561be8a6e319edb0accf98ff03460411ec1c4d1dc0b8a44ea7883e9b94",
+      "human_success": null
+    },
+    {
+      "evaluation_id": "enso-effort-low-01",
+      "trial_id": "enso-effort-low-01-dev-07-1",
+      "task_id": "dev-07",
+      "status": "completed",
+      "classification": "failure",
+      "required_outcomes": [
+        "Retrieves method evidence",
+        "Explains preservation of pre-onset history and lag effects"
+      ],
+      "fail_if": [
+        "Claims all historical ENSO is erased"
+      ],
+      "semantic_review": {
+        "classification": "failure",
+        "required_outcomes_met": [
+          true,
+          false
+        ],
+        "notes": "Pre-onset history preservation correctly explained and cited, but required lag-effects explanation omitted. Model report mentions only intervention definition and rebound alternative, not persistence of lagged earlier cold exposure. End-to-end required-outcome omission, not false numerical claim."
+      },
+      "citations_checked": [
+        {
+          "evidence_id": "89c0626f466a53f2a870d300",
+          "selector": {
+            "retrieval_query": "neutral climate counterfactual La Ni\u00f1a prior conditions treatment"
+          },
+          "unit": null,
+          "artifact": "reports/event_risk_metadata.json",
+          "hash_matches": true
+        },
+        {
+          "evidence_id": "ce338dfd0cbf145c5d6e8140",
+          "selector": {
+            "retrieval_query": "neutral climate counterfactual La Ni\u00f1a prior conditions treatment"
+          },
+          "unit": null,
+          "artifact": "docs/EVENT_METHODOLOGY.md",
+          "hash_matches": true
+        }
+      ],
+      "numeric_metadata_claim_checks": [],
+      "reason": null,
+      "elapsed_seconds": 20.867968295999162,
+      "provider_request_timings": [
+        {
+          "status": "settled",
+          "provider_seconds": 1.985396146774292,
+          "input_tokens": 3024,
+          "output_tokens": 17
+        },
+        {
+          "status": "settled",
+          "provider_seconds": 2.5211803913116455,
+          "input_tokens": 3151,
+          "output_tokens": 42
+        },
+        {
+          "status": "settled",
+          "provider_seconds": 4.149032115936279,
+          "input_tokens": 4827,
+          "output_tokens": 296
+        }
+      ],
+      "input_tokens": 11002,
+      "output_tokens": 355,
+      "report_sha256": "adb2844c7738a608d2c674d0e0b982908b2a3d6bcd12686fe120742984c9fff4",
+      "human_success": null
+    },
+    {
+      "evaluation_id": "enso-effort-low-01",
+      "trial_id": "enso-effort-low-01-dev-10-1",
+      "task_id": "dev-10",
+      "status": "completed",
+      "classification": "supported",
+      "required_outcomes": [
+        "Uses recorded or supported recomputed variants",
+        "Computes or reports correct scenario difference",
+        "No scenario occurrence probabilities invented"
+      ],
+      "fail_if": [
+        "Treats alternatives as independently observed forecasts"
+      ],
+      "semantic_review": {
+        "classification": "supported",
+        "required_outcomes_met": [
+          true,
+          true,
+          true
+        ],
+        "notes": "Both stored scenarios and signed neutral-minus-central difference match:677.478343945203 versus669.5230044517064millionUSD, difference-7.955339493496656million. No occurrence probabilities invented. Conditional extension scope maintained."
+      },
+      "citations_checked": [
+        {
+          "evidence_id": "03ea091217b863ce842f4aee",
+          "selector": {
+            "scope": "excluding_Australia",
+            "period": "2026\u20132027",
+            "metric": "revenue_loss_2025usd_mean"
+          },
+          "unit": "million 2025 USD",
+          "calculation": "convert_units",
+          "operands": [
+            {
+              "evidence_id": "fbdd76249cef4ceed840e4e9",
+              "selector": {
+                "scope": "excluding_Australia",
+                "period": "2026\u20132027",
+                "metric": "revenue_loss_2025usd_mean"
+              },
+              "unit": "2025 USD",
+              "artifact": "reports/sensitivity/neutral_late_2027/event_aggregate_risk.csv",
+              "hash_matches": true,
+              "unique_source_row": true,
+              "source_value": 669523004.4517064,
+              "value_matches": true
+            }
+          ],
+          "value_matches": true
+        },
+        {
+          "evidence_id": "3fbec95131ff150b4726e89e",
+          "selector": {
+            "scope": "excluding_Australia",
+            "period": "2026\u20132027",
+            "metric": "revenue_loss_2025usd_mean"
+          },
+          "unit": "million 2025 USD",
+          "calculation": "convert_units",
+          "operands": [
+            {
+              "evidence_id": "2dc640090e756ce2e37ce25d",
+              "selector": {
+                "scope": "excluding_Australia",
+                "period": "2026\u20132027",
+                "metric": "revenue_loss_2025usd_mean"
+              },
+              "unit": "2025 USD",
+              "artifact": "reports/event_aggregate_risk.csv",
+              "hash_matches": true,
+              "unique_source_row": true,
+              "source_value": 677478343.9452031,
+              "value_matches": true
+            }
+          ],
+          "value_matches": true
+        },
+        {
+          "evidence_id": "4ddda4178132c72e3f0a75bd",
+          "selector": {
+            "comparison": "neutral_late_2027 minus central",
+            "scope": "excluding_Australia",
+            "period": "2026\u20132027",
+            "metric": "revenue_loss_2025usd_mean"
+          },
+          "unit": "million 2025 USD",
+          "calculation": "convert_units",
+          "operands": [
+            {
+              "evidence_id": "a8886b75e43d9d5d76870969",
+              "selector": {
+                "comparison": "neutral_late_2027 minus central",
+                "scope": "excluding_Australia",
+                "period": "2026\u20132027",
+                "metric": "revenue_loss_2025usd_mean"
+              },
+              "unit": "2025 USD",
+              "calculation": "subtract",
+              "operands": [
+                {
+                  "evidence_id": "fbdd76249cef4ceed840e4e9",
+                  "selector": {
+                    "scope": "excluding_Australia",
+                    "period": "2026\u20132027",
+                    "metric": "revenue_loss_2025usd_mean"
+                  },
+                  "unit": "2025 USD",
+                  "artifact": "reports/sensitivity/neutral_late_2027/event_aggregate_risk.csv",
+                  "hash_matches": true,
+                  "unique_source_row": true,
+                  "source_value": 669523004.4517064,
+                  "value_matches": true
+                },
+                {
+                  "evidence_id": "2dc640090e756ce2e37ce25d",
+                  "selector": {
+                    "scope": "excluding_Australia",
+                    "period": "2026\u20132027",
+                    "metric": "revenue_loss_2025usd_mean"
+                  },
+                  "unit": "2025 USD",
+                  "artifact": "reports/event_aggregate_risk.csv",
+                  "hash_matches": true,
+                  "unique_source_row": true,
+                  "source_value": 677478343.9452031,
+                  "value_matches": true
+                }
+              ],
+              "value_matches": true
+            }
+          ],
+          "value_matches": true
+        },
+        {
+          "evidence_id": "52391358d41f75e82a6cac8e",
+          "selector": {},
+          "unit": null,
+          "artifact": "reports/event_risk_metadata.json",
+          "hash_matches": true
+        }
+      ],
+      "numeric_metadata_claim_checks": [
+        {
+          "claim_index": 0,
+          "kind": "numeric",
+          "value_matches_source_evidence": true,
+          "unit_matches_source_evidence": true
+        },
+        {
+          "claim_index": 1,
+          "kind": "numeric",
+          "value_matches_source_evidence": true,
+          "unit_matches_source_evidence": true
+        },
+        {
+          "claim_index": 2,
+          "kind": "numeric",
+          "value_matches_source_evidence": true,
+          "unit_matches_source_evidence": true
+        }
+      ],
+      "reason": null,
+      "elapsed_seconds": 55.40222619300039,
+      "provider_request_timings": [
+        {
+          "status": "settled",
+          "provider_seconds": 2.5854501724243164,
+          "input_tokens": 3023,
+          "output_tokens": 61
+        },
+        {
+          "status": "settled",
+          "provider_seconds": 2.6516273021698,
+          "input_tokens": 3340,
+          "output_tokens": 85
+        },
+        {
+          "status": "settled",
+          "provider_seconds": 3.408928632736206,
+          "input_tokens": 11722,
+          "output_tokens": 157
+        },
+        {
+          "status": "settled",
+          "provider_seconds": 14.561121463775635,
+          "input_tokens": 12185,
+          "output_tokens": 605
+        }
+      ],
+      "input_tokens": 30270,
+      "output_tokens": 908,
+      "report_sha256": "5d39daf13b270bf623f6d2cf7eb8cdd65d57f32d79b71cb49a208697a4f7177c",
+      "human_success": null
+    },
+    {
+      "evaluation_id": "enso-effort-low-01",
+      "trial_id": "enso-effort-low-01-dev-13-1",
+      "task_id": "dev-13",
+      "status": "incomplete",
+      "classification": "failure",
+      "required_outcomes": [
+        "Recognizes country outside model coverage",
+        "Does not invent a value"
+      ],
+      "fail_if": [
+        "Returns a fabricated or substituted country's estimate"
+      ],
+      "semantic_review": {
+        "classification": "failure",
+        "required_outcomes_met": [
+          false,
+          false
+        ],
+        "notes": "No final report delivered: model stopped without submit_findings. Do not infer fabricated value or model incapability from this protocol failure."
+      },
+      "citations_checked": [],
+      "numeric_metadata_claim_checks": [],
+      "reason": "Model stopped without verified findings",
+      "elapsed_seconds": 51.05587791400103,
+      "provider_request_timings": [
+        {
+          "status": "settled",
+          "provider_seconds": 1.4098787307739258,
+          "input_tokens": 3020,
+          "output_tokens": 8
+        },
+        {
+          "status": "settled",
+          "provider_seconds": 2.517348051071167,
+          "input_tokens": 3138,
+          "output_tokens": 40
+        },
+        {
+          "status": "settled",
+          "provider_seconds": 4.929080247879028,
+          "input_tokens": 3278,
+          "output_tokens": 189
+        }
+      ],
+      "input_tokens": 9436,
+      "output_tokens": 237,
+      "report_sha256": null,
+      "human_success": null
+    },
+    {
+      "evaluation_id": "enso-effort-low-01",
+      "trial_id": "enso-effort-low-01-dev-15-1",
+      "task_id": "dev-15",
+      "status": "completed",
+      "classification": "uncertain",
+      "required_outcomes": [
+        "Checks recomputation support",
+        "Refuses silent input substitution",
+        "Reports available alternatives"
+      ],
+      "fail_if": [
+        "Uses newer mutable inputs as historical evidence"
+      ],
+      "semantic_review": {
+        "classification": "uncertain",
+        "required_outcomes_met": [
+          true,
+          true,
+          true
+        ],
+        "notes": "Operational requested outcomes met: tool trace/manifest establish unsupported recomputation, no substitute vintage and recorded variants available. However explicit provenance/nonrecomputability claims cite event_risk_metadata.json rather than manifest/tool denial, which do not provide those facts. Citation scope deficiency excludes fully-supported numerator."
+      },
+      "citations_checked": [
+        {
+          "evidence_id": "4f42001c805c4bda23b1893b",
+          "selector": {
+            "json_path": [
+              "climate",
+              "as_of"
+            ]
+          },
+          "unit": "ISO date",
+          "artifact": "reports/event_risk_metadata.json",
+          "hash_matches": true,
+          "source_value": "2026-09-07",
+          "value_matches": true
+        },
+        {
+          "evidence_id": "52391358d41f75e82a6cac8e",
+          "selector": {},
+          "unit": null,
+          "artifact": "reports/event_risk_metadata.json",
+          "hash_matches": true
+        }
+      ],
+      "numeric_metadata_claim_checks": [
+        {
+          "claim_index": 2,
+          "kind": "metadata",
+          "value_matches_source_evidence": true,
+          "unit_matches_source_evidence": true
+        }
+      ],
+      "reason": null,
+      "elapsed_seconds": 82.57801066999855,
+      "provider_request_timings": [
+        {
+          "status": "settled",
+          "provider_seconds": 2.764782428741455,
+          "input_tokens": 3033,
+          "output_tokens": 96
+        },
+        {
+          "status": "settled",
+          "provider_seconds": 3.382554531097412,
+          "input_tokens": 11304,
+          "output_tokens": 180
+        },
+        {
+          "status": "settled",
+          "provider_seconds": 1.5756161212921143,
+          "input_tokens": 11565,
+          "output_tokens": 32
+        },
+        {
+          "status": "settled",
+          "provider_seconds": 4.533677577972412,
+          "input_tokens": 11678,
+          "output_tokens": 76
+        },
+        {
+          "status": "settled",
+          "provider_seconds": 8.7263343334198,
+          "input_tokens": 11848,
+          "output_tokens": 513
+        },
+        {
+          "status": "settled",
+          "provider_seconds": 2.2099812030792236,
+          "input_tokens": 12423,
+          "output_tokens": 57
+        },
+        {
+          "status": "settled",
+          "provider_seconds": 5.978460311889648,
+          "input_tokens": 12550,
+          "output_tokens": 305
+        }
+      ],
+      "input_tokens": 74401,
+      "output_tokens": 1259,
+      "report_sha256": "2cdc9bcf15d6a58e32f1dc6c892719f1ec1730fa36ef4091e1c78d30a1736131",
+      "human_success": null
+    },
+    {
+      "evaluation_id": "enso-effort-high-01",
+      "trial_id": "enso-effort-high-01-dev-01-1",
+      "task_id": "dev-01",
+      "status": "completed",
+      "classification": "supported",
+      "required_outcomes": [
+        "Correct IDN 2027 mean revenue loss",
+        "Constant 2025 USD",
+        "Assessment date and evidence"
+      ],
+      "fail_if": [
+        "Reports a crop loss as revenue",
+        "Presents estimate as observed loss"
+      ],
+      "semantic_review": {
+        "classification": "supported",
+        "required_outcomes_met": [
+          true,
+          true,
+          true
+        ],
+        "notes": "Correct IDN2027 mean67,490,065.81869538 constant2025USD with pinned cell; rendered HTML automatically includes assessment date2026-09-07. High also correctly converts millions."
+      },
+      "citations_checked": [
+        {
+          "evidence_id": "7695d83c2a6ec6b77af30b09",
+          "selector": {
+            "country": "IDN",
+            "year": "2027",
+            "metric": "revenue_loss_2025usd_mean"
+          },
+          "unit": "million 2025 USD",
+          "calculation": "convert_units",
+          "operands": [
+            {
+              "evidence_id": "b9cf840baf908d0ee76396fa",
+              "selector": {
+                "country": "IDN",
+                "year": "2027",
+                "metric": "revenue_loss_2025usd_mean"
+              },
+              "unit": "2025 USD",
+              "artifact": "reports/event_country_risk.csv",
+              "hash_matches": true,
+              "unique_source_row": true,
+              "source_value": 67490065.81869538,
+              "value_matches": true
+            }
+          ],
+          "value_matches": true
+        },
+        {
+          "evidence_id": "b9cf840baf908d0ee76396fa",
+          "selector": {
+            "country": "IDN",
+            "year": "2027",
+            "metric": "revenue_loss_2025usd_mean"
+          },
+          "unit": "2025 USD",
+          "artifact": "reports/event_country_risk.csv",
+          "hash_matches": true,
+          "unique_source_row": true,
+          "source_value": 67490065.81869538,
+          "value_matches": true
+        }
+      ],
+      "numeric_metadata_claim_checks": [
+        {
+          "claim_index": 0,
+          "kind": "numeric",
+          "value_matches_source_evidence": true,
+          "unit_matches_source_evidence": true
+        },
+        {
+          "claim_index": 1,
+          "kind": "numeric",
+          "value_matches_source_evidence": true,
+          "unit_matches_source_evidence": true
+        }
+      ],
+      "reason": null,
+      "elapsed_seconds": 46.40473744600058,
+      "provider_request_timings": [
+        {
+          "status": "settled",
+          "provider_seconds": 3.2095541954040527,
+          "input_tokens": 3023,
+          "output_tokens": 75
+        },
+        {
+          "status": "settled",
+          "provider_seconds": 2.6761043071746826,
+          "input_tokens": 3189,
+          "output_tokens": 80
+        },
+        {
+          "status": "settled",
+          "provider_seconds": 8.950456857681274,
+          "input_tokens": 3364,
+          "output_tokens": 252
+        },
+        {
+          "status": "settled",
+          "provider_seconds": 5.69689154624939,
+          "input_tokens": 3728,
+          "output_tokens": 254
+        }
+      ],
+      "input_tokens": 13304,
+      "output_tokens": 661,
+      "report_sha256": "3bf2826050ffd07e57f68f58e79fb00645085423fbe6f2eb6126dda0140d2a1d",
+      "human_success": null
+    },
+    {
+      "evaluation_id": "enso-effort-high-01",
+      "trial_id": "enso-effort-high-01-dev-04-1",
+      "task_id": "dev-04",
+      "status": "completed",
+      "classification": "supported",
+      "required_outcomes": [
+        "Correct recorded ES95 for requested scope",
+        "Explanation of positive-shortfall tail convention",
+        "Conditional-estimate caveat"
+      ],
+      "fail_if": [
+        "Calls ES the most likely loss",
+        "Sums country tail measures"
+      ],
+      "semantic_review": {
+        "classification": "supported",
+        "required_outcomes_met": [
+          true,
+          true,
+          true
+        ],
+        "notes": "Pacific_islands2027 ES95 matches140,443,610.18201944USD. Correct positive-part tail mean beyond VaR threshold, joint simulation aggregation, conditional scope. Source methodology and metadata checked; high conversion correct."
+      },
+      "citations_checked": [
+        {
+          "evidence_id": "cb924fc84347db0e31e21b86",
+          "selector": {
+            "retrieval_query": "expected shortfall definition tail average positive part mean loss difference"
+          },
+          "unit": null,
+          "artifact": "docs/EVENT_METHODOLOGY.md",
+          "hash_matches": true
+        },
+        {
+          "evidence_id": "d4cd9c96bd7d28ba619f66c5",
+          "selector": {
+            "scope": "Pacific_islands",
+            "period": "2027",
+            "metric": "es95_2025usd"
+          },
+          "unit": "million 2025 USD",
+          "calculation": "convert_units",
+          "operands": [
+            {
+              "evidence_id": "ffd607c9e89529a828b68368",
+              "selector": {
+                "scope": "Pacific_islands",
+                "period": "2027",
+                "metric": "es95_2025usd"
+              },
+              "unit": "2025 USD",
+              "artifact": "reports/event_aggregate_risk.csv",
+              "hash_matches": true,
+              "unique_source_row": true,
+              "source_value": 140443610.18201944,
+              "value_matches": true
+            }
+          ],
+          "value_matches": true
+        },
+        {
+          "evidence_id": "d522689df3c5039de942f882",
+          "selector": {
+            "retrieval_query": "expected shortfall definition tail average positive part mean loss difference"
+          },
+          "unit": null,
+          "artifact": "reports/event_risk_metadata.json",
+          "hash_matches": true
+        },
+        {
+          "evidence_id": "ffd607c9e89529a828b68368",
+          "selector": {
+            "scope": "Pacific_islands",
+            "period": "2027",
+            "metric": "es95_2025usd"
+          },
+          "unit": "2025 USD",
+          "artifact": "reports/event_aggregate_risk.csv",
+          "hash_matches": true,
+          "unique_source_row": true,
+          "source_value": 140443610.18201944,
+          "value_matches": true
+        }
+      ],
+      "numeric_metadata_claim_checks": [
+        {
+          "claim_index": 0,
+          "kind": "numeric",
+          "value_matches_source_evidence": true,
+          "unit_matches_source_evidence": true
+        },
+        {
+          "claim_index": 1,
+          "kind": "numeric",
+          "value_matches_source_evidence": true,
+          "unit_matches_source_evidence": true
+        }
+      ],
+      "reason": null,
+      "elapsed_seconds": 64.5984410609999,
+      "provider_request_timings": [
+        {
+          "status": "settled",
+          "provider_seconds": 3.035837411880493,
+          "input_tokens": 3021,
+          "output_tokens": 115
+        },
+        {
+          "status": "settled",
+          "provider_seconds": 3.1790387630462646,
+          "input_tokens": 3334,
+          "output_tokens": 103
+        },
+        {
+          "status": "settled",
+          "provider_seconds": 4.547355890274048,
+          "input_tokens": 12524,
+          "output_tokens": 202
+        },
+        {
+          "status": "settled",
+          "provider_seconds": 12.542839050292969,
+          "input_tokens": 12819,
+          "output_tokens": 670
+        },
+        {
+          "status": "settled",
+          "provider_seconds": 5.932927846908569,
+          "input_tokens": 13563,
+          "output_tokens": 613
+        }
+      ],
+      "input_tokens": 45261,
+      "output_tokens": 1703,
+      "report_sha256": "3ec20cf87662c6d13b28812586c8171db27d96153d685aacdfc16ff6eec825ed",
+      "human_success": null
+    },
+    {
+      "evaluation_id": "enso-effort-high-01",
+      "trial_id": "enso-effort-high-01-dev-07-1",
+      "task_id": "dev-07",
+      "status": "completed",
+      "classification": "supported",
+      "required_outcomes": [
+        "Retrieves method evidence",
+        "Explains preservation of pre-onset history and lag effects"
+      ],
+      "fail_if": [
+        "Claims all historical ENSO is erased"
+      ],
+      "semantic_review": {
+        "classification": "supported",
+        "required_outcomes_met": [
+          true,
+          true
+        ],
+        "notes": "Explains retained earlier La Nina history and its lagged cold features enter both branches; model metadata contains cold_lag1/cold_lag2 and methodology describes two years of lags. Scope limited to earlier pre-onset history; future branches differ. No causal identification asserted."
+      },
+      "citations_checked": [
+        {
+          "evidence_id": "0da3cb9c8b6a7e5d5bd58078",
+          "selector": {
+            "retrieval_query": "cold episode lag features retained in counterfactual pre-event La Ni\u00f1a history"
+          },
+          "unit": null,
+          "artifact": "reports/event_risk_metadata.json",
+          "hash_matches": true
+        },
+        {
+          "evidence_id": "25e44e4a6e642a1158829057",
+          "selector": {
+            "retrieval_query": "neutral-climate counterfactual La Ni\u00f1a treatment"
+          },
+          "unit": null,
+          "artifact": "docs/EVENT_METHODOLOGY.md",
+          "hash_matches": true
+        },
+        {
+          "evidence_id": "4f42001c805c4bda23b1893b",
+          "selector": {
+            "json_path": [
+              "climate",
+              "as_of"
+            ]
+          },
+          "unit": "ISO date",
+          "artifact": "reports/event_risk_metadata.json",
+          "hash_matches": true,
+          "source_value": "2026-09-07",
+          "value_matches": true
+        },
+        {
+          "evidence_id": "56a2bccd12c58adced5dbc95",
+          "selector": {
+            "retrieval_query": "neutral-climate counterfactual La Ni\u00f1a treatment"
+          },
+          "unit": null,
+          "artifact": "reports/sensitivity/la_nina_late_2027/event_climate_metadata.json",
+          "hash_matches": true
+        },
+        {
+          "evidence_id": "73b22553df54b439226dff52",
+          "selector": {
+            "json_path": [
+              "climate",
+              "latest_observed_center"
+            ]
+          },
+          "unit": "ISO date",
+          "artifact": "reports/event_risk_metadata.json",
+          "hash_matches": true,
+          "source_value": "2026-07-01",
+          "value_matches": true
+        },
+        {
+          "evidence_id": "9ccf89a49a2452a5698c562c",
+          "selector": {
+            "retrieval_query": "cold episode lag features retained in counterfactual pre-event La Ni\u00f1a history"
+          },
+          "unit": null,
+          "artifact": "docs/EVENT_METHODOLOGY.md",
+          "hash_matches": true
+        },
+        {
+          "evidence_id": "fe0177fedadba3afaa701ff1",
+          "selector": {
+            "retrieval_query": "neutral-climate counterfactual La Ni\u00f1a treatment"
+          },
+          "unit": null,
+          "artifact": "reports/event_risk_metadata.json",
+          "hash_matches": true
+        }
+      ],
+      "numeric_metadata_claim_checks": [
+        {
+          "claim_index": 5,
+          "kind": "metadata",
+          "value_matches_source_evidence": true,
+          "unit_matches_source_evidence": true
+        },
+        {
+          "claim_index": 6,
+          "kind": "metadata",
+          "value_matches_source_evidence": true,
+          "unit_matches_source_evidence": true
+        }
+      ],
+      "reason": null,
+      "elapsed_seconds": 88.59840057700058,
+      "provider_request_timings": [
+        {
+          "status": "settled",
+          "provider_seconds": 2.034482717514038,
+          "input_tokens": 3024,
+          "output_tokens": 39
+        },
+        {
+          "status": "settled",
+          "provider_seconds": 2.884765863418579,
+          "input_tokens": 3173,
+          "output_tokens": 80
+        },
+        {
+          "status": "settled",
+          "provider_seconds": 4.578033685684204,
+          "input_tokens": 12903,
+          "output_tokens": 133
+        },
+        {
+          "status": "settled",
+          "provider_seconds": 11.901482820510864,
+          "input_tokens": 16183,
+          "output_tokens": 741
+        },
+        {
+          "status": "settled",
+          "provider_seconds": 27.73406147956848,
+          "input_tokens": 17061,
+          "output_tokens": 1334
+        }
+      ],
+      "input_tokens": 52344,
+      "output_tokens": 2327,
+      "report_sha256": "26c9c7f06ab9650ff674283ef40597b866f2e5d5d9ee875876b10aa70b635168",
+      "human_success": null
+    },
+    {
+      "evaluation_id": "enso-effort-high-01",
+      "trial_id": "enso-effort-high-01-dev-10-1",
+      "task_id": "dev-10",
+      "status": "completed",
+      "classification": "supported",
+      "required_outcomes": [
+        "Uses recorded or supported recomputed variants",
+        "Computes or reports correct scenario difference",
+        "No scenario occurrence probabilities invented"
+      ],
+      "fail_if": [
+        "Treats alternatives as independently observed forecasts"
+      ],
+      "semantic_review": {
+        "classification": "supported",
+        "required_outcomes_met": [
+          true,
+          true,
+          true
+        ],
+        "notes": "Both stored scenarios and signed neutral-minus-central difference match:677.478343945203 versus669.5230044517064millionUSD, difference-7.955339493496656million. No occurrence probabilities invented. Conditional extension scope maintained."
+      },
+      "citations_checked": [
+        {
+          "evidence_id": "03ea091217b863ce842f4aee",
+          "selector": {
+            "scope": "excluding_Australia",
+            "period": "2026\u20132027",
+            "metric": "revenue_loss_2025usd_mean"
+          },
+          "unit": "million 2025 USD",
+          "calculation": "convert_units",
+          "operands": [
+            {
+              "evidence_id": "fbdd76249cef4ceed840e4e9",
+              "selector": {
+                "scope": "excluding_Australia",
+                "period": "2026\u20132027",
+                "metric": "revenue_loss_2025usd_mean"
+              },
+              "unit": "2025 USD",
+              "artifact": "reports/sensitivity/neutral_late_2027/event_aggregate_risk.csv",
+              "hash_matches": true,
+              "unique_source_row": true,
+              "source_value": 669523004.4517064,
+              "value_matches": true
+            }
+          ],
+          "value_matches": true
+        },
+        {
+          "evidence_id": "3fbec95131ff150b4726e89e",
+          "selector": {
+            "scope": "excluding_Australia",
+            "period": "2026\u20132027",
+            "metric": "revenue_loss_2025usd_mean"
+          },
+          "unit": "million 2025 USD",
+          "calculation": "convert_units",
+          "operands": [
+            {
+              "evidence_id": "2dc640090e756ce2e37ce25d",
+              "selector": {
+                "scope": "excluding_Australia",
+                "period": "2026\u20132027",
+                "metric": "revenue_loss_2025usd_mean"
+              },
+              "unit": "2025 USD",
+              "artifact": "reports/event_aggregate_risk.csv",
+              "hash_matches": true,
+              "unique_source_row": true,
+              "source_value": 677478343.9452031,
+              "value_matches": true
+            }
+          ],
+          "value_matches": true
+        },
+        {
+          "evidence_id": "4ddda4178132c72e3f0a75bd",
+          "selector": {
+            "comparison": "neutral_late_2027 minus central",
+            "scope": "excluding_Australia",
+            "period": "2026\u20132027",
+            "metric": "revenue_loss_2025usd_mean"
+          },
+          "unit": "million 2025 USD",
+          "calculation": "convert_units",
+          "operands": [
+            {
+              "evidence_id": "a8886b75e43d9d5d76870969",
+              "selector": {
+                "comparison": "neutral_late_2027 minus central",
+                "scope": "excluding_Australia",
+                "period": "2026\u20132027",
+                "metric": "revenue_loss_2025usd_mean"
+              },
+              "unit": "2025 USD",
+              "calculation": "subtract",
+              "operands": [
+                {
+                  "evidence_id": "fbdd76249cef4ceed840e4e9",
+                  "selector": {
+                    "scope": "excluding_Australia",
+                    "period": "2026\u20132027",
+                    "metric": "revenue_loss_2025usd_mean"
+                  },
+                  "unit": "2025 USD",
+                  "artifact": "reports/sensitivity/neutral_late_2027/event_aggregate_risk.csv",
+                  "hash_matches": true,
+                  "unique_source_row": true,
+                  "source_value": 669523004.4517064,
+                  "value_matches": true
+                },
+                {
+                  "evidence_id": "2dc640090e756ce2e37ce25d",
+                  "selector": {
+                    "scope": "excluding_Australia",
+                    "period": "2026\u20132027",
+                    "metric": "revenue_loss_2025usd_mean"
+                  },
+                  "unit": "2025 USD",
+                  "artifact": "reports/event_aggregate_risk.csv",
+                  "hash_matches": true,
+                  "unique_source_row": true,
+                  "source_value": 677478343.9452031,
+                  "value_matches": true
+                }
+              ],
+              "value_matches": true
+            }
+          ],
+          "value_matches": true
+        },
+        {
+          "evidence_id": "4f42001c805c4bda23b1893b",
+          "selector": {
+            "json_path": [
+              "climate",
+              "as_of"
+            ]
+          },
+          "unit": "ISO date",
+          "artifact": "reports/event_risk_metadata.json",
+          "hash_matches": true,
+          "source_value": "2026-09-07",
+          "value_matches": true
+        },
+        {
+          "evidence_id": "a8886b75e43d9d5d76870969",
+          "selector": {
+            "comparison": "neutral_late_2027 minus central",
+            "scope": "excluding_Australia",
+            "period": "2026\u20132027",
+            "metric": "revenue_loss_2025usd_mean"
+          },
+          "unit": "2025 USD",
+          "calculation": "subtract",
+          "operands": [
+            {
+              "evidence_id": "fbdd76249cef4ceed840e4e9",
+              "selector": {
+                "scope": "excluding_Australia",
+                "period": "2026\u20132027",
+                "metric": "revenue_loss_2025usd_mean"
+              },
+              "unit": "2025 USD",
+              "artifact": "reports/sensitivity/neutral_late_2027/event_aggregate_risk.csv",
+              "hash_matches": true,
+              "unique_source_row": true,
+              "source_value": 669523004.4517064,
+              "value_matches": true
+            },
+            {
+              "evidence_id": "2dc640090e756ce2e37ce25d",
+              "selector": {
+                "scope": "excluding_Australia",
+                "period": "2026\u20132027",
+                "metric": "revenue_loss_2025usd_mean"
+              },
+              "unit": "2025 USD",
+              "artifact": "reports/event_aggregate_risk.csv",
+              "hash_matches": true,
+              "unique_source_row": true,
+              "source_value": 677478343.9452031,
+              "value_matches": true
+            }
+          ],
+          "value_matches": true
+        },
+        {
+          "evidence_id": "fbdd76249cef4ceed840e4e9",
+          "selector": {
+            "scope": "excluding_Australia",
+            "period": "2026\u20132027",
+            "metric": "revenue_loss_2025usd_mean"
+          },
+          "unit": "2025 USD",
+          "artifact": "reports/sensitivity/neutral_late_2027/event_aggregate_risk.csv",
+          "hash_matches": true,
+          "unique_source_row": true,
+          "source_value": 669523004.4517064,
+          "value_matches": true
+        }
+      ],
+      "numeric_metadata_claim_checks": [
+        {
+          "claim_index": 0,
+          "kind": "numeric",
+          "value_matches_source_evidence": true,
+          "unit_matches_source_evidence": true
+        },
+        {
+          "claim_index": 1,
+          "kind": "numeric",
+          "value_matches_source_evidence": true,
+          "unit_matches_source_evidence": true
+        },
+        {
+          "claim_index": 2,
+          "kind": "numeric",
+          "value_matches_source_evidence": true,
+          "unit_matches_source_evidence": true
+        },
+        {
+          "claim_index": 3,
+          "kind": "metadata",
+          "value_matches_source_evidence": true,
+          "unit_matches_source_evidence": true
+        }
+      ],
+      "reason": null,
+      "elapsed_seconds": 126.55930709399945,
+      "provider_request_timings": [
+        {
+          "status": "settled",
+          "provider_seconds": 2.4062888622283936,
+          "input_tokens": 3023,
+          "output_tokens": 41
+        },
+        {
+          "status": "settled",
+          "provider_seconds": 2.572301149368286,
+          "input_tokens": 11201,
+          "output_tokens": 85
+        },
+        {
+          "status": "settled",
+          "provider_seconds": 2.6078128814697266,
+          "input_tokens": 11434,
+          "output_tokens": 96
+        },
+        {
+          "status": "settled",
+          "provider_seconds": 12.036554336547852,
+          "input_tokens": 11800,
+          "output_tokens": 470
+        },
+        {
+          "status": "settled",
+          "provider_seconds": 3.190777063369751,
+          "input_tokens": 18410,
+          "output_tokens": 122
+        },
+        {
+          "status": "settled",
+          "provider_seconds": 15.858554363250732,
+          "input_tokens": 18602,
+          "output_tokens": 1165
+        },
+        {
+          "status": "settled",
+          "provider_seconds": 11.854117631912231,
+          "input_tokens": 19828,
+          "output_tokens": 1077
+        },
+        {
+          "status": "settled",
+          "provider_seconds": 24.157145977020264,
+          "input_tokens": 20966,
+          "output_tokens": 1243
+        }
+      ],
+      "input_tokens": 115264,
+      "output_tokens": 4299,
+      "report_sha256": "ed03f888c806dff24274018a2eb7b09d61bfc0fde2e93956b432e78ec71364d4",
+      "human_success": null
+    },
+    {
+      "evaluation_id": "enso-effort-high-01",
+      "trial_id": "enso-effort-high-01-dev-13-1",
+      "task_id": "dev-13",
+      "status": "completed",
+      "classification": "supported",
+      "required_outcomes": [
+        "Recognizes country outside model coverage",
+        "Does not invent a value"
+      ],
+      "fail_if": [
+        "Returns a fabricated or substituted country's estimate"
+      ],
+      "semantic_review": {
+        "classification": "supported",
+        "required_outcomes_met": [
+          true,
+          true
+        ],
+        "notes": "Correctly identifies Brazil outside twelve-country coverage using metadata; no fabricated estimate or geography substitution."
+      },
+      "citations_checked": [
+        {
+          "evidence_id": "52391358d41f75e82a6cac8e",
+          "selector": {},
+          "unit": null,
+          "artifact": "reports/event_risk_metadata.json",
+          "hash_matches": true
+        }
+      ],
+      "numeric_metadata_claim_checks": [],
+      "reason": null,
+      "elapsed_seconds": 31.810463765999884,
+      "provider_request_timings": [
+        {
+          "status": "settled",
+          "provider_seconds": 2.640561580657959,
+          "input_tokens": 3020,
+          "output_tokens": 100
+        },
+        {
+          "status": "settled",
+          "provider_seconds": 8.166215181350708,
+          "input_tokens": 11247,
+          "output_tokens": 442
+        },
+        {
+          "status": "settled",
+          "provider_seconds": 4.321847915649414,
+          "input_tokens": 11750,
+          "output_tokens": 247
+        }
+      ],
+      "input_tokens": 26017,
+      "output_tokens": 789,
+      "report_sha256": "8505b7ab03c71887eb4004554e8f5b652432b7b2b8245fdec89bb91cf45b3dbe",
+      "human_success": null
+    },
+    {
+      "evaluation_id": "enso-effort-high-01",
+      "trial_id": "enso-effort-high-01-dev-15-1",
+      "task_id": "dev-15",
+      "status": "completed",
+      "classification": "uncertain",
+      "required_outcomes": [
+        "Checks recomputation support",
+        "Refuses silent input substitution",
+        "Reports available alternatives"
+      ],
+      "fail_if": [
+        "Uses newer mutable inputs as historical evidence"
+      ],
+      "semantic_review": {
+        "classification": "uncertain",
+        "required_outcomes_met": [
+          true,
+          true,
+          true
+        ],
+        "notes": "Tool trace/manifest establish requested recomputation refusal, no substitute inputs and alternatives. Cites event metadata for manifest/tool denial and additionally says conditional holdout exercises are not direct validation of posterior forecasts, ambiguously conflating Bayesian holdout with ridge challenger. Operational requirements met but full source-supported semantic judgment uncertain."
+      },
+      "citations_checked": [
+        {
+          "evidence_id": "4f42001c805c4bda23b1893b",
+          "selector": {
+            "json_path": [
+              "climate",
+              "as_of"
+            ]
+          },
+          "unit": "ISO date",
+          "artifact": "reports/event_risk_metadata.json",
+          "hash_matches": true,
+          "source_value": "2026-09-07",
+          "value_matches": true
+        },
+        {
+          "evidence_id": "52391358d41f75e82a6cac8e",
+          "selector": {},
+          "unit": null,
+          "artifact": "reports/event_risk_metadata.json",
+          "hash_matches": true
+        },
+        {
+          "evidence_id": "a506f4173835648188dcfef0",
+          "selector": {
+            "json_path": [
+              "models",
+              "fiscal",
+              "prior_scale"
+            ],
+            "scenario": "central"
+          },
+          "unit": "prior scale",
+          "artifact": "reports/event_risk_metadata.json",
+          "hash_matches": true,
+          "source_value": 2.0,
+          "value_matches": true
+        }
+      ],
+      "numeric_metadata_claim_checks": [
+        {
+          "claim_index": 1,
+          "kind": "metadata",
+          "value_matches_source_evidence": true,
+          "unit_matches_source_evidence": true
+        },
+        {
+          "claim_index": 2,
+          "kind": "numeric",
+          "value_matches_source_evidence": true,
+          "unit_matches_source_evidence": true
+        }
+      ],
+      "reason": null,
+      "elapsed_seconds": 93.75665982700048,
+      "provider_request_timings": [
+        {
+          "status": "settled",
+          "provider_seconds": 3.415677309036255,
+          "input_tokens": 3033,
+          "output_tokens": 129
+        },
+        {
+          "status": "settled",
+          "provider_seconds": 12.16445517539978,
+          "input_tokens": 11299,
+          "output_tokens": 281
+        },
+        {
+          "status": "settled",
+          "provider_seconds": 5.203267574310303,
+          "input_tokens": 17562,
+          "output_tokens": 227
+        },
+        {
+          "status": "settled",
+          "provider_seconds": 2.465787410736084,
+          "input_tokens": 17883,
+          "output_tokens": 107
+        },
+        {
+          "status": "settled",
+          "provider_seconds": 7.297132253646851,
+          "input_tokens": 18084,
+          "output_tokens": 228
+        },
+        {
+          "status": "settled",
+          "provider_seconds": 5.221489429473877,
+          "input_tokens": 18406,
+          "output_tokens": 193
+        },
+        {
+          "status": "settled",
+          "provider_seconds": 14.176735639572144,
+          "input_tokens": 18686,
+          "output_tokens": 630
+        },
+        {
+          "status": "settled",
+          "provider_seconds": 17.290884256362915,
+          "input_tokens": 19460,
+          "output_tokens": 1138
+        }
+      ],
+      "input_tokens": 124413,
+      "output_tokens": 2933,
+      "report_sha256": "c4c98539bf7de0c649c16b2cb27c6caf29565718da3ce09c4f5876e0ddf88209",
+      "human_success": null
+    }
+  ],
+  "tokens": {
+    "low": 150807,
+    "high": 389315,
+    "high_to_low_ratio": 2.5815446232601933
+  },
+  "interpretation": "Machine completion5/6low versus6/6high does not by itself establish accuracy. Independent source-supported counts3/6low versus5/6high, with citation/scope uncertainty in the recomputation task for both; low omitted required lag explanation and failed to submit one report. Small author-visible development sample cannot establish general reasoning-effort benefit."
+}

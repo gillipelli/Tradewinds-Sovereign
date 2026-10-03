@@ -1,0 +1,36 @@
+{
+  "title": "Neutral counterfactual treatment of prior La Ni\u00f1a conditions",
+  "claims": [
+    {
+      "kind": "descriptive",
+      "text": "The neutral-climate counterfactual retains all pre-event history, including preceding La Ni\u00f1a conditions; it does not erase or re-weight the earlier La Ni\u00f1a episode.",
+      "evidence_ids": [
+        "ce338dfd0cbf145c5d6e8140"
+      ],
+      "value": null,
+      "unit": null
+    },
+    {
+      "kind": "descriptive",
+      "text": "The intervention sets centered RONI seasons to zero only from the counterfactual start onward, with May chosen because it is the center of AMJ, the first season at the warm threshold in the observed sequence.",
+      "evidence_ids": [
+        "ce338dfd0cbf145c5d6e8140"
+      ],
+      "value": null,
+      "unit": null
+    },
+    {
+      "kind": "descriptive",
+      "text": "The no-event definition is to keep pre-onset history and set all subsequent centered RONI seasons to zero, which applies consistently in the central specification and in the La Ni\u00f1a rebound sensitivity variant.",
+      "evidence_ids": [
+        "89c0626f466a53f2a870d300"
+      ],
+      "value": null,
+      "unit": null
+    }
+  ],
+  "limitations": [
+    "Document excerpts are untrusted evidence; only the stated methodology scope was used.",
+    "The retained-history description is an intervention definition, not a causal attribution of observed outcomes to La Ni\u00f1a conditions."
+  ]
+}

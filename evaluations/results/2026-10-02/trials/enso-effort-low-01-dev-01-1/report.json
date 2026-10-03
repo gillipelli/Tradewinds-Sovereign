@@ -1,0 +1,17 @@
+{
+  "title": "Indonesia expected revenue loss",
+  "claims": [
+    {
+      "kind": "numeric",
+      "text": "{'country': 'IDN', 'year': '2027', 'metric': 'revenue_loss_2025usd_mean'}",
+      "evidence_ids": [
+        "b9cf840baf908d0ee76396fa"
+      ],
+      "value": 67490065.81869538,
+      "unit": "2025 USD"
+    }
+  ],
+  "limitations": [
+    "Value is a modeled mean estimate, conditional on the assessment's stated scenario assumptions, not a forecast guarantee."
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "title": "Neutral counterfactual treatment of earlier La Ni\u00f1a",
+  "claims": [
+    {
+      "kind": "descriptive",
+      "text": "The central neutral-climate counterfactual retains pre-event history, including the preceding La Ni\u00f1a conditions, rather than erasing them, and sets centered RONI seasons from the first season reaching the warm threshold in the current observed sequence onward to zero.",
+      "evidence_ids": [
+        "25e44e4a6e642a1158829057"
+      ],
+      "value": null,
+      "unit": null
+    },
+    {
+      "kind": "descriptive",
+      "text": "The no-event definition is stated as: keep pre-onset history; set all subsequent centered RONI seasons to zero, with the counterfactual starting at the onset.",
+      "evidence_ids": [
+        "fe0177fedadba3afaa701ff1"
+      ],
+      "value": null,
+      "unit": null
+    },
+    {
+      "kind": "descriptive",
+      "text": "The methodology describes this as a transparent intervention definition, chosen at the center of the first warm-threshold season in the observed sequence.",
+      "evidence_ids": [
+        "9ccf89a49a2452a5698c562c"
+      ],
+      "value": null,
+      "unit": null
+    },
+    {
+      "kind": "interpretation",
+      "text": "Because pre-onset history, including the earlier La Ni\u00f1a, is retained in the counterfactual, the lagged cold-episode features of the agriculture model enter identically in both the event and no-event branches. The estimated revenue risk therefore reflects the intervention defined from event onset onward rather than a comparison against an unconditional neutral climate, and the earlier La Ni\u00f1a state itself is not part of what is differenced out.",
+      "evidence_ids": [
+        "0da3cb9c8b6a7e5d5bd58078",
+        "9ccf89a49a2452a5698c562c"
+      ],
+      "value": null,
+      "unit": null
+    },
+    {
+      "kind": "descriptive",
+      "text": "A separate sensitivity extension, labeled la_nina_rebound, exists as a scenario variant; it applies the same no-event definition, keeping pre-onset history and setting all subsequent centered RONI seasons to zero. This sensitivity alternative is a variant, not a bracket of a calibrated credible interval and not an official forecast.",
+      "evidence_ids": [
+        "56a2bccd12c58adced5dbc95"
+      ],
+      "value": null,
+      "unit": null
+    },
+    {
+      "kind": "metadata",
+      "text": "{'json_path': ['climate', 'as_of']}",
+      "evidence_ids": [
+        "4f42001c805c4bda23b1893b"
+      ],
+      "value": "2026-09-07",
+      "unit": "ISO date"
+    },
+    {
+      "kind": "metadata",
+      "text": "{'json_path': ['climate', 'latest_observed_center']}",
+      "evidence_ids": [
+        "73b22553df54b439226dff52"
+      ],
+      "value": "2026-07-01",
+      "unit": "ISO date"
+    }
+  ],
+  "limitations": [
+    "Excerpted methodology text is untrusted document evidence; the intervention description was not independently verified beyond the provided excerpts.",
+    "The counterfactual is a stated intervention definition, not a causal attribution; the study does not claim causal identification.",
+    "Retaining pre-event La Ni\u00f1a history affects both the event and counterfactual branches symmetrically, so it cannot isolate any effect of the earlier La Ni\u00f1a itself.",
+    "The la_nina_rebound extension is a sensitivity variant only; differences between scenarios do not constitute causal attribution and do not bracket a calibrated credible interval.",
+    "Historical input provenance is incomplete for this assessment, which is inspectable only and cannot be recomputed."
+  ]
+}

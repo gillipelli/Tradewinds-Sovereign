@@ -1,0 +1,175 @@
+{
+  "kind": "live_trials_requiring_human_semantic_review",
+  "llm_task_success": "not scored",
+  "trials": [
+    {
+      "task_id": "dev-01",
+      "trial": 1,
+      "run_id": "enso-effort-low-01-dev-01-1",
+      "required": [
+        "Correct IDN 2027 mean revenue loss",
+        "Constant 2025 USD",
+        "Assessment date and evidence"
+      ],
+      "fail_if": [
+        "Reports a crop loss as revenue",
+        "Presents estimate as observed loss"
+      ],
+      "human_success": null,
+      "review_notes": null,
+      "elapsed_seconds": 19.402836379998917,
+      "status": "completed",
+      "reason": null,
+      "input_tokens": 9556,
+      "output_tokens": 296,
+      "cost_usd": 0.0146808,
+      "reserved_usd": 0.0,
+      "turns": 3,
+      "tool_count": 3,
+      "repairs": 1,
+      "artifact_directory": "artifacts/agent_runs/enso-effort-low-01-dev-01-1"
+    },
+    {
+      "task_id": "dev-04",
+      "trial": 1,
+      "run_id": "enso-effort-low-01-dev-04-1",
+      "required": [
+        "Correct recorded ES95 for requested scope",
+        "Explanation of positive-shortfall tail convention",
+        "Conditional-estimate caveat"
+      ],
+      "fail_if": [
+        "Calls ES the most likely loss",
+        "Sums country tail measures"
+      ],
+      "human_success": null,
+      "review_notes": null,
+      "elapsed_seconds": 52.794699407000735,
+      "status": "completed",
+      "reason": null,
+      "input_tokens": 12292,
+      "output_tokens": 795,
+      "cost_usd": 0.020706799999999997,
+      "reserved_usd": 0.0,
+      "turns": 3,
+      "tool_count": 4,
+      "repairs": 1,
+      "artifact_directory": "artifacts/agent_runs/enso-effort-low-01-dev-04-1"
+    },
+    {
+      "task_id": "dev-07",
+      "trial": 1,
+      "run_id": "enso-effort-low-01-dev-07-1",
+      "required": [
+        "Retrieves method evidence",
+        "Explains preservation of pre-onset history and lag effects"
+      ],
+      "fail_if": [
+        "Claims all historical ENSO is erased"
+      ],
+      "human_success": null,
+      "review_notes": null,
+      "elapsed_seconds": 20.867968295999162,
+      "status": "completed",
+      "reason": null,
+      "input_tokens": 11002,
+      "output_tokens": 355,
+      "cost_usd": 0.016964799999999995,
+      "reserved_usd": 0.0,
+      "turns": 3,
+      "tool_count": 3,
+      "repairs": 0,
+      "artifact_directory": "artifacts/agent_runs/enso-effort-low-01-dev-07-1"
+    },
+    {
+      "task_id": "dev-10",
+      "trial": 1,
+      "run_id": "enso-effort-low-01-dev-10-1",
+      "required": [
+        "Uses recorded or supported recomputed variants",
+        "Computes or reports correct scenario difference",
+        "No scenario occurrence probabilities invented"
+      ],
+      "fail_if": [
+        "Treats alternatives as independently observed forecasts"
+      ],
+      "human_success": null,
+      "review_notes": null,
+      "elapsed_seconds": 55.40222619300039,
+      "status": "completed",
+      "reason": null,
+      "input_tokens": 30270,
+      "output_tokens": 908,
+      "cost_usd": 0.046373199999999996,
+      "reserved_usd": 0.0,
+      "turns": 4,
+      "tool_count": 8,
+      "repairs": 0,
+      "artifact_directory": "artifacts/agent_runs/enso-effort-low-01-dev-10-1"
+    },
+    {
+      "task_id": "dev-13",
+      "trial": 1,
+      "run_id": "enso-effort-low-01-dev-13-1",
+      "required": [
+        "Recognizes country outside model coverage",
+        "Does not invent a value"
+      ],
+      "fail_if": [
+        "Returns a fabricated or substituted country's estimate"
+      ],
+      "human_success": null,
+      "review_notes": null,
+      "elapsed_seconds": 51.05587791400103,
+      "status": "incomplete",
+      "reason": "Model stopped without verified findings",
+      "input_tokens": 9436,
+      "output_tokens": 237,
+      "cost_usd": 0.0142532,
+      "reserved_usd": 0.0,
+      "turns": 3,
+      "tool_count": 2,
+      "repairs": 0,
+      "artifact_directory": "artifacts/agent_runs/enso-effort-low-01-dev-13-1"
+    },
+    {
+      "task_id": "dev-15",
+      "trial": 1,
+      "run_id": "enso-effort-low-01-dev-15-1",
+      "required": [
+        "Checks recomputation support",
+        "Refuses silent input substitution",
+        "Reports available alternatives"
+      ],
+      "fail_if": [
+        "Uses newer mutable inputs as historical evidence"
+      ],
+      "human_success": null,
+      "review_notes": null,
+      "elapsed_seconds": 82.57801066999855,
+      "status": "completed",
+      "reason": null,
+      "input_tokens": 74401,
+      "output_tokens": 1259,
+      "cost_usd": 0.10970099999999999,
+      "reserved_usd": 0.0,
+      "turns": 7,
+      "tool_count": 8,
+      "repairs": 1,
+      "artifact_directory": "artifacts/agent_runs/enso-effort-low-01-dev-15-1"
+    }
+  ],
+  "charged_or_reserved_usd": 0.22267979999999998,
+  "total_ceiling_usd": 20.0,
+  "summary": {
+    "trial_count": 6,
+    "status_counts": {
+      "completed": 5,
+      "incomplete": 1
+    },
+    "available_trials": 6,
+    "reviewed_trials": 0,
+    "input_tokens": 146957,
+    "output_tokens": 3850
+  }
+}

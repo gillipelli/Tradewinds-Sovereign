@@ -1,0 +1,49 @@
+{
+  "title": "Sensitivity rerun unavailable",
+  "claims": [
+    {
+      "kind": "interpretation",
+      "text": "The requested sensitivity rerun could not be performed. The assessment bundle is flagged as not recomputable because historical input provenance is incomplete, and the recomputation tool rejected the scenario specification. No new sensitivity results were generated, and no substitution with different data was made.",
+      "evidence_ids": [
+        "52391358d41f75e82a6cac8e"
+      ],
+      "value": null,
+      "unit": null
+    },
+    {
+      "kind": "metadata",
+      "text": "{'json_path': ['climate', 'as_of']}",
+      "evidence_ids": [
+        "4f42001c805c4bda23b1893b"
+      ],
+      "value": "2026-09-07",
+      "unit": "ISO date"
+    },
+    {
+      "kind": "numeric",
+      "text": "{'json_path': ['models', 'fiscal', 'prior_scale'], 'scenario': 'central'}",
+      "evidence_ids": [
+        "a506f4173835648188dcfef0"
+      ],
+      "value": 2.0,
+      "unit": "prior scale"
+    },
+    {
+      "kind": "descriptive",
+      "text": "Stored sensitivity variant labels exist in the bundle, but they are descriptive labels only; fitted parameter values for central and variant scenarios must be read through the scenario parameter tool, and the bundle itself lists these variants as not recomputable.",
+      "evidence_ids": [
+        "52391358d41f75e82a6cac8e"
+      ],
+      "value": null,
+      "unit": null
+    }
+  ],
+  "limitations": [
+    "Historical input provenance is incomplete for this assessment; the bundle supports inspection only and the requested sensitivity recomputation is unsupported.",
+    "No new scenario results were produced; reported values are limited to the frozen stored metadata.",
+    "Sensitivity variant names are labels, not ratios to fitted central parameters, and do not define a calibrated credible interval or occurrence probabilities.",
+    "Diagnostics convergence does not establish predictive skill; validation results are conditional holdout exercises, not direct validation of posterior forecasts.",
+    "Model scope covers agriculture, forestry and fishing value added with conditional government revenue transmission; results are not total-economy losses and not sovereign default probabilities.",
+    "Official forecasts embedded in the model are marginal rather than joint, and the extension mechanism is not itself an official forecast."
+  ]
+}
